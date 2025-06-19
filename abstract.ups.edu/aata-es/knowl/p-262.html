@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:39-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Párrafo</span></h6>
+<p>Para calcular \(\gcd(a,b) = d\text{,}\) estamos usando sucesivas divisiones para obtener una sucesión decreciente de enteros positivos \(r_1 \gt r_2 \gt \cdots \gt r_n = d\text{;}\) es decir,</p>
+\begin{align*}
+b &amp; = a q_1 + r_1\\
+a &amp; = r_1 q_2 + r_2\\
+r_1 &amp; = r_2 q_3 + r_3\\
+&amp; \vdots \\
+r_{n - 2} &amp; = r_{n - 1} q_{n} + r_{n}\\
+r_{n - 1} &amp; = r_n q_{n + 1}.
+\end{align*}
+<p>Para encontrar \(r\) y \(s\) tales que \(ar + bs = d\text{,}\) empezamos con la última ecuación y sustituímos los resultados obtenidos de las ecuaciones anteriores:</p>
+\begin{align*}
+d &amp; = r_n\\
+&amp; = r_{n - 2} - r_{n - 1} q_n\\
+&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )\\
+&amp; = -q_n r_{n - 3} + ( 1+ q_n q_{n-1} ) r_{n - 2} \\
+&amp; \vdots \\
+&amp; = ra + sb.
+\end{align*}
+<p>El algoritmo que acabamos de usar para encontrar el máximo común divisor \(d\) de dos enteros \(a\) y \(b\) y escribir \(d\) como combinación lineal de \(a\) y \(b\) se conoce como el <b class="terminology">algoritmo de Euclides</b>.</p>
+<span class="incontext"><a href="http://abstract.ups.edu/aata-es/knowl/section-division-algorithm.html#p-262">[incontext]</a></span>
+</body>
+</html>

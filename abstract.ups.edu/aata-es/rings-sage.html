@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:46-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Sage</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="rings-references.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="rings.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="rings-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="rings-references.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="rings.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="rings-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage" class="active">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="rings-sage"><h2 class="heading hide-type" alt="Sección 16.9 Sage">
+<span class="type">Sección</span><span class="codenumber">16.9</span><span class="title">Sage</span>
+</h2>
+<a href="rings-sage.html" class="permalink">¶</a><section class="introduction" id="introduction-59"><p id="p-2509">Los anillos son muy importantes en el estudio del álgebra abstracta, y de igual forma, son muy importantes en el diseño y el uso de Sage.  Este capítulo contiene mucho material, y hay muchos comandos correspondientes en Sage.</p></section><section class="subsection" id="subsection-94"><h3 class="heading hide-type" alt="Subsección  Creando Anillos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Creando Anillos</span>
+</h3>
+<p id="p-2510">Acá hay una lista de varios anillos, dominio y cuerpos que se pueden construir de forma sencilla.</p>
+<ol id="ol-113" style="list-style-type: decimal;">
+<li id="li-558"><p id="p-2511"><tt class="code-inline tex2jax_ignore">Integers()</tt>, <tt class="code-inline tex2jax_ignore">ZZ</tt>: el dominio integral de los números enteros positivos y negativos, \({\mathbb Z}\text{.}\)</p></li>
+<li id="li-559"><p id="p-2512"><tt class="code-inline tex2jax_ignore">Integers(n)</tt>: los enteros mód \(n\text{,}\) \({\mathbb Z_n}\text{.}\)  Un cuerpop cuando \(n\) es primo, pero solo un anillo cuando \(n\) es compuesto.</p></li>
+<li id="li-560"><p id="p-2513"><tt class="code-inline tex2jax_ignore">QQ</tt>: el cuerpo de los números racionales, \({\mathbb Q}\text{.}\)</p></li>
+<li id="li-561"><p id="p-2514"><tt class="code-inline tex2jax_ignore">RR</tt>, <tt class="code-inline tex2jax_ignore">CC</tt>: el cuerpos de los números reales y el cuerpo de los números complejos, \({\mathbb R}\text{,}\) \({\mathbb C}\text{.}\)  Es imposible crear <em class="emphasis">todo</em> número real en un computador, así es que técnicamenteso estos conjuntos no se comportan como cuerpos, sino solo ofrecen una buena imitación del objeto real.  Decimos que son anillos <b class="terminology">inexactos</b> para enfatizar este punto.</p></li>
+<li id="li-562"><p id="p-2515"><tt class="code-inline tex2jax_ignore">QuadraticField(n)</tt>:  el cuerpo obtenido de adjuntar una solución de la ecuación \(x^2-n=0\) a los números racionales.  La notación en el texto es \({\mathbb Q}[\sqrt{n}]\text{.}\)  Una forma equivalente funcionalmente de construirlos es con la sintaxis <tt class="code-inline tex2jax_ignore">QQ[sqrt(n)]</tt>.  Notemos que <tt class="code-inline tex2jax_ignore">n</tt> puede ser negativo.</p></li>
+<li id="li-563"><p id="p-2516"><tt class="code-inline tex2jax_ignore">CyclotomicField(n)</tt>: el cuerpo formado de adjuntar las soluciones de la ecuación polinomial \(x^n-1=0\) a los números racionales.</p></li>
+<li id="li-564"><p id="p-2517"><tt class="code-inline tex2jax_ignore">QQbar</tt>: el cuerpo formado de adjuntar soluciones de <em class="emphasis">toda</em> ecuación polinomial con coeficientes enteros al cuerpo de los números racionales.  Este se conoce como el cuerpo de los números algebraicos, y se denota como \(\overline{{\mathbb Q}}\text{.}\)</p></li>
+<li id="li-565"><p id="p-2518"><tt class="code-inline tex2jax_ignore">FiniteField(p)</tt>: para un primo \(p\text{,}\) es el cuerpo \({\mathbb Z_p}\text{.}\)</p></li>
+</ol>
+<p id="p-2519">Cuando se muestra una descripción de algunos de los anillos anteriores, se puede ver la introducción de nuevos símbolos.  Considere el siguiente ejemplo:</p>
+<div class="sagecell-sage" id="sage-392"><script type="text/x-sage">F = QuadraticField(7)
+F
+</script></div>
+<div class="sagecell-sage" id="sage-393"><script type="text/x-sage">root = F.gen(0)
+root^2
+</script></div>
+<div class="sagecell-sage" id="sage-394"><script type="text/x-sage">root
+</script></div>
+<div class="sagecell-sage" id="sage-395"><script type="text/x-sage">(2*root)^3
+</script></div>
+<p id="p-2520">Acá <tt class="code-inline tex2jax_ignore">Number Field</tt> describe un objecto generalmente formado combinando los racionales con otro número (en este caso \(\sqrt{7}\)).  “a” es un nunevo símbolo que se comporta como una raíz del polinomio \(x^2-7\text{.}\)  No especificamos cuál raíz, \(\sqrt{7}\) o \(-\sqrt{7}\text{,}\) y en la medida que comprendamos mejor la teoría, veremos que esta distinción no importa realmente.</p>
+<p id="p-2521">Podemos obtener esta raíz como un generador del cuerpo de números, y luego manipularla.  Elevando <tt class="code-inline tex2jax_ignore">root</tt> al cuadrado, nos da 7.  Notemos que <tt class="code-inline tex2jax_ignore">root</tt> se muestra como <tt class="code-inline tex2jax_ignore">a</tt>.  Notemos, además, que los cálculos que involucran a <tt class="code-inline tex2jax_ignore">root</tt> se comportan como si fuera <em class="emphasis">cualquier</em> raíz de \(x^2-7\text{,}\) y los resultados se muestran usando <tt class="code-inline tex2jax_ignore">a</tt>.</p>
+<p id="p-2522">Esto puede ser un poco confuso, ingresar los cálculos usando <tt class="code-inline tex2jax_ignore">root</tt> y obtener respuestas en términos de <tt class="code-inline tex2jax_ignore">a</tt>.  Afortunadamente, hay una mejor forma.  Considere el siguiente ejemplo:</p>
+<div class="sagecell-sage" id="sage-396"><script type="text/x-sage">F.<b> = QuadraticField(7)
+F
+</script></div>
+<div class="sagecell-sage" id="sage-397"><script type="text/x-sage">b^2
+</script></div>
+<div class="sagecell-sage" id="sage-398"><script type="text/x-sage">(2*b)^3
+</script></div>
+<p id="p-2523">Con la sintaxis <tt class="code-inline tex2jax_ignore">F.&lt;b&gt;</tt> podemos crear el cuerpo <tt class="code-inline tex2jax_ignore">F</tt> especificando al mismo tiempo un generador <tt class="code-inline tex2jax_ignore">b</tt> con un nombre de nuestra elección.  Luego los cálculos podrán usar <tt class="code-inline tex2jax_ignore">b</tt> tanto en la entrada como en la salida como una raíz de \(x^2-7\text{.}\)</p>
+<p id="p-2524">Acá hay tres nuevos anillos que se crean mejor con esta nueva sintaxis.</p>
+<ol id="ol-114" style="list-style-type: decimal;">
+<li id="li-566"><p id="p-2525"><tt class="code-inline tex2jax_ignore">F.&lt;a&gt; = FiniteField(p^n)</tt>: Más adelante tendremos un teorema que diga que los cuerpos finitos existen solo de orden igual a una potencia de un primo.  Si la potencia es mayor a 1, entonces necesitamos un generador, en este caso dado como <tt class="code-inline tex2jax_ignore">a</tt>.</p></li>
+<li id="li-567"><p id="p-2526"><tt class="code-inline tex2jax_ignore">P.&lt;x&gt;=R[]</tt>: el anillo de todos los polinomios en la variable <tt class="code-inline tex2jax_ignore">x</tt>, con coeficientes en el anillo <tt class="code-inline tex2jax_ignore">R</tt>.  Notemos que <tt class="code-inline tex2jax_ignore">R</tt> puede ser <em class="emphasis">cualquier</em> anillo, de manera que esta es una construcción muy general que usa un anillo para formar otro.  Vea el ejemplo abajo.</p></li>
+<li id="li-568"><p id="p-2527"><tt class="code-inline tex2jax_ignore">Q.&lt;r,s,t&gt; = QuaternionAlgebra(n, m)</tt>: los racionales combinados con indeterminadas <tt class="code-inline tex2jax_ignore">r</tt>, <tt class="code-inline tex2jax_ignore">s</tt> y <tt class="code-inline tex2jax_ignore">t</tt> tales que \(r^2=n\text{,}\) \(s^2=m\) y \(t = rs = -sr\text{.}\)  Esta es na generalización de los cuaterniones descritos en este capítulo, pero sobre lo racionales en lugar de los reales, de manera que es un anillo exacto.  Notemos que este es uno de los pocos anillos no-conmutativos en Sage.  Los cuaterniones “usuales” se construyen como <tt class="code-inline tex2jax_ignore">Q.&lt;I,J,K&gt; = QuaternionAlgebra(-1, -1)</tt>.  (Notemo que usar <tt class="code-inline tex2jax_ignore">I</tt> en esta construcción no es la mejor idea, pues estaríamos redefiniendo el símbolo <tt class="code-inline tex2jax_ignore">I</tt> usado para el número complejo i.)</p></li>
+</ol>
+<p id="p-2528">La sintaxis que especifica los nombres de los generadores puede también ser usada para muchos de los anillos de más arriba, como se ha demostrado para los cuerpos cuadráticos y se demuestra más abajo para los cuerpos ciclotómicos.</p>
+<div class="sagecell-sage" id="sage-399"><script type="text/x-sage">C.<t> = CyclotomicField(8)
+C.random_element()
+</script></div></section><section class="subsection" id="subsection-95"><h3 class="heading hide-type" alt="Subsección  Propiedades de los Anillos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Propiedades de los Anillos</span>
+</h3>
+<p id="p-2529">Los ejemplos abajo muestran como preguntar por ciertas propiedades de los anillos.  Asegúrese de ejecutar la primera celda, pues allí se definen los distintos anillos involucrados en los ejemplos posteriores.</p>
+<div class="sagecell-sage" id="sage-400"><script type="text/x-sage">Z7 = Integers(7)
+Z9 = Integers(9)
+Q = QuadraticField(-11)
+F.<a> = FiniteField(3^2)
+P.<x> = Z7[]
+S.<f,g,h> = QuaternionAlgebra(-7, 3)
+</script></div>
+<p id="p-2530">Exacto versus inexacto.</p>
+<div class="sagecell-sage" id="sage-401"><script type="text/x-sage">QQ.is_exact()
+</script></div>
+<div class="sagecell-sage" id="sage-402"><script type="text/x-sage">RR.is_exact()
+</script></div>
+<p id="p-2531">Finito versus infinito.</p>
+<div class="sagecell-sage" id="sage-403"><script type="text/x-sage">Z7.is_finite()
+</script></div>
+<div class="sagecell-sage" id="sage-404"><script type="text/x-sage">Z7.is_finite()
+</script></div>
+<p id="p-2532">¿Dominio integral?</p>
+<div class="sagecell-sage" id="sage-405"><script type="text/x-sage">Z7.is_integral_domain()
+</script></div>
+<div class="sagecell-sage" id="sage-406"><script type="text/x-sage">Z9.is_integral_domain()
+</script></div>
+<p id="p-2533">¿Cuerpo?</p>
+<div class="sagecell-sage" id="sage-407"><script type="text/x-sage">Z9.is_field()
+</script></div>
+<div class="sagecell-sage" id="sage-408"><script type="text/x-sage">F.is_field()
+</script></div>
+<div class="sagecell-sage" id="sage-409"><script type="text/x-sage">Q.is_field()
+</script></div>
+<p id="p-2534">¿Conmutativo?</p>
+<div class="sagecell-sage" id="sage-410"><script type="text/x-sage">Q.is_commutative()
+</script></div>
+<div class="sagecell-sage" id="sage-411"><script type="text/x-sage">S.is_commutative()
+</script></div>
+<p id="p-2535">Característica.</p>
+<div class="sagecell-sage" id="sage-412"><script type="text/x-sage">Z7.characteristic()
+</script></div>
+<div class="sagecell-sage" id="sage-413"><script type="text/x-sage">Z9.characteristic()
+</script></div>
+<div class="sagecell-sage" id="sage-414"><script type="text/x-sage">Q.characteristic()
+</script></div>
+<div class="sagecell-sage" id="sage-415"><script type="text/x-sage">F.characteristic()
+</script></div>
+<div class="sagecell-sage" id="sage-416"><script type="text/x-sage">P.characteristic()
+</script></div>
+<div class="sagecell-sage" id="sage-417"><script type="text/x-sage">S.characteristic()
+</script></div>
+<p id="p-2536">Neutros aditivo y multiplicativo se <em class="emphasis">muestran</em> como uno esperaría, pero notemos que si bien se puedan <em class="emphasis">mostrar</em> idénticos, podrían ser <em class="emphasis">diferentes</em> debido al anillo en el que están.</p>
+<div class="sagecell-sage" id="sage-418"><script type="text/x-sage">b = Z9.zero(); b
+</script></div>
+<div class="sagecell-sage" id="sage-419"><script type="text/x-sage">b.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-420"><script type="text/x-sage">c = Q.zero(); c
+</script></div>
+<div class="sagecell-sage" id="sage-421"><script type="text/x-sage">c.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-422"><script type="text/x-sage">b == c
+</script></div>
+<div class="sagecell-sage" id="sage-423"><script type="text/x-sage">d = Z9.one(); d
+</script></div>
+<div class="sagecell-sage" id="sage-424"><script type="text/x-sage">d.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-425"><script type="text/x-sage">e = Q.one(); e
+</script></div>
+<div class="sagecell-sage" id="sage-426"><script type="text/x-sage">e.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-427"><script type="text/x-sage">d == e
+</script></div>
+<p id="p-2537">Existe cierta implementación de subanillos.  Por ejemplo, <tt class="code-inline tex2jax_ignore">Q</tt> y <tt class="code-inline tex2jax_ignore">S</tt> son extensiones de los racionales, mientras <tt class="code-inline tex2jax_ignore">F</tt> es totalmente distinto de los racionales.</p>
+<div class="sagecell-sage" id="sage-428"><script type="text/x-sage">QQ.is_subring(Q)
+</script></div>
+<div class="sagecell-sage" id="sage-429"><script type="text/x-sage">QQ.is_subring(S)
+</script></div>
+<div class="sagecell-sage" id="sage-430"><script type="text/x-sage">QQ.is_subring(F)
+</script></div>
+<p id="p-2538">No todo elemento de un anillo tiene inverso multiplicativo.  Puede ser una buena práctica verificar si un elemento es una unidad antes de intentar calcular su inverso.</p>
+<div class="sagecell-sage" id="sage-431"><script type="text/x-sage">three = Z9(3)
+three.is_unit()
+</script></div>
+<div class="sagecell-sage" id="sage-432"><script type="text/x-sage">three*three
+</script></div>
+<div class="sagecell-sage" id="sage-433"><script type="text/x-sage">four = Z9(4)
+four.is_unit()
+</script></div>
+<div class="sagecell-sage" id="sage-434"><script type="text/x-sage">g = four^-1; g
+</script></div>
+<div class="sagecell-sage" id="sage-435"><script type="text/x-sage">four*g
+</script></div></section><section class="subsection" id="subsection-96"><h3 class="heading hide-type" alt="Subsección  Estructuras Cociente">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Estructuras Cociente</span>
+</h3>
+<p id="p-2539">Ideales corresponden a los subgrupos normales en el caso de anillos y nos permiten contruir “cocientes” — básicamente anillos nuevos definidos sobre clases de equivalencia de elementos del anillo original.  La implementación de ideales en Sage es dispar.  Cuando pueden ser creados, no siempre es mucho lo que se puede hacer con ellos.  Pero funcionan bien en algunos casos muy importantes.</p>
+<p id="p-2540">El anillo de los enteros, \({\mathbb Z}\text{,}\) tiene ideales que son simplemente los múltiplos de un solo entero.  Los podemos crear con el método <tt class="code-inline tex2jax_ignore">.ideal()</tt> o escribiendo un múltiplo escalar de <tt class="code-inline tex2jax_ignore">ZZ</tt>.  Luego el cociente es isomorfo a un anillo que entendemos bien.  (Note que <tt class="code-inline tex2jax_ignore">I</tt> es un mal nombre para un ideal si queremos trabajar con números complejos más adelante.)</p>
+<div class="sagecell-sage" id="sage-436"><script type="text/x-sage">I1 = ZZ.ideal(4)
+I2 = 4*ZZ
+I3 = (-4)*ZZ
+I1 == I2
+</script></div>
+<div class="sagecell-sage" id="sage-437"><script type="text/x-sage">I2 == I3
+</script></div>
+<div class="sagecell-sage" id="sage-438"><script type="text/x-sage">Q = ZZ.quotient(I1); Q
+</script></div>
+<div class="sagecell-sage" id="sage-439"><script type="text/x-sage">Q == Integers(4)
+</script></div>
+<p id="p-2541">Usualmente seremos más cuidadosos con la última instrucción.  El cociente es un conjunto de clases de equivalencia, cada una infinita, ciertamente no es un solo entero.  Pero el cociente es <em class="emphasis">isomorfo</em> a \({\mathbb Z}_4\text{,}\) de manera que Sage simplemente hace esa identificación.</p>
+<div class="sagecell-sage" id="sage-440"><script type="text/x-sage">Z7 = Integers(7)
+P.<y> = Z7[]
+M = P.ideal(y^2+4)
+Q = P.quotient(M)
+Q
+</script></div>
+<div class="sagecell-sage" id="sage-441"><script type="text/x-sage">Q.random_element()
+</script></div>
+<div class="sagecell-sage" id="sage-442"><script type="text/x-sage">Q.order()
+</script></div>
+<div class="sagecell-sage" id="sage-443"><script type="text/x-sage">Q.is_field()
+</script></div>
+<p id="p-2542">Notemos que la construcción del anillo cociente a creado un nuevo generador, convirtiendo <tt class="code-inline tex2jax_ignore">y</tt> (\(y\)) en <tt class="code-inline tex2jax_ignore">ybar</tt> (\(\overline{y}\)).  Podemos modificar este comportamiento con la sintaxis mostrada abajo.</p>
+<div class="sagecell-sage" id="sage-444"><script type="text/x-sage">Q.<t> = P.quotient(M); Q
+</script></div>
+<div class="sagecell-sage" id="sage-445"><script type="text/x-sage">Q.random_element()
+</script></div>
+<p id="p-2543">Así del cociente de una anillo infinito por un ideal (que también es un anillo), creamos un cuerpo, que es finito.  Entender esta construcción será un tópico importante en los próximos capítulos.  Para ver lo notable que es, considere lo que pasa con un pequeño cambio.</p>
+<div class="sagecell-sage" id="sage-446"><script type="text/x-sage">Z7 = Integers(7)
+P.<y> = Z7[]
+M = P.ideal(y^2+3)
+Q.<t> = P.quotient(M)
+Q
+</script></div>
+<div class="sagecell-sage" id="sage-447"><script type="text/x-sage">Q.random_element()
+</script></div>
+<div class="sagecell-sage" id="sage-448"><script type="text/x-sage">Q.order()
+</script></div>
+<div class="sagecell-sage" id="sage-449"><script type="text/x-sage">Q.is_field()
+</script></div>
+<p id="p-2544">Hay unos pocos métodos disponibles que nos darán propiedades de los ideales.  En particular, podemos preguntar si un ideal en un anillo de polinomios es primo o maximal.  Examine los resultados de arriba y de abajo en el contexto del Teorema <a knowl="./knowl/theorem-maximal-ideal-field.html" knowl-id="xref-theorem-maximal-ideal-field" alt="Teorema 16.35 " title="Teorema 16.35 ">16.35</a>.</p>
+<div class="sagecell-sage" id="sage-450"><script type="text/x-sage">Z7 = Integers(7)
+P.<y> = Z7[]
+M = P.ideal(y^2+4)
+N = P.ideal(y^2+3)
+M.is_maximal()
+</script></div>
+<div class="sagecell-sage" id="sage-451"><script type="text/x-sage">N.is_maximal()
+</script></div>
+<p id="p-2545">El hecho de que <tt class="code-inline tex2jax_ignore">M</tt> sea un ideal primo es una verificación del Corolario <a knowl="./knowl/corollary-maximal-ideal.html" knowl-id="xref-corollary-maximal-ideal" alt="Corolario 16.40 " title="Corolario 16.40 ">16.40</a>.</p>
+<div class="sagecell-sage" id="sage-452"><script type="text/x-sage">M.is_prime()
+</script></div>
+<div class="sagecell-sage" id="sage-453"><script type="text/x-sage">N.is_prime()
+</script></div></section><section class="subsection" id="subsection-97"><h3 class="heading hide-type" alt="Subsección  Homomorfismo de Anillos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Homomorfismo de Anillos</span>
+</h3>
+<p id="p-2546">Cuando Sage recibe la entrada <tt class="code-inline tex2jax_ignore">3 + 4/3</tt>, ¿cómo sabe que se supone que 3 es un número entero? Y depués al sumarlo con un racional, ¿cómo sabe que lo que queremos es la suma de racionales, 3/1 + 4/3?  Esto es muy fácil para una persona como usted o como yo, pero extremadamente complejo para un programa, y usted se podrá imaginar que se vuelve cada vez más difícil con los muchos posible anillos, subanillos, matrices, etc en Sage.  Una parte de la respuesta es que Sage usa homomorfismos de anillos para “traducir” objectos (números) entre anillos.</p>
+<p id="p-2547">Daremos un ejemplo abajo, pero no insistiremos mucho con el tema.  Si tiene curiosidad, leer la documentación de Sage y experimentar un poco pueden ser ejercicios interesantes.</p>
+<div class="sagecell-sage" id="sage-454"><script type="text/x-sage">H = Hom(ZZ, QQ)
+phi = H([1])
+phi
+</script></div>
+<div class="sagecell-sage" id="sage-455"><script type="text/x-sage">phi.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-456"><script type="text/x-sage">a = 3; a
+</script></div>
+<div class="sagecell-sage" id="sage-457"><script type="text/x-sage">a.parent()
+</script></div>
+<div class="sagecell-sage" id="sage-458"><script type="text/x-sage">b = phi(3); b
+</script></div>
+<div class="sagecell-sage" id="sage-459"><script type="text/x-sage">b.parent()
+</script></div>
+<p id="p-2548">Así <tt class="code-inline tex2jax_ignore">phi</tt> es un homomorfismo (“morfismo”) que convierte números enteros (el dominio es <tt class="code-inline tex2jax_ignore">ZZ</tt>) en racionales (el codominio es <tt class="code-inline tex2jax_ignore">QQ</tt>), cuyo parent es un conjunto de homomorfismos que Sage denomina “homset.”  Si bien tanto <tt class="code-inline tex2jax_ignore">a</tt> como <tt class="code-inline tex2jax_ignore">b</tt> se muestran como <tt class="code-inline tex2jax_ignore">3</tt>, de forma indistinguible a la vista, los parents de <tt class="code-inline tex2jax_ignore">a</tt> y <tt class="code-inline tex2jax_ignore">b</tt> son diferentes.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

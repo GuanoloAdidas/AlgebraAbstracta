@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:48-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Párrafo</span></h6>
+<p>Investigemos un criptosistema ligeramente más sofisticado. Supongamos que la función encriptadora está dada por</p>
+\begin{equation*}
+f(p) = ap + b \bmod 26.
+\end{equation*}
+<p>Primero debemos determinar cuándo existe una función decriptadora \(f^{-1}\text{.}\) Tal función existe cuando podemos resolver la ecuación</p>
+\begin{equation*}
+c = ap + b \bmod 26
+\end{equation*}
+<p>en \(p\text{.}\) Por la Proposición <a knowl="./knowl/proposition-zn-equiv-classes.html" knowl-id="xref-proposition-zn-equiv-classes" alt="Proposición 3.4 " title="Proposición 3.4 ">3.4</a>, esto es posible precisamente cuando \(a\) tiene inverso, es decir cuando \(\gcd( a, 26) =1\text{.}\) En este caso</p>
+\begin{equation*}
+f^{-1}(p) = a^{-1} p - a^{-1} b \bmod 26.
+\end{equation*}
+<p>Un criptosistema de este tipo se denomina <b class="terminology">criptosistema afín</b>.</p>
+<span class="incontext"><a href="http://abstract.ups.edu/aata-es/knowl/section-private-key-crypt.html#p-1103">[incontext]</a></span>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:41-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="exercise-like"><h6 class="heading">
+<span class="type">Ejercicio</span><span class="codenumber">4</span><span class="title">Códigos <abbr class="acronym">ISBN</abbr></span>
+</h6>
+<p>Todo libro tiene un International Standard Book Number (<abbr class="acronym">ISBN</abbr>).  Este es un código de 10 dígitos que indica la editorial y el título del libro.  El décimo dígito es un dígito verificador que satisface</p>
+\begin{equation*}
+(d_1, d_2, \ldots, d_{10} ) \cdot (10, 9, \ldots, 1 )  \equiv 0 \pmod{11}.
+\end{equation*}
+<p>Un problema es que \(d_{10}\) puede tener que ser 10 para que el producto interno sea cero; en ese caso, se requieren 11 dígitos para que funcione el método.  Por lo tanto se usa una X como undécimo dígito para representar el 10.  Así el <abbr class="acronym">ISBN</abbr> 3-540-96035-X es un código <abbr class="acronym">ISBN</abbr> válido. </p>
+<ol style="list-style-type: lower-alpha;">
+<li><p>¿Es el <abbr class="acronym">ISBN</abbr> 0-534-91500-0 un código <abbr class="acronym">ISBN</abbr> válido?  ¿Y el <abbr class="acronym">ISBN</abbr> 0-534-91700-0 o el <abbr class="acronym">ISBN</abbr> 0-534-19500-0?</p></li>
+<li><p>¿Sirve este método para detectar todos los errores en un solo dígito?  ¿y todos los errores de transposición?</p></li>
+<li><p>¿Cuántos códigos <abbr class="acronym">ISBN</abbr> diferentes hay?</p></li>
+<li><p>Escriba un programa que permita calcular el dígito verificador para los primeros nueve dígitos de un código <abbr class="acronym">ISBN</abbr>.</p></li>
+<li><p>Una editorial tiene sedes en Alemania y Estados Unidos.  Su prefijo alemán es 3-540.  Si su prefijo en Estados Unidos es 0-<tt class="code-inline tex2jax_ignore">abc</tt>, encuentre <tt class="code-inline tex2jax_ignore">abc</tt> tal que el resto del código <abbr class="acronym">ISBN</abbr> sea el mismo para un libro impreso en Alemania y los Estados Unidos. Bajo el método de codificación <abbr class="acronym">ISBN</abbr> el primer dígito identifica el idioma; alemán es 3 y e inglés es 0.  El siguiente grupo de número identifica a la editorial, y el último grupo identifica el libro específico.</p></li>
+</ol></article><span class="incontext"><a href="http://abstract.ups.edu/aata-es/knowl/groups-exercises-detecting-errors.html#exercise-128">[incontext]</a></span>
+</body>
+</html>

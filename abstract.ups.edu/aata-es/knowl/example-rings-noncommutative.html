@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:04:12-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">16.7</span>
+</h6>
+<p>Para un ejemplo de un anillo de división no conmutativo, sea</p>
+\begin{equation*}
+1 = 
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix},
+\quad
+{\mathbf i}
+=
+\begin{pmatrix}
+0 &amp; 1 \\
+-1 &amp; 0
+\end{pmatrix},
+\quad
+{\mathbf j} =
+\begin{pmatrix}
+0 &amp; i \\
+i &amp; 0
+\end{pmatrix},
+\quad
+{\mathbf k} = 
+\begin{pmatrix}
+i &amp; 0 \\
+0 &amp; -i
+\end{pmatrix},
+\end{equation*}
+<p>con \(i^2 = -1\text{.}\) Estos elementos satisfacen las siguientes relaciones:</p>
+\begin{align*}
+{\mathbf i}^2 = {\mathbf j}^2 &amp; =  {\mathbf k}^2 = -1\\
+{\mathbf i}  {\mathbf j} &amp; =  {\mathbf k} \\
+{\mathbf j}  {\mathbf k} &amp; =  {\mathbf i} \\
+{\mathbf k}  {\mathbf i} &amp; =  {\mathbf j} \\
+{\mathbf j}  {\mathbf i} &amp; =  - {\mathbf k} \\
+{\mathbf k}  {\mathbf j} &amp; =  - {\mathbf i} \\
+{\mathbf i}  {\mathbf k} &amp; =  - {\mathbf j}. 
+\end{align*}
+<p>Sea \({\mathbb H}\) el conjunto de todos los elementos de la forma \(a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k}\text{,}\) donde \(a, b , c, d\) son números reales. Equivalentemente, \({\mathbb H}\) se puede considerar como el conjunto de todas las matrices de \(2 \times 2\) de la forma  </p>
+\begin{equation*}
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\overline{\beta} &amp; \overline{\alpha }
+\end{pmatrix},
+\end{equation*}
+<p>donde \(\alpha = a + di\) y \(\beta = b+ci\) son números complejos. Podemos definir la suma y la multiplicación en \({\mathbb H}\) en términos de la multiplicación usual de matrices o en términos de sus generadores 1, \({\mathbf i}\text{,}\) \({\mathbf j}\text{,}\) y \({\mathbf k}\text{:}\)</p>
+\begin{gather*}
+(a_1 + b_1 {\mathbf i}  + c_1 {\mathbf j} +d_1 {\mathbf k} ) + ( a_2 + b_2 {\mathbf i}  + c_2 {\mathbf j} +d_2 {\mathbf k} )\\
+= (a_1 + a_2) + ( b_1 + b_2) {\mathbf i}  + ( c_1 + c_2) \mathbf j + (d_1 + d_2) \mathbf k
+\end{gather*}
+<p>y</p>
+\begin{equation*}
+(a_1 + b_1 {\mathbf i}  + c_1 {\mathbf j} +d_1 {\mathbf k} ) ( a_2 + b_2 {\mathbf i}  + c_2 {\mathbf j} +d_2 {\mathbf k} ) = \alpha + \beta {\mathbf i}  + \gamma {\mathbf j} + \delta {\mathbf k},
+\end{equation*}
+<p>donde</p>
+\begin{align*}
+\alpha &amp; =  a_1 a_2 - b_1 b_2 - c_1 c_2 -d_1 d_2\\
+\beta &amp; =  a_1 b_2 + a_2 b_1 + c_1 d_2 - d_1 c_2\\
+\gamma &amp; =  a_1 c_2 - b_1 d_2 + c_1 a_2 - d_1 b_2\\
+\delta &amp; =  a_1 d_2 + b_1 c_2 - c_1 b_2 - d_1 a_2.
+\end{align*}
+<p>Aunque la multiplicación se ve complicada, en realidad es un un cálculo directo si recordamos que sumamos y multiplicamos elementos en \({\mathbb H}\) como polinomios teniendo en consideración las relaciones entre los generadores \({\mathbf i}\text{,}\) \({\mathbf j}\text{,}\) y \({\mathbf k}\text{.}\) El anillo \({\mathbb H}\) se llama anillo de <b class="terminology">cuaterniones</b>.</p>
+<p>Para mostrar que los cuaterniones forman un anillo de división, debemos ser capaces de encontrar un inverso para cada elemento distinto de cero. Note que</p>
+\begin{equation*}
+( a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} )( a - b {\mathbf i}  - c {\mathbf j} -d {\mathbf k} ) = a^2 + b^2 + c^2 + d^2.
+\end{equation*}
+<p>Este elemento es cero solo si \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) y \(d\) son todos cero. Así si \(a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} \neq 0\text{,}\)</p>
+\begin{equation*}
+( a + b {\mathbf i}  + c {\mathbf j} +d {\mathbf k} )\left( \frac{a - b {\mathbf i} - c {\mathbf j} - d {\mathbf k} }{ a^2 + b^2 + c^2 + d^2 } \right) = 1.
+\end{equation*}
+</article><span class="incontext"><a href="http://abstract.ups.edu/aata-es/knowl/section-rings-definitions.html#example-rings-noncommutative">[incontext]</a></span>
+</body>
+</html>

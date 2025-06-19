@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:49-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="exercise-like"><h6 class="heading">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<p>Un mejor algoritmo para factorizar enteros positivos impares es el <b class="terminology">algoritmo de factorización de Fermat</b>.</p>
+<ol style="list-style-type: lower-alpha;">
+<li>
+<p>Sea \(n= ab\) un número impar compuesto. Demuestre que \(n\) puede ser escrito como la diferencia de dos cuadrados perfectos:</p>
+\begin{equation*}
+n = x^2 - y^2 = (x - y)(x + y).
+\end{equation*}
+<p>Por lo tanto, un entero positivo impar se puede factorizar si y solo si podemos encontrar enteros \(x\) e \(y\) tales que \(n = x^2 - y^2\text{.}\)</p>
+</li>
+<li><p>Escriba un programa para implementar el siguiente algoritmo de factorización basado en la observación en la parte (a).  La expresión <tt class="code-inline tex2jax_ignore">ceiling(sqrt(n))</tt> se refiere al menor entero que es mayor o igual a la raíz cuadrada de \(n\text{.}\) Escriba otro programa que use intentos de división y compare la velocidad de los dos algoritmos. ¿Cuál de ellos es más rápido y por qué?</p></li>
+</ol>
+<figure class="figure-like"><pre class="plainprint" style="font-size:80%">x := ceiling(sqrt(n))
+y := 1
+
+1 : while x^2 - y^2 &gt; n do
+	y := y + 1
+
+if x^2 - y^2 &lt; n then
+	x := x + 1
+	y := 1
+	goto 1
+else if x^2 - y^2 = 0 then
+	a := x - y
+	b := x + y
+	write n = a * b
+</pre>
+<figcaption><span class="type">[listing]</span><span class="codenumber">7.6</span>algoritmo en pseudo-código</figcaption></figure></article><span class="incontext"><a href="http://abstract.ups.edu/aata-es/knowl/crypt-exercises-additional.html#exercise-270">[incontext]</a></span>
+</body>
+</html>

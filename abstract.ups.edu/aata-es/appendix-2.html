@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:33-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Pistas y Soluciones a Ejercicios Seleccionados</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="appendix-gfdl.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="backmatter.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="appendix-3.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="appendix-gfdl.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="backmatter.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="appendix-3.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2" class="active">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="appendix" id="appendix-2"><h1 class="heading hide-type" alt="Apéndice B Pistas y Soluciones a Ejercicios Seleccionados">
+<span class="type">Apéndice</span><span class="codenumber">B</span><span class="title">Pistas y Soluciones a Ejercicios Seleccionados</span>
+</h1>
+<section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">1.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-1"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-1" id="hint-1"><span class="type">Pista</span></a></span><div id="hk-hint-1" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-123">(a) \(A \cap B = \{ 2 \}\text{;}\) (b) \(B \cap C = \{ 5 \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-2"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-2" id="hint-2"><span class="type">Pista</span></a></span><div id="hk-hint-2" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-129">(a) \(A \times B = \{ (a,1), (a,2), (a,3), (b,1), (b,2), (b,3), (c,1), (c,2), (c,3) \}\text{;}\) (d) \(A \times D = \emptyset\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-6"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-3" id="hint-3"><span class="type">Pista</span></a></span><div id="hk-hint-3" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-134">Si \(x \in A \cup (B \cap C)\text{,}\) entonces ya sea \(x \in A\) o \(x \in B \cap C\text{.}\)  Luego,   \(x \in A \cup B\) y \(A \cup C\text{.}\)  Así, \(x \in (A \cup B) \cap (A \cup C)\text{.}\) Por lo tanto, \(A \cup (B \cap C) \subset (A \cup B) \cap (A \cup C)\text{.}\)  Recíprocamente, si \(x \in (A \cup B) \cap (A \cup C)\text{,}\) entonces \(x \in A \cup B\) y \(A \cup C\text{.}\) Luego, \(x \in A\) o \(x\) está tanto en \(B\) como en \(C\text{.}\) Así \(x \in A \cup (B \cap C)\) y por lo tanto \((A \cup B) \cap (A \cup C) \subset A \cup (B \cap C)\text{.}\) Luego, \(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-10"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-4" id="hint-4"><span class="type">Pista</span></a></span><div id="hk-hint-4" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-139">\((A \cap B) \cup (A \setminus B) \cup (B \setminus A) = (A \cap B) \cup (A \cap B') \cup (B \cap A') = [A \cap (B \cup B')] \cup (B \cap A') = A \cup (B \cap A') = (A \cup B) \cap (A \cup A') = A \cup B\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-14"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">14</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-5" id="hint-5"><span class="type">Pista</span></a></span><div id="hk-hint-5" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-144">\(A \setminus (B \cup C) = A \cap (B \cup C)' = (A \cap A) \cap (B' \cap C') = (A \cap B') \cap (A \cap C') = (A \setminus B) \cap (A \setminus C)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-17"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-6" id="hint-6"><span class="type">Pista</span></a></span><div id="hk-hint-6" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-152">(a) No es función pues \(f(2/3)\) no está definido; (b) es una función; (c) no es función, pues \(f(1/2) = 3/4\) pero \(f(2/4)=3/8\text{;}\) (d) es una función.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-18"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-7" id="hint-7"><span class="type">Pista</span></a></span><div id="hk-hint-7" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-158">(a) \(f\) es 1-1 pero no es sobre. \(f({\mathbb R} ) = \{ x \in {\mathbb R} : x \gt 0 \}\text{.}\)  (c) \(f\) no es 1-1 ni es sobre.  \(f(\mathbb R) = \{ x : -1 \leq x \leq 1 \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-20"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">20</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-8" id="hint-8"><span class="type">Pista</span></a></span><div id="hk-hint-8" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-163">(a) \(f(n) = n + 1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-22"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">22</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-9" id="hint-9"><span class="type">Pista</span></a></span><div id="hk-hint-9" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-171">(a) Sean \(x, y \in A\text{.}\) Entonces \(g(f(x)) = (g \circ f)(x) = (g \circ f)(y) = g(f(y))\text{.}\)  Luego, \(f(x) = f(y)\) y \(x = y\text{,}\)  so \(g \circ f\) es 1-1. (b) Sea \(c \in C\text{,}\) entonces \(c = (g \circ f)(x) = g(f(x))\) para algún \(x \in A\text{.}\) Como \(f(x) \in B\text{,}\) \(g\) es sobre.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-23"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">23</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-10" id="hint-10"><span class="type">Pista</span></a></span><div id="hk-hint-10" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-173">\(f^{-1}(x) = (x+1)/(x-1)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-24"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">24</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-11" id="hint-11"><span class="type">Pista</span></a></span><div id="hk-hint-11" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-180">(a) Sea \(y \in f(A_1 \cup A_2)\text{.}\) Entonces existe \(x \in A_1 \cup A_2\) tal que \(f(x) = y\text{.}\)  Luego, \(y \in f(A_1)\) o \(f(A_2) \text{.}\)  Por lo tanto, \(y \in f(A_1) \cup f(A_2)\text{.}\) Así, \(f(A_1 \cup A_2) \subset f(A_1) \cup f(A_2)\text{.}\) Recíprocamente, si \(y \in f(A_1) \cup f(A_2)\text{,}\) entonces \(y \in f(A_1)\) o \(f(A_2)\text{.}\)  Luego, existe \(x\) en \(A_1\) o  \(A_2\) tal que \(f(x) = y\text{.}\)  Entonces existe \(x \in A_1 \cup A_2\) tal que \(f(x) = y\text{.}\)  Por lo tanto, \(f(A_1) \cup f(A_2) \subset f(A_1 \cup A_2)\text{,}\) y \(f(A_1 \cup A_2) = f(A_1) \cup f(A_2)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-25"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">25</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-12" id="hint-12"><span class="type">Pista</span></a></span><div id="hk-hint-12" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-186">(a) La relación no es simétrica. (b) La erlación no es refleja, pues 0 no es equivalente a sí mismo. (c) La relación no es transitiva.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-28"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">28</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-13" id="hint-13"><span class="type">Pista</span></a></span><div id="hk-hint-13" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-190">Sea \(X = {\mathbb N} \cup \{ \sqrt{2}\, \}\) y defina \(x \sim y\) si \(x + y \in {\mathbb N}\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">2.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-31"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-14" id="hint-14"><span class="type">Pista</span></a></span><div id="hk-hint-14" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-274">El caso base, \(S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2\) es verdadero. Supongamos que \(S(k): 1^2 + 2^2 + \cdots + k^2 = [k(k + 1)(2k + 1)]/6\) es verdadero. Entonces</p>
+\begin{align*}
+1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 &amp; = [k(k + 1)(2k + 1)]/6 + (k + 1)^2\\
+&amp; = [(k + 1)((k + 1) + 1)(2(k + 1) + 1)]/6,
+\end{align*}
+<p>y así \(S(k + 1)\) es verdadero. Luego, \(S(n)\) es verdadero para todos los enteros positivos \(n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-33"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-15" id="hint-15"><span class="type">Pista</span></a></span><div id="hk-hint-15" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-277">El caso base, \(S(4): 4! = 24 \gt 16 =2^4\) es verdadero. Supongamos que \(S(k): k! \gt 2^k\) es verdadero. Entonces \((k + 1)! = k! (k + 1) \gt 2^k \cdot 2 = 2^{k + 1}\text{,}\) así \(S(k + 1)\) es verdadero. Luego, \(S(n)\) es verdadero para todos los enteros positivos \(n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-38"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-16" id="hint-16"><span class="type">Pista</span></a></span><div id="hk-hint-16" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-283">Siga la demostración el Ejemplo <a knowl="./knowl/example-integers-binomial-theorem.html" knowl-id="xref-example-integers-binomial-theorem" alt="Ejemplo 2.4 " title="Ejemplo 2.4 ">2.4</a>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-41"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-17" id="hint-17"><span class="type">Pista</span></a></span><div id="hk-hint-17" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-287">El caso base, \(S(0): (1 + x)^0 - 1 = 0 \geq 0 = 0 \cdot x\) es verdadero. Supongamos que \(S(k): (1 + x)^k -1 \geq kx\) es verdadero. Entonces</p>
+\begin{align*}
+(1 + x)^{k + 1} - 1 &amp; = (1 + x)(1 + x)^k -1\\
+&amp; = (1 + x)^k + x(1 + x)^k - 1\\
+&amp; \geq kx + x(1 + x)^k\\
+&amp; \geq kx + x\\
+&amp; = (k + 1)x,
+\end{align*}
+<p>así \(S(k + 1)\) es verdadero. Por lo tanto, \(S(n)\) es verdadero para todos los enteros positivos \(n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-47"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span><span class="title">Números de Fibonacci</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-18" id="hint-18"><span class="type">Pista</span></a></span><div id="hk-hint-18" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-305">Para (a) y (b) use inducción. (c) Muestre que \(f_1 = 1\text{,}\) \(f_2 = 1\text{,}\) y \(f_{n + 2} = f_{n + 1} + f_n\text{.}\) (d)  Use la parte (c). (e) Use la parte (b) y el Ejercicio <a knowl="./knowl/exercise-integers-gcd-1.html" knowl-id="xref-exercise-integers-gcd-1" alt="Ejercicio 2.3.16 " title="Ejercicio 2.3.16 ">2.3.16</a>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-49"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">19</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-19" id="hint-19"><span class="type">Pista</span></a></span><div id="hk-hint-19" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-308">Use el Teorema Fundamental de la Aritmética.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-53"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">23</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-20" id="hint-20"><span class="type">Pista</span></a></span><div id="hk-hint-20" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-313">Use el Principio del Buen-Orden y el algoritmo de división.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-57"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">27</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-21" id="hint-21"><span class="type">Pista</span></a></span><div id="hk-hint-21" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-318">Como \(\gcd(a,b) = 1\text{,}\) existen enteros \(r\) y \(s\) tales que \(ar + bs = 1\text{.}\)   Luego, \(acr + bcs = c\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-59"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">29</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-22" id="hint-22"><span class="type">Pista</span></a></span><div id="hk-hint-22" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-321">Todo primo es de la forma 2, 3, \(6n + 1\text{,}\) o \(6n + 5\text{.}\)   Suponga que solo hay un número finito de primos de la forma \(6k + 5\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">3.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-71"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-23" id="hint-23"><span class="type">Pista</span></a></span><div id="hk-hint-23" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-446">(a) \(3 + 7 \mathbb Z = \{ \ldots, -4, 3, 10, \ldots \}\text{;}\)  (c) \(18 + 26 \mathbb Z\text{;}\)  (e) \(5 + 6 \mathbb Z\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-72"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-24" id="hint-24"><span class="type">Pista</span></a></span><div id="hk-hint-24" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-452">(a) No es un grupo; (c) es un grupo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-76"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-25" id="hint-25"><span class="type">Pista</span></a></span><div id="hk-hint-25" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-457"></p>
+\begin{equation*}
+\begin{array}{c|cccc}
+\cdot &amp; 1  &amp; 5  &amp; 7  &amp; 11 \\
+\hline
+1 &amp; 1 &amp; 5 &amp; 7 &amp; 11 \\ 5 &amp; 5 &amp; 1 &amp; 11 &amp; 7 \\
+7 &amp; 7 &amp; 11 &amp; 1 &amp; 5 \\ 11 &amp; 11 &amp; 7 &amp; 5 &amp; 1
+\end{array}
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-78"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-26" id="hint-26"><span class="type">Pista</span></a></span><div id="hk-hint-26" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-460">Elija dos matrices. Casi cualquier par sirve.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-85"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-27" id="hint-27"><span class="type">Pista</span></a></span><div id="hk-hint-27" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-468">Hay un grupo no abeliano con seis elementos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-86"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-28" id="hint-28"><span class="type">Pista</span></a></span><div id="hk-hint-28" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-470">Considere el grupo de simetrías de un triángulo equilátero o de un cuadrado.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-87"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-29" id="hint-29"><span class="type">Pista</span></a></span><div id="hk-hint-29" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-472">Hay cinco grupos diferentes de orden 8.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-88"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-30" id="hint-30"><span class="type">Pista</span></a></span><div id="hk-hint-30" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-474">Sea</p>
+\begin{equation*}
+\sigma =
+\begin{pmatrix}
+1 &amp; 2 &amp; \cdots &amp; n \\ a_1 &amp; a_2 &amp; \cdots &amp; a_n
+\end{pmatrix}
+\end{equation*}
+<p>en \(S_n\text{.}\) Todos los \(a_i\) deben ser distintos. Hay \(n\) forman de elegir \(a_1\text{,}\) \(n-1\) formas de elegir \(a_2\text{,}\) \(\ldots\text{,}\) 2 formas de elegir \(a_{n - 1}\text{,}\) y solo una forma de elegir \(a_n\text{.}\) Por lo tanto, podemos formar \(\sigma\) de \(n(n - 1) \cdots 2 \cdot 1 = n!\) maneras.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-95"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">25</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-31" id="hint-31"><span class="type">Pista</span></a></span><div id="hk-hint-31" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-482"></p>
+\begin{align*}
+(aba^{-1})^n &amp; = (aba^{-1})(aba^{-1}) \cdots (aba^{-1})\\
+&amp; = ab(aa^{-1})b(aa^{-1})b \cdots b(aa^{-1})ba^{-1}\\
+&amp; = ab^na^{-1}.
+\end{align*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-101"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">31</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-32" id="hint-32"><span class="type">Pista</span></a></span><div id="hk-hint-32" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-489">Como \(abab = (ab)^2 = e = a^2 b^2 = aabb\text{,}\) sabemos que \(ba = ab\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-105"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">35</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-33" id="hint-33"><span class="type">Pista</span></a></span><div id="hk-hint-33" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-494">\(H_1 = \{ \identity \}\text{,}\) \(H_2 = \{ \identity, \rho_1, \rho_2 \}\text{,}\) \(H_3 = \{ \identity, \mu_1 \}\text{,}\) \(H_4 = \{ \identity, \mu_2 \}\text{,}\) \(H_5 = \{ \identity, \mu_3 \}\text{,}\) \(S_3\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-111"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">41</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-34" id="hint-34"><span class="type">Pista</span></a></span><div id="hk-hint-34" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-501">La identidad de \(G\) es \(1 = 1 + 0 \sqrt{2}\text{.}\) Como \((a + b \sqrt{2}\, )(c + d \sqrt{2}\, ) = (ac + 2bd) + (ad + bc)\sqrt{2}\text{,}\) \(G\) es cerrado bajo multiplicación.  Finalmente,  \((a + b \sqrt{2}\, )^{-1} = a/(a^2 - 2b^2) - b\sqrt{2}/(a^2 - 2 b^2)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-116"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">46</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-35" id="hint-35"><span class="type">Pista</span></a></span><div id="hk-hint-35" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-507">Considere \(S_3\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-119"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">49</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-36" id="hint-36"><span class="type">Pista</span></a></span><div id="hk-hint-36" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-511">\(b a = a^4 b = a^3 a b = ab\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">4.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-135"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-37" id="hint-37"><span class="type">Pista</span></a></span><div id="hk-hint-37" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-621">(a) Falso; (c) falso; (e) verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-136"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-38" id="hint-38"><span class="type">Pista</span></a></span><div id="hk-hint-38" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-629">(a) 12; (c) infinito; (e) 10.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-137"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-39" id="hint-39"><span class="type">Pista</span></a></span><div id="hk-hint-39" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-644">(a) \(7 {\mathbb Z} = \{ \ldots, -7, 0, 7, 14, \ldots \}\text{;}\) (b) \(\{ 0, 3, 6, 9, 12, 15, 18, 21 \}\text{;}\) (c) \(\{ 0 \}\text{,}\) \(\{ 0, 6 \}\text{,}\) \(\{ 0, 4, 8 \}\text{,}\) \(\{ 0, 3, 6, 9 \}\text{,}\) \(\{ 0, 2, 4, 6, 8, 10 \}\text{;}\) (g) \(\{ 1, 3, 7, 9 \}\text{;}\) (j) \(\{ 1, -1, i, -i \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-138"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-40" id="hint-40"><span class="type">Pista</span></a></span><div id="hk-hint-40" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-652">(a)</p>
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+-1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix},
+\begin{pmatrix}
+0 &amp; -1 \\
+1 &amp; 0
+\end{pmatrix},
+\begin{pmatrix}
+0 &amp; 1 \\
+-1 &amp; 0
+\end{pmatrix}.
+\end{equation*}
+<p id="p-653">(c)</p>
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+1 &amp; -1 \\
+1 &amp; 0
+\end{pmatrix},
+\begin{pmatrix}
+-1 &amp; 1 \\
+-1 &amp; 0
+\end{pmatrix}, \\
+\begin{pmatrix}
+0 &amp; 1 \\
+-1 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+0 &amp; -1 \\
+1 &amp; -1
+\end{pmatrix},
+\begin{pmatrix}
+-1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix}.
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-144"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-41" id="hint-41"><span class="type">Pista</span></a></span><div id="hk-hint-41" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-663">(a) \(0\text{;}\) (b) \(1, -1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-145"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-42" id="hint-42"><span class="type">Pista</span></a></span><div id="hk-hint-42" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-665">1, 2, 3, 4, 6, 8, 12, 24.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-149"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-43" id="hint-43"><span class="type">Pista</span></a></span><div id="hk-hint-43" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-676">(a) \(-3 + 3i\text{;}\) (c) \(43- 18i\text{;}\) (e) \(i\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-150"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-44" id="hint-44"><span class="type">Pista</span></a></span><div id="hk-hint-44" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-682">(a) \(\sqrt{3} + i\text{;}\) (c) \(-3\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-151"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-45" id="hint-45"><span class="type">Pista</span></a></span><div id="hk-hint-45" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-690">(a) \(\sqrt{2} \cis( 7 \pi /4)\text{;}\) (c) \(2 \sqrt{2} \cis( \pi /4)\text{;}\) (e) \(3 \cis(3 \pi/2)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-152"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-46" id="hint-46"><span class="type">Pista</span></a></span><div id="hk-hint-46" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-699">(a) \((1 - i)/2\text{;}\) (c) \(16(i - \sqrt{3}\, )\text{;}\) (e) \(-1/4\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-156"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">22</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-47" id="hint-47"><span class="type">Pista</span></a></span><div id="hk-hint-47" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-714">(a) 292; (c) 1523.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-161"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">27</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-48" id="hint-48"><span class="type">Pista</span></a></span><div id="hk-hint-48" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-723">\(|\langle g \rangle \cap \langle h \rangle| = 1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-165"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">31</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-49" id="hint-49"><span class="type">Pista</span></a></span><div id="hk-hint-49" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-728">El elemento identidad en cualquier grupo tiene orden finito. Si \(g, h \in G\) tienen orden \(m\) y \(n\text{,}\) respectivamente, como \((g^{-1})^m = e\) y \((gh)^{mn} = e\text{,}\) se cumple que los elementos de orden finito en \(G\) forman un subgrupo de \(G\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-171"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">37</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-50" id="hint-50"><span class="type">Pista</span></a></span><div id="hk-hint-50" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-735">Si \(g\) es un elemento distinto de la identidad en \(G\text{,}\) entonces \(g\) debe generar todo \(G\text{;}\) de lo contrario, \(\langle g \rangle\) sería un subgrupo propio no trivial de \(G\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">5.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-188"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-51" id="hint-51"><span class="type">Pista</span></a></span><div id="hk-hint-51" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-839">(a) \((12453)\text{;}\) (c) \((13)(25)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-189"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-52" id="hint-52"><span class="type">Pista</span></a></span><div id="hk-hint-52" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-857">(a) \((135)(24)\text{;}\) (c) \((14)(23)\text{;}\) (e) \((1324)\text{;}\) (g) \((134)(25)\text{;}\) (n) \((17352)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-190"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-53" id="hint-53"><span class="type">Pista</span></a></span><div id="hk-hint-53" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-864">(a) \((16)(15)(13)(14)\text{;}\) (c) \((16)(14)(12)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-191"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-54" id="hint-54"><span class="type">Pista</span></a></span><div id="hk-hint-54" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-866">\((a_1, a_2, \ldots, a_n)^{-1} = (a_1, a_{n}, a_{n-1}, \ldots, a_2)\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-192"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-55" id="hint-55"><span class="type">Pista</span></a></span><div id="hk-hint-55" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-871">(a) \(\{ (13), (13)(24), (132), (134), (1324), (1342) \}\) no es un subgrupo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-195"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-56" id="hint-56"><span class="type">Pista</span></a></span><div id="hk-hint-56" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-875">\((12345)(678)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-198"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-57" id="hint-57"><span class="type">Pista</span></a></span><div id="hk-hint-57" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-879">Permutaciones de la forma</p>
+\begin{equation*}
+(1), (a_1, a_2)(a_3, a_4), (a_1, a_2, a_3), (a_1, a_2, a_3, a_4, a_5)
+\end{equation*}
+<p>son posibles en \(A_5\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-204"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-58" id="hint-58"><span class="type">Pista</span></a></span><div id="hk-hint-58" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-886">Calcule \((123)(12)\) y \((12)(123)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-212"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">25</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-59" id="hint-59"><span class="type">Pista</span></a></span><div id="hk-hint-59" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-895">Considere los casos \((ab)(bc)\) y \((ab)(cd)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-217"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">30</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-60" id="hint-60"><span class="type">Pista</span></a></span><div id="hk-hint-60" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-906">Para la parte (a), muestre que \(\sigma \tau \sigma^{-1 }(\sigma(a_i)) = \sigma(a_{i + 1})\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">6.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-229"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-61" id="hint-61"><span class="type">Pista</span></a></span><div id="hk-hint-61" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1016">El orden de \(g\) y el orden de \(h\) deben ambos dividir el orden de \(G\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-230"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-62" id="hint-62"><span class="type">Pista</span></a></span><div id="hk-hint-62" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1018">Los órdenes posibles deben ser divisores de 60.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-231"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-63" id="hint-63"><span class="type">Pista</span></a></span><div id="hk-hint-63" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1020">Esto es verdadero para todo subgrupo propio no trivial.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-232"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-64" id="hint-64"><span class="type">Pista</span></a></span><div id="hk-hint-64" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1022">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-233"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-65" id="hint-65"><span class="type">Pista</span></a></span><div id="hk-hint-65" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1032">(a) \(\langle 8 \rangle\text{,}\) \(1 + \langle 8 \rangle\text{,}\)  \(2 + \langle 8 \rangle\text{,}\)  \(3 + \langle 8 \rangle\text{,}\)  \(4 + \langle 8 \rangle\text{,}\)  \(5 + \langle 8 \rangle\text{,}\)  \(6 + \langle 8 \rangle\text{,}\) and  \(7 + \langle 8 \rangle\text{;}\) (c) \(3 {\mathbb Z}\text{,}\) \(1 + 3 {\mathbb Z}\text{,}\) and \(2 + 3 {\mathbb Z}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-235"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-66" id="hint-66"><span class="type">Pista</span></a></span><div id="hk-hint-66" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1035">\(4^{\phi(15)} \equiv 4^8 \equiv 1 \pmod{15}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-240"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-67" id="hint-67"><span class="type">Pista</span></a></span><div id="hk-hint-67" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1046">Sea \(g_1 \in gH\text{.}\) Muestre que \(g_1 \in Hg\) y por lo tanto \(gH \subset Hg\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-247"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">19</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-68" id="hint-68"><span class="type">Pista</span></a></span><div id="hk-hint-68" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1054">Muestre que \(g(H \cap K) = gH \cap gK\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-250"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">22</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-69" id="hint-69"><span class="type">Pista</span></a></span><div id="hk-hint-69" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1058">Si \(\gcd(m,n) = 1\text{,}\) entonces \(\phi(mn) = \phi(m)\phi(n)\) (Ejercicio <a knowl="./knowl/exercise-integers-gcd-products.html" knowl-id="xref-exercise-integers-gcd-products" alt="Ejercicio 2.3.26 " title="Ejercicio 2.3.26 ">2.3.26</a> en el Capítulo <a href="integers.html" alt="Capítulo 2 Los Enteros" title="Capítulo 2 Los Enteros">2</a>).</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">7.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-257"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-70" id="hint-70"><span class="type">Pista</span></a></span><div id="hk-hint-70" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1124"><tt class="code-inline tex2jax_ignore">LAORYHAPDWK</tt></p></span></div>
+</div></article><article class="exercise-like" id="exercise-259"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-71" id="hint-71"><span class="type">Pista</span></a></span><div id="hk-hint-71" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1128">Hint: <tt class="code-inline tex2jax_ignore">V = E</tt>, <tt class="code-inline tex2jax_ignore">E = X</tt> (also used for spaces and punctuation), <tt class="code-inline tex2jax_ignore">K = R</tt>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-260"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-72" id="hint-72"><span class="type">Pista</span></a></span><div id="hk-hint-72" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1130">\(26! - 1\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-263"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-73" id="hint-73"><span class="type">Pista</span></a></span><div id="hk-hint-73" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1138">(a) 2791; (c) 112135 25032 442.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-265"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">9</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-74" id="hint-74"><span class="type">Pista</span></a></span><div id="hk-hint-74" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1145">(a) 31; (c) 14.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-266"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-75" id="hint-75"><span class="type">Pista</span></a></span><div id="hk-hint-75" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1151">(a) \(n = 11 \cdot 41\text{;}\) (c) \(n = 8779 \cdot 4327\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">8.5</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-280"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-76" id="hint-76"><span class="type">Pista</span></a></span><div id="hk-hint-76" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1296">No puede ser un código de gruops pues \((0000) \notin C\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-281"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-77" id="hint-77"><span class="type">Pista</span></a></span><div id="hk-hint-77" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1302">(a) 2; (c) 2.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-282"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-78" id="hint-78"><span class="type">Pista</span></a></span><div id="hk-hint-78" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1308">(a) 3; (c) 4.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-284"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-79" id="hint-79"><span class="type">Pista</span></a></span><div id="hk-hint-79" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1315">(a) \(d_{\min} = 2\text{;}\) (c) \(d_{\min} = 1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-285"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-80" id="hint-80"><span class="type">Pista</span></a></span><div id="hk-hint-80" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1321"></p>
+<ol id="ol-59" style="list-style-type: lower-alpha;">
+<li id="li-320">
+<p id="p-1322">\((00000), (00101), (10011), (10110)\)</p>
+\begin{equation*}
+G = 
+\begin{pmatrix}
+0 &amp; 1 \\
+0 &amp; 0 \\
+1 &amp; 0 \\
+0 &amp; 1 \\
+1 &amp; 1
+\end{pmatrix}
+\end{equation*}
+</li>
+<li id="li-321">
+<p id="p-1323">\((000000), (010111), (101101), (111010)\)</p>
+\begin{equation*}
+G = 
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1 \\
+1 &amp; 0 \\
+1 &amp; 1 \\ 
+0 &amp; 1 \\
+1 &amp; 1
+\end{pmatrix}
+\end{equation*}
+</li>
+</ol></span></div>
+</div></article><article class="exercise-like" id="exercise-287"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">9</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-81" id="hint-81"><span class="type">Pista</span></a></span><div id="hk-hint-81" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1326">Multiples errores ocurren en una de las palabras recibidas.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-algcodes-check-matrices"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-82" id="hint-82"><span class="type">Pista</span></a></span><div id="hk-hint-82" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1333">(a) Es matriz verificadora canónica con matriz generadora estándar</p>
+\begin{equation*}
+G = 
+\begin{pmatrix}
+1 \\ 1 \\ 0 \\ 0 \\ 1
+\end{pmatrix}.
+\end{equation*}
+<p id="p-1334">(c) Es matriz verificadora canónica con matriz generadora estándar</p>
+\begin{equation*}
+G = 
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1 \\
+1 &amp; 1 \\
+1 &amp; 0
+\end{pmatrix}.
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-290"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-83" id="hint-83"><span class="type">Pista</span></a></span><div id="hk-hint-83" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1336">(a) Ocurren todos los posibles síndromes.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-293"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-84" id="hint-84"><span class="type">Pista</span></a></span><div id="hk-hint-84" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1348">(a) \(C\text{,}\) \((10000) + C\text{,}\) \((01000) + C\text{,}\) \((00100) + C\text{,}\) \((00010) + C\text{,}\) \((11000) + C\text{,}\) \((01100) + C\text{,}\) \((01010) + C\text{.}\)  No hay tabla de decodificación para \(C\) pues este es solo un código detector de un error.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-297"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">19</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-85" id="hint-85"><span class="type">Pista</span></a></span><div id="hk-hint-85" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1360">Sea \({\mathbf x} \in C\) una palabra de peso impar y defina una función y defina una función del conjunto de todas las palabras de peso impar al conjunto de las palabras de peso par como \({\mathbf y} \mapsto {\mathbf x} + {\mathbf y}\text{.}\) Muestre que esta función es una biyección.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-301"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">23</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-86" id="hint-86"><span class="type">Pista</span></a></span><div id="hk-hint-86" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1365">Para 20 posiciones de información, se requieren al menor 6 bits de verificación para permitir un código de corrección de un error.</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">9.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-310"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-87" id="hint-87"><span class="type">Pista</span></a></span><div id="hk-hint-87" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1488">Todo grupo cíclico infinito es isomorfo a \({\mathbb Z}\) por el Teorema <a knowl="./knowl/theorem-isomorph-2.html" knowl-id="xref-theorem-isomorph-2" alt="Teorema 9.7 " title="Teorema 9.7 ">9.7</a>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-311"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-88" id="hint-88"><span class="type">Pista</span></a></span><div id="hk-hint-88" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1490">Defina \(\phi: {\mathbb C}^* \rightarrow GL_2( {\mathbb R})\) como</p>
+\begin{equation*}
+\phi(a + bi) = 
+\begin{pmatrix}
+a &amp; b \\
+-b &amp; a
+\end{pmatrix}.
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-312"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-89" id="hint-89"><span class="type">Pista</span></a></span><div id="hk-hint-89" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1492">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-315"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-90" id="hint-90"><span class="type">Pista</span></a></span><div id="hk-hint-90" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1496">Defina una función de \({\mathbb Z}_n\) en el grupo de raíces \(n\)-ésimas de la unidad como \(k \mapsto \cis(2k\pi / n)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-317"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-91" id="hint-91"><span class="type">Pista</span></a></span><div id="hk-hint-91" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1499">Suponga que \({\mathbb Q}\) es cíclico e intente encontrar un generador.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-320"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-92" id="hint-92"><span class="type">Pista</span></a></span><div id="hk-hint-92" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1503">Hay dos grupos no abelianos y tres grupos abelianos que no son isomorfos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-325"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-93" id="hint-93"><span class="type">Pista</span></a></span><div id="hk-hint-93" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1513">(a) 12; (c) 5.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-328"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">19</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-94" id="hint-94"><span class="type">Pista</span></a></span><div id="hk-hint-94" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1517">Haga el dibujo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-329"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">20</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-95" id="hint-95"><span class="type">Pista</span></a></span><div id="hk-hint-95" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1519">Verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-334"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">25</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-96" id="hint-96"><span class="type">Pista</span></a></span><div id="hk-hint-96" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1525">Verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-336"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">27</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-97" id="hint-97"><span class="type">Pista</span></a></span><div id="hk-hint-97" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1528">Sea \(a\) un generador de \(G\text{.}\) Si \(\phi :G \rightarrow H\) es un isomorfismo, muestre que \(\phi(a)\) es un generador de \(H\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-347"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">38</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-98" id="hint-98"><span class="type">Pista</span></a></span><div id="hk-hint-98" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1540">Cualquier automorfismo de \({\mathbb Z}_6\) debe enviar al 1 en otro generador de \({\mathbb Z}_6\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-354"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">45</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-99" id="hint-99"><span class="type">Pista</span></a></span><div id="hk-hint-99" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1548">Para mostrar que \(\phi\) es 1-1, sean \(g_1 = h_1 k_1\) y \(g_2 = h_2 k_2\) y considere \(\phi(g_1) = \phi(g_2)\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">10.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-367"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-100" id="hint-100"><span class="type">Pista</span></a></span><div id="hk-hint-100" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1648">(a)</p>
+\begin{equation*}
+\begin{array}{c|cc}
+&amp; A_4 &amp; (12)A_4 \\ \hline
+A_4 &amp; A_4 &amp; (12) A_4 \\
+(12) A_4 &amp; (12) A_4 &amp; A_4
+\end{array}
+\end{equation*}
+<p id="p-1649">(c) \(D_4\) no es normal en \(S_4\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-374"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-101" id="hint-101"><span class="type">Pista</span></a></span><div id="hk-hint-101" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1662">Si \(a \in G\) es un generador para \(G\text{,}\) entonces \(aH\) es un generador para \(G/H\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-normal-one-subgroup"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-102" id="hint-102"><span class="type">Pista</span></a></span><div id="hk-hint-102" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1666">Para cualquier \(g \in G\text{,}\) muestre que la función \(i_g : G \to G\) definida como \(i_g : x \mapsto gxg^{-1}\) es un isomorfismo de \(G\) en sí mismo.  Luego considere \(i_g(H)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-378"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-103" id="hint-103"><span class="type">Pista</span></a></span><div id="hk-hint-103" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1668">Supongamos que \(\langle g \rangle\) es normal en \(G\) y sea \(y\) un elemento arbitrario de \(G\text{.}\)  Si \(x \in C(g)\text{,}\) debemos mostrar que \(y x y^{-1}\) también está en \(C(g)\text{.}\)  Muestre que \((y x y^{-1}) g = g (y x y^{-1})\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-normal-commutator"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">14</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-104" id="hint-104"><span class="type">Pista</span></a></span><div id="hk-hint-104" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1677">(a) Sean \(g \in G\) y \(h \in G'\text{.}\) Si \(h = aba^{-1}b^{-1}\text{,}\) entonces</p>
+\begin{align*}
+ghg^{-1} &amp; = gaba^{-1}b^{-1}g^{-1}\\
+&amp; = (gag^{-1})(gbg^{-1})(ga^{-1}g^{-1})(gb^{-1}g^{-1})\\
+&amp; = (gag^{-1})(gbg^{-1})(gag^{-1})^{-1}(gbg^{-1})^{-1}.
+\end{align*}
+<p>También debemos demostrar que si \(h = h_1 \cdots h_n\) with \(h_i = a_i b_i a_i^{-1} b_i^{-1}\text{,}\) entonces \(ghg^{-1}\) es un producto de elementos del mismo tipo.  Pero, \(ghg^{-1} = g h_1 \cdots h_n g^{-1} = (gh_1g^{-1})(gh_2g^{-1}) \cdots (gh_ng^{-1})\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">11.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-388"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-105" id="hint-105"><span class="type">Pista</span></a></span><div id="hk-hint-105" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1758">(a) es un homomorfismo con núcleo \(\{ 1 \}\text{;}\) (c) no es un homomorfismo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-390"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-106" id="hint-106"><span class="type">Pista</span></a></span><div id="hk-hint-106" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1761">Como \(\phi(m + n) = 7(m+n) = 7m + 7n = \phi(m) + \phi(n)\text{,}\) \(\phi\) es un homomorfismo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-391"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-107" id="hint-107"><span class="type">Pista</span></a></span><div id="hk-hint-107" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1763">Para cualquier homomorfismo \(\phi : {\mathbb Z}_{24} \rightarrow {\mathbb Z}_{18}\text{,}\) el núcleo de \(\phi\) es un subgrupo de \({\mathbb Z}_{24}\) y la imagen de \(\phi\) es un subgrupo de \({\mathbb Z}_{18}\text{.}\) Ahora usea el hecho de que la imagen de un generador es un generador.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-395"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">9</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-108" id="hint-108"><span class="type">Pista</span></a></span><div id="hk-hint-108" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1772">Sean \(a, b \in G\text{.}\) Entonces \(\phi(a) \phi(b) = \phi(ab) = \phi(ba) = \phi(b)\phi(a)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-403"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-109" id="hint-109"><span class="type">Pista</span></a></span><div id="hk-hint-109" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1781">Encuentre un contraejemplo.</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">12.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-423"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-110" id="hint-110"><span class="type">Pista</span></a></span><div id="hk-hint-110" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1878"></p>
+\begin{align*}
+\frac{1}{2} \left[ \|{\mathbf x} + {\mathbf y}\|^2 + \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right] &amp; =  \frac{1}{2} \left[ \langle x + y, x + y \rangle - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right]\\
+&amp; = \frac{1}{2} \left[ \| {\mathbf x}\|^2 + 2 \langle x, y \rangle + \| {\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right]\\
+&amp; = \langle {\mathbf x}, {\mathbf y} \rangle.
+\end{align*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-425"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-111" id="hint-111"><span class="type">Pista</span></a></span><div id="hk-hint-111" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1885">(a) está en \(SO(2)\text{;}\) (c) no está en \(O(3)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-427"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-112" id="hint-112"><span class="type">Pista</span></a></span><div id="hk-hint-112" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1893">(a) \(\langle {\mathbf x}, {\mathbf y} \rangle = \langle {\mathbf y}, {\mathbf x} \rangle\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-429"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-113" id="hint-113"><span class="type">Pista</span></a></span><div id="hk-hint-113" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1896">Use la matriz unimodular</p>
+\begin{equation*}
+\begin{pmatrix}
+5 &amp; 2 \\
+2 &amp; 1
+\end{pmatrix}.
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-432"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-114" id="hint-114"><span class="type">Pista</span></a></span><div id="hk-hint-114" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1900">Muestre que el núcleo de la función \(\det : O(n) \rightarrow {\mathbb R}^*\) es \(SO(n)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-435"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">13</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-115" id="hint-115"><span class="type">Pista</span></a></span><div id="hk-hint-115" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1904">True.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-439"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-116" id="hint-116"><span class="type">Pista</span></a></span><div id="hk-hint-116" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1914">\(p6m\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">13.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-442"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-117" id="hint-117"><span class="type">Pista</span></a></span><div id="hk-hint-117" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1977">Hay tres grupos posibles de orden 40.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-445"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-118" id="hint-118"><span class="type">Pista</span></a></span><div id="hk-hint-118" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1989">(a) \(\{ 0 \} \subset \langle 6 \rangle \subset \langle 3 \rangle \subset {\mathbb Z}_{12}\text{;}\) (e) \(\{ (1) \} \times \{ 0  \} \subset \{ (1), (123), (132) \} \times \{ 0 \} \subset S_3 \times \{ 0 \}  \subset S_3 \times \langle 2 \rangle\subset S_3 \times {\mathbb Z}_4\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-448"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-119" id="hint-119"><span class="type">Pista</span></a></span><div id="hk-hint-119" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1993">Use el Teorema Fundamental de los Grupos Abelianos Finitamente Generados.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-453"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-120" id="hint-120"><span class="type">Pista</span></a></span><div id="hk-hint-120" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-1999">Si \(N\) y \(G/N\) son solubles, entonces tienen series solubles</p>
+\begin{gather*}
+N = N_n \supset N_{n - 1} \supset \cdots \supset N_1 \supset N_0 = \{ e \}\\
+G/N = G_n/N \supset G_{n - 1}/N \supset \cdots G_1/N \supset G_0/N = \{ N \}.
+\end{gather*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-457"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-121" id="hint-121"><span class="type">Pista</span></a></span><div id="hk-hint-121" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2004">Use el hecho de que \(D_n\) tiene un subgrupo cíclico de índice 2.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-462"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">21</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-122" id="hint-122"><span class="type">Pista</span></a></span><div id="hk-hint-122" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2012">\(G/G'\) es abeliano.</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">14.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-467"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-123" id="hint-123"><span class="type">Pista</span></a></span><div id="hk-hint-123" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2094">Ejemplo <a knowl="./knowl/example-actions-gl2.html" knowl-id="xref-example-actions-gl2" alt="Ejemplo 14.1 " title="Ejemplo 14.1 ">14.1</a>: \(0\text{,}\) \({\mathbb R}^2 \setminus \{ 0 \}\text{.}\) Ejemplo <a knowl="./knowl/example-actions-d4.html" knowl-id="xref-example-actions-d4" alt="Ejemplo 14.2 " title="Ejemplo 14.2 ">14.2</a>: \(X = \{ 1, 2, 3, 4 \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-actions-permutation"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-124" id="hint-124"><span class="type">Pista</span></a></span><div id="hk-hint-124" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2098">(a) \(X_{(1)} = \{1, 2, 3  \}\text{,}\) \(X_{(12)} = \{3 \}\text{,}\) \(X_{(13)} = \{ 2 \}\text{,}\) \(X_{(23)} = \{1 \}\text{,}\) \(X_{(123)} = X_{(132)} = \emptyset\text{.}\) \(G_1 = \{ (1), (23) \}\text{,}\) \(G_2 = \{(1), (13) \}\text{,}\) \(G_3 = \{ (1), (12)\}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-469"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-125" id="hint-125"><span class="type">Pista</span></a></span><div id="hk-hint-125" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2100">(a) \({\mathcal O}_1 = {\mathcal O}_2 = {\mathcal O}_3 = \{ 1, 2, 3\}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-472"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-126" id="hint-126"><span class="type">Pista</span></a></span><div id="hk-hint-126" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2113">Las clases de conjugación para \(S_4\) son</p>
+\begin{gather*}
+{\mathcal O}_{(1)} = \{ (1) \},\\
+{\mathcal O}_{(12)} = \{ (12), (13), (14), (23), (24), (34) \},\\
+{\mathcal O}_{(12)(34)} = \{ (12)(34), (13)(24), (14)(23) \},\\
+{\mathcal O}_{(123)} = \{ (123), (132), (124), (142), (134), (143),
+(234), (243) \},\\
+{\mathcal O}_{(1234)} = \{ (1234), (1243), (1324), (1342), (1423), (1432) \}.
+\end{gather*}
+<p>La ecuación de clase es \(1 + 3 + 6 + 6 + 8 = 24\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-474"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-127" id="hint-127"><span class="type">Pista</span></a></span><div id="hk-hint-127" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2116">\((3^4 + 3^1 + 3^2 + 3^1 + 3^2 + 3^2 + 3^3 + 3^3)/8 = 21\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-477"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-128" id="hint-128"><span class="type">Pista</span></a></span><div id="hk-hint-128" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2120">El grupo de movimientos rígidos del cubo puede ser descrito por las permutaciones permisibles de sus seis caras y es isomorfo a \(S_4\text{.}\)  Están la identidad, 6 permutaciones con la estructura \((abcd)\) que corresponden a cuartos de vuelta, 3 permutaciones con la estructura \((ab)(cd)\) que corresponden a medias vueltas,  6 permutaciones con la estructura \((ab)(cd)(ef)\) que corresponden a rotar el cubo en torno a los centros de aristas opuestas, y 8 permutaciones con la estructura \((abc)(def)\) que corresponden a rotar el cubo en torno a vértices opuestos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-481"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-129" id="hint-129"><span class="type">Pista</span></a></span><div id="hk-hint-129" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2125">\((1 \cdot 2^6 + 3 \cdot 2^4 + 4 \cdot 2^3 + 2 \cdot 2^2 + 2 \cdot 2^1)/12 = 13\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-483"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-130" id="hint-130"><span class="type">Pista</span></a></span><div id="hk-hint-130" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2130">\((1 \cdot 2^8 + 3 \cdot 2^6 + 2 \cdot 2^4)/6 = 80\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-actions-centralizer"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">22</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-131" id="hint-131"><span class="type">Pista</span></a></span><div id="hk-hint-131" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2136">Use el hecho de que \(x \in g C(a) g^{-1}\) si y solo si \(g^{-1}x g \in C(a)\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">15.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-499"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-132" id="hint-132"><span class="type">Pista</span></a></span><div id="hk-hint-132" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2225">Si \(|G| = 18 = 2 \cdot 3^2\text{,}\) entonces el orden de on 2-subgrupo de Sylow es 2, y el orden de on 3-subgrupo de Sylow es 9.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-500"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-133" id="hint-133"><span class="type">Pista</span></a></span><div id="hk-hint-133" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2227">Los cuatro 3-subgrupos de Sylow de \(S_4\) son \(P_1 = \{ (1), (123), (132) \}\text{,}\) \(P_2 = \{ (1), (124), (142) \}\text{,}\) \(P_3 = \{ (1), (134), (143) \}\text{,}\) \(P_4 = \{ (1), (234), (243) \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-sylow-order-96"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-134" id="hint-134"><span class="type">Pista</span></a></span><div id="hk-hint-134" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2231">Como \(|G| = 96 = 2^5 \cdot 3\text{,}\) \(G\) puede tener uno o tres 2-subgrupos de Sylow por el Terecer Teorema de Sylow. Si solo tiene uno, estamos listos. Si hay tres 2-subgrupos de Sylow, sean \(H\) y \(K\) dos de ellos. Por lo tanto, \(|H \cap K| \geq 16\text{;}\) de lo contrario, \(HK\) tendría \((32 \cdot 32)/8 = 128\) elementos, lo que es imposible. Luego, \(H \cap K\) es normal tanto en \(H\) como en \(K\) pues tiene índice 2 en ambos grupos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-506"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-135" id="hint-135"><span class="type">Pista</span></a></span><div id="hk-hint-135" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2235">Muestre que \(G\) tiene un \(p\)-subgrupo de Sylow normal de orden \(p^2\) y un \(q\)-subgrupo de Sylow normal de orden \(q^2\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-508"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-136" id="hint-136"><span class="type">Pista</span></a></span><div id="hk-hint-136" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2238">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-515"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-137" id="hint-137"><span class="type">Pista</span></a></span><div id="hk-hint-137" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2246">Si \(G\) es abeliano, entonces \(G\) es cíclico, pues \(|G| = 3 \cdot 5 \cdot 17\text{.}\) Ahora vea el Ejemplo <a knowl="./knowl/example-sylow-group-1645-subgroups.html" knowl-id="xref-example-sylow-group-1645-subgroups" alt="Ejemplo 15.14 " title="Ejemplo 15.14 ">15.14</a>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-521"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">23</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-138" id="hint-138"><span class="type">Pista</span></a></span><div id="hk-hint-138" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2253">Defina una función entre las clases laterales derechas de \(N(H)\) en \(G\) y los conjugados de \(H\) en \(G\) como \(N(H) g \mapsto g^{-1} H g\text{.}\) Demuestre que esta función es una biyección.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-524"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">26</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-139" id="hint-139"><span class="type">Pista</span></a></span><div id="hk-hint-139" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2264">Sean \(a G', b G' \in G/G'\text{.}\) Entonces \((a G')( b G') = ab G' = ab(b^{-1}a^{-1}ba) G' =  (abb^{-1}a^{-1})ba G' = ba G'\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">16.6</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-534"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-140" id="hint-140"><span class="type">Pista</span></a></span><div id="hk-hint-140" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2425">(a) \(7 {\mathbb Z}\) es un anillo pero no es un cuerpo; (c) \({\mathbb Q}(\sqrt{2}\, )\) es un cuerpo; (f) \(R\) no es un anillo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-536"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-141" id="hint-141"><span class="type">Pista</span></a></span><div id="hk-hint-141" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2433">(a) \(\{1, 3, 7, 9 \}\text{;}\) (c) \(\{ 1, 2, 3, 4, 5, 6 \}\text{;}\) (e)</p>
+\begin{equation*}
+\left\{
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+1 &amp; 1 \\
+0 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+1 &amp; 0 \\
+1 &amp; 1
+\end{pmatrix},
+\begin{pmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{pmatrix},
+\begin{pmatrix}
+1 &amp; 1 \\
+1 &amp; 0
+\end{pmatrix},
+\begin{pmatrix}
+0 &amp; 1 \\
+1 &amp; 1
+\end{pmatrix},
+\right\}.
+\end{equation*}
+</span></div>
+</div></article><article class="exercise-like" id="exercise-537"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-142" id="hint-142"><span class="type">Pista</span></a></span><div id="hk-hint-142" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2440">(a) \(\{0 \}\text{,}\) \(\{0, 9 \}\text{,}\) \(\{0, 6, 12 \}\text{,}\) \(\{0, 3, 6, 9, 12, 15 \}\text{,}\)  \(\{0, 2, 4, 6, 8, 10, 12, 14, 16 \}\text{;}\) (c) no hay ideales no triviales.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-540"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-143" id="hint-143"><span class="type">Pista</span></a></span><div id="hk-hint-143" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2446">Suponga que hay un isomorfismo \(\phi: {\mathbb C} \rightarrow {\mathbb R}\) con \(\phi(i) = a\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-541"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-144" id="hint-144"><span class="type">Pista</span></a></span><div id="hk-hint-144" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2448">Falso. Suponga que hay un isomorfismo \(\phi: {\mathbb Q}(\sqrt{2}\, ) \rightarrow {\mathbb Q}(\sqrt{3}\, )\) tal que \(\phi(\sqrt{2}\, ) = a\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-546"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">13</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-145" id="hint-145"><span class="type">Pista</span></a></span><div id="hk-hint-145" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2458">(a) \(x \equiv 17 \pmod{55}\text{;}\) (c) \(x \equiv 214 \pmod{2772}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-549"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-146" id="hint-146"><span class="type">Pista</span></a></span><div id="hk-hint-146" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2462">Si \(I \neq \{ 0 \}\text{,}\) muestre que \(1 \in I\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-551"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-147" id="hint-147"><span class="type">Pista</span></a></span><div id="hk-hint-147" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2469">(a) \(\phi(a) \phi(b) = \phi(ab) = \phi(ba) = \phi(b) \phi(a)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-559"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">26</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-148" id="hint-148"><span class="type">Pista</span></a></span><div id="hk-hint-148" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2481">Sea \(a \in R\) con \(a \neq 0\text{.}\)  Entonces el ideal principal generado por \(a\) es \(R\text{.}\)  Por lo tanto, existe \(b \in R\) tal que \(ab =1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-561"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">28</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-149" id="hint-149"><span class="type">Pista</span></a></span><div id="hk-hint-149" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2484">Calcule \((a+b)^2\) y \((-ab)^2\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-567"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">34</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-150" id="hint-150"><span class="type">Pista</span></a></span><div id="hk-hint-150" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2491">Sean \(a/b, c/d \in {\mathbb Z}_{(p)}\text{.}\) Entonces \(a/b + c/d = (ad + bc)/bd\) y \((a/b) \cdot (c/d) = (ac)/(bd)\) están ambos en \({\mathbb Z}_{(p)}\text{,}\) pues \(\gcd(bd,p) = 1\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-571"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">38</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-151" id="hint-151"><span class="type">Pista</span></a></span><div id="hk-hint-151" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2502">Supongamos que  \(x^2 = x\) y \(x \neq 0\text{.}\) Como \(R\) es un dominio integral, \(x = 1\text{.}\) Para encontrar un idempotente no trivial, examine \({\mathbb M}_2({\mathbb R})\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">17.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-580"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-152" id="hint-152"><span class="type">Pista</span></a></span><div id="hk-hint-152" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2636">(a) \(9x^2 + 2x + 5\text{;}\) (b) \(8x^4 + 7x^3 + 2x^2 + 7x\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-581"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-153" id="hint-153"><span class="type">Pista</span></a></span><div id="hk-hint-153" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2642">(a) \(5 x^3 + 6 x^2 - 3 x + 4 = (5 x^2 + 2x + 1)(x -2) + 6\text{;}\) (c) \(4x^5 - x^3 + x^2 + 4 = (4x^2 + 4)(x^3 + 3) + 4x^2 + 2\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-583"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-154" id="hint-154"><span class="type">Pista</span></a></span><div id="hk-hint-154" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2653">(a) No tiene ceros en \({\mathbb Z}_{12}\text{;}\) (c) 3, 4.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-585"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-155" id="hint-155"><span class="type">Pista</span></a></span><div id="hk-hint-155" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2656">Considere \((2x + 1)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-586"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-156" id="hint-156"><span class="type">Pista</span></a></span><div id="hk-hint-156" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2662">(a) Reducible; (c) irreducible.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-588"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-157" id="hint-157"><span class="type">Pista</span></a></span><div id="hk-hint-157" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2665">Una factorización es \(x^2 + x + 8 = (x + 2)(x + 9)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-591"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">13</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-158" id="hint-158"><span class="type">Pista</span></a></span><div id="hk-hint-158" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2669">Los enteros \(\mathbb Z\) no forman un cuerpo.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-592"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">14</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-159" id="hint-159"><span class="type">Pista</span></a></span><div id="hk-hint-159" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2671">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-594"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-160" id="hint-160"><span class="type">Pista</span></a></span><div id="hk-hint-160" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2674">Sea \(\phi : R \rightarrow S\) un isomorfismo. Defina \(\overline{\phi} : R[x] \rightarrow S[x]\) como \(\overline{\phi}(a_0 + a_1 x + \cdots + a_n x^n) = \phi(a_0) + \phi(a_1) x + \cdots + \phi(a_n) x^n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-poly-cyclotomic-polynomials"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">20</span><span class="title">Polinomios Ciclotómicos</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-161" id="hint-161"><span class="type">Pista</span></a></span><div id="hk-hint-161" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2679">El polinomio \(\Phi_n(x+1)\) es irreducible sobre \({\mathbb Q}\) si y solo si \(\Phi_n(x)\) es irreducible sobre \({\mathbb Q}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-604"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">26</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-162" id="hint-162"><span class="type">Pista</span></a></span><div id="hk-hint-162" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2691">Ecuentre un ideal propio no trivial en \(F[x]\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">18.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-626"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-163" id="hint-163"><span class="type">Pista</span></a></span><div id="hk-hint-163" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2840">Note que \(z^{-1} = 1/(a + b\sqrt{3}\, i) = (a -b \sqrt{3}\, i)/(a^2 + 3b^2)\) está en \({\mathbb Z}[\sqrt{3}\, i]\) si y solo si \(a^2 + 3 b^2 = 1\text{.}\) Las únicas soluciones enteras de la ecuación son \(a = \pm 1, b = 0\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-627"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-164" id="hint-164"><span class="type">Pista</span></a></span><div id="hk-hint-164" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2846">(a) \(5 = -i(1 + 2i)(2 + i)\text{;}\) (c) \(6 + 8i = -i(1 + i)^2(2 + i)^2\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-629"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-165" id="hint-165"><span class="type">Pista</span></a></span><div id="hk-hint-165" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2852">Verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-634"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">9</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-166" id="hint-166"><span class="type">Pista</span></a></span><div id="hk-hint-166" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2860">Sean \(z = a + bi\) y \(w = c + di \neq 0\) en \({\mathbb Z}[i]\text{.}\) Demuestre que \(z/w \in {\mathbb Q}(i)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-640"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-167" id="hint-167"><span class="type">Pista</span></a></span><div id="hk-hint-167" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2876">Sea \(a = ub\) con \(u\) una unidad. Entonces \(\nu(b) \leq \nu(ub) \leq \nu(a)\text{.}\) Similarmente, \(\nu(a) \leq \nu(b)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-641"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-168" id="hint-168"><span class="type">Pista</span></a></span><div id="hk-hint-168" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-2878">Muestre que 21 se puede factorizar de dos formas diferentes.</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">19.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-647"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-169" id="hint-169"><span class="type">Pista</span></a></span><div id="hk-hint-169" class="hidden-content tex2jax_ignore"><span class="solution"><div class="sidebyside" id="sidebyside-10"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><object type="image/svg+xml" style="width:100%; margin:auto; display:block;" data="images/hint-divisors-30.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></div></div></div></span></div>
+</div></article><article class="exercise-like" id="exercise-650"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-170" id="hint-170"><span class="type">Pista</span></a></span><div id="hk-hint-170" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3001">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-651"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">6</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-171" id="hint-171"><span class="type">Pista</span></a></span><div id="hk-hint-171" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3007">(a) \((a \vee b \vee a') \wedge a\)</p>
+<div class="sidebyside" id="sidebyside-11"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><object type="image/svg+xml" style="width:100%; margin:auto; display:block;" data="images/hint-switching-circuit-part-a.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></div></div></div>
+<p id="p-3008">(c) \(a \vee (a \wedge b)\)</p>
+<div class="sidebyside" id="sidebyside-12"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><object type="image/svg+xml" style="width:100%; margin:auto; display:block;" data="images/hint-switching-circuit-part-c.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></div></div></div></span></div>
+</div></article><article class="exercise-like" id="exercise-653"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-172" id="hint-172"><span class="type">Pista</span></a></span><div id="hk-hint-172" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3011">No son equivalentes.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-655"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-173" id="hint-173"><span class="type">Pista</span></a></span><div id="hk-hint-173" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3014">(a) \(a' \wedge [(a \wedge b') \vee b] = a \wedge (a \vee b) \text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-659"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">14</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-174" id="hint-174"><span class="type">Pista</span></a></span><div id="hk-hint-174" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3019">Sean \(I, J\) ideales en \(R\text{.}\) Debemos mostrar que \(I + J = \{ r + s : r \in I \text{ and } s \in J  \}\) es el menor ideal en \(R\) que contiene tanto a \(I\) como \(J\text{.}\) Si \(r_1, r_2 \in I\) y \(s_1, s_2 \in J\text{,}\) entonces \((r_1 + s_1) + (r_2 + s_2) = (r_1 + r_2) +(s_1 + s_2)\) is in \(I + J\text{.}\) Para \(a \in R\text{,}\) \(a(r_1 + s_1) = ar_1 + as_1 \in I + J\text{;}\) luego, \(I + J\) es un ideal en \(R\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-663"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-175" id="hint-175"><span class="type">Pista</span></a></span><div id="hk-hint-175" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3031">(a) No.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-665"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">20</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-176" id="hint-176"><span class="type">Pista</span></a></span><div id="hk-hint-176" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3034">\(( \Rightarrow)\text{.}\) \(a = b \Rightarrow (a \wedge b') \vee (a' \wedge b) = (a \wedge a') \vee (a' \wedge a) = O \vee O = O\text{.}\) \(( \Leftarrow)\text{.}\) \(( a \wedge b') \vee (a' \wedge b) = O \Rightarrow a \vee b = (a \vee a) \vee b = a \vee (a \vee b) = a \vee [I \wedge (a \vee b)] = a \vee [(a \vee a') \wedge (a \vee b)] = [a \vee (a \wedge b')] \vee [a \vee (a' \wedge b)] = a \vee [(a \wedge b') \vee (a' \wedge b)] = a \vee 0 = a\text{.}\)  Un argumento simétrico muestra que \(a \vee b = b\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">20.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-676"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-177" id="hint-177"><span class="type">Pista</span></a></span><div id="hk-hint-177" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3133">\({\mathbb Q}(\sqrt{2}, \sqrt{3}\, )\) tiene base \(\{ 1, \sqrt{2}, \sqrt{3}, \sqrt{6}\, \}\)  sobre \({\mathbb Q}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-678"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-178" id="hint-178"><span class="type">Pista</span></a></span><div id="hk-hint-178" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3136">El conjunto \(\{ 1, x, x^2, \ldots, x^{n-1} \}\) es una base para \(P_n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-680"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-179" id="hint-179"><span class="type">Pista</span></a></span><div id="hk-hint-179" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3143">(a) Subespacio de dimensión 2 con base \(\{(1, 0, -3), (0, 1, 2) \}\text{;}\) (d) no es un subespacio</p></span></div>
+</div></article><article class="exercise-like" id="exercise-683"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">10</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-180" id="hint-180"><span class="type">Pista</span></a></span><div id="hk-hint-180" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3147">Como \(0 =  \alpha 0 = \alpha(-v + v) = \alpha(-v) + \alpha v\text{,}\) se concluye que \(- \alpha v = \alpha(-v)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-685"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-181" id="hint-181"><span class="type">Pista</span></a></span><div id="hk-hint-181" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3153">Sea \(v_0 = 0, v_1, \ldots, v_n \in V\) y \(\alpha_0 \neq 0, \alpha_1, \ldots, \alpha_n \in F\text{.}\) Entonces \(\alpha_0 v_0 + \cdots + \alpha_n v_n = 0\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-vect-linear-transformation"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">15</span><span class="title">Transformaciones Lineales</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-182" id="hint-182"><span class="type">Pista</span></a></span><div id="hk-hint-182" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3162">(a) Sean \(u, v \in \ker(T)\) y \(\alpha \in F\text{.}\)  Entonces</p>
+\begin{gather*}
+T(u +v) = T(u) + T(v) = 0\\
+T(\alpha v) = \alpha T(v) = \alpha 0 = 0.
+\end{gather*}
+<p>Luego, \(u + v, \alpha v \in \ker(T)\text{,}\) y \(\ker(T)\) es un subespacio de \(V\text{.}\)</p>
+<p id="p-3163">(c)  \(T(u) = T(v)\) es equivalente a \(T(u-v) = T(u) - T(v) = 0\text{,}\) lo que se cumple si y solo si \(u-v = 0\text{,}\) es decir  \(u = v\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-690"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span><span class="title">Sumas Directas</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-183" id="hint-183"><span class="type">Pista</span></a></span><div id="hk-hint-183" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3170">(a) Sean \(u, u' \in U\) y sean \(v, v' \in V\text{.}\) Entonces</p>
+\begin{align*}
+(u + v) + (u' + v') &amp; = (u + u') + (v + v') \in U + V\\
+\alpha(u + v) &amp; = \alpha u + \alpha v \in U + V.
+\end{align*}
+</span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">21.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-697"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-184" id="hint-184"><span class="type">Pista</span></a></span><div id="hk-hint-184" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3339">(a) \(x^4 - (2/3) x^2 - 62/9\text{;}\) (c) \(x^4 - 2 x^2 + 25\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-698"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-185" id="hint-185"><span class="type">Pista</span></a></span><div id="hk-hint-185" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3350">(a) \(\{ 1, \sqrt{2}, \sqrt{3}, \sqrt{6}\, \}\text{;}\) (c) \(\{ 1, i, \sqrt{2}, \sqrt{2}\, i \}\text{;}\) (e) \(\{1, 2^{1/6}, 2^{1/3}, 2^{1/2}, 2^{2/3}, 2^{5/6}  \}\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-699"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-186" id="hint-186"><span class="type">Pista</span></a></span><div id="hk-hint-186" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3356">(a) \({\mathbb Q}(\sqrt{3}, \sqrt{7}\, )\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-701"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-187" id="hint-187"><span class="type">Pista</span></a></span><div id="hk-hint-187" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3362">Use el hecho de que los elementos de \({\mathbb Z}_2[x]/ \langle x^3 + x + 1 \rangle\) son 0, 1, \(\alpha\text{,}\) \(1 + \alpha\text{,}\) \(\alpha^2\text{,}\) \(1 + \alpha^2\text{,}\) \(\alpha + \alpha^2\text{,}\) \(1 + \alpha + \alpha^2\) y el hecho de que \(\alpha^3 + \alpha + 1 = 0\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-704"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-188" id="hint-188"><span class="type">Pista</span></a></span><div id="hk-hint-188" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3366">False.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-710"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">14</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-189" id="hint-189"><span class="type">Pista</span></a></span><div id="hk-hint-189" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3373">Supongamos que \(E\) es algebraico sobre \(F\) y \(K\) es algebraico sobre \(E\text{.}\) Sea \(\alpha \in K\text{.}\) Basta con demostrar que \(\alpha\) es algebraico sobre alguna extensión finita de \(F\text{.}\) Como \(\alpha\) es algebraico sobre \(E\text{,}\) debe ser cero de algún polinomio \(p(x) = \beta_0 + \beta_1 x + \cdots + \beta_n x^n\) en \(E[x]\text{.}\) Por lo tanto \(\alpha\) es algebraico sobre \(F(\beta_0, \ldots, \beta_n)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-718"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">22</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-190" id="hint-190"><span class="type">Pista</span></a></span><div id="hk-hint-190" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3382">Como \(\{ 1, \sqrt{3}, \sqrt{7}, \sqrt{21}\, \}\) es una base para \({\mathbb Q}( \sqrt{3}, \sqrt{7}\, )\) sobre \({\mathbb Q}\text{,}\) \({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) \supset {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\) Como \([{\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) : {\mathbb Q}] = 4\text{,}\) \([{\mathbb Q}( \sqrt{3} + \sqrt{7}\, ) : {\mathbb Q}] = 2\) o 4. Como el grado del polinomio minimal de \(\sqrt{3} +\sqrt{7}\) es 4, \({\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} +\sqrt{7}\, )\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-723"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">27</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-191" id="hint-191"><span class="type">Pista</span></a></span><div id="hk-hint-191" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3388">Sea \(\beta \in F(\alpha)\) no en \(F\text{.}\) Entonces \(\beta = p(\alpha)/q(\alpha)\text{,}\) donde \(p\) y \(q\) son polinomios en \(\alpha\) con \(q(\alpha) \neq 0\) y coeficientes en \(F\text{.}\) Si \(\beta\) es algebraico sobre \(F\text{,}\) entonces hay un polinomio \(f(x) \in F[x]\) tal que \(f(\beta) = 0\text{.}\) Sea \(f(x) = a_0 + a_1 x + \cdots + a_n x^n\text{.}\) Entonces</p>
+\begin{equation*}
+0 = f(\beta) = f\left( \frac{p(\alpha)}{q(\alpha)} \right) = a_0 + a_1 \left( \frac{p(\alpha)}{q(\alpha)} \right)  + \cdots + a_n \left( \frac{p(\alpha)}{q(\alpha)} \right)^n.
+\end{equation*}
+<p>Ahora multiplique ambos lados por \(q(\alpha)^n\) para demostrar que hay un polinomio en \(F[x]\) que se anula en \(\alpha\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-fields-degree-irred-poly"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">28</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-192" id="hint-192"><span class="type">Pista</span></a></span><div id="hk-hint-192" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3390">Vea el comentario que sigue al Teorema <a knowl="./knowl/theorem-simple_extension.html" knowl-id="xref-theorem-simple_extension" alt="Teorema 21.13 " title="Teorema 21.13 ">21.13</a>.</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">22.3</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-730"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-193" id="hint-193"><span class="type">Pista</span></a></span><div id="hk-hint-193" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3502">Asegúrese de tener una extensión de cuerpos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-733"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-194" id="hint-194"><span class="type">Pista</span></a></span><div id="hk-hint-194" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3506">Hay ocho elementos en \({\mathbb Z}_2(\alpha)\text{.}\) Exhiba dos ceros más de \(x^3 + x^2 + 1\) además de \(\alpha\) entre estos ocho elementos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-734"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-195" id="hint-195"><span class="type">Pista</span></a></span><div id="hk-hint-195" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3508">Encuentre un polinomio irreducible \(p(x)\) en \({\mathbb Z}_3[x]\) de grado 3 y muestre que \({\mathbb Z}_3[x]/ \langle p(x) \rangle\) tiene 27 elementos.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-736"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-196" id="hint-196"><span class="type">Pista</span></a></span><div id="hk-hint-196" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3515">(a) \(x^5 -1 = (x+1)(x^4+x^3 + x^2 + x+ 1)\text{;}\) (c) \(x^9 -1 = (x+1)( x^2 + x+ 1)(x^6+x^3+1)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-737"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">8</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-197" id="hint-197"><span class="type">Pista</span></a></span><div id="hk-hint-197" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3517">Verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-740"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">11</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-198" id="hint-198"><span class="type">Pista</span></a></span><div id="hk-hint-198" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3523">(a) Use el hechode que \(x^7 -1 = (x+1)( x^3 + x+ 1)(x^3+x^2+1)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-741"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">12</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-199" id="hint-199"><span class="type">Pista</span></a></span><div id="hk-hint-199" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3525">Falso.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-746"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">17</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-200" id="hint-200"><span class="type">Pista</span></a></span><div id="hk-hint-200" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3531">Si \(p(x) \in F[x]\text{,}\) entonces \(p(x) \in E[x]\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-747"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">18</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-201" id="hint-201"><span class="type">Pista</span></a></span><div id="hk-hint-201" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3533">Como \(\alpha\) es algebraico sobreo \(F\) de grado \(n\text{,}\) podemos escribir cualquier elemento \(\beta \in F(\alpha)\) de forma única como \(\beta = a_0  + a_1 \alpha + \cdots + a_{n-1} \alpha^{n-1}\) with \(a_i \in F\text{.}\) Existen \(q^n\) posibles \(n\)-tuplas \((a_0, a_1, \ldots, a_{n-1})\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-753"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">24</span><span class="title">Teoream de Wilson</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-202" id="hint-202"><span class="type">Pista</span></a></span><div id="hk-hint-202" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3540">Factorice \(x^{p-1} - 1\) sobre \({\mathbb Z}_p\text{.}\)</p></span></div>
+</div></article></section><section class="exercises"><h1 class="heading">
+<span class="type">Exercises</span><span class="codenumber">23.4</span><span class="title">Ejercicios</span>
+</h1>
+<article class="exercise-like" id="exercise-769"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">1</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-203" id="hint-203"><span class="type">Pista</span></a></span><div id="hk-hint-203" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3683">(a) \({\mathbb Z}_2\text{;}\) (c) \({\mathbb Z}_2 \times {\mathbb Z}_2 \times {\mathbb Z}_2\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-770"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">2</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-204" id="hint-204"><span class="type">Pista</span></a></span><div id="hk-hint-204" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3689">(a) Separable sobre \(\mathbb Q\) pues \(x^3 + 2 x^2 - x - 2 = (x - 1)(x + 1)(x + 2)\text{;}\) (c) no es separable sobre \(\mathbb Z_3\) pues \(x^4 + x^2 + 1 = (x + 1)^2 (x + 2)^2  \text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-771"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">3</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-205" id="hint-205"><span class="type">Pista</span></a></span><div id="hk-hint-205" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3691">Si</p>
+\begin{equation*}
+[\gf(729): \gf(9)] = [\gf(729): \gf(3)] /[\gf(9): \gf(3)] = 6/2 = 3,
+\end{equation*}
+<p>entonces \(G(\gf(729)/ \gf(9)) \cong {\mathbb Z}_3\text{.}\) Un generador para \(G(\gf(729)/ \gf(9))\) es \(\sigma\text{,}\) deonde \(\sigma_{3^6}( \alpha) = \alpha^{3^6} = \alpha^{729}\) para \(\alpha \in \gf(729)\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-772"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">4</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-206" id="hint-206"><span class="type">Pista</span></a></span><div id="hk-hint-206" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3702">(a) \(S_5\text{;}\) (c) \(S_3\text{;}\) (g) Vea el Ejemplo <a knowl="./knowl/example-galois-group-x4.html" knowl-id="xref-example-galois-group-x4" alt="Ejemplo 23.10 " title="Ejemplo 23.10 ">23.10</a>.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-773"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">5</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-207" id="hint-207"><span class="type">Pista</span></a></span><div id="hk-hint-207" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3708">(a) \({\mathbb Q}(i)\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-775"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">7</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-208" id="hint-208"><span class="type">Pista</span></a></span><div id="hk-hint-208" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3711">Sea \(E\) el cuerpo de descomposición de un polinomio cúbico en \(F[x]\text{.}\) Muestre que \([E:F]\) es menor o igual a 6 y es divisible por 3. Como \(G(E/F)\) es un subgrupo de \(S_3\) cuyo orden es divisible por 3, concluya que este grupo debe ser isomorfo a \({\mathbb Z}_3\) o a \(S_3\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-777"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">9</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-209" id="hint-209"><span class="type">Pista</span></a></span><div id="hk-hint-209" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3714">\(G\) es un subgrupo de \(S_n\text{.}\)</p></span></div>
+</div></article><article class="exercise-like" id="exercise-784"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">16</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-210" id="hint-210"><span class="type">Pista</span></a></span><div id="hk-hint-210" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3722">Verdadero.</p></span></div>
+</div></article><article class="exercise-like" id="exercise-788"><h6 class="heading hidden-type">
+<span class="type">Ejercicio</span><span class="codenumber">20</span>
+</h6>
+<div class="solutions">
+<span class="solution"><a knowl="" class="id-ref" refid="hk-hint-211" id="hint-211"><span class="type">Pista</span></a></span><div id="hk-hint-211" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-3730"></p>
+<ol id="ol-177" style="list-style-type: lower-alpha;">
+<li id="li-816"><p id="p-3731">Claramente \(\omega, \omega^2, \ldots, \omega^{p - 1}\) son distintas pues \(\omega \neq 1\) ni 0. Para mostrar que \(\omega^i\) es un cero de \(\Phi_p\text{,}\) calcule \(\Phi_p( \omega^i)\text{.}\)</p></li>
+<li id="li-817">
+<p id="p-3732">Los conjugados de \(\omega\) son \(\omega, \omega^2, \ldots, \omega^{p - 1}\text{.}\) Defina una función \(\phi_i: {\mathbb Q}(\omega) \rightarrow {\mathbb Q}(\omega^i)\) como</p>
+\begin{equation*}
+\phi_i(a_0 + a_1 \omega + \cdots + a_{p - 2} \omega^{p - 2}) = a_0 + a_1 \omega^i + \cdots + c_{p - 2} (\omega^i)^{p - 2},
+\end{equation*}
+<p>donde \(a_i \in {\mathbb Q}\text{.}\) Demuestre que \(\phi_i\) es un isomorfismo de cuerpos. Muestre que \(\phi_2\) genera \(G({\mathbb Q}(\omega)/{\mathbb Q})\text{.}\)</p>
+</li>
+<li id="li-818"><p id="p-3733">Muestre que \(\{ \omega, \omega^2, \ldots, \omega^{p - 1} \}\) es una base para \({\mathbb Q}( \omega )\) sobre \({\mathbb Q}\text{,}\) y considere cuáles combinaciones lineales de \(\omega, \omega^2, \ldots, \omega^{p - 1}\) quedan fijas por todos los elementos de \(G( {\mathbb Q}( \omega ) / {\mathbb Q})\text{.}\)</p></li>
+</ol></span></div>
+</div></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>
