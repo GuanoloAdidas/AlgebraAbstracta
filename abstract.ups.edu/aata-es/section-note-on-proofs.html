@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <!--**************************************-->
-<!-- MathJax v3 configuration and CDN load -->
+<!-- MathJax v3 configuration -->
 <script>
 window.MathJax = {
-    tex: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [['\\[', '\\]']],
-        processEscapes: true,
-        processEnvironments: true
-    },
-    options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process'
-    }
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
 };
 </script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <!--*    Generated from PreTeXt source   *-->
 <!--*    on 2017-12-26T11:01:47-08:00    *-->
