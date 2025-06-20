@@ -1831,7 +1831,7 @@ a:hover {
    **************************************************************************/
   /* Method 1 */
   padding-top: 20px;
-  padding-bottom: 10%;
+  padding-bottom: 50%;
   /* This feels more conclusive: the page is over. */
   /* Method 2 - will clip anything positioned absolutely outside borders */
   /*overflow:hidden;*/
