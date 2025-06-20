@@ -1831,7 +1831,8 @@ a:hover {
    **************************************************************************/
   /* Method 1 */
   padding-top: 20px;
-  padding-bottom: 50%;
+  padding-bottom: 10%;
+  min-height: 100vh
   /* This feels more conclusive: the page is over. */
   /* Method 2 - will clip anything positioned absolutely outside borders */
   /*overflow:hidden;*/
@@ -1844,7 +1845,7 @@ a:hover {
   /* line 5, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_main.scss */
   .page > .main {
     /* Make space for navbar fixed to bottom of screen */
-    padding-bottom: 35.36px;
+    padding-bottom: 60%;
   }
 }
 /* line 47, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_main.scss */
