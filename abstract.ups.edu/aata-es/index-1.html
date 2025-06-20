@@ -1,415 +1,1383 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-12-26T11:01:46-08:00    *-->
+<!--*    on 2017-12-26T11:03:37-08:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!-- MathJax v3 configuration -->
-<script>
-   window.MathJax = {
-     tex: {
-       inlineMath: [['\\(', '\\)']],
-       displayMath: [['\\[', '\\]']],
-       processEscapes: true,
-       processEnvironments: true
-     },
-     svg: {
-       fontCache: 'global'
-     }
-   };
-</script>
-<!-- Load MathJax v3 from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
+<!--**************************************-->
 <html lang="es-ES">
-   <!-- Added by HTTrack -->
-   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <!-- /Added by HTTrack -->
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>AATA Páginas preliminares</title>
-      <meta name="Keywords" content="Authored in PreTeXt">
-      <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-      <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
-         MathJax.Hub.Config({
-             tex2jax: {
-                 inlineMath: [['\\(','\\)']],
-             },
-             TeX: {
-                 extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
-                 // scrolling to fragment identifiers is controlled by other Javascript
-                 positionToHash: false,
-                 equationNumbers: { autoNumber: "none", useLabelIds: true, },
-                 TagSide: "right",
-                 TagIndent: ".8em",
-             },
-             // HTML-CSS output Jax to be dropped for MathJax 3.0
-             "HTML-CSS": {
-                 scale: 88,
-                 mtextFontInherit: true,
-             },
-             CommonHTML: {
-                 scale: 88,
-                 mtextFontInherit: true,
-             },
-         });
-      </script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
-         // Make *any* div with class 'sagecell-sage' an executable Sage cell
-         // Their results will be linked, only within language type
-         sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                                linked: true,
-                                languages: ['sage'],
-                                evalButtonText: 'Evaluate (Sage)'});
-         });
-      </script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
-         var cx = '012975021551273728005:y0h32vuqauw';
-         var gcse = document.createElement('script');
-         gcse.type = 'text/javascript';
-         gcse.async = true;
-         gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(gcse, s);
-         })();
-      </script>
-      <link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
-      <script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-      <link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
-      <link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
-   </head>
-   <body class="mathbook-book has-toc has-sidebar-left">
-      <a class="assistive" href="#content">[skip-to-content]</a>
-      <div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
-         \newcommand{\notdivide}{{\not{\mid}}}
-         \newcommand{\notsubset}{\not\subset}
-         \newcommand{\lcm}{\operatorname{lcm}}
-         \newcommand{\gf}{\operatorname{GF}}
-         \newcommand{\inn}{\operatorname{Inn}}
-         \newcommand{\aut}{\operatorname{Aut}}
-         \newcommand{\Hom}{\operatorname{Hom}}
-         \newcommand{\cis}{\operatorname{cis}}
-         \newcommand{\chr}{\operatorname{char}}
-         \newcommand{\Null}{\operatorname{Null}}
-         \renewcommand{\gcd}{\operatorname{mcd}}
-         \renewcommand{\lcm}{\operatorname{mcm}}
-         \renewcommand{\deg}{\operatorname{gr}}
-         \newcommand{\lt}{&lt;}
-         \newcommand{\gt}{&gt;}
-         \newcommand{\amp}{&amp;}
-         \)
-      </div>
-      <header id="masthead" class="smallbuttons">
-         <div class="banner">
-            <div class="container">
-               <div class="searchwrapper">
-                  <div class="gcse-search"></div>
-               </div>
-               <a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a>
-               <div class="title-container">
-                  <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
-                  <p class="byline">Thomas W. Judson</p>
-               </div>
-            </div>
-         </div>
-         <nav id="primary-navbar" class="navbar" style="">
-            <div class="container">
-               <div class="navbar-top-buttons">
-                  <button class="sidebar-left-toggle-button button active"></button>
-                  <div class="tree-nav toolbar toolbar-divisor-3">
-                     <a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="aata.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="aata.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="colophon-1.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
-                  </div>
-                  <button class="sidebar-right-toggle-button button active">Anotaciones</button>
-               </div>
-               <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-                  <button class="sidebar-left-toggle-button button toolbar-item active"></button><a class="previous-button toolbar-item button" href="aata.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="aata.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="colophon-1.html" title="Siguiente" alt="Siguiente">Siguiente</a>
-               </div>
-            </div>
-         </nav>
-      </header>
-      <div class="page">
-         <aside id="sidebar-left" class="sidebar">
-            <div class="sidebar-content">
-               <nav id="toc">
-                  <h2 class="link active"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
-                  <ul>
-                     <li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
-                     <li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
-                     <li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
-                  </ul>
-                  <h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
-                  <ul>
-                     <li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
-                     <li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
-                     <li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
-                     <li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
-                     <li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
-                  <ul>
-                     <li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
-                     <li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
-                     <li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
-                     <li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
-                     <li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
-                     <li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
-                  <ul>
-                     <li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
-                     <li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
-                     <li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
-                     <li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
-                     <li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
-                     <li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
-                     <li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
-                  <ul>
-                     <li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
-                     <li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
-                     <li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
-                     <li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
-                     <li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
-                     <li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
-                     <li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
-                     <li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
-                  <ul>
-                     <li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
-                     <li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
-                     <li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
-                     <li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
-                     <li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
-                  <ul>
-                     <li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
-                     <li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
-                     <li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
-                     <li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
-                     <li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
-                     <li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
-                  <ul>
-                     <li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
-                     <li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
-                     <li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
-                     <li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
-                     <li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
-                     <li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
-                  <ul>
-                     <li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
-                     <li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
-                     <li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
-                     <li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
-                     <li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
-                     <li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
-                     <li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
-                     <li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
-                  <ul>
-                     <li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
-                     <li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
-                     <li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
-                     <li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
-                     <li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
-                  <ul>
-                     <li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
-                     <li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
-                     <li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
-                     <li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
-                     <li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
-                  <ul>
-                     <li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
-                     <li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
-                     <li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
-                     <li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
-                     <li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
-                     <li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
-                  <ul>
-                     <li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
-                     <li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
-                     <li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
-                     <li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
-                     <li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
-                  <ul>
-                     <li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
-                     <li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
-                     <li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
-                     <li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
-                     <li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
-                     <li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
-                  <ul>
-                     <li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
-                     <li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
-                     <li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
-                     <li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
-                     <li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
-                     <li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
-                     <li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
-                  <ul>
-                     <li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
-                     <li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
-                     <li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
-                     <li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
-                     <li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
-                     <li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
-                  <ul>
-                     <li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
-                     <li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
-                     <li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
-                     <li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
-                     <li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
-                     <li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
-                     <li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
-                     <li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
-                     <li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
-                  <ul>
-                     <li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
-                     <li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
-                     <li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
-                     <li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
-                     <li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
-                     <li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
-                     <li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
-                  <ul>
-                     <li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
-                     <li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
-                     <li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
-                     <li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
-                     <li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
-                  <ul>
-                     <li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
-                     <li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
-                     <li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
-                     <li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
-                     <li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
-                     <li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
-                     <li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
-                  <ul>
-                     <li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
-                     <li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
-                     <li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
-                     <li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
-                     <li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
-                     <li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
-                  <ul>
-                     <li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
-                     <li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
-                     <li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
-                     <li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
-                     <li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
-                     <li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
-                     <li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
-                  <ul>
-                     <li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
-                     <li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
-                     <li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
-                     <li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
-                     <li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
-                     <li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
-                  <ul>
-                     <li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
-                     <li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
-                     <li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
-                     <li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
-                     <li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
-                     <li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
-                     <li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
-                  </ul>
-                  <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
-                  <ul>
-                     <li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
-                     <li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
-                     <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
-                     <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
-                     <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-                  </ul>
-               </nav>
-               
-            </div>
-         </aside>
-         <main class="main">
-            <div id="content" class="mathbook-content">
-               <section class="frontmatter" id="index">
-                  <h1 class="heading">
-                     <span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span>
-                  </h1>
-                  <address class="contributors">
-                     <p>Thomas W. Judson<br>Department of Mathematics and Statistics<br>Stephen F. Austin State University<br><a href="mailto:judsontw@sfasu.edu">judsontw@sfasu.edu</a></p>
-                     <p>Sage Exercises for Abstract Algebra</p>
-                     <p>Robert A. Beezer<br>Department of Mathematics and Computer Science<br>University of Puget Sound<br><a href="mailto:beezer@pugetsound.edu">beezer@pugetsound.edu</a></p>
-                     <p>Traducción al español</p>
-                     <p>Antonio Behn<br>Departamento de Matemáticas, Facultad de Ciencias<br>Universidad de Chile<br><a href="mailto:abehn@uchile.cl">abehn@uchile.cl</a></p>
-                  </address>
-                  <address class="contributors">December 6, 2017
-                        <p> Contribucion a la Adaptación<br> <br><nav>Joaquin Baeza</nav> <nav>Ingeniería Estadística, Facultad de Ciencia</nav><nav> Universidad de Santiago de Chile</nav> <nav>Junio 19, 2025</nav></p>
-                  </address>
-                    
-                  <p></p>
-                  <nav class="summary-links"><a href="colophon-1.html"><span class="title">Colofón</span></a><a href="acknowledgement-1.html"><span class="title">Agradecimentos</span></a><a href="preface-1.html"><span class="title">Prefacio</span></a></nav>
-               </section>
-            </div>
-         </main>
-      </div>
-      <!--Start: StatCounter code--><script type="text/javascript">
-         var sc_project=11583430;
-         var sc_invisible=1;
-         var sc_security="72e3190a";
-         var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-         document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-      </script>
-      <noscript>
-         <div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div>
-      </noscript>
-      <!--End: StatCounter code-->
-   </body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Índice alfabético</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active"></button><div class="tree-nav toolbar toolbar-divisor-3">
+<span class="mininav">[jump-to]</span><span class="indexnav"><a href="#indexletter-a">A </a><a href="#indexletter-b">B </a><a href="#indexletter-c">C </a><a href="#indexletter-d">D </a><a href="#indexletter-e">E </a><a href="#indexletter-f">F </a><a href="#indexletter-g">G </a><a href="#indexletter-h">H </a><a href="#indexletter-i">I </a><a href="#indexletter-j">J </a><a href="#indexletter-k">K </a><a href="#indexletter-l">L </a><a href="#indexletter-m">M </a><br><a href="#indexletter-n">N </a><a href="#indexletter-o">O </a><a href="#indexletter-p">P </a><a href="#indexletter-q">Q </a><a href="#indexletter-r">R </a><a href="#indexletter-s">S </a><a href="#indexletter-t">T </a><a href="#indexletter-u">U </a><a href="#indexletter-v">V </a><a href="#indexletter-w">W </a><a href="#indexletter-x">X </a><a href="#indexletter-y">Y </a><a href="#indexletter-z">Z </a></span><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="appendix-3.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="backmatter.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="colophon-2.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active"></button><a class="previous-button toolbar-item button" href="appendix-3.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="backmatter.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="colophon-2.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1" class="active">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="index" id="index-1"><h1 class="heading hide-type" alt="Índice alfabético  Índice alfabético">
+<span class="type">Índice alfabético</span><span class="codenumber"></span><span class="title">Índice alfabético</span>
+</h1>
+<div class="indexletter" id="indexletter-\">
+<div class="indexitem">\(G\)-conjunto<span class="indexknowl">, <a knowl="./knowl/p-2030.html">Párrafo</a></span>
+</div>
+<div class="indexitem">\(G\)-equivalente<span class="indexknowl">, <a knowl="./knowl/p-2039.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-a">
+<div class="indexitem">Abel, Niels Henrik<span class="indexknowl">, <a knowl="./knowl/p-3648.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Abeliano</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-381.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Acción de grupo<span class="indexknowl">, <a knowl="./knowl/p-2030.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Adleman, L.<span class="indexknowl">, <a knowl="./knowl/p-1109.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Algebraica</div>
+<div class="subindexitem">extensión<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Algoritmo</div>
+<div class="subindexitem">de Euclides<span class="indexknowl">, <a knowl="./knowl/p-262.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Algoritmo de división</div>
+<div class="subindexitem">para enteros<span class="indexknowl">, <a knowl="./knowl/theorem-integers-division_algorithm.html">Teorema</a></span>
+</div>
+<div class="subindexitem">para polinomios<span class="indexknowl">, <a knowl="./knowl/theorem-90.html">Teorema</a></span>
+</div>
+<div class="indexitem">algoritmo de Euclides<span class="indexknowl">, <a knowl="./knowl/p-262.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Algoritmo de factorización de Fermat<span class="indexknowl">, <a knowl="./knowl/exercise-270.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Alternante</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-816.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Anillo</div>
+<div class="subindexitem">característica de<span class="indexknowl">, <a knowl="./knowl/p-2346.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">con identidad<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">con unidad<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2306.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">isomorfismo de<span class="indexknowl">, <a knowl="./knowl/p-2352.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Anillo cociente<span class="indexknowl">, <a knowl="./knowl/p-2375.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Anillo conmutativo<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Anillo de división<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Anillos</div>
+<div class="subindexitem">homomorfismo de<span class="indexknowl">, <a knowl="./knowl/p-2352.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Asociado</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/p-2769.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-b">
+<div class="indexitem">Base de un reticulado<span class="indexknowl">, <a knowl="./knowl/p-1865.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Bieberbach, L.<span class="indexknowl">, <a knowl="./knowl/p-1876.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Boole, George<span class="indexknowl">, <a knowl="./knowl/p-2993.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Booleana</div>
+<div class="subindexitem">función<span class="indexknowl">, <a knowl="./knowl/p-2085.html">Párrafo</a> <a knowl="./knowl/exercise-668.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Burnside, William<span class="indexknowl">, <a knowl="./knowl/p-420.html">Párrafo</a> <a knowl="./knowl/p-1641.html">Párrafo</a> <a knowl="./knowl/p-2092.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-c">
+<div class="indexitem">Canal binario simétrico<span class="indexknowl">, <a knowl="./knowl/p-1209.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Canónico</div>
+<div class="subindexitem">homomorfismo<span class="indexknowl">, <a knowl="./knowl/p-1732.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Característica de un anillo<span class="indexknowl">, <a knowl="./knowl/p-2346.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cardano, Gerolamo<span class="indexknowl">, <a knowl="./knowl/p-2627.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cauchy, Augustin-Louis<span class="indexknowl">, <a knowl="./knowl/p-822.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cayley, Arthur<span class="indexknowl">, <a knowl="./knowl/p-1443.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cero</div>
+<div class="subindexitem">de un polinomio<span class="indexknowl">, <a knowl="./knowl/p-2583.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">multiplicidad de un<span class="indexknowl">, <a knowl="./knowl/p-3603.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ciclo</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-793.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cifrado<span class="indexknowl">, <a knowl="./knowl/p-1095.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Circuito</div>
+<div class="subindexitem">paralelo<span class="indexknowl">, <a knowl="./knowl/p-2985.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">paralelo-serial<span class="indexknowl">, <a knowl="./knowl/p-2986.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Circunferencia</div>
+<div class="subindexitem">grupo de la<span class="indexknowl">, <a knowl="./knowl/p-602.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Clase de equivalencia<span class="indexknowl">, <a knowl="./knowl/p-106.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Clases de conjugación<span class="indexknowl">, <a knowl="./knowl/p-2053.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Clausura algebraica<span class="indexknowl">, <a knowl="./knowl/p-3272.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Clave</div>
+<div class="subindexitem">privada<span class="indexknowl">, <a knowl="./knowl/p-1098.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">única<span class="indexknowl">, <a knowl="./knowl/p-1098.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cociente</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-1612.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Combinación lineal<span class="indexknowl">, <a knowl="./knowl/p-3106.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Condición de cadenas ascendentes<span class="indexknowl">, <a knowl="./knowl/p-2794.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Congruencia módulo \(n\)<span class="indexknowl">, <a knowl="./knowl/example-sets-congruent-integers.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Conjetura de Mordell-Weil<span class="indexknowl">, <a knowl="./knowl/p-3332.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjugación<span class="indexknowl">, <a knowl="./knowl/example-actions-conjugation.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Conjugado, complejo<span class="indexknowl">, <a knowl="./knowl/p-590.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto bien-ordenado<span class="indexknowl">, <a knowl="./knowl/p-239.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto de puntos fijos<span class="indexknowl">, <a knowl="./knowl/p-2044.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto generado<span class="indexknowl">, <a knowl="./knowl/p-3106.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto ortonormal<span class="indexknowl">, <a knowl="./knowl/p-1836.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto parcialmente ordenado<span class="indexknowl">, <a knowl="./knowl/p-2900.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">elemento mayor en<span class="indexknowl">, <a knowl="./knowl/p-2934.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">elemento menor en<span class="indexknowl">, <a knowl="./knowl/p-2934.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conjunto potencia<span class="indexknowl">, <a knowl="./knowl/example-boolean-power-set-subset.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Conmutación</div>
+<div class="subindexitem">función de<span class="indexknowl">, <a knowl="./knowl/p-2085.html">Párrafo</a> <a knowl="./knowl/exercise-668.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Conmutador</div>
+<div class="subindexitem">abierto<span class="indexknowl">, <a knowl="./knowl/p-2984.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">cerrado<span class="indexknowl">, <a knowl="./knowl/p-2984.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2984.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">subgrupo<span class="indexknowl">, <a knowl="./knowl/p-2207.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conmutadores</div>
+<div class="subindexitem">en serie<span class="indexknowl">, <a knowl="./knowl/p-2985.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Conmutativo</div>
+<div class="subindexitem">anillo<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-381.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Copo</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2900.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cota inferior<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cota superior<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Criba de Eratóstenes<span class="indexknowl">, <a knowl="./knowl/exercise-62.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Criptoanálisis<span class="indexknowl">, <a knowl="./knowl/p-1100.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Criptosistema</div>
+<div class="subindexitem">afín<span class="indexknowl">, <a knowl="./knowl/p-1103.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">clave privada<span class="indexknowl">, <a knowl="./knowl/p-1098.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">clave única<span class="indexknowl">, <a knowl="./knowl/p-1098.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-1095.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">monoalfabético<span class="indexknowl">, <a knowl="./knowl/p-1102.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">polialfabético<span class="indexknowl">, <a knowl="./knowl/p-1105.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">
+<abbr class="acronym">RSA</abbr><span class="indexknowl">, <a knowl="./knowl/p-1110.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Criptosistemas de clave pública<span class="indexknowl">, <a knowl="./knowl/p-1097.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Criterio de Eisenstein<span class="indexknowl">, <a knowl="./knowl/theorem-eisenstein.html">Teorema</a></span>
+</div>
+<div class="indexitem">Cuadrar el círculo es imposible<span class="indexknowl">, <a knowl="./knowl/paragraphs-21.html">Párrafo</a></span>
+</div>
+<div class="indexitem">cuaterniones<span class="indexknowl">, <a knowl="./knowl/example-groups-quaterions.html">Ejemplo</a> <a knowl="./knowl/example-rings-noncommutative.html">Ejemplo</a></span>
+</div>
+<div class="subindexitem">grupo de<span class="indexknowl">, <a knowl="./knowl/example-groups-quaterions.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Cuerpo<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">algebraicamente cerrado<span class="indexknowl">, <a knowl="./knowl/p-3272.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">base<span class="indexknowl">, <a knowl="./knowl/p-3216.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de cocientes<span class="indexknowl">, <a knowl="./knowl/p-2758.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de extensión<span class="indexknowl">, <a knowl="./knowl/p-3216.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de fracciones<span class="indexknowl">, <a knowl="./knowl/p-2758.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cuerpo de descomposición<span class="indexknowl">, <a knowl="./knowl/p-3283.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cuerpo de Galois<span class="indexknowl">, <a knowl="./knowl/p-3451.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cuerpo fijo<span class="indexknowl">, <a knowl="./knowl/p-3613.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Cíclico</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-569.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">subgrupo<span class="indexknowl">, <a knowl="./knowl/p-569.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Código</div>
+<div class="subindexitem">
+<abbr class="acronym">BCH</abbr><span class="indexknowl">, <a knowl="./knowl/p-3487.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">cíclico<span class="indexknowl">, <a knowl="./knowl/p-3464.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">distancia mínima del<span class="indexknowl">, <a knowl="./knowl/p-1215.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">lineal<span class="indexknowl">, <a knowl="./knowl/p-1246.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">polinomial<span class="indexknowl">, <a knowl="./knowl/p-3467.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Código Universal de Productos<span class="indexknowl">, <a knowl="./knowl/exercise-125.html">Ejercicio</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-d">
+<div class="indexitem">De Morgan, Augustus<span class="indexknowl">, <a knowl="./knowl/p-2993.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Decodificación de probabilidad máxima<span class="indexknowl">, <a knowl="./knowl/p-1208.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Decodificación estándar<span class="indexknowl">, <a knowl="./knowl/p-1284.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Decodificación por Clases Laterales<span class="indexknowl">, <a knowl="./knowl/p-1284.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Deligne, Pierre<span class="indexknowl">, <a knowl="./knowl/p-3332.html">Párrafo</a></span>
+</div>
+<div class="indexitem">delta de Kronecker<span class="indexknowl">, <a knowl="./knowl/lemma-parity-check.html">Lema</a> <a knowl="./knowl/p-1836.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dependencia lineal<span class="indexknowl">, <a knowl="./knowl/p-3109.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Derechas</div>
+<div class="subindexitem">clases laterales<span class="indexknowl">, <a knowl="./knowl/p-968.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Derivada<span class="indexknowl">, <a knowl="./knowl/p-3444.html">Párrafo</a></span>
+</div>
+<div class="indexitem">descomposición</div>
+<div class="subindexitem">cuerpo<span class="indexknowl">, <a knowl="./knowl/p-3283.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Determinante de Vandermonde<span class="indexknowl">, <a knowl="./knowl/p-3480.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Diagramas conmutativos<span class="indexknowl">, <a knowl="./knowl/p-1735.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dickson, L. E.<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Diffie, W.<span class="indexknowl">, <a knowl="./knowl/p-1108.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dihedral</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-823.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Discriminante</div>
+<div class="subindexitem">de la ecuación cuadrática<span class="indexknowl">, <a knowl="./knowl/exercise-608.html">Ejercicio</a></span>
+</div>
+<div class="subindexitem">de la ecuación cúbica<span class="indexknowl">, <a knowl="./knowl/exercise-614.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Disjuntos</div>
+<div class="subindexitem">ciclos<span class="indexknowl">, <a knowl="./knowl/p-797.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Distancia de Hamming<span class="indexknowl">, <a knowl="./knowl/p-1215.html">Párrafo</a></span>
+</div>
+<div class="indexitem">División</div>
+<div class="subindexitem">algoritmo de<span class="indexknowl">, <a knowl="./knowl/theorem-90.html">Teorema</a></span>
+</div>
+<div class="subindexitem">anillo de<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Divisor de Cero<span class="indexknowl">, <a knowl="./knowl/p-2317.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dominio de factorización única (<abbr class="acronym">DFU</abbr>)<span class="indexknowl">, <a knowl="./knowl/p-2772.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dominio de ideales principales (<abbr class="acronym">DIP</abbr>)<span class="indexknowl">, <a knowl="./knowl/p-2778.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dominio Euclideano<span class="indexknowl">, <a knowl="./knowl/p-2802.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Dominio integral<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Duplicando el cubo<span class="indexknowl">, <a knowl="./knowl/paragraphs-20.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-e">
+<div class="indexitem">Ecuación de clase<span class="indexknowl">, <a knowl="./knowl/p-2053.html">Párrafo</a></span>
+</div>
+<div class="indexitem">El grupo ortogonal<span class="indexknowl">, <a knowl="./knowl/p-1826.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elemento</div>
+<div class="subindexitem">orden del<span class="indexknowl">, <a knowl="./knowl/p-569.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elemento irreducible<span class="indexknowl">, <a knowl="./knowl/p-2770.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elemento primitivo<span class="indexknowl">, <a knowl="./knowl/p-3606.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elemento primo<span class="indexknowl">, <a knowl="./knowl/p-2770.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elemento trascendente<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elementos asociados<span class="indexknowl">, <a knowl="./knowl/p-2769.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Elementos conjugados<span class="indexknowl">, <a knowl="./knowl/p-3593.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Entero compuesto<span class="indexknowl">, <a knowl="./knowl/p-263.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Entero primo<span class="indexknowl">, <a knowl="./knowl/p-263.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Enteros Gaussianos<span class="indexknowl">, <a knowl="./knowl/example-rings-gaussian-integers.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Espacio nulo</div>
+<div class="subindexitem">de una matriz<span class="indexknowl">, <a knowl="./knowl/p-1242.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Espacio vectorial</div>
+<div class="subindexitem">base de<span class="indexknowl">, <a knowl="./knowl/p-3118.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-3083.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">dimensión de<span class="indexknowl">, <a knowl="./knowl/p-3124.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">subespacio de<span class="indexknowl">, <a knowl="./knowl/p-3103.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Euclideano</div>
+<div class="subindexitem">Dominio<span class="indexknowl">, <a knowl="./knowl/p-2802.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-1851.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Euler, Leonhard<span class="indexknowl">, <a knowl="./knowl/p-1014.html">Párrafo</a> <a knowl="./knowl/p-3330.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Evaluación</div>
+<div class="subindexitem">homomorfismo de<span class="indexknowl">, <a knowl="./knowl/example-rings-continuous-function-homomorph.html">Ejemplo</a> <a knowl="./knowl/p-2576.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Extensión</div>
+<div class="subindexitem">de cuerpos<span class="indexknowl">, <a knowl="./knowl/p-3216.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">radical<span class="indexknowl">, <a knowl="./knowl/p-3653.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Extensión algebraica<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Extensión normal<span class="indexknowl">, <a knowl="./knowl/p-3621.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Extensión simple<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-f">
+<div class="indexitem">Factorización única</div>
+<div class="subindexitem">Dominio de<span class="indexknowl">, <a knowl="./knowl/p-2772.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Faltings, Gerd<span class="indexknowl">, <a knowl="./knowl/p-3332.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Feit, W.<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a> <a knowl="./knowl/p-2092.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Fermat, Pierre de<span class="indexknowl">, <a knowl="./knowl/p-1011.html">Párrafo</a> <a knowl="./knowl/p-3329.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ferrari, Ludovico<span class="indexknowl">, <a knowl="./knowl/p-2627.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ferro, Scipione del<span class="indexknowl">, <a knowl="./knowl/p-2625.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Finita</div>
+<div class="subindexitem">extensión<span class="indexknowl">, <a knowl="./knowl/p-3247.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Finitamente generado</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-1922.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Finito</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-393.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Fior, Antonio<span class="indexknowl">, <a knowl="./knowl/p-2625.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Freshman's Dream<span class="indexknowl">, <a knowl="./knowl/lemma-freshmans-dream.html">Lema</a></span>
+</div>
+<div class="indexitem">Función</div>
+<div class="subindexitem">1-1<span class="indexknowl">, <a knowl="./knowl/p-74.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">biyectiva<span class="indexknowl">, <a knowl="./knowl/p-74.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">composición de<span class="indexknowl">, <a knowl="./knowl/p-76.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-70.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">dominio de la<span class="indexknowl">, <a knowl="./knowl/p-70.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">identidad<span class="indexknowl">, <a knowl="./knowl/p-90.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">invertible<span class="indexknowl">, <a knowl="./knowl/p-90.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">inyectiva<span class="indexknowl">, <a knowl="./knowl/p-74.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">rango de la<span class="indexknowl">, <a knowl="./knowl/p-70.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">sobre<span class="indexknowl">, <a knowl="./knowl/p-74.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">sobreyectiva<span class="indexknowl">, <a knowl="./knowl/p-74.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Función \(\phi\) de Euler<span class="indexknowl">, <a knowl="./knowl/p-1005.html">Párrafo</a></span>
+</div>
+<div class="indexitem">función bien-definida<span class="indexknowl">, <a knowl="./knowl/p-73.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Función Booleana<span class="indexknowl">, <a knowl="./knowl/p-2085.html">Párrafo</a> <a knowl="./knowl/exercise-668.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Función de Ackermann<span class="indexknowl">, <a knowl="./knowl/exercise-63.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Función de conmutación<span class="indexknowl">, <a knowl="./knowl/p-2085.html">Párrafo</a> <a knowl="./knowl/exercise-668.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Función lineal<span class="indexknowl">, <a knowl="./knowl/p-1813.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-g">
+<div class="indexitem">Galois</div>
+<div class="subindexitem">cuerpo de<span class="indexknowl">, <a knowl="./knowl/p-3451.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">grupo de<span class="indexknowl">, <a knowl="./knowl/p-3588.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Galois, Évariste<span class="indexknowl">, <a knowl="./knowl/p-419.html">Párrafo</a> <a knowl="./knowl/p-3649.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Gauss, Karl Friedrich<span class="indexknowl">, <a knowl="./knowl/p-2834.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Generador del subgrupo cíclico<span class="indexknowl">, <a knowl="./knowl/p-569.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Generador minimal</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-3475.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Generadors para un grupo<span class="indexknowl">, <a knowl="./knowl/p-1922.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Gorenstein, Daniel<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Greiss, R.<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grothendieck, Alexander<span class="indexknowl">, <a knowl="./knowl/p-3332.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo</div>
+<div class="subindexitem">centro del<span class="indexknowl">, <a knowl="./knowl/p-2053.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">código de<span class="indexknowl">, <a knowl="./knowl/p-1232.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de unidades<span class="indexknowl">, <a knowl="./knowl/example-groups-z6-mult.html">Ejemplo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-377.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">espacial<span class="indexknowl">, <a knowl="./knowl/p-1867.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">generadores del<span class="indexknowl">, <a knowl="./knowl/p-1922.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">lineal especial<span class="indexknowl">, <a knowl="./knowl/p-1824.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">lineal general<span class="indexknowl">, <a knowl="./knowl/p-1824.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">orden de<span class="indexknowl">, <a knowl="./knowl/p-393.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">ortogonal<span class="indexknowl">, <a knowl="./knowl/p-1826.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">ortogonal especial<span class="indexknowl">, <a knowl="./knowl/p-1851.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">puntual<span class="indexknowl">, <a knowl="./knowl/p-1868.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo abeliano<span class="indexknowl">, <a knowl="./knowl/p-381.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo de Galois<span class="indexknowl">, <a knowl="./knowl/p-3588.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo de permutaciones<span class="indexknowl">, <a knowl="./knowl/p-787.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo Euclideano<span class="indexknowl">, <a knowl="./knowl/p-1851.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo finitamente generado<span class="indexknowl">, <a knowl="./knowl/p-1922.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo simple<span class="indexknowl">, <a knowl="./knowl/p-1623.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo!\(p\)-grupo<span class="indexknowl">, <a knowl="./knowl/p-2174.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupo\(p\)-grupo<span class="indexknowl">, <a knowl="./knowl/p-1929.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Grupos</div>
+<div class="subindexitem">homomorfismo de<span class="indexknowl">, <a knowl="./knowl/p-1708.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">isomorfismo de<span class="indexknowl">, <a knowl="./knowl/p-1410.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">isomorfos<span class="indexknowl">, <a knowl="./knowl/p-1410.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Gödel, Kurt<span class="indexknowl">, <a knowl="./knowl/p-2994.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-h">
+<div class="indexitem">Hamming, R.<span class="indexknowl">, <a knowl="./knowl/p-1231.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Hellman, M.<span class="indexknowl">, <a knowl="./knowl/p-1108.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Hilbert, David<span class="indexknowl">, <a knowl="./knowl/p-1876.html">Párrafo</a> <a knowl="./knowl/p-2399.html">Párrafo</a> <a knowl="./knowl/p-2994.html">Párrafo</a> <a knowl="./knowl/p-3331.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Homomorfismo</div>
+<div class="subindexitem">de anillos<span class="indexknowl">, <a knowl="./knowl/p-2352.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de grupos<span class="indexknowl">, <a knowl="./knowl/p-1708.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Homomorfismo canónico<span class="indexknowl">, <a knowl="./knowl/p-2378.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Homomorfismo de anillos</div>
+<div class="subindexitem">núcleo de<span class="indexknowl">, <a knowl="./knowl/p-2353.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Homomorfismo natural<span class="indexknowl">, <a knowl="./knowl/p-2378.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Homomorfismode grupos</div>
+<div class="subindexitem">núcleo de un<span class="indexknowl">, <a knowl="./knowl/p-1725.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-i">
+<div class="indexitem">Ideal</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2362.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ideal bilátero ideal<span class="indexknowl">, <a knowl="./knowl/remark-7.html">Nota</a></span>
+</div>
+<div class="indexitem">Ideal maximal<span class="indexknowl">, <a knowl="./knowl/p-2385.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ideal por un lado<span class="indexknowl">, <a knowl="./knowl/remark-7.html">Nota</a></span>
+</div>
+<div class="indexitem">Ideal primo<span class="indexknowl">, <a knowl="./knowl/p-2390.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ideal principal<span class="indexknowl">, <a knowl="./knowl/p-2366.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ideales principales</div>
+<div class="subindexitem">dominio de<span class="indexknowl">, <a knowl="./knowl/p-2778.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Identidad</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/li-90.html">[li]</a></span>
+</div>
+<div class="indexitem">Imagen homomorfa<span class="indexknowl">, <a knowl="./knowl/p-1708.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Impar</div>
+<div class="subindexitem">permutación<span class="indexknowl">, <a knowl="./knowl/p-815.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Independencia lineal<span class="indexknowl">, <a knowl="./knowl/p-3109.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Indeterminada<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Induccion</div>
+<div class="subindexitem">segundo principio de<span class="indexknowl">, <a knowl="./knowl/principle-integers-second-pmi.html">Principio</a></span>
+</div>
+<div class="indexitem">Inducción</div>
+<div class="subindexitem">primer principio de<span class="indexknowl">, <a knowl="./knowl/principle-integers-first-pmi.html">Principio</a></span>
+</div>
+<div class="indexitem">Infinito</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-393.html">Párrafo</a></span>
+</div>
+<div class="indexitem">International standard book number<span class="indexknowl">, <a knowl="./knowl/exercise-128.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Interno</div>
+<div class="subindexitem">automorfismo<span class="indexknowl">, <a knowl="./knowl/exercise-407.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Inverso</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/li-91.html">[li]</a></span>
+</div>
+<div class="indexitem">Irreducible</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/p-2770.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-2596.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Isometría<span class="indexknowl">, <a knowl="./knowl/p-1852.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Isomorfismo</div>
+<div class="subindexitem">de anillo<span class="indexknowl">, <a knowl="./knowl/p-2352.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de grupos<span class="indexknowl">, <a knowl="./knowl/p-1410.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Isomorfismo de álgebras Booleanas<span class="indexknowl">, <a knowl="./knowl/p-2959.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Izquierda</div>
+<div class="subindexitem">clase lateral<span class="indexknowl">, <a knowl="./knowl/p-968.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-j"><div class="indexitem">Jordan, C.<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a></span>
+</div></div>
+<div class="indexletter" id="indexletter-k">
+<div class="indexitem">Key</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-1096.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Klein, Felix<span class="indexknowl">, <a knowl="./knowl/p-420.html">Párrafo</a> <a knowl="./knowl/p-1812.html">Párrafo</a> <a knowl="./knowl/p-2399.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Kronecker, Leopold<span class="indexknowl">, <a knowl="./knowl/p-3330.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Kummer, Ernst<span class="indexknowl">, <a knowl="./knowl/p-3330.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-l">
+<div class="indexitem">Lagrange, Joseph-Louis<span class="indexknowl">, <a knowl="./knowl/p-419.html">Párrafo</a> <a knowl="./knowl/p-822.html">Párrafo</a> <a knowl="./knowl/p-1014.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Laplace, Pierre-Simon<span class="indexknowl">, <a knowl="./knowl/p-822.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Lema de Gauss<span class="indexknowl">, <a knowl="./knowl/theorem-domains-gauss-lemma.html">Teorema</a></span>
+</div>
+<div class="indexitem">Ley de cancelación</div>
+<div class="subindexitem">para dominios integrales<span class="indexknowl">, <a knowl="./knowl/proposition-33.html">Proposición</a></span>
+</div>
+<div class="subindexitem">para grupos<span class="indexknowl">, <a knowl="./knowl/p-407.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Leyes de De Morgan</div>
+<div class="subindexitem">para conjuntos<span class="indexknowl">, <a knowl="./knowl/theorem-1.html">Teorema</a></span>
+</div>
+<div class="subindexitem">para álgebras Booleanas<span class="indexknowl">, <a knowl="./knowl/li-665.html">[li]</a></span>
+</div>
+<div class="indexitem">Lie, Sophus<span class="indexknowl">, <a knowl="./knowl/p-420.html">Párrafo</a> <a knowl="./knowl/p-2197.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Lineal</div>
+<div class="subindexitem">código<span class="indexknowl">, <a knowl="./knowl/p-1232.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Lineal especial</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/example-groups-sl2.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Lineal general</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/example-groups-gl2.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Líder</div>
+<div class="subindexitem">de clase<span class="indexknowl">, <a knowl="./knowl/p-1286.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-m">
+<div class="indexitem">Mapeo<span class="indexknowl">, <em class="see">véase</em>Función</span>
+</div>
+<div class="indexitem">Matrices</div>
+<div class="subindexitem">similares<span class="indexknowl">, <a knowl="./knowl/example-sets-equivalent-matrices.html">Ejemplo</a></span>
+</div>
+<div class="indexitem">Matriz</div>
+<div class="subindexitem">espacio nulo de una<span class="indexknowl">, <a knowl="./knowl/p-1242.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">generadora<span class="indexknowl">, <a knowl="./knowl/p-1249.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">invertible<span class="indexknowl">, <a knowl="./knowl/p-1816.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">no singular<span class="indexknowl">, <a knowl="./knowl/p-1816.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">ortogonal<span class="indexknowl">, <a knowl="./knowl/p-1826.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">preserva distancias<span class="indexknowl">, <a knowl="./knowl/p-1837.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">preserva el producto interno<span class="indexknowl">, <a knowl="./knowl/p-1837.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">unimodular<span class="indexknowl">, <a knowl="./knowl/p-1866.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">verficadora<span class="indexknowl">, <a knowl="./knowl/p-1249.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Matriz de Vandermonde<span class="indexknowl">, <a knowl="./knowl/p-3480.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Matriz ortogonal<span class="indexknowl">, <a knowl="./knowl/p-1826.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Maximal</div>
+<div class="subindexitem">ideal<span class="indexknowl">, <a knowl="./knowl/p-2385.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Mayor cota inferior<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Menor cota superior<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Minimal</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-3238.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Minkowski, Hermann<span class="indexknowl">, <a knowl="./knowl/p-3331.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Movimiento rígido<span class="indexknowl">, <a knowl="./knowl/p-372.html">Párrafo</a> <a knowl="./knowl/p-1852.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Multiplicidad de una raíz<span class="indexknowl">, <a knowl="./knowl/p-3603.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Máximo común divisor</div>
+<div class="subindexitem">de dos enteros<span class="indexknowl">, <a knowl="./knowl/p-254.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de dos polinomios<span class="indexknowl">, <a knowl="./knowl/p-2590.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Mónico</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-n">
+<div class="indexitem">Natural</div>
+<div class="subindexitem">homomorfismo<span class="indexknowl">, <a knowl="./knowl/p-1732.html">Párrafo</a></span>
+</div>
+<div class="indexitem">No abeliano</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-381.html">Párrafo</a></span>
+</div>
+<div class="indexitem">No conmutativo</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-381.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Noether, A. Emmy<span class="indexknowl">, <a knowl="./knowl/p-2398.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Noether, Max<span class="indexknowl">, <a knowl="./knowl/p-2398.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Noetheriano</div>
+<div class="subindexitem">anillo<span class="indexknowl">, <a knowl="./knowl/p-2794.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Normal</div>
+<div class="subindexitem">extensión<span class="indexknowl">, <a knowl="./knowl/p-3621.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">subgrupo<span class="indexknowl">, <a knowl="./knowl/p-1601.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Normalizador<span class="indexknowl">, <a knowl="./knowl/p-2186.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Núcleo</div>
+<div class="subindexitem">de un homomorfismo de anillos<span class="indexknowl">, <a knowl="./knowl/p-2353.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de un homomorfismo de grupos<span class="indexknowl">, <a knowl="./knowl/p-1725.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Número algebraico<span class="indexknowl">, <a knowl="./knowl/p-3229.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Número constructible<span class="indexknowl">, <a knowl="./knowl/p-3303.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Número trascendente<span class="indexknowl">, <a knowl="./knowl/p-3229.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Números de Carmichael<span class="indexknowl">, <a knowl="./knowl/exercise-273.html">Ejercicio</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-o">
+<div class="indexitem">Operación binaria<span class="indexknowl">, <a knowl="./knowl/p-377.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Orden parcial<span class="indexknowl">, <a knowl="./knowl/p-2900.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-p">
+<div class="indexitem">Par</div>
+<div class="subindexitem">permutación<span class="indexknowl">, <a knowl="./knowl/p-815.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Partición<span class="indexknowl">, <a knowl="./knowl/p-106.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Pequeño Teorema de Fermat<span class="indexknowl">, <a knowl="./knowl/theorem-cosets-theorem-13.html">Teorema</a></span>
+</div>
+<div class="indexitem">Permutaciones</div>
+<div class="subindexitem">grupo de<span class="indexknowl">, <a knowl="./knowl/p-787.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Permutación</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/example-sets-permutation.html">Ejemplo</a> <a knowl="./knowl/p-782.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Peso de una palabra del código<span class="indexknowl">, <a knowl="./knowl/p-1215.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomial</div>
+<div class="subindexitem">código<span class="indexknowl">, <a knowl="./knowl/p-3467.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio</div>
+<div class="subindexitem">cero del<span class="indexknowl">, <a knowl="./knowl/p-2583.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">coeficiente líder del<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">contenido del<span class="indexknowl">, <a knowl="./knowl/p-2814.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de error<span class="indexknowl">, <a knowl="./knowl/p-3549.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">grado de<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">localizador de errores<span class="indexknowl">, <a knowl="./knowl/exercise-760.html">Ejercicio</a></span>
+</div>
+<div class="subindexitem">raíz del<span class="indexknowl">, <a knowl="./knowl/p-2583.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio en\(n\) variables<span class="indexknowl">, <a knowl="./knowl/p-2573.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio generador minimal<span class="indexknowl">, <a knowl="./knowl/p-3475.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio irreducible<span class="indexknowl">, <a knowl="./knowl/p-2596.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio minimal<span class="indexknowl">, <a knowl="./knowl/p-3238.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio mónico<span class="indexknowl">, <a knowl="./knowl/p-2564.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomio primitivo<span class="indexknowl">, <a knowl="./knowl/p-2814.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polinomios</div>
+<div class="subindexitem">máximo común divisor de<span class="indexknowl">, <a knowl="./knowl/p-2590.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Polynomio separable<span class="indexknowl">, <a knowl="./knowl/p-3442.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Primer Teorema de Isomorfía</div>
+<div class="subindexitem">para anillos<span class="indexknowl">, <a knowl="./knowl/theorem-82.html">Teorema</a></span>
+</div>
+<div class="subindexitem">para grupos<span class="indexknowl">, <a knowl="./knowl/theorem-first-isomorphism.html">Teorema</a></span>
+</div>
+<div class="indexitem">Primitivo</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/p-3606.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-2814.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Primo</div>
+<div class="subindexitem">elemento<span class="indexknowl">, <a knowl="./knowl/p-2770.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">ideal<span class="indexknowl">, <a knowl="./knowl/p-2390.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Principal</div>
+<div class="subindexitem">ideal<span class="indexknowl">, <a knowl="./knowl/p-2366.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Producto directo externo<span class="indexknowl">, <a knowl="./knowl/p-1450.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Producto directo interno de grupos<span class="indexknowl">, <a knowl="./knowl/p-1466.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Producto Escalar<span class="indexknowl">, <a knowl="./knowl/p-3083.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Producto interno<span class="indexknowl">, <a knowl="./knowl/p-1240.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Producto interno Euclideano<span class="indexknowl">, <a knowl="./knowl/p-1828.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Propio</div>
+<div class="subindexitem">subgrupo<span class="indexknowl">, <a knowl="./knowl/p-421.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Pseudoprimo<span class="indexknowl">, <a knowl="./knowl/exercise-271.html">Ejercicio</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-r">
+<div class="indexitem">raíces \(n\)-ésimas de la unidad<span class="indexknowl">, <a knowl="./knowl/p-3654.html">Párrafo</a></span>
+</div>
+<div class="indexitem">raíz \(n\)-ésima de la unidad<span class="indexknowl">, <a knowl="./knowl/p-604.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Raíz \(n\)-ésima primitiva de la unidad<span class="indexknowl">, <a knowl="./knowl/p-607.html">Párrafo</a> <a knowl="./knowl/p-3654.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Raíz simple<span class="indexknowl">, <a knowl="./knowl/p-3603.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Reflexión deslizante<span class="indexknowl">, <a knowl="./knowl/p-1853.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Relación de equivalencia<span class="indexknowl">, <a knowl="./knowl/p-98.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Representación regular izquierda<span class="indexknowl">, <a knowl="./knowl/p-1442.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Representante</div>
+<div class="subindexitem">de clase lateral<span class="indexknowl">, <a knowl="./knowl/p-968.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Resolvente cúbica<span class="indexknowl">, <a knowl="./knowl/exercise-619.html">Ejercicio</a></span>
+</div>
+<div class="indexitem">Reticulado</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2914.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Reticulado complementado<span class="indexknowl">, <a knowl="./knowl/p-2935.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Reticulado de puntos<span class="indexknowl">, <a knowl="./knowl/p-1865.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Reticulado distributivo<span class="indexknowl">, <a knowl="./knowl/p-2936.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Reticulados, Principio de Dualidad para<span class="indexknowl">, <a knowl="./knowl/axiom-1.html">Axioma</a></span>
+</div>
+<div class="indexitem">Rivest, R.<span class="indexknowl">, <a knowl="./knowl/p-1109.html">Párrafo</a></span>
+</div>
+<div class="indexitem">
+<abbr class="acronym">RSA</abbr> criptosistema<span class="indexknowl">, <a knowl="./knowl/p-1110.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ruffini, P.<span class="indexknowl">, <a knowl="./knowl/p-3648.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Russell, Bertrand<span class="indexknowl">, <a knowl="./knowl/p-2994.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-s">
+<div class="indexitem">Secundo Teorema de Isomorfía</div>
+<div class="subindexitem">para anillos<span class="indexknowl">, <a knowl="./knowl/theorem-83.html">Teorema</a></span>
+</div>
+<div class="indexitem">Segundo Teorema de Isomorfía</div>
+<div class="subindexitem">para grupos<span class="indexknowl">, <a knowl="./knowl/theorem-second-isomorphism.html">Teorema</a></span>
+</div>
+<div class="indexitem">Separable</div>
+<div class="subindexitem">extensión<span class="indexknowl">, <a knowl="./knowl/p-3442.html">Párrafo</a> <a knowl="./knowl/p-3603.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">polinomio<span class="indexknowl">, <a knowl="./knowl/p-3603.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Serie de composición<span class="indexknowl">, <a knowl="./knowl/p-1965.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Serie normal de un grupo<span class="indexknowl">, <a knowl="./knowl/p-1958.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Serie principal<span class="indexknowl">, <a knowl="./knowl/p-1965.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Serie subnormal de un grupo<span class="indexknowl">, <a knowl="./knowl/p-1958.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Shamir, A.<span class="indexknowl">, <a knowl="./knowl/p-1109.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Shannon, C..<span class="indexknowl">, <a knowl="./knowl/p-1231.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Simetría</div>
+<div class="subindexitem">grupo de<span class="indexknowl">, <a knowl="./knowl/p-1858.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Simple</div>
+<div class="subindexitem">Extensión<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-1623.html">Párrafo</a> <a knowl="./knowl/p-1641.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Simétrico</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-784.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Solubilidad por radicales<span class="indexknowl">, <a knowl="./knowl/p-3653.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Soluble</div>
+<div class="subindexitem">grupo<span class="indexknowl">, <a knowl="./knowl/p-1973.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Subanillo<span class="indexknowl">, <a knowl="./knowl/p-2327.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Subgrupo</div>
+<div class="subindexitem">\(p\)-subgrupo de Sylow<span class="indexknowl">, <a knowl="./knowl/p-2185.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">centralizador<span class="indexknowl">, <a knowl="./knowl/p-2053.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de isotropía<span class="indexknowl">, <a knowl="./knowl/p-2044.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">de traslación<span class="indexknowl">, <a knowl="./knowl/p-1868.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-421.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">estabilizador<span class="indexknowl">, <a knowl="./knowl/p-2044.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">normalizador de<span class="indexknowl">, <a knowl="./knowl/p-2186.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">índice de<span class="indexknowl">, <a knowl="./knowl/p-983.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Subgrupo normal<span class="indexknowl">, <a knowl="./knowl/p-1601.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Subgrupo!\(p\)-subgrupo<span class="indexknowl">, <a knowl="./knowl/p-2174.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Supremo<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a> <a knowl="./knowl/p-2914.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Sylow</div>
+<div class="subindexitem">\(p\)-subgrupo de<span class="indexknowl">, <a knowl="./knowl/p-2185.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Sylow, Ludvig<span class="indexknowl">, <a knowl="./knowl/p-2197.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Síndrome de un código<span class="indexknowl">, <a knowl="./knowl/p-1278.html">Párrafo</a> <a knowl="./knowl/p-3549.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-t">
+<div class="indexitem">Tabla de Cayley<span class="indexknowl">, <a knowl="./knowl/p-384.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Tabla de decodificación<span class="indexknowl">, <a knowl="./knowl/p-1288.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Tartaglia<span class="indexknowl">, <a knowl="./knowl/p-2626.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Teorema Chino de los Restos</div>
+<div class="subindexitem">para enteros<span class="indexknowl">, <a knowl="./knowl/theorem-87.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Cauchy<span class="indexknowl">, <a knowl="./knowl/theorem-cauchy.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Cayley<span class="indexknowl">, <a knowl="./knowl/theorem-cayleys.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Conteo de Burnside<span class="indexknowl">, <a knowl="./knowl/theorem-69.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Correspondencia</div>
+<div class="subindexitem">para anillos<span class="indexknowl">, <a knowl="./knowl/theorem-correspondence-rings.html">Teorema</a></span>
+</div>
+<div class="subindexitem">para grupos<span class="indexknowl">, <a knowl="./knowl/theorem-correspondence.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de DeMoivre<span class="indexknowl">, <a knowl="./knowl/theorem-15.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Jordan-Hölder<span class="indexknowl">, <a knowl="./knowl/theorem-66.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema de Lagrange<span class="indexknowl">, <a knowl="./knowl/theorem-lagrange.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema del Elemento Primitivo<span class="indexknowl">, <a knowl="./knowl/theorem-primitive-element.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema del Orden Impar<span class="indexknowl">, <a knowl="./knowl/theorem-76.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema Fundamental</div>
+<div class="subindexitem">de la Aritmética<span class="indexknowl">, <a knowl="./knowl/theorem-fund-theorem-arithmetic.html">Teorema</a></span>
+</div>
+<div class="subindexitem">de los Grupos Abelianos Finitos<span class="indexknowl">, <a knowl="./knowl/theorem-finite-abelian-groups.html">Teorema</a></span>
+</div>
+<div class="subindexitem">de Álgebra<span class="indexknowl">, <a knowl="./knowl/theorem-120.html">Teorema</a></span>
+</div>
+<div class="subindexitem">del Álgebra<span class="indexknowl">, <a knowl="./knowl/theorem-136.html">Teorema</a></span>
+</div>
+<div class="indexitem">Teorema Fundamental de la Teoría de Galois<span class="indexknowl">, <a knowl="./knowl/theorem-fundamental-galois.html">Teorema</a></span>
+</div>
+<div class="indexitem">Tercer Teorema de Isomorfía</div>
+<div class="subindexitem">para anillos<span class="indexknowl">, <a knowl="./knowl/theorem-84.html">Teorema</a></span>
+</div>
+<div class="subindexitem">para grupos<span class="indexknowl">, <a knowl="./knowl/theorem-third-isomorphism.html">Teorema</a></span>
+</div>
+<div class="indexitem">Texto cifrado<span class="indexknowl">, <a knowl="./knowl/p-1095.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Texto claro<span class="indexknowl">, <a knowl="./knowl/p-1095.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Thompson, J.<span class="indexknowl">, <a knowl="./knowl/p-1641.html">Párrafo</a> <a knowl="./knowl/p-2092.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Transformación lineal</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/example-sets-linear-map.html">Ejemplo</a> <a knowl="./knowl/p-1813.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Transposición<span class="indexknowl">, <a knowl="./knowl/p-805.html">Párrafo</a></span>
+</div>
+<div class="indexitem">trascendente</div>
+<div class="subindexitem">Elemento<span class="indexknowl">, <a knowl="./knowl/p-3227.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Trisección de un ángulo<span class="indexknowl">, <a href="section-constructions.html#fields-subsection-trisect-angle">Subsección</a></span>
+</div>
+<div class="indexitem">Trivial</div>
+<div class="subindexitem">ideal<span class="indexknowl">, <a knowl="./knowl/example-rings-trivial-ideal.html">Ejemplo</a></span>
+</div>
+<div class="subindexitem">subgrupo<span class="indexknowl">, <a knowl="./knowl/p-421.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-u"><div class="indexitem">Unidad<span class="indexknowl">, <a knowl="./knowl/p-2313.html">Párrafo</a> <a knowl="./knowl/p-2769.html">Párrafo</a></span>
+</div></div>
+<div class="indexletter" id="indexletter-v">
+<div class="indexitem">Valuación Euclideana<span class="indexknowl">, <a knowl="./knowl/p-2802.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Vandermonde, determinante de<span class="indexknowl">, <a knowl="./knowl/p-3480.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Vandermonde, matriz de<span class="indexknowl">, <a knowl="./knowl/p-3480.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-w">
+<div class="indexitem">Weil, André<span class="indexknowl">, <a knowl="./knowl/p-3332.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Whitehead, Alfred North<span class="indexknowl">, <a knowl="./knowl/p-2994.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-á">
+<div class="indexitem">Álgebra Booleana</div>
+<div class="subindexitem">definición de<span class="indexknowl">, <a knowl="./knowl/p-2939.html">Párrafo</a></span>
+</div>
+<div class="subindexitem">átomo en un<span class="indexknowl">, <a knowl="./knowl/p-2960.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Álgebra Booleana finita<span class="indexknowl">, <a knowl="./knowl/p-2958.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Álgebras Booleanas</div>
+<div class="subindexitem">isomorfismo de<span class="indexknowl">, <a knowl="./knowl/p-2959.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Átomo<span class="indexknowl">, <a knowl="./knowl/p-2960.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-í">
+<div class="indexitem">Índice de un subgrupo<span class="indexknowl">, <a knowl="./knowl/p-983.html">Párrafo</a></span>
+</div>
+<div class="indexitem">Ínfimo<span class="indexknowl">, <a knowl="./knowl/p-2909.html">Párrafo</a> <a knowl="./knowl/p-2914.html">Párrafo</a></span>
+</div>
+</div>
+<div class="indexletter" id="indexletter-ó"><div class="indexitem">Órbita<span class="indexknowl">, <a knowl="./knowl/p-2042.html">Párrafo</a></span>
+</div></div></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
 </html>
