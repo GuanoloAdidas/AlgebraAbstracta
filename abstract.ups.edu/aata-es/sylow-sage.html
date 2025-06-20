@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:39-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Sage</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script>$(function () {
+    // Make *any* div with class 'sage-display' a visible, uneditable Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage-display',
+                           editor: 'codemirror-readonly',
+                           hide: ['evalButton', 'editorToggle', 'language']});
+});
+</script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sylow-references.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="sylow.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="sylow-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="sylow-references.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="sylow.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="sylow-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage" class="active">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="sylow-sage"><h2 class="heading hide-type" alt="Sección 15.6 Sage">
+<span class="type">Sección</span><span class="codenumber">15.6</span><span class="title">Sage</span>
+</h2>
+<a href="sylow-sage.html" class="permalink">¶</a><section class="subsection" id="subsection-89"><h3 class="heading hide-type" alt="Subsección  Subgrupos de Sylow">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Subgrupos de Sylow</span>
+</h3>
+<p id="p-2269">El método <tt class="code-inline tex2jax_ignore">.sylow_subgroup(p)</tt>, implementaado para grupos de permutaciones, entregará un \(p\)-subgrupo de Sylow.  Si el primo no es un divisor propio del orden del grupo devuelve un subgrupo de orden \(p^0\text{,}\) en otras palabras, el subgrupo trivial.    A veces, solo necesitaremos <em class="emphasis">un</em> subgrupo de Sylow, pues cualquiera dos \(p\)-subgrupos de Sylow son conjugados, y por ende isomorfos (Teorema <a knowl="./knowl/theorem-second-sylow.html" knowl-id="xref-theorem-second-sylow" alt="Teorema 15.7 Segundo Teorema de Sylow" title="Teorema 15.7 Segundo Teorema de Sylow">15.7</a>).  Esto también quiere decir que podemos crear otros \(p\)-subgrupos de Sylow conjugando el que obtuvimos.  El método <tt class="code-inline tex2jax_ignore">.conjugate(g)</tt> conjugará el grupo por <tt class="code-inline tex2jax_ignore">g</tt>.</p>
+<p id="p-2270">Mediante conjugaciones de un solo \(p\)-subgrupo de Sylow \(p\text{,}\) siempre obtendremos subgrupos repetidos.  Necesitamos una construcción un poco más complicada para formar una lista que contenga cada \(p\)-subgrupo de Sylow exactamente una vez.  La siguiente rutina que calcula todos los \(p\)-subgrupos de Sylow será útil para lo que queda de esta sección.  Se podría hacer más eficiente conjugando solo por un elemento de cada clase lateral del normalizador, pero es suficiente para nuestros propósitos acá.  Asegúrese de ejecutar la próxima celda, para poder usar la función más adelante.</p>
+<div class="sagecell-sage" id="sage-361"><script type="text/x-sage">def all_sylow(G, p):
+    '''Form the set of all distinct Sylow p-subgroups of G'''
+    scriptP = []
+    P = G.sylow_subgroup(p)
+    for x in G:
+        H = P.conjugate(x)
+        if not(H in scriptP):
+            scriptP.append(H)
+    return scriptP
+</script></div>
+<p id="p-2271">Investiguemos los subgrupos de Sylow del grupo dihedral \(D_{18}\text{.}\)  Como grupo de orden \(36=2^2\cdot 3^2\text{,}\) sabemos por el Primer Teorema de Sylow que tiene un \(2\)-subgrupo de orden \(4\) y un \(3\)-subgrupo de Sylow de orden \(9\text{.}\)  Comenzando con \(p=2\text{,}\) obtenemos un \(2\)-subgrupo de Sylow, formamos todos sus conjugados, y formamos una lista de los subgrupos sin repeticiones.</p>
+<div class="sagecell-sage" id="sage-362"><script type="text/x-sage">G = DihedralGroup(18)
+S2 = G.sylow_subgroup(2); S2
+</script></div>
+<div class="sagecell-sage" id="sage-363"><script type="text/x-sage">uniqS2 = all_sylow(G, 2)
+uniqS2
+</script></div>
+<div class="sagecell-sage" id="sage-364"><script type="text/x-sage">len(uniqS2)
+</script></div>
+<p id="p-2272">El Tercer Teorema de Sylow nos  dice que para \(p=2\) podríamos tener \(1, 3\) o \(9\) \(2\)-subgrupos de Sylow, de manera que los \(9\) subgrupos obtenidos son consistentes con lo que predice la teoría.  ¿Puede visualizar cada uno de estos subgrupos como simetrías de un polígono regular de \(18\) lados?  Notemos que también tenemos muchos subgrupos de orden \(2\) dentro de estos subgrupos de orden \(4\text{.}\)</p>
+<p id="p-2273">Ahora para \(p=3\text{.}\)</p>
+<div class="sagecell-sage" id="sage-365"><script type="text/x-sage">G = DihedralGroup(18)
+S3 = G.sylow_subgroup(3); S3
+</script></div>
+<div class="sagecell-sage" id="sage-366"><script type="text/x-sage">uniqS3 = all_sylow(G, 3)
+uniqS3
+</script></div>
+<div class="sagecell-sage" id="sage-367"><script type="text/x-sage">len(uniqS3)
+</script></div>
+<p id="p-2274">¿Qué es lo que predice el Tercer Teorema de Sylow?  Habiendo encontrado solo un subgrupo de Sylow computacionalmente, sabemos que todos los conjugados de este único \(3\)-subgrupo de Sylow son iguales.  En otras palabras el \(3\)-subgrupo de Sylow es normal en \(D_{18}\text{.}\)  Comprobémoslo de todas formas.</p>
+<div class="sagecell-sage" id="sage-368"><script type="text/x-sage">S3.is_normal(G)
+</script></div>
+<p id="p-2275">Al menos uno de los subgrupos de orden \(3\) contenidos en este \(3\)-subgrupo de Sylow debiese ser obvio mirando los órdenes de los generadores, y luego podríamos incluso darnos cuenta que los generadores dados se pueden reducir, y uno es una potencia del otro.</p>
+<div class="sagecell-sage" id="sage-369"><script type="text/x-sage">S3.is_cyclic()
+</script></div>
+<p id="p-2276">Recuerde que existen muchos otros subgrupos, de otros órdenes.  Por ejemplo, ¿puede construir un subgrupo de oreden \(6=2\cdot 3\) en \(D_{18}\text{?}\)</p></section><section class="subsection" id="subsection-90"><h3 class="heading hide-type" alt="Subsección  Normalizadores">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Normalizadores</span>
+</h3>
+<p id="p-2277">Un comando nuevo que resulta relevante para esta sección es la construcción del normalizador.   El comando <tt class="code-inline tex2jax_ignore">G.normalizer(H)</tt> devolverá el subgrupo de <tt class="code-inline tex2jax_ignore">G</tt> que contiene todos los elementos que normalizan al subgrupo <tt class="code-inline tex2jax_ignore">H</tt>.  Ilustraremos su uso con los subgrupos de Sylow de arriba.</p>
+<div class="sagecell-sage" id="sage-370"><script type="text/x-sage">G = DihedralGroup(18)
+S2 = G.sylow_subgroup(2)
+S3 = G.sylow_subgroup(3)
+N2 = G.normalizer(S2); N2
+</script></div>
+<div class="sagecell-sage" id="sage-371"><script type="text/x-sage">N2 == S2
+</script></div>
+<div class="sagecell-sage" id="sage-372"><script type="text/x-sage">N3 = G.normalizer(S3); N3
+</script></div>
+<div class="sagecell-sage" id="sage-373"><script type="text/x-sage">N3 == G
+</script></div>
+<p id="p-2278">El normalizador de n subgrupo siempre contiene al subgrupo, de manera que el normalizador de <tt class="code-inline tex2jax_ignore">S2</tt> este todo lo pequeño que puede ser.  Ya sabíamos que <tt class="code-inline tex2jax_ignore">S3</tt> es normal en <tt class="code-inline tex2jax_ignore">G</tt>, así es que no es sorprendente que su normalizador sea todo llo grande que puede ser — todo elemento de <tt class="code-inline tex2jax_ignore">G</tt> normaliza a <tt class="code-inline tex2jax_ignore">S3</tt>.  Calculemos un normalizador más “interesante” en \(D_{18}\)</p>
+<div class="sagecell-sage" id="sage-374"><script type="text/x-sage">G = DihedralGroup(18)
+a = G("(1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18)")
+b = G("(1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13)")
+H = G.subgroup([a, b])
+H.order()
+</script></div>
+<div class="sagecell-sage" id="sage-375"><script type="text/x-sage">N = G.normalizer(H)
+N
+</script></div>
+<div class="sagecell-sage" id="sage-376"><script type="text/x-sage">N.order()
+</script></div>
+<p id="p-2279">Para este subgrupo de orden \(6\text{,}\) el normalizador es estrictamente más grande que el subgrupo, pero estrictamente menor que el grupo completo (y por ende no es normal en el grupo dihedral).  Trivialmente, un subgrupo es normal en su normalizador:</p>
+<div class="sagecell-sage" id="sage-377"><script type="text/x-sage">H.is_normal(G)
+</script></div>
+<div class="sagecell-sage" id="sage-378"><script type="text/x-sage">H.is_normal(N)
+</script></div></section><section class="subsection" id="subsection-91"><h3 class="heading hide-type" alt="Subsección  Grupos Finitos Simples">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Grupos Finitos Simples</span>
+</h3>
+<p id="p-2280">Ya vimos el método <tt class="code-inline tex2jax_ignore">.is_simple()</tt>.  En el Ejemplo <a knowl="./knowl/example-group-pn.html" knowl-id="xref-example-group-pn" alt="Ejemplo 15.16 " title="Ejemplo 15.16 ">15.16</a> que un grupo de orden \(64\) nunca es simple.  El grupo dicíclico <tt class="code-inline tex2jax_ignore">DiCyclicGroup(16)</tt> es un grupo no-abeliano de orden \(64\text{,}\) así es que podemos poner a prueba el método con este grupo.  Resulta que este grupo tiene muchos subgrupos normales — la lista siempre contendrá al grupo trivial y al grupo completo, así cualquier número mayor a \(2\) indica un subgrupo normal no-trivial.</p>
+<div class="sagecell-sage" id="sage-379"><script type="text/x-sage">DC=DiCyclicGroup(16)
+DC.order()
+</script></div>
+<div class="sagecell-sage" id="sage-380"><script type="text/x-sage">DC.is_simple()
+</script></div>
+<div class="sagecell-sage" id="sage-381"><script type="text/x-sage">ns = DC.normal_subgroups()
+len(ns)
+</script></div>
+<p id="p-2281">Acá viene un grupo bastante interesante, uno de los \(26\) grupos simles esporádicos, conocido como el grupo de Higman-Sims, \(HS\text{.}\)  Los generadores usados abajo vienen de su representación permutacional en 100 puntos en formato <abbr class="acronym">GAP</abbr>, disponible en <a class="external-url" href="http://web.mat.bham.ac.uk/atlas/v2.0/spor/HS/" target="_blank">web.mat.bham.ac.uk/atlas/v2.0/spor/HS/</a>.  Dos generadores, uno de orden \(2\) y otro de orden \(5\) (como se puede ver fácilmente), generando \(44\,352\,000\) elementos, pero ningún subgrupo normal.  Impresionante.</p>
+<div class="sagecell-sage" id="sage-382"><script type="text/x-sage">G = SymmetricGroup(100)
+a = G([(1,60),  (2,72),  (3,81),  (4,43),  (5,11),  (6,87),
+        (7,34),  (9,63),  (12,46), (13,28), (14,71), (15,42),
+        (16,97), (18,57), (19,52), (21,32), (23,47), (24,54),
+        (25,83), (26,78), (29,89), (30,39), (33,61), (35,56),
+        (37,67), (44,76), (45,88), (48,59), (49,86), (50,74),
+        (51,66), (53,99), (55,75), (62,73), (65,79), (68,82),
+        (77,92), (84,90), (85,98), (94,100)])
+b = G([(1,86,13,10,47),  (2,53,30,8,38),
+        (3,40,48,25,17),  (4,29,92,88,43),   (5,98,66,54, 65),
+        (6,27,51,73,24),  (7,83,16,20,28),   (9,23,89,95,61),
+        (11,42,46,91,32), (12,14, 81,55,68), (15,90,31,56,37),
+        (18,69,45,84,76), (19,59,79,35,93),  (21,22,64,39,100),
+        (26,58,96,85,77), (33,52,94,75,44),  (34,62,87,78,50),
+        (36,82,60,74,72), (41,80,70,49,67),  (57,63,71,99,97)])
+a.order(), b.order()
+</script></div>
+<div class="sagecell-sage" id="sage-383"><script type="text/x-sage">HS = G.subgroup([a, b])
+HS.order()
+</script></div>
+<div class="sagecell-sage" id="sage-384"><script type="text/x-sage">HS.is_simple()
+</script></div>
+<p id="p-2282">Vimos antes este grupo en los Ejercicios del Capítulo <a href="actions.html" alt="Capítulo 14 Acciones de Grupo" title="Capítulo 14 Acciones de Grupo">14</a> sobre acciones de grupo, donde era el único subgrupo normal no trivial del grupo de automorfismos del grafo de Higman-Sims, de ahí su nombre.</p></section><section class="subsection" id="subsection-92"><h3 class="heading hide-type" alt="Subsección  Consola e Interfaz GAP">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Consola e Interfaz <abbr class="acronym">GAP</abbr></span>
+</h3>
+<p id="p-2283">Acá concluimos el estudio exclusivo de teoría de grupos, aunque seguiremos usando algunos grupos en las secciones que siguientes.  Como ya hemos destacado, mucho del lo que hace Sage con grupos es realizado por el programa de código aberto, “Groups, Algorithms, and Programming,” más conocido como <abbr class="acronym">GAP</abbr>.  Si luego de este curso, sus necesidades superan la capacidad de Sage en relación a grupos, entonces aprender <abbr class="acronym">GAP</abbr> sería el próximo paso como teórico de grupos. Cada copia de Sage incluye una copia de <abbr class="acronym">GAP</abbr> y se puede saber fácilmente cuál es la versión de <abbr class="acronym">GAP</abbr> incluida:</p>
+<div class="sagecell-sage" id="sage-385"><script type="text/x-sage">gap.version()
+</script></div>
+<p id="p-2284">En Sage se puede interactuar con <abbr class="acronym">GAP</abbr> de diferentes formas. La mñas directa es creando un grupo de permutaciones por medio del comando <tt class="code-inline tex2jax_ignore">gap()</tt> de Sage.</p>
+<div class="sagecell-sage" id="sage-386"><script type="text/x-sage">G = gap('Group( (1,2,3,4,5,6), (1,3,5) )')
+G
+</script></div>
+<p id="p-2285">Ahora podemos usar casi cualquier comando <abbr class="acronym">GAP</abbr> con <tt class="code-inline tex2jax_ignore">G</tt>, via la convención de que la mayoría de los comandos en  <abbr class="acronym">GAP</abbr> esperan recibir un grupo como su primer argumento, y en su lugar proveemos el grupo usando la sintaxis orientada al objeto <tt class="code-inline tex2jax_ignore">G.</tt>.  Si consulta un manual de <abbr class="acronym">GAP</abbr> verá que <tt class="code-inline tex2jax_ignore">Center</tt> es un comando <abbr class="acronym">GAP</abbr> que toma un grupo como su único argumento, y <tt class="code-inline tex2jax_ignore">Centralizer</tt> es un comando <abbr class="acronym">GAP</abbr> que requiere dos argumentos — un grupo y luego un elemento del grupo.</p>
+<div class="sagecell-sage" id="sage-387"><script type="text/x-sage">G.Center()
+</script></div>
+<div class="sagecell-sage" id="sage-388"><script type="text/x-sage">G.Centralizer('(1, 3, 5)')
+</script></div>
+<p id="p-2286">Si usa la interfaz Notebook de Sage puede poner <tt class="code-inline tex2jax_ignore">%gap</tt> en la primera línea de una celda y la celda completa se interpretará como si estuviera interactuando directamente cong <abbr class="acronym">GAP</abbr>.  Esto significa que ahora puede (y debe) usar la sintaxis de <abbr class="acronym">GAP</abbr>, que como puede ver arriba, es ligeramente diferente a la Sintaxis de Sage.  También se puede usar el menú en el comienzo de la página para seleccionar <tt class="code-inline tex2jax_ignore">gap</tt> en lugar de <tt class="code-inline tex2jax_ignore">sage</tt> y la hoja de trabajo completa será interpretada como <abbr class="acronym">GAP</abbr>.  Acá un ejemplo simple, que debiera poder ejecutar en su hoja de trabajo actual.  Este ejemplo particular no correrá bien en una celda Sage en la versión web de esta sección.</p>
+<div class="sage-display"><script type="text/x-sage">%gap
+G := Group( (1,2,3,4,5,6), (1,3,5) );
+Centralizer(G, (1,3,5));
+</script></div>
+<p id="p-2287">Notemos que</p>
+<ul id="ul-16" style="list-style-type: disc;">
+<li id="li-499"><p id="p-2288">No es necesario encerrar las permutaciones individuales con tantas cremillas como haríamos en Sage.</p></li>
+<li id="li-500"><p id="p-2289">La asignación es <tt class="code-inline tex2jax_ignore">:=</tt> not <tt class="code-inline tex2jax_ignore">=</tt>.  Si olvida los dos puntos, obtendrá un error del tipo <tt class="code-inline tex2jax_ignore">Variable: 'G' must have a value</tt></p></li>
+<li id="li-501"><p id="p-2290">Una línea <em class="emphasis">debe</em> terminar en punto y coma (;).  Si olvida el punto y coma al final la línea, las líneas se fusionarán como si fuera una sola.</p></li>
+</ul>
+<p id="p-2291">Puede obtener ayuda sobr los comandos en <abbr class="acronym">GAP</abbr> como se muestra más abajo, pero pronto se dará cuenta que <abbr class="acronym">GAP</abbr> supone que usted sabe más álgebra de lo que supone Sage.</p>
+<div class="sagecell-sage" id="sage-390"><script type="text/x-sage">print(gap.help('SymmetricGroup', pager=False))
+</script></div>
+<p id="p-2292">En la versión de línea de comando de Sage, también es posible usar la “consola” <abbr class="acronym">GAP</abbr>.   Nuevamente, será necesario usar la sintaxis de <abbr class="acronym">GAP</abbr>, y no tendrá muchas de las comodidades del Notebook Sage.  También es bueno saber de antemano que <tt class="code-inline tex2jax_ignore">quit;</tt> es la forma de salir de la consola <abbr class="acronym">GAP</abbr> y volver a Sage.  Si corre Sage en la línea de comando, use el comando <tt class="code-inline tex2jax_ignore">gap_console()</tt> para iniciar <abbr class="acronym">GAP</abbr>.</p>
+<p id="p-2293">Es reconfortante saber que con Sage tenemos una copia completa de <abbr class="acronym">GAP</abbr>, instalada y lista para correr.  Pero, este no es un tutorial de <abbr class="acronym">GAP</abbr>, así es que si le interesa, puede consultar la página oficial de <abbr class="acronym">GAP</abbr>: <a class="external-url" href="http://www.gap-system.org/" target="_blank">www.gap-system.org</a> para aprender más sobre <abbr class="acronym">GAP</abbr>.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

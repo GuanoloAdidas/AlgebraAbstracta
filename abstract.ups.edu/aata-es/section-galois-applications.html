@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:23-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Aplicaciones</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-fund-theorem-galois-theory.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="galois.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="exercises-galois.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="section-fund-theorem-galois-theory.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="galois.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="exercises-galois.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications" class="active">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-galois-applications"><h2 class="heading hide-type" alt="Sección 23.3 Aplicaciones">
+<span class="type">Sección</span><span class="codenumber">23.3</span><span class="title">Aplicaciones</span>
+</h2>
+<a href="section-galois-applications.html" class="permalink">¶</a><section class="subsection" id="galois-subsection-solvable-by-radicals"><h3 class="heading hide-type" alt="Subsección  Solubilidad por Radicales">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Solubilidad por Radicales</span>
+</h3>
+<a href="section-galois-applications.html#galois-subsection-solvable-by-radicals" class="permalink">¶</a><p id="p-3652">En toda esta sección supondremos que los cuerpos tienen característica cero para asegurar que los polinomios irreducibles no tengan raíces repetidas. El objetivo inmediato de esta sección es determinar cuándo las raíces de un polinomio \(f(x)\) se pueden calcular con un número finito de operaciones con los coeficientes de \(f(x)\text{.}\) Las operaciones permitidas son suma, resta, multipicación, división y extracción de raíces \(n\)-ésimas. Por cierto la solución de la ecuación cuadrática, \(a x^2 + b x +c = 0\text{,}\) ilustra este proceso:</p>
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\end{equation*}
+<p>La única de estas operaciones que puede requerir un cuerpo más grande es la de extraer raíces \(n\)-ésimas.  Esto nos lleva a la siguiente definición.</p>
+<p id="p-3653">Una extensión \(E\) de un cuerpo \(F\) es una <b class="terminology">extensión por radicales</b> si existe una cadena de subcuerpos</p>
+\begin{equation*}
+F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+\end{equation*}
+<p>tal que para \(i = 1, 2, \ldots, r\text{,}\) tenemos \(F_i = F_{i - 1}(\alpha_i)\) y \(\alpha_i^{n_i} \in F_{i-1}\) para ciertos enteros positivos \(n_i\text{.}\) Un polinomio \(f(x)\) es <b class="terminology">soluble por radicales</b> sobre \(F\) si el cuerpo de descomposición \(K\) de \(f(x)\) sobre \(F\) está contenido en una extensión por radicales de \(F\text{.}\) Nuestro objetivo es llegar a un criterio que nos diga si un polinomio \(f(x)\) es o no soluble por radicales examinando su grupo de Galois \(f(x)\text{.}\)</p>
+<p id="p-3654">El polinomio más fácil de resolver por radicales es uno de la forma \(x^n - a\text{.}\) Como vimos en el Capítulo <a href="cyclic.html" alt="Capítulo 4 Grupos Cíclicos" title="Capítulo 4 Grupos Cíclicos">4</a>, las raíces de \(x^n - 1\) se llaman <b class="terminology">raíces  \(n\)-ésimas de la unidad</b>.  Estas raíces forman un subgrupo finito del cuerpo de descomposición de \(x^n -1\text{.}\) Por el Corolario <a knowl="./knowl/corollary-cyclic-group-finite-field.html" knowl-id="xref-corollary-cyclic-group-finite-field" alt="Corolario 22.11 " title="Corolario 22.11 ">22.11</a>, las raíces \(n\)-ésimas de la unidad forman un grupo cíclico.  Cualquier generador de este grupo es una <b class="terminology">raíz \(n\)-ésima primitiva de la unidad</b>.</p>
+<article class="example-like" id="example-galois-group-xn-1"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">23.26</span>
+</h6>
+<p id="p-3655">El polinomio \(x^n - 1\) es soluble por radicales sobre \({\mathbb Q}\text{.}\) Las raíces de este polinomio son \(1, \omega, \omega^2, \ldots, \omega^{n - 1}\text{,}\) donde</p>
+\begin{equation*}
+\omega = \cos\left( \frac{2 \pi}{n} \right) +  i \sin\left( \frac{2 \pi}{n} \right).
+\end{equation*}
+<p>El cuerpo de descomposición de \(x^n - 1\) sobre \({\mathbb Q}\) es \({\mathbb Q}(\omega)\text{.}\)</p></article><p id="p-3656">Demostraremos que un polinomio es soluble por radicales si y solo si su grupo de Galois es soluble. Recuerde que una serie subnormal de un grupo \(G\) es una sucesión finita de subgrupos</p>
+\begin{equation*}
+G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \},
+\end{equation*}
+<p>tal que \(H_i\) es normal en \(H_{i+1}\text{.}\)  Un grupo \(G\) es soluble si tiene una serie subnormal \(\{ H_i \}\) tal que todos los grupos cociente \(H_{i+1} /H_i\) son abelianos.  Por ejemplo, si examinamos la serie \(\{ \identity \} \subset A_3 \subset S_3\text{,}\) vemos que \(S_3\) es soluble.  Por otra parte, \(S_5\) no es soluble, por el Teorema <a knowl="./knowl/theorem-an-simple.html" knowl-id="xref-theorem-an-simple" alt="Teorema 10.11 " title="Teorema 10.11 ">10.11</a>.</p>
+<article class="theorem-like" id="lemma-xn-a-solvable"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">23.27</span>
+</h6>
+<p id="p-3657">Sea \(F\) un cuerpo de característica cero y \(E\) el cuerpo de descomposición de \(x^n - a\) sobre \(F\) con \(a \in F\text{.}\) Entonces \(G(E/F)\) es un grupo soluble.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-204" id="proof-204"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-204" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3658">Las raíces de \(x^n - a\) son \(\sqrt[n]{a}, \omega	\sqrt[n]{a}, \ldots, \omega^{n-1} \sqrt[n]{a}\text{,}\) con \(\omega\) una raíz \(n\)-ésima primitiva de la unidad.  Supongamos que \(F\) contiene todas las raíces \(n\)-ésimas de la unidad.  Si \(\zeta\) es una de las raíces de \(x^n - a\text{,}\) entonces las diferentes raíces de \(x^n - a\) son \(\zeta, \omega \zeta, \ldots, \omega^{n - 1} \zeta\text{,}\) y \(E = F(\zeta)\text{.}\) Como \(G(E/F)\) permuta las raíces de \(x^n - a\text{,}\) los elemento en \(G(E/F)\) deben estar determinados por su acción en estas raíces. Sean \(\sigma\)  y \(\tau\) en \(G(E/F)\) y supongamos que \(\sigma( \zeta ) = \omega^i  \zeta\) y \(\tau( \zeta ) = \omega^j \zeta\text{.}\) If \(F\) contains the roots of unity, entonces</p>
+\begin{equation*}
+\sigma \tau( \zeta ) = \sigma( \omega^j \zeta) = \omega^j \sigma( \zeta ) = \omega^{i+j} \zeta = \omega^i \tau( \zeta ) = \tau( \omega^i \zeta ) = \tau \sigma( \zeta ).
+\end{equation*}
+<p>Por lo tanto, \(\sigma \tau = \tau \sigma\) y \(G(E/F)\) es abeliano, en particular es soluble.</p>
+<p id="p-3659">Ahora supongamos que \(F\) no contiene raíces \(n\)-ésimass primitivas de la unidad. Sea \(\omega\) un generador del grupo cíclico de las raíces \(n\)-ésimas de la unidad.  Sea \(\alpha\) un cero de \(x^n - a\text{.}\) Como \(\alpha\) y \(\omega \alpha\) están ambos en el cuerpo de descomposición de \(x^n - a\text{,}\) \(\omega = (\omega \alpha)/ \alpha\) también está en \(E\text{.}\) Sea \(K = F( \omega)\text{.}\) Entonces \(F \subset K \subset E\text{.}\) Since \(K\) es el cuerpo de descomposición de \(x^n - 1\text{,}\) \(K\) es una etensión normal de \(F\text{.}\)  Por lo tanto, cualquier automorfismo \(\sigma\) en \(G(F( \omega)/ F)\) está determinado por \(\sigma( \omega)\text{.}\)  Se debe tener que \(\sigma( \omega ) = \omega^i\) para algún entero \(i\) pues todos los ceros de \(x^n - 1\) son potencias de \(\omega\text{.}\) Si \(\tau( \omega ) = \omega^j\) está en \(G(F(\omega)/F)\text{,}\) entonces</p>
+\begin{equation*}
+\sigma \tau( \omega ) = \sigma( \omega^j ) = [ \sigma( \omega )]^j = \omega^{ij} = [\tau( \omega ) ]^i = \tau( \omega^i )  = \tau \sigma( \omega ).
+\end{equation*}
+<p>Por lo tanto, \(G(F( \omega ) / F)\) es abeliano.  Por el Teorema Fundamental de la Teoría de Galois, la serie</p>
+\begin{equation*}
+\{ \identity \} \subset G(E/ F(\omega)) \subset G(E/F)
+\end{equation*}
+<p>es una serie normal. Por el argumento anterior, \(G(E/F(\omega))\) es abeliano.  Como</p>
+\begin{equation*}
+G(E/F) /G(E/F( \omega)) \cong G(F(\omega)/F)
+\end{equation*}
+<p>también es abeliano, \(G(E/F)\) es soluble.</p></article></div>
+<article class="theorem-like" id="lemma-radical-extension"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">23.28</span>
+</h6>
+<p id="p-3660">Sea \(F\) un cuerpo de característica cero y sea</p>
+\begin{equation*}
+F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+\end{equation*}
+<p>una extensión radical de \(F\text{.}\) Entonces existe una extensión radical normal</p>
+\begin{equation*}
+F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+\end{equation*}
+<p>tal que \(K\) contiene a \(E\) y \(K_i\) es una extensión normal de \(K_{i-1}\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-205" id="proof-205"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-205" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3661">Como \(E\) es una extensión radical de \(F\text{,}\)  existe una cadena de subcuerpos</p>
+\begin{equation*}
+F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+\end{equation*}
+<p>tal que para \(i = 1, 2, \ldots, r\text{,}\) tenemos  \(F_i = F_{i - 1}(\alpha_i)\) y \(\alpha_i^{n_i} \in F_{i-1}\) para ciertos enteros positivos \(n_i\text{.}\)  Construiremos una extensión radical normal de \(F\text{,}\)</p>
+\begin{equation*}
+F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+\end{equation*}
+<p>tal que \(K \supseteq E\text{.}\)  Defina \(K_1\) como el cuerpo de descomposición de \(x^{n_1} - \alpha_1^{n_1}\text{.}\)  Las ríces de este polinomio son \(\alpha_1, \alpha_1 \omega, \alpha_1 \omega^2, \ldots, \alpha_1 \omega^{n_1 - 1}\text{,}\) donde \(\omega\) es una raíz \(n_1\)-ésima primitiva de la unidad.  Si \(F\) contiene las \(n_1\) raíces de la unidad, entonces  \(K_1 = F(\alpha_!)\text{.}\)   Por otra parte, supongamos que \(F\) no contiene raíces \(n_1\)-ésimas primitivas de la unidad.  Si \(\beta\) es una raíz de \(x^{n_1} - \alpha_1^{n_1}\text{,}\) entonces todas las raíces de \(x^{n_1} - \alpha_1^{n_1}\) son \(\beta, \omega \beta, \ldots, \omega^{n_1-1}\text{,}\) con  \(\omega\) una raíz \(n_1\)-ésima primitiva de la unidad. En este caso, \(K_1 = F(\omega \beta)\text{.}\)  Luego, \(K_1\) es una extensión radical normal de \(F\) que contiene a \(F_1\text{.}\) Continuando de esta manera, obtenemos</p>
+\begin{equation*}
+F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+\end{equation*}
+<p>tal que \(K_i\) es una extensión normal de \(K_{i-1}\) y \(K_i \supseteq F_i\) para \(i = 1, 2, \ldots, r\text{.}\)</p></article></div>
+<p id="p-3662">Demostraremos ahora el teorema principal sobre solubilidad por radicales.</p>
+<article class="theorem-like" id="theorem-solvable-by-radicals"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">23.29</span>
+</h6>
+<p id="p-3663">Sea \(f(x)\) un polinomio en \(F[x]\text{,}\) con \(\chr F = 0\text{.}\) Si \(f(x)\) es soluble por radicales, entonces el grupo de Galois de \(f(x)\) sobre \(F\) es soluble.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-206" id="proof-206"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-206" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3664">Como \(f(x)\) es soluv¡ble por radicales existe una extensión \(E\) de \(F\) por radicales \(F = F_0 \subset F_1 \subset \cdots \subset F_n = E\text{.}\) Por el Lema <a knowl="./knowl/lemma-radical-extension.html" knowl-id="xref-lemma-radical-extension" alt="Lema 23.28 " title="Lema 23.28 ">23.28</a>, podemos suponer que \(E\) es un cuerpo de descomposición de \(f(x)\) y   \(F_i\) es normal sobre \(F_{i - 1}\text{.}\) Por el Teorema Fundamental de la Teoría de Galois, \(G(E/F_i)\) es un subgrupo normal de \(G(E/F_{i - 1})\text{.}\)  Por lo tanto, tenemos una serie subnormal de subgrupos de \(G(E/F)\text{:}\)</p>
+\begin{equation*}
+\{ \identity \} \subset G(E/F_{n - 1}) \subset \cdots \subset G(E/F_1) \subset G(E/F).
+\end{equation*}
+<p>Nuevamente por el Teorema Fundamental de la Teoría de Galois, sabemos que</p>
+\begin{equation*}
+G(E/F_{i - 1})/G(E/F_i) \cong G(F_i/F_{i - 1}).
+\end{equation*}
+<p>Por el Lema <a knowl="./knowl/lemma-xn-a-solvable.html" knowl-id="xref-lemma-xn-a-solvable" alt="Lema 23.27 " title="Lema 23.27 ">23.27</a>, \(G(F_i/F_{i - 1})\) es soluble; luego, \(G(E/F)\) también es soluble.</p></article></div>
+<p id="p-3665">El recíproco del Teorema <a knowl="./knowl/theorem-solvable-by-radicals.html" knowl-id="xref-theorem-solvable-by-radicals" alt="Teorema 23.29 " title="Teorema 23.29 ">23.29</a> también es verdadero.  Para una demostración, vea cualquiera de las referencias al final de este capítulo.</p></section><section class="subsection" id="galois-subsection-quintic"><h3 class="heading hide-type" alt="Subsección  Insolubilidad de la Quíntica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Insolubilidad de la Quíntica</span>
+</h3>
+<a href="section-galois-applications.html#galois-subsection-quintic" class="permalink">¶</a><p id="p-3666">Estamos ahora en condiciones de encontrar un polinomio de grado cinco que no es soluble por radicales.  Simplemente debemos encontrar un polinomio cuyo grupo de Galois sea \(S_5\text{.}\) Empezaremos con un lema.</p>
+<article class="theorem-like" id="lemma-sn-generating"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">23.30</span>
+</h6>
+<p id="p-3667">Si \(p\) es primo, entonces cualquier subgrupo de \(S_p\) que contenga una transposición y un ciclo de largo \(p\) es todo \(S_p\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-207" id="proof-207"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-207" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3668">Sea \(G\) un subgrupo de \(S_p\) que contenga una transposición \(\sigma\) y \(\tau\) un ciclo de largo \(p\text{.}\)  Podemos suponer que \(\sigma = (1 2)\text{.}\)  El orden de  \(\tau\) es \(p\) y \(\tau^n\) es un ciclo de largo \(p\) para \(1 \leq n \lt p\text{.}\)  Por lo tanto, podemos suponer que \(\mu = \tau^n = (1 2 i_3 \ldots i_p)\) para algún \(n\text{,}\) donde \(1 \leq n \lt p\) (vea el Ejercicio <a knowl="./knowl/exercise-permute-order-product-cycles.html" knowl-id="xref-exercise-permute-order-product-cycles" alt="Ejercicio 5.3.13 " title="Ejercicio 5.3.13 ">5.3.13</a> en el Capítulo <a href="permute.html" alt="Capítulo 5 Grupos de Permutaciones" title="Capítulo 5 Grupos de Permutaciones">5</a>). Observando que \((1 2)(12 i_3\ldots i_p) = (2 i_3\ldots i_p)\) y \((2i_3 \ldots i_p)^k(12)(2i_3 \ldots i_p)^{-k} = (1i_k)\text{,}\) podemos obtener todas las transposiciones de la forma \((1n)\) para \(1 \leq n \lt p\text{.}\) Pero, estas transposiciones generan todas las transpociciones en \(S_p\text{,}\) pues \((1j)(1 i)(1 j) = (i j)\text{.}\)  Las transposiciones generan \(S_p\text{.}\)</p></article></div>
+<figure class="figure-like" id="figure-galois-4"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/galois-quintic.svg" alt=""><img src="images/galois-quintic.html" width="70%" alt=""></object><figcaption><span class="type">Figura</span><span class="codenumber">23.31</span>El grafo de \(f(x) = x^5 - 6 x^3 - 27 x - 3\)</figcaption></figure><article class="example-like" id="example-galois-x5"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">23.32</span>
+</h6>
+<p id="p-3669">Mostraremos que \(f(x) = x^5 - 6 x^3 - 27 x - 3 \in {\mathbb Q}[x]\) no es soluble. Afirmamos que el grupo de Galois de \(f(x)\) sobre \({\mathbb Q}\) es \(S_5\text{.}\) Por el Criterio de Eisenstein, \(f(x)\) es irreducible y, por lo tanto, es separable. La derivada de \(f(x)\) es \(f'(x) = 5 x^4 - 18 x^2 - 27\text{;}\) luego, poniendo \(f'(x) = 0\) y resolviendo, vemos que las únicas raíces reales de \(f'(x)\) son</p>
+\begin{equation*}
+x = \pm \sqrt{ \frac{6 \sqrt{6} + 9 }{5} }.
+\end{equation*}
+<p>Por lo tanto, \(f(x)\) puede tener a lo sumo un máximo y un mínimo. Es fácil mostrar que \(f(x)\) cambia de signo entre \(-3\) y \(-2\text{,}\) entre \(-2\) y \(0\text{,}\) y una vez más entre \(0\) y \(4\) (Figura <a knowl="./knowl/figure-galois-4.html" knowl-id="xref-figure-galois-4" alt="Figura 23.31 " title="Figura 23.31 ">23.31</a>). Por lo tanto, \(f(x)\) tiene precisamente tres raíces reales diferentes. Las restantes dos raíces de \(f(x)\) deben ser complejos conjugados. Sea \(K\) el cuerpo de descomposición de \(f(x)\text{.}\) Como \(f(x)\) tiene cincoraíces distintas en \(K\) y todo automorfismode \(K\) que fija a \({\mathbb Q}\) está determinado por la forma en que permuta las raíces de \(f(x)\text{,}\) sabemos que \(G(K/{\mathbb Q})\) es un subgrupo de \(S_5\text{.}\) Como \(f\) es irreducible, hay un elemento en \(\sigma \in G(K/{\mathbb Q})\) tal que \(\sigma(a) = b\) para dos raíces \(a\) y \(b\) de \(f(x)\text{.}\) El automorfismo de \({\mathbb C}\) que envía \(a + bi \mapsto a - bi\) dejas fijas las raíces reales e intercambia las raíces complejas; por ende, \(G(K/{\mathbb Q} )\) contiene una transposición. Si \(\alpha\) es una de las raíces reale de \(f(x)\text{,}\) entonces \([\mathbb Q(\alpha) : \mathbb Q] = 5\) por el Ejercicio  <a knowl="./knowl/exercise-fields-degree-irred-poly.html" knowl-id="xref-exercise-fields-degree-irred-poly" alt="Ejercicio 21.4.28 " title="Ejercicio 21.4.28 ">21.4.28</a>.  Como \(\mathbb Q(\alpha)\) es un subcuerpo de \(K\text{,}\) debe ser que \([K : \mathbb Q]\) es divisible por 5.  Como \([K : \mathbb Q] = |G(K/{\mathbb Q})|\) y \(G(K/{\mathbb Q}) \subset S_5\text{,}\) sabemos que \(G(K/{\mathbb Q})\) contiene un ciclo de largo 5. Por el Lema <a knowl="./knowl/lemma-sn-generating.html" knowl-id="xref-lemma-sn-generating" alt="Lema 23.30 " title="Lema 23.30 ">23.30</a>, \(S_5\) está generado por una transposición y un elemento de orden 5; por lo tanto, \(G(K/{\mathbb Q} )\) es todo \(S_5\text{.}\) Por el Teorema <a knowl="./knowl/theorem-an-simple.html" knowl-id="xref-theorem-an-simple" alt="Teorema 10.11 " title="Teorema 10.11 ">10.11</a>, \(S_5\) no es soluble. Por lo tanto, \(f(x)\) no se puede resolver por radicales.</p></article></section><section class="subsection" id="galois-subsection-fun-theorem-of-algebra"><h3 class="heading hide-type" alt="Subsección  El Teorema Fundamental del Álgebra">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">El Teorema Fundamental del Álgebra</span>
+</h3>
+<a href="section-galois-applications.html#galois-subsection-fun-theorem-of-algebra" class="permalink">¶</a><p id="p-3670">Parece apropiado que el último teorema que enunciemos y demostremos sea el Teorema Fundamental del Álgebra. Este teorema fue demostrado por primera vez por Gauss en su tesis doctoral.  Antes de la demostración de Gauss, los matemáticos sospechaban que podrían existir polinomios sin soluciones sobre los números reales y los números complejos. El Teorema Fundamental del Álgebra establece que todo polinomio sobre los números complejos se factoriza como producto de factores lineales.</p>
+<article class="theorem-like" id="theorem-136"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">23.33</span><span class="title">Teorema Fundamental del Álgebra</span>
+</h6>
+<p id="p-3671">El cuerpo de los números complejos es algebraicamente cerrado; es decir, todo polinomio no constante en \({\mathbb C}[x]\) tiene una raíz en\({\mathbb C}\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-208" id="proof-208"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-208" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3672">Supongamos que \(E\) es una extensión propia finita de los números complejos. Como toda extensión finita de un cuerpo de característica cero es una extensión simple, existe \(\alpha \in E\) tal que \(E = {\mathbb C}( \alpha )\) con \(\alpha\) la raíz de un polinomio irreducible \(f(x)\) en \({\mathbb C}[x]\text{.}\) El cuerpo de descomposición \(L\) de \(f(x)\) es una extensión normal finita y separable de \({\mathbb C}\) que contiene a \(E\text{.}\) Debemos mostrar que es imposible que \(L\) sea una extensión propia de \({\mathbb C}\text{.}\)</p>
+<p id="p-3673">Supongamos que \(L\) es una extensión propia de \({\mathbb C}\text{.}\) Como \(L\) es el cuerpo de descomposición de \(f(x)(x^2 + 1)\) sobre \({\mathbb R}\text{,}\) \(L\) es una extensión normal finita y separable de \({\mathbb R}\text{.}\) Sea \(K\) el cuerpo fijo de un 2-subgrupo de Sylow \(G\) de \(G(L/{\mathbb R})\text{.}\) Entonces \(L \supset  K \supset {\mathbb R}\) y \(|G( L / K )| =[L:K]\text{.}\) Como \([L : {\mathbb R}] = [L:K][K:{\mathbb R}]\text{,}\) sabemos que \([K:{\mathbb R}]\) debe ser impar. Así, \(K = {\mathbb R}(\beta)\) con \(\beta\) un elemento cuyo polinomio minimal \(f(x)\) es de grado impar.  Por lo tanto, \(K = {\mathbb R}\text{.}\)</p>
+<p id="p-3674">Sabemos ahora que \(G(L/{\mathbb R})\) debe ser un 2-grupo. Por lo tanto \(G(L / {\mathbb C})\) es un 2-grupo.  Hemos supuesto que \(L \neq {\mathbb C}\text{;}\) por lo tanto, \(|G(L / {\mathbb C})| \geq 2\text{.}\)  Por el primer Teorema de Sylow y el Teorema Fundamental de la Teoría de Galois, existe un subgrupo \(G\) de \(G(L/{\mathbb C})\) de índice 2 y un cuerpo \(E\) fijo por \(G\text{.}\) Entonces \([E:{\mathbb C}] = 2\) y existe un elemento \(\gamma \in E\) con polinomio minimal \(x^2 + b x + c\) en \({\mathbb C}[x]\text{.}\)  Este polinomio tiene raíces \(( - b \pm \sqrt{b^2 - 4c}\, ) / 2\) que están en \({\mathbb C}\text{,}\) pues \(b^2 - 4 c\) está en \({\mathbb C}\text{.}\)  Esto es imposible; luego, \(L = {\mathbb C}\text{.}\)</p></article></div>
+<p id="p-3675">Si bien esta demostración es estrictamente algebraica, estuvimos forzados a usar resultados de Cálculo.  Es necesario suponer el axioma del Supremo para demostrar que todo polinomio de grado impar tiene una raíz real y que todo número real positivo tiene una raíz cuadrada.  Pareciera que no hay forma de evitar esta dificultad para hacer un argumento puramente algebraico.  Es bastante impresionante que haya varias demostraciones elegantes del Teorema Fundamental del Álgebra que usan análisis complejo.  También es importante notar que podemos obtener una demostración de un teorema tan importante como este desde dos áreas muy diferentes de las matemáticas.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

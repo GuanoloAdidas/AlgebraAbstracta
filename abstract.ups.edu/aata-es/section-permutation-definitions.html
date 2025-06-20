@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:01-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Definiciones y Notación</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="permute.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="permute.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="section-dihedral-groups.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="permute.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="permute.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="section-dihedral-groups.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions" class="active">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-permutation-definitions"><h2 class="heading hide-type" alt="Sección 5.1 Definiciones y Notación">
+<span class="type">Sección</span><span class="codenumber">5.1</span><span class="title">Definiciones y Notación</span>
+</h2>
+<a href="section-permutation-definitions.html" class="permalink">¶</a><section class="introduction" id="introduction-19"><p id="p-784">En general, las permutaciones de un conjunto \(X\) forman el grupo \(S_X\text{.}\) Si \(X\) es un conjunto finito, podemos suponer que \(X=\{ 1, 2, \ldots, n\}\text{.}\) En este caso escribiremos \(S_n\) en lugar de \(S_X\text{.}\)  El siguiente teorema dice que \(S_n\) es un grupo. A este grupo lo llamaremos <b class="terminology">grupo simétrico</b> en \(n\) símbolos.</p>
+<article class="theorem-like" id="theorem-17"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">5.1</span>
+</h6>
+<p id="p-785">El grupo simétrico en \(n\) símbolos, \(S_n\text{,}\) es un grupo con \(n!\) elementos, con la operación binaria de composición de funciones.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-27" id="proof-27"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-27" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-786">La identidad de \(S_n\) es simplemente la función identidad que envía 1 en 1, 2 en 2, \(\ldots\text{,}\) \(n\) en \(n\text{.}\) Si \(f : S_n \rightarrow S_n\) es una permutación, entonces \(f^{-1}\) existe, pues \(f\) es biyectiva; luego, toda permutación tiene una inversa. La composición de funciones es asociativa, lo que hace que  la operación del grupo sea asociativa. Dejamos como ejercicio la demostración de que \(|S_n|= n!\text{.}\)</p></article></div>
+<p id="p-787">Un subgrupo de \(S_n\) se llama <b class="terminology">grupo de permutaciones</b>.</p>
+<article class="example-like" id="example-permute-s5"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.2</span>
+</h6>
+<p id="p-788">Considere el subgrupo \(G\) de \(S_5\) que consiste de la permutación \(\identity\) y las permutaciones</p>
+\begin{align*}
+\sigma
+&amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+1 &amp; 2 &amp; 3 &amp; 5 &amp; 4
+\end{pmatrix}\\
+\tau
+&amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+3 &amp; 2 &amp; 1 &amp; 4 &amp; 5
+\end{pmatrix}\\
+\mu
+&amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+3 &amp; 2 &amp; 1 &amp; 5 &amp; 4
+\end{pmatrix}.
+\end{align*}
+<p>La siguiente tabla nos indica como multiplicar elementos en el grupo de permutaciones \(G\text{.}\)</p>
+<div class="sidebyside" id="sidebyside-2"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;">
+<p id="p-789"></p>
+\begin{equation*}
+\begin{array}{c|cccc}
+\circ   &amp; \identity     &amp; \sigma &amp; \tau   &amp; \mu    \\
+\hline
+\identity     &amp; \identity     &amp; \sigma &amp; \tau   &amp; \mu    \\
+\sigma &amp; \sigma &amp; \identity     &amp; \mu    &amp; \tau   \\
+\tau   &amp; \tau   &amp; \mu    &amp; \identity     &amp; \sigma \\
+\mu    &amp; \mu    &amp; \tau   &amp; \sigma &amp; \identity
+\end{array}
+\end{equation*}
+</div></div></div></article><article class="remark-like" id="remark-2"><h6 class="heading">
+<span class="type">Nota</span><span class="codenumber">5.3</span>
+</h6>
+<p id="p-790">Si bien es natural multiplicar los elementos en un grupo de izquierda a derecha, las funciones se componen de derecha a izquierda.  Sean \(\sigma\) y \(\tau\) permutaciones en un conjunto \(X\text{.}\) Para componer \(\sigma\) y \(\tau\) como funciones, calculamos \((\sigma \circ \tau)(x) = \sigma( \tau(x))\text{.}\) Es decir, aplicamos primero \(\tau\text{,}\) luego \(\sigma\text{.}\) Hay diversas formas de resolver esta inconsistencia. <em class="emphasis">Nosotros adoptaremos la convención de multiplicar permutaciones de derecha a izquierda. Para calcular \(\sigma \tau\text{,}\) haga \(\tau\) primero y luego \(\sigma\text{.}\)</em> Es decir, por \(\sigma \tau (x)\) queremos decir \(\sigma( \tau( x))\text{.}\) (Otra manera de resolver este problema sería escribir las funciones a la derecha; es decir, en lugar de escribir \(\sigma(x)\text{,}\) podríamos escribir \((x)\sigma\text{.}\) También podríamos multiplicar las permutaciones de izquierda a derecha para coincidir con la forma usual de multiplicar elementos en un grupo. Cada una de estas soluciones ha sido usada.)</p></article><article class="example-like" id="example-permute-s4-nonabelian"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.4</span>
+</h6>
+<p id="p-791">La multiplicación de permutaciones no es conmutativa en general. Sean</p>
+\begin{align*}
+\sigma
+&amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 \\
+4 &amp; 1 &amp; 2 &amp; 3
+\end{pmatrix}\\
+\tau
+&amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 \\
+2 &amp; 1 &amp; 4 &amp; 3
+\end{pmatrix}.
+\end{align*}
+<p>Entonces</p>
+\begin{equation*}
+\sigma \tau
+=
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 4 &amp; 3 &amp; 2
+\end{pmatrix},
+\end{equation*}
+<p>pero</p>
+\begin{equation*}
+\tau \sigma
+=
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 \\
+3 &amp; 2 &amp; 1 &amp; 4
+\end{pmatrix}.
+\end{equation*}
+</article></section><section class="subsection" id="permute-subsection-cycle-notation"><h3 class="heading hide-type" alt="Subsección  Notación cíclica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Notación cíclica</span>
+</h3>
+<a href="section-permutation-definitions.html#permute-subsection-cycle-notation" class="permalink">¶</a><p id="p-792">La notación que hemos usado hasta ahora para representar las permutaciones es engorrosa, para decir lo menos. Para trabajar efectivamente con grupos de permutaciones, necesitaremos un método más expedito de escribir y manipular permutaciones.</p>
+<p id="p-793">Una permutación \(\sigma \in S_X\) es un <b class="terminology">ciclo de largo</b> \(k\) si existen elementos \(a_1, a_2, \ldots, a_k \in X\) tales que</p>
+\begin{align*}
+\sigma( a_1 ) &amp; = a_2\\
+\sigma( a_2 ) &amp; = a_3\\
+&amp; \vdots\\
+\sigma( a_k ) &amp; = a_1
+\end{align*}
+<p>y \(\sigma( x) =x\) para todos los demás elementos \(x \in X\text{.}\) Escribiremos \((a_1, a_2, \ldots, a_k )\) para denotar al ciclo \(\sigma\text{.}\)  Los ciclos son los bloques básicos para construir todas las permutaciones.</p>
+<article class="example-like" id="example-permute-cycle-notation"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.5</span>
+</h6>
+<p id="p-794">La permutación</p>
+\begin{equation*}
+\sigma =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7\\
+6 &amp; 3 &amp; 5 &amp; 1 &amp; 4 &amp; 2 &amp; 7
+\end{pmatrix}
+=
+(1 6 2 3 5 4 )
+\end{equation*}
+<p>es un ciclo de largo 6, mientras</p>
+\begin{equation*}
+\tau =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+1 &amp; 4 &amp; 2 &amp; 3 &amp; 5 &amp; 6
+\end{pmatrix}
+=
+(2 4 3)
+\end{equation*}
+<p>es un ciclo de largo 3.</p>
+<p id="p-795">No toda permutación es  un ciclo. Considere la permutación</p>
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+2 &amp; 4 &amp; 1 &amp; 3 &amp; 6 &amp; 5
+\end{pmatrix}
+= (1 2 4 3)(5 6).
+\end{equation*}
+<p>Esta permutación de hecho contiene  un ciclo de largo 2 y un ciclo de largo 4.</p></article><article class="example-like" id="example-permute-cycle-mult"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.6</span>
+</h6>
+<p id="p-796">Es muy simple calcular el producto de ciclos. Supongamos que</p>
+\begin{equation*}
+\sigma  = (1 3 5 2 ) \quad \text{y} \quad \tau = (2 5 6).
+\end{equation*}
+<p>Si pensamos en \(\sigma\) como</p>
+\begin{equation*}
+1  \mapsto  3, \qquad
+3  \mapsto  5, \qquad
+5  \mapsto  2, \qquad
+2  \mapsto  1,
+\end{equation*}
+<p>y \(\tau\) como</p>
+\begin{equation*}
+2  \mapsto  5, \qquad
+5  \mapsto  6, \qquad
+6  \mapsto  2,
+\end{equation*}
+<p>entonces para \(\sigma \tau\) recordando que primero debemos aplicar \(\tau\) y luego \(\sigma\text{,}\) debe ser el caso que</p>
+\begin{equation*}
+1  \mapsto  3, \qquad
+3  \mapsto  5, \qquad
+5  \mapsto  6, \qquad
+6  \mapsto  2 \mapsto 1,
+\end{equation*}
+<p>o \(\sigma \tau =  (1 3 5 6 )\text{.}\)  Si \(\mu = (1634)\text{,}\) entonces \(\sigma \mu = (1 6 5 2)(3 4)\text{.}\)</p></article><p id="p-797">Dos ciclos en \(S_X\text{,}\) \(\sigma = (a_1, a_2, \ldots, a_k )\) y \(\tau = (b_1, b_2, \ldots, b_l )\text{,}\) son <b class="terminology">disjuntos</b> si \(a_i \neq b_j\) para todo \(i\) y para todo \(j\text{.}\)</p>
+<article class="example-like" id="example-permute-cycles-disjoint"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.7</span>
+</h6>
+<p id="p-798">Los ciclos \((1 3 5)\) y \((2 7 )\) son disjuntos; mientras los ciclos \((1 3 5)\) y \((3 4 7 )\) no lo son.  Calculando sus productos, descubrimos que</p>
+\begin{align*}
+(1 3 5)(2 7 ) &amp; = (1 3 5)(2 7 )\\
+(1 3 5)(3 4 7 ) &amp; = (1 3 4 7 5).
+\end{align*}
+<p>El producto de dos ciclos que no son disjuntos a veces se puede reducir a algo menos complicado; el producto de dos ciclos disjuntos no puede ser simplificado.</p></article><article class="theorem-like" id="proposition-14"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">5.8</span>
+</h6>
+<p id="p-799">Sean \(\sigma\) y \(\tau\) dos ciclos disjuntos en \(S_X\text{.}\) Entonces \(\sigma \tau = \tau \sigma\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-28" id="proof-28"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-28" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-800">Sea \(\sigma = (a_1, a_2, \ldots, a_k )\) and \(\tau = (b_1, b_2, \ldots, b_l )\text{.}\) Debemos mostrar que \(\sigma \tau(x) = \tau \sigma(x)\) para todo \(x \in X\text{.}\) Si \(x\) no está en \(\{ a_1, a_2, \ldots, a_k \}\) ni en \(\{b_1, b_2, \ldots, b_l  \}\text{,}\) entonces tanto \(\sigma\) como \(\tau\) fijan \(x\text{.}\) Es decir, \(\sigma(x)=x\) y \(\tau(x)=x\text{.}\) Luego,</p>
+\begin{equation*}
+\sigma \tau(x) = \sigma( \tau(x)) = \sigma(x) = x = \tau(x) = \tau( \sigma(x)) =  \tau \sigma(x).
+\end{equation*}
+<p><em class="emphasis">No debemos olvidar que estamos multiplicando las permutaciones de derecha a izquierda,.</em>  Ahora supongamos que \(x \in \{ a_1, a_2, \ldots, a_k \}\text{.}\) Entonces \(\sigma( a_i ) = a_{(i \bmod k) + 1}\text{;}\) es decir,</p>
+\begin{align*}
+a_1 &amp; \mapsto  a_2\\
+a_2 &amp; \mapsto  a_3\\
+&amp; \vdots\\
+a_{k-1} &amp; \mapsto  a_k\\
+a_k &amp; \mapsto  a_1. 
+\end{align*}
+<p>Pero, \(\tau(a_i) = a_i\) pues \(\sigma\) y \(\tau\) son disjuntos. Por lo tanto,</p>
+\begin{align*}
+\sigma \tau(a_i) &amp; = \sigma( \tau(a_i))\\
+&amp; = \sigma(a_i)\\
+&amp; = a_{(i \bmod k)+1}\\
+&amp; = \tau( a_{(i \bmod k)+1} )\\
+&amp; = \tau( \sigma(a_i) )\\
+&amp; = \tau \sigma(a_i).
+\end{align*}
+<p>Similarmente, si \(x \in \{b_1, b_2, \ldots, b_l  \}\text{,}\) entonces \(\sigma\) y \(\tau\) también conmutan.</p></article></div>
+<article class="theorem-like" id="theorem-18"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">5.9</span>
+</h6>
+<p id="p-801">Toda permutación en \(S_n\) puede ser escrita como producto de ciclos disjuntos.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-29" id="proof-29"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-29" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-802">Podemos suponer que \(X = \{ 1, 2, \ldots, n \}\text{.}\) Si \(\sigma \in S_n\) y definimos \(X_1\) como \(\{ \sigma(1), \sigma^2(1), \ldots \}\text{,}\) entonces el conjunto \(X_1\) es finito pues \(X\) es finito. Ahora sea \(i\) el primer entero en \(X\) que no está en \(X_1\) y definamos \(X_2\) como \(\{ \sigma(i), \sigma^2(i), \ldots \}\text{.}\) Nuevamente, \(X_2\) es un conjunto finito.  Continuando de esta manera, podemos definir conjuntos finitos disjuntos \(X_3, X_4, \ldots\text{.}\) Como \(X\) es un conjunto finito, estamos seguros que este proceso terminará y que habrá un número finito de estos conjuntos, digamos \(r\text{.}\) Si \(\sigma_i\) es el ciclo definido por</p>
+\begin{equation*}
+\sigma_i( x ) = 
+\left\{\begin{array}{ll}
+\sigma( x ) &amp; x \in X_i \\
+x   &amp; x \notin X_i, 
+\end{array}\right.
+\end{equation*}
+<p>entonces \(\sigma = \sigma_1 \sigma_2 \cdots \sigma_r\text{.}\) Como los conjuntos \(X_1, X_2, \ldots, X_r\) son disjuntos, los ciclos \(\sigma_1, \sigma_2, \ldots, \sigma_r\) también lo son.</p></article></div>
+<article class="example-like" id="example-permute-cycle-products"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.10</span>
+</h6>
+<p id="p-803">Sean</p>
+\begin{align*}
+\sigma &amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+6 &amp; 4 &amp; 3 &amp; 1 &amp; 5 &amp; 2
+\end{pmatrix}\\
+\tau &amp; =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+3 &amp; 2 &amp; 1 &amp; 5 &amp; 6 &amp; 4
+\end{pmatrix}.
+\end{align*}
+<p>Usando notación cíclica, podemos escribir</p>
+\begin{align*}
+\sigma      &amp; = (1624)\\
+\tau        &amp; = (13)(456)\\
+\sigma \tau &amp; = (1 3 6) ( 2 4 5)\\
+\tau \sigma &amp; = (1 4 3 )(2 5 6).
+\end{align*}
+</article><article class="remark-like" id="remark-3"><h6 class="heading">
+<span class="type">Nota</span><span class="codenumber">5.11</span>
+</h6>
+<p id="p-804">Desde ahora nos resultará conveniente usar la notación cíclica para representar las permutaciones. Cuando usemos la notación cíclica, frecuentemente representaremos la permutación identidad por \((1)\) o por \(()\text{.}\)</p></article></section><section class="subsection" id="permute-subsection-transpositions"><h3 class="heading hide-type" alt="Subsección  Transposiciones">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Transposiciones</span>
+</h3>
+<a href="section-permutation-definitions.html#permute-subsection-transpositions" class="permalink">¶</a><p id="p-805">La permutación (no trivial) más simple es un ciclo de largo 2.  Tales ciclos se llaman <b class="terminology">transposiciones</b>. Como</p>
+\begin{equation*}
+(a_1, a_2, \ldots, a_n ) = (a_1 a_n ) (a_1 a_{n-1} ) \cdots ( a_1 a_3 ) (a_1 a_2 ), 
+\end{equation*}
+<p>cualquier ciclo puede ser escrito como el producto de transposiciones, llevándonos a la siguiente proposición.</p>
+<article class="theorem-like" id="proposition-15"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">5.12</span>
+</h6>
+<p id="p-806">Cualquier permutación de un conjunto finito que contenga al menos dos elementos puede ser escrita como producto de transposiciones.</p></article><article class="example-like" id="example-permute-transpositions"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.13</span>
+</h6>
+<p id="p-807">Considere la permutación</p>
+\begin{equation*}
+( 1 6 ) (2 5 3) = (1 6 )( 2 3 )( 2 5 ) = (1 6 )( 4 5 )(2 3 )( 4 5 )(2 5 ).
+\end{equation*}
+<p>Como podemos ver, no hay una única forma de representar la permutación como producto de transposiciones. Por ejemplo, podemos escribir la identidad como \((1 2 )(1 2 )\text{,}\) como \((1 3 )(2 4 )(1 3 )( 2 4 )\text{,}\) y en muchas otras formas. Sin embargo, resulta ser, que ninguna permutación se puede escribir tanto como un producto de un número par como de un número impar de transposiciones. Por ejemplo, podemos representar la permutación \((1 6)\) por</p>
+\begin{equation*}
+(2 3 )(1 6)( 2 3)
+\end{equation*}
+<p>o por</p>
+\begin{equation*}
+(3 5) (1 6) (1 3) (1 6) (1 3) (3 5) (5 6),
+\end{equation*}
+<p>pero \((1 6)\) siempre será el producto de un número impar de transposiciones.</p></article><article class="theorem-like" id="lemma-identity-even-trans"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">5.14</span>
+</h6>
+<p id="p-808">Si la identidad se escribe como el producto de \(r\) transposiciones,</p>
+\begin{equation*}
+\identity = \tau_1 \tau_2 \cdots \tau_r, 
+\end{equation*}
+<p>entonces \(r\) es un número par.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-30" id="proof-30"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-30" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-809">Procederemos por inducción en \(r\text{.}\)  Una transposición no puede ser la identidad; luego,   \(r \gt 1\text{.}\) Si \(r=2\text{,}\) estamos listos. Supongamos que \(r \gt 2\text{.}\) En este caso el producto de al menos dos de estas transposiciones, \(\tau_{r-1} \tau_r\text{,}\) debe estar en uno de los casos siguientes:</p>
+\begin{align*}
+(a b)(a b) &amp; = \identity\\
+(b c)(a b) &amp; = (a c)(b c)\\
+(c d)(a b) &amp; = (a b)(c d)\\
+(a c)(a b) &amp; = (a b)(b c),
+\end{align*}
+<p>donde \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) y \(d\) son distintos.</p>
+<p id="p-810">La primera ecuación simplemente dice que una transposición es su propia inversa. Si ocurre este caso, borre \(\tau_{r-1} \tau_r\) del producto para obtener</p>
+\begin{equation*}
+\identity = \tau_1 \tau_2 \cdots \tau_{r - 3} \tau_{r - 2}.
+\end{equation*}
+<p>Por inducción \(r - 2\) es par; luego, \(r\) debe ser par.</p>
+<p id="p-811">En cada uno de los otros tres casos, podemos reemplazar \(\tau_{r - 1} \tau_r\) con el lado derecho de la ecuación correspondiente para obtener un nuevo producto de \(r\) transposiciones para la identidad. En este nuevo producto, la última aparición de \(a\) será en la penúltima transposición. Podemos continuar este proceso con \(\tau_{r - 2} \tau_{r - 1}\) para obtener ya sea un producto de \(r - 2\) transposiciones o un nuevo producto de \(r\) transposiciones donde la última apaarición de \(a\) es en \(\tau_{r - 2}\text{.}\) Si la identidad es el producto de \(r - 2\) transposiciones, entonces nuevamente estamos listos, por la hipótesis de inducción; de otro modo, repetiremosel procedimiento con \(\tau_{r - 3} \tau_{r - 2}\text{.}\)</p>
+<p id="p-812">En algún momento, tendremos dos transposiciones adyacentes iguales, que se cancelarán o \(a\) solamente estará presente en la primera transposición. Pero este último caso no puede ocurrir, pues la identidad no fijaría \(a\) en esta situación. Por lo tanto, la identidad debe ser el producto de \(r-2\) transposiciones y, nuevamente por la hipótesis de inducción, estamos listos.</p></article></div>
+<article class="theorem-like" id="theorem-even-and-odd"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">5.15</span>
+</h6>
+<p id="p-813">Si una permutación \(\sigma\) puede ser expresada como el producto de un número par de transposiciones, entonces cualquier otro producto de transposiciones igual a \(\sigma\) debe también contener un número par de transposiciones.  De forma similar, si \(\sigma\) puede ser expresada como el producto de un número impar de transposiciones, entonces cualquier otro producto de transposiciones igual a \(\sigma\) debe también contener un número impar de transposiciones.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-31" id="proof-31"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-31" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-814">Supongamos que</p>
+\begin{equation*}
+\sigma = \sigma_1 \sigma_2 \cdots \sigma_m = \tau_1 \tau_2 \cdots \tau_n, 
+\end{equation*}
+<p>con \(m\) par. Debemos mostrar que \(n\) también es un número par.  La inversa de \(\sigma\) es \(\sigma_m \cdots \sigma_1\text{.}\) Como</p>
+\begin{equation*}
+\identity = \sigma \sigma_m \cdots \sigma_1 = \tau_1  \cdots \tau_n \sigma_m \cdots \sigma_1, 
+\end{equation*}
+<p>\(n\) debe ser par por el Lema <a knowl="./knowl/lemma-identity-even-trans.html" knowl-id="xref-lemma-identity-even-trans" alt="Lema 5.14 " title="Lema 5.14 ">5.14</a>. La demostración del caso en el que \(\sigma\) puede ser expresada como el producto de un número impar de transposiciones lo dejamos como ejercicio.</p></article></div>
+<p id="p-815">A la luz del Teorema <a knowl="./knowl/theorem-even-and-odd.html" knowl-id="xref-theorem-even-and-odd" alt="Teorema 5.15 " title="Teorema 5.15 ">5.15</a>, definimos que una permutación es <b class="terminology">par</b> si puede ser expresada como el producto de un número par de transposiciones e <b class="terminology">impar</b> si puede ser expresada como el producto de un número impar de transposiciones.</p></section><section class="subsection" id="permute-subsection-alternating-groups"><h3 class="heading hide-type" alt="Subsección  Los Grupos Alternantes">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Los Grupos Alternantes</span>
+</h3>
+<a href="section-permutation-definitions.html#permute-subsection-alternating-groups" class="permalink">¶</a><p id="p-816">Uno de los subgrupos más importantes de \(S_n\) es el conjunto de todas las permutaciones pares, \(A_n\text{.}\)   El grupo \(A_n\) se llama <b class="terminology">grupo alternante en \(n\) símbolos</b>.</p>
+<article class="theorem-like" id="theorem-20"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">5.16</span>
+</h6>
+<p id="p-817">El conjunto \(A_n\) es un subgrupo de \(S_n\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-32" id="proof-32"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-32" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-818">Como el producto de dos permutaciones pares es también una permutación par, \(A_n\) es cerrado.  La identidad es una permutación par y por lo tanto está en \(A_n\text{.}\) Si \(\sigma\) es una permutación par, entonces</p>
+\begin{equation*}
+\sigma = \sigma_1 \sigma_2 \cdots \sigma_r,
+\end{equation*}
+<p>donde \(\sigma_i\) son transposiciones y  \(r\) es par. Como la inversa de una transposición es ella misma,</p>
+\begin{equation*}
+\sigma^{-1} = \sigma_r \sigma_{r-1} \cdots \sigma_1
+\end{equation*}
+<p>también está en \(A_n\text{.}\)</p></article></div>
+<article class="theorem-like" id="proposition-16"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">5.17</span>
+</h6>
+<p id="p-819">El número de permutaciones pares en \(S_n\text{,}\) \(n \geq 2\text{,}\) es igual al número de permutaciones impares; luego, el orden de \(A_n\) es \(n!/2\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-33" id="proof-33"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-33" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-820">Sea \(A_n\) el conjunto de permutaciones pares en \(S_n\) y \(B_n\) el conjunto de permutaciones impares.  Si ppodemos mostrar que existe una biyección entre estos conjuntos, habremos demostrado que contienen el mismo número de elementos. Fijemos una transposición \(\sigma\) en \(S_n\text{.}\)  Como \(n \geq 2\text{,}\) tal  \(\sigma\) existe.  Defina</p>
+\begin{equation*}
+\lambda_{\sigma} : A_n \rightarrow B_n
+\end{equation*}
+<p>como</p>
+\begin{equation*}
+\lambda_{\sigma} ( \tau ) = \sigma  \tau .
+\end{equation*}
+<p>Supongamos que \(\lambda_{\sigma} ( \tau ) = \lambda_{\sigma} ( \mu )\text{.}\) Entonces \(\sigma  \tau = \sigma  \mu\) y así</p>
+\begin{equation*}
+\tau = \sigma^{-1} \sigma \tau = \sigma^{-1} \sigma \mu = \mu. 
+\end{equation*}
+<p>Por lo tanto, \(\lambda_{\sigma}\) es 1-1.  Dejaremos la demostración de que \(\lambda_{\sigma}\) es sobreyectiva como ejercicio.</p></article></div>
+<article class="example-like" id="example-permute-s4"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">5.18</span>
+</h6>
+<p id="p-821">El grupo \(A_4\) es el subgrupo de \(S_4\) que consiste de las permutaciones pares.  Hay doce elementos en \(A_4\text{:}\)</p>
+\begin{align*}
+&amp; (1)    &amp;&amp; (12)(34) &amp;&amp; (13)(24) &amp;&amp; (14)(23) \\
+&amp; (123)  &amp;&amp; (132)    &amp;&amp; (124)    &amp;&amp; (142)    \\
+&amp; (134)  &amp;&amp; (143)    &amp;&amp; (234)    &amp;&amp; (243).   
+\end{align*}
+<p>Uno de los ejercicios al final del capítulo será el de encontrar todos los subgrupos de \(A_4\text{.}\) Descubrirá que no hay ningún subgrupo de orden 6.  ¿Le sorprende?</p></article></section><section class="subsection" id="permute-historical-note"><h3 class="heading hide-type" alt="Subsección  Note Histórica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Note Histórica</span>
+</h3>
+<a href="section-permutation-definitions.html#permute-historical-note" class="permalink">¶</a><p id="p-822">Lagrange fue el primero en pensar las permutaciones como funciones de un conjunto en sí mismo, pero fue Cauchy quién desarrolló los teoremas básicos y la notación para las permutaciones. Él fue el primero en usar la notación cíclica. Augustin-Louis Cauchy (1789–1857) nació en París durante en el apogeo de la Revolución Francesa. Su familia dejó París y se fue al pueblo de Arcueil para escapar del Reino del Terror. Uno de los vecinos de la familia allí, fue Pierre-Simon Laplace (1749–1827), quien lo motivó a iniciar una carrera en matemáticas. Cauchy comenzó su carrera como matemático resolviendo un problema de geometría que le planteó Lagrange. Cauchy escribió más de 800 trabajos en diversos tópicos, como ecuaciones diferenciales, grupos finitos, matemáticas aplicadas, y análisis complejo. Fue uno de los matemáticos responsables de hacer que el Cálculo Diferencial fuera riguroso. Es probable que haya más teoremas y conceptos en matemáticas asociados al nombre de Cauchy que al de cualquier otro matemático.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

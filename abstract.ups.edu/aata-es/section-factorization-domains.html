@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:54-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Factorización en un Dominio Integral</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-field-of-fractions.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="domains.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="exercises-domains.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="section-field-of-fractions.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="domains.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="exercises-domains.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains" class="active">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-factorization-domains"><h2 class="heading hide-type" alt="Sección 18.2 Factorización en un Dominio Integral">
+<span class="type">Sección</span><span class="codenumber">18.2</span><span class="title">Factorización en un Dominio Integral</span>
+</h2>
+<a href="section-factorization-domains.html" class="permalink">¶</a><section class="introduction" id="introduction-64"><p id="p-2768">Los componentes esenciales para la factorización de enteros son los números primos.  Si \(F\) es un cuerpo, los polinomios irreducibles en \(F[x]\) tienen un rol muy similar al que tienen los números primos en el anillo de los enteros. Dado un dominio integral arbitrario, esto nos lleva a las siguientes definiciones.</p>
+<p id="p-2769">Sea \(R\) un anillo conmutativo con identidad, y sean \(a\) y \(b\) elementos en \(R\text{.}\)  Decimos que \(a\) <b class="terminology">divide a</b> \(b\text{,}\) y escribimos \(a \mid b\text{,}\) si existe un elemento \(c \in R\) tal que \(b = ac\text{.}\)  Una <b class="terminology">unidad</b> en \(R\) es un elemento que tiene inverso multiplicativo.  Dos elementos \(a\) y \(b\) en \(R\) se dicen <b class="terminology">asociados</b> si existe una unidad \(u\) en \(R\) tal que \(a = ub\text{.}\)</p>
+<p id="p-2770">Sea \(D\) un dominio integral.  Un elemento distinto de cero \(p \in D\) que no sea una unidad se dice <b class="terminology">irreducible</b> si cada vez que \(p = ab\text{,}\) ya sea \(a\) o \(b\) es una unidad. Ademá, \(p\) es <b class="terminology">primo</b> si cada vez que \(p \mid ab\) ya sea \(p \mid a\) o \(p \mid b\text{.}\)</p>
+<article class="example-like" id="example-domains-q-xy"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.8</span>
+</h6>
+<p id="p-2771">Es importante notar que los elementos primos y los elementos irreducibles no siempre coinciden. Sea \(R\) el subanillo (con identidad) de \({\mathbb Q}[x, y]\) generado por \(x^2\text{,}\) \(y^2\text{,}\) y \(xy\text{.}\)  Cada uno de estos elementos es irreducible en \(R\text{;}\) pero, \(xy\) no es primo, pues \(xy\) divide a \(x^2 y^2\) pero no divide a \(x^2\) ni a  \(y^2\text{.}\)</p></article><p id="p-2772">El Teorema Fundamental de la Aritméticas establece que cada entero \(n \gt 1\) puede ser factorizado como pruducto de números primos \(p_1 \cdots p_k\text{,}\) donde los \(p_i\) no son cecesariamente distintos. También sabemos que tal factorización es única salvo el orden en que aparecen los \(p_i\text{.}\) Podemos fácilmente extender este resultado a todos los enteros. La pregunta surge sobre si tales factorizaciones son posibles en otros anillos.  Generalizando esta definición, diremos que un dominio integral \(D\) es un <b class="terminology">dominio de factorización única</b>, o <b class="terminology"><abbr class="acronym">DFU</abbr></b>, si \(D\) satisface los siguientes criterios. </p>
+<ol id="ol-126" style="list-style-type: decimal;">
+<li id="li-617"><p id="p-2773">Sea \(a \in D\) tal que \(a \neq 0\) y \(a\) no es una unidad. Entonces \(a\) puede ser escrito como producto de elementos irreducibles en \(D\text{.}\)</p></li>
+<li id="li-618"><p id="p-2774">Sea \(a = p_1 \cdots p_r = q_1 \cdots q_s\text{,}\) donde los \(p_i\) y los \(q_i\) son irreducibles. Entonces \(r=s\) y existe \(\pi \in S_r\) tal que \(p_i\) y \(q_{\pi(j)}\) son asociados para \(j = 1, \ldots, r\text{.}\)</p></li>
+</ol>
+<article class="example-like" id="example-domains-z-ufd"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.9</span>
+</h6>
+<p id="p-2775">El anillo de los enteros es un dominio de factorización única por el Teorema Fundamental de la Aritmética.</p></article><article class="example-like" id="example-domains-not-a-ufd"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.10</span>
+</h6>
+<p id="p-2776">No todo dominio integral es un dominio de factorización única. El subanillo \({\mathbb Z}[ \sqrt{3}\, i ] = \{ a + b \sqrt{3}\, i\}\) de los números complejos es un dominio integral (Ejercicio <a knowl="./knowl/exercise-rings-gaussian.html" knowl-id="xref-exercise-rings-gaussian" alt="Ejercicio 16.6.12 " title="Ejercicio 16.6.12 ">16.6.12</a>, Capítulo <a href="rings.html" alt="Capítulo 16 Anillos" title="Capítulo 16 Anillos">16</a>). Sea \(z = a + b \sqrt{3}\, i\) y defina \(\nu : {\mathbb Z}[ \sqrt{3}\, i ] \rightarrow {\mathbb N} \cup \{ 0 \}\) por \(\nu( z) = |z|^2 = a^2 + 3 b^2\text{.}\) Es claro que \(\nu(z) \geq 0\) con igualdad cuando \(z = 0\text{.}\) Además, de nuestro conocimiento de números complejos sabemos que \(\nu(z w) = \nu(z) \nu(w)\text{.}\) Es fácil mostrar que si \(\nu(z) = 1\text{,}\) entonces \(z\) es una unidad, y que las únicas unidades de \({\mathbb Z}[ \sqrt{3}\, i ]\) son 1 y \(-1\text{.}\)</p>
+<p id="p-2777">Afirmamos que 4 tiene dos factorizaciones distintas en elementos irreducibles:</p>
+\begin{equation*}
+4 = 2 \cdot 2 = (1 - \sqrt{3}\, i) (1 + \sqrt{3}\, i).
+\end{equation*}
+<p>Debemos demostrar que cada uno de estos factores es un elemento irreducible en \({\mathbb Z}[ \sqrt{3}\, i ]\text{.}\) Si 2 no fuera irreducible, entonces \(2 = z w\) para ciertos \(z, w\) en \({\mathbb Z}[ \sqrt{3}\, i ]\) con \(\nu( z) = \nu(w) = 2\text{.}\) Pero, no existe ningún elemento \(z\) en \({\mathbb Z}[\sqrt{3}\, i ]\) tal que \(\nu(z) = 2\) pues la ecuación \(a^2 + 3 b^2 = 2\) no tiene solución entera. Por lo tanto, 2 es irreducible. Un argumento similar muestra que tanto \(1 - \sqrt{3}\, i\) como \(1 + \sqrt{3}\, i\) son irreducibles. Como 2 no es un múltiplo de una unidad por \(1 -  \sqrt{3}\, i\) o \(1 + \sqrt{3}\, i\text{,}\) vemos que 4 tiene al menos dos factorizaciones diferentes en elementos irreducibless.</p></article></section><section class="subsection" id="domains-subsection-pids"><h3 class="heading hide-type" alt="Subsección  Dominios de Ideales Principales">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Dominios de Ideales Principales</span>
+</h3>
+<a href="section-factorization-domains.html#domains-subsection-pids" class="permalink">¶</a><p id="p-2778">Sea \(R\) un anillo conmutativo con identidad. Recordemos que un ideal principal generado por \(a \in R\) es un ideal de la forma \(\langle a \rangle = \{ ra : r \in R \}\text{.}\) Un dominio integral en el que todos los ideales son principales se llama <b class="terminology">dominio de ideales principales</b>, o  <b class="terminology"><abbr class="acronym">DIP</abbr></b>.</p>
+<article class="theorem-like" id="lemma-principal-ideal"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">18.11</span>
+</h6>
+<p id="p-2779">Sea \(D\) un dominio integral y sean \(a, b \in D\text{.}\) Entonces </p>
+<ol id="ol-127" style="list-style-type: decimal;">
+<li id="li-619"><p id="p-2780">\(a \mid b\) si y solo si \(\langle b \rangle \subset \langle a \rangle\text{.}\)</p></li>
+<li id="li-620"><p id="p-2781">\(a\) y \(b\) son asociados si y solo si \(\langle b \rangle = \langle a \rangle\text{.}\)</p></li>
+<li id="li-621"><p id="p-2782">\(a\) es una unidad en \(D\) si y solo si \(\langle a \rangle = D\text{.}\)</p></li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-134" id="proof-134"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-134" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2783">(1) Supongamos que \(a \mid b\text{.}\) Entonces \(b = ax\) para algún \(x \in D\text{.}\) Luego, para cada \(r\) en \(D\text{,}\) \(br =(ax)r = a(xr)\) y \(\langle b \rangle \subset \langle a \rangle\text{.}\) Recíprocamente, supongamos que \(\langle b \rangle \subset \langle a \rangle\text{.}\) Entonces \(b \in \langle a \rangle\text{.}\) Concluimos que, \(b =a x\) para algún \(x \in D\text{.}\)  Es decir, \(a \mid b\text{.}\)</p>
+<p id="p-2784">(2) Como \(a\) y \(b\) son asociados, existe una unidad \(u\) tal que \(a = u b\text{.}\)  Por lo tanto, \(b \mid a\) y \(\langle a \rangle \subset \langle b \rangle\text{.}\) Similarmente, \(\langle b \rangle \subset \langle a  \rangle\text{.}\) En consecuencia \(\langle a \rangle = \langle b \rangle\text{.}\) Recíprocamente, supongamos que \(\langle a \rangle = \langle b \rangle\text{.}\) Por la parte (1), \(a \mid b\) y \(b \mid a\text{.}\) Entonces \(a = bx\) y \(b = ay\) para ciertos \(x, y \in D\text{.}\) Por lo tanto, \(a = bx = ayx\text{.}\) Como \(D\) es un dominio integral, \(x y =1\text{;}\) es decir, \(x\) e \(y\) son unidades y \(a\) y \(b\) son asociados.</p>
+<p id="p-2785">(3) Un elemento \(a \in D\) es una unidad si y solo si \(a\) es un asociado de 1. Pero, \(a\) es un asociado de 1 si y solo si \(\langle a \rangle = \langle 1 \rangle = D\text{.}\)</p></article></div>
+<article class="theorem-like" id="theorem-96"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">18.12</span>
+</h6>
+<p id="p-2786">Sea \(D\) un <abbr class="acronym">DIP</abbr> y \(\langle p \rangle\) un ideal distinto de cero en \(D\text{.}\) Entonces \(\langle p \rangle\) es un ideal maximal si y solo si \(p\) es irreducible.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-135" id="proof-135"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-135" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2787">Supongamos que \(\langle p \rangle\) es un ideal maximal.  Si algún elemento \(a\) en \(D\) divide a \(p\text{,}\) entonces \(\langle p \rangle \subset \langle a \rangle\text{.}\)  Como \(\langle p \rangle\) es maximal, ya sea \(D = \langle a \rangle\) o \(\langle p \rangle = \langle a \rangle\text{.}\)  En otras palabras, ya sea \(a\) y \(p\) son asociados o \(a\) es una unidad.  Por lo tanto, \(p\) es irreducible.</p>
+<p id="p-2788">Recíprocamente, sea \(p\) irreducible. Si \(\langle a \rangle\) es un ideal en \(D\) tal que \(\langle p \rangle \subset \langle a \rangle \subset D\text{,}\) entonces \(a \mid p\text{.}\) Como \(p\) es irreducible, ya sea \(a\) es una unidad o \(a\) y \(p\) son asociados. Por lo tanto, ya sea \(D = \langle a \rangle\) o \(\langle p \rangle = \langle a \rangle\text{.}\)  Concluioms que \(\langle p \rangle\) es un ideal maximal.</p></article></div>
+<article class="theorem-like" id="corollary-irreducible-pid"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.13</span>
+</h6>
+<p id="p-2789">Sea \(D\) un <abbr class="acronym">DIP</abbr>. Si \(p\) es irreducible, entonces \(p\) es primo.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-136" id="proof-136"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-136" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2790">Sea \(p\) un irreducible y supongamos que \(p \mid ab\text{.}\)  Entonces \(\langle ab \rangle \subset \langle p \rangle\text{.}\) Por el Corolario <a knowl="./knowl/corollary-maximal-ideal.html" knowl-id="xref-corollary-maximal-ideal" alt="Corolario 16.40 " title="Corolario 16.40 ">16.40</a>, como \(\langle p \rangle\) es un ideal maximal, \(\langle p \rangle\) también es un ideal primo. Luego, ya sea \(a \in \langle p \rangle\) o \(b \in \langle p \rangle\text{.}\)  En otras palabras, ya sea \(p \mid a \) o \(p \mid b\text{.}\)</p></article></div>
+<article class="theorem-like" id="lemma-acc"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">18.14</span>
+</h6>
+<p id="p-2791">Sea \(D\) un <abbr class="acronym">DIP</abbr>.  Sean \(I_1, I_2, \ldots\) ideales tales que \(I_1 \subset I_2 \subset \cdots\text{.}\) Entonces existe un entero \(N\) tal que \(I_n = I_N\) para todo \(n \geq N\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-137" id="proof-137"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-137" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2792">Afirmamos que \(I= \bigcup_{i=1}^\infty I_i\) es un ideal de \(D\text{.}\) Ciertamente \(I\) no es vacío, pues \(I_1 \subset I\) y \(0 \in I\text{.}\) Si \(a, b \in I\text{,}\) entonces \(a \in I_i\) y \(b \in I_j\) para ciertos \(i\) y \(j\) en \({\mathbb N}\text{.}\) Sin pérdida de generalidad podemos suponer que \(i \leq j\text{.}\)  Entonces, \(a\) y \(b\) están ambos en \(I_j\) de manera que \(a - b\) también está en \(I_j\text{.}\) Ahora sea \(r \in D\) y \(a \in I\text{.}\) Nuevamente, notemos que \(a \in I_i\) para algún entero positivo \(i\text{.}\)  Como \(I_i\) es un ideal, \(ra \in I_i\) y  \(ra\in I\text{.}\) Por lo tanto, hemos demostrado que \(I\) es un ideal en \(D\text{.}\)</p>
+<p id="p-2793">Como \(D\) es un dominio de ideales principales, existe un elemento \(\overline{a} \in D\) que genera a \(I\text{.}\) Como \(\overline{a}\) está en  \(I_N\) para algún \(N \in {\mathbb N}\text{,}\) sabemos que \(I_N = I = \langle  \overline{a} \rangle\text{.}\) Consecuentemente, \(I_n = I_N\) para \(n \geq N\text{.}\)</p></article></div>
+<p id="p-2794">Cualquier anillo conmutativo que satisfaga la condición en el Lema <a knowl="./knowl/lemma-acc.html" knowl-id="xref-lemma-acc" alt="Lema 18.14 " title="Lema 18.14 ">18.14</a> se dice que satisface la <b class="terminology">condición de cadenas ascendentes</b>, o <b class="terminology">CCA</b>.  Tales anillo se llaman <b class="terminology">anillos Noetherianos</b>, en honor a Emmy Noether.</p>
+<article class="theorem-like" id="theorem-97"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">18.15</span>
+</h6>
+<p id="p-2795">Todo <abbr class="acronym">DIP</abbr> es un <abbr class="acronym">DFU</abbr>.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-138" id="proof-138"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-138" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2796"><em class="emphasis">Existencia de una factorización.</em> Sea \(D\) un <abbr class="acronym">DIP</abbr> y sea \(a\) un elemento distinto de cero en \(D\) que no sea una unidad. Si \(a\) es irreducible, no hay más que probar. Si no, entonces existe una factorización \(a = a_1 b_1\text{,}\) donde ni  \(a_1\) ni \(b_1\) son unidades. Por ende, \(\langle a \rangle \subset \langle a_1 \rangle\text{.}\) Por el Lema <a knowl="./knowl/lemma-principal-ideal.html" knowl-id="xref-lemma-principal-ideal" alt="Lema 18.11 " title="Lema 18.11 ">18.11</a>, sabemos que \(\langle a \rangle \neq \langle a_1 \rangle\text{;}\) de lo contrario, \(a\) y \(a_1\) serían asociados y \(b_1\) sería una unidad, lo que sería una contradicción. Ahora supongamos que \(a_1 =  a_2 b_2\text{,}\) donde ni \(a_2\) ni \(b_2\) son unidades. Por el mismo argumento de antes, \(\langle a_1 \rangle \subset \langle a_2 \rangle\text{.}\)  Podemos continuar esta construcción para obtener una cadena ascendente de ideales</p>
+\begin{equation*}
+\langle a \rangle \subset \langle a_1 \rangle \subset \langle a_2 \rangle \subset \cdots.
+\end{equation*}
+<p>Por el Lema <a knowl="./knowl/lemma-acc.html" knowl-id="xref-lemma-acc" alt="Lema 18.14 " title="Lema 18.14 ">18.14</a>, existe un entero positivo \(N\) tal que \(\langle a_n \rangle = \langle a_N \rangle\) para todo \(n \geq N\text{.}\) En consecuencia, \(a_N\) debe ser irreducible. Hemos mostrado que \(a\) es producto de dos elementos, uno de los cuáles tiene que ser irreducible.</p>
+<p id="p-2797">Ahora supongamos que \(a = c_1 p_1\text{,}\) donde \(p_1\) es irreducible. Si \(c_1\) no es una  unidad, podemos repetir el argumento anterior para concluir que \(\langle a \rangle \subset \langle c_1 \rangle\text{.}\) Ya sea \(c_1\) es irreducible o \(c_1 = c_2 p_2\text{,}\) donde \(p_2\) es irreducible y \(c_2\) no es una unidad.  Continuando de esta manera, obtenemos otra cadena de ideales</p>
+\begin{equation*}
+\langle a \rangle \subset \langle c_1 \rangle \subset \langle c_2 \rangle \subset \cdots.
+\end{equation*}
+<p>Esta cadena debe satisfacer la condición de cadenas ascendentes; por lo tanto,</p>
+\begin{equation*}
+a = p_1 p_2 \cdots p_r
+\end{equation*}
+<p>para elementos irreducibles \(p_1, \ldots, p_r\text{.}\)</p>
+<p id="p-2798"><em class="emphasis">Unicidad de la factorización.</em> Para mostrar la unicidad, sea</p>
+\begin{equation*}
+a = p_1 p_2 \cdots p_r = q_1 q_2 \cdots q_s,
+\end{equation*}
+<p>donde cada \(p_i\) y cada \(q_i\) es irreducible.  Sin pérdida de generalidad, podemos suponer que \(r \lt s\text{.}\) Como \(p_1\) divide a \(q_1 q_2 \cdots q_s\text{,}\) por el Corolario <a knowl="./knowl/corollary-irreducible-pid.html" knowl-id="xref-corollary-irreducible-pid" alt="Corolario 18.13 " title="Corolario 18.13 ">18.13</a> debe dividir a algún \(q_i\text{.}\) Reordenando los \(q_i\text{,}\) podemos suponer que \(p_1 \mid q_1\text{;}\) así, \(q_1 = u_1 p_1\) para alguna unidad \(u_1\) en \(D\text{.}\) Por lo tanto,</p>
+\begin{equation*}
+a = p_1 p_2 \cdots p_r = u_1 p_1 q_2 \cdots q_s
+\end{equation*}
+<p>o</p>
+\begin{equation*}
+p_2 \cdots p_r = u_1 q_2 \cdots q_s.
+\end{equation*}
+<p>Continuando de esta manera, podemos reordenar los \(q_i\) tal que \(p_2 = u_2q_2, p_3 = u_3q_3, \ldots, p_r = u_rq_r\text{,}\) y obtener</p>
+\begin{equation*}
+u_1 u_2 \cdots u_r q_{r+1} \cdots q_s = 1.
+\end{equation*}
+<p>En este caso \(q_{r + 1} \cdots q_s\) es una unidad, lo que contradice el hecho de que \(q_{r + 1}, \ldots, q_s\) son irreducibles. Por lo tanto, \(r = s\) y la factorización de \(a\) es única.</p></article></div>
+<article class="theorem-like" id="corollary-21"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.16</span>
+</h6>
+<p id="p-2799">Sea \(F\) un cuerpo.  Entonces \(F[x]\) es un <abbr class="acronym">DFU</abbr>.</p></article><article class="example-like" id="example-domains-zx-ufd"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.17</span>
+</h6>
+<p id="p-2800">Todo <abbr class="acronym">DIP</abbr> es un <abbr class="acronym">DFU</abbr>, pero no todo <abbr class="acronym">DFU</abbr> es un <abbr class="acronym">DIP</abbr>. En el Corolario <a knowl="./knowl/corollary-integer-poly-ufd.html" knowl-id="xref-corollary-integer-poly-ufd" alt="Corolario 18.31 " title="Corolario 18.31 ">18.31</a>, demostraremos que \({\mathbb Z}[x]\) es un <abbr class="acronym">DFU</abbr>.  Pero, \({\mathbb Z}[x]\) no es un <abbr class="acronym">DIP</abbr>.  Sea \(I = \{ 5 f(x) + x g(x) : f(x), g(x)  \in {\mathbb Z}[x] \}\text{.}\)  Podemos mostrar fácilmente que \(I\) es un ideal de \({\mathbb Z}[x]\text{.}\)  Supongamos que \(I = \langle p(x) \rangle\text{.}\)  Como \(5 \in I\text{,}\)  \(5 = f(x) p(x)\text{.}\)  En este caso \(p(x) = p\) debe ser una constante.  Como \(x  \in I\text{,}\) \(x = p g(x)\text{;}\) luego, \(p = \pm 1\text{.}\) Pero, de esto conluimos que \(\langle p(x) \rangle = {\mathbb Z}[x]\text{.}\) Pero esto diría que 3 está en \(I\text{.}\) Por lo tanto, podemos escribir \(3 = 5 f(x) + x g(x)\) para ciertos \(f(x)\) y \(g(x)\) en \({\mathbb Z}[x]\text{.}\)  Examinando el términio constante de este polinomio, vemos que \(3 = 5 f(x)\text{,}\) lo que es imposible.</p></article></section><section class="subsection" id="domains-subsection-euclidean-domains"><h3 class="heading hide-type" alt="Subsección  Dominios Euclideanos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Dominios Euclideanos</span>
+</h3>
+<a href="section-factorization-domains.html#domains-subsection-euclidean-domains" class="permalink">¶</a><p id="p-2801">Hemos usado de forma repetida el algoritmo de la división para probar resultados tanto sobre \({\mathbb Z}\) como sobre \(F[x]\text{,}\) donde \(F\) es un cuerpo.  Nos preguntamos ahora cuándo es que existe un algoritmo de la división para un dominio integral.</p>
+<p id="p-2802">Sea \(D\) un dominio integral tal que para cada \(a \in D\) existe un entero no negativo \(\nu(a)\) que satisface las siguientes condiciones.  </p>
+<ol id="ol-128" style="list-style-type: decimal;">
+<li id="li-622"><p id="p-2803">Si \(a\) y \(b\) son elementos distintos de cero en \(D\text{,}\) entonces \(\nu(a) \leq \nu(ab)\text{.}\)</p></li>
+<li id="li-623"><p id="p-2804">Sean \(a, b \in D\) y supongamos que \(b \neq 0\text{.}\) Entonces existen elementos \(q, r \in D\) tales que \(a = bq + r\) y ya sea \(r=0\) o \(\nu(r) \lt \nu(b)\text{.}\)</p></li>
+</ol>
+<p> Entonces \(D\) se llama <b class="terminology">dominio Euclideano</b> y \(\nu\) se llama <b class="terminology">valuación Euclideana</b>.</p>
+<article class="example-like" id="example-domains-abs-value"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.18</span>
+</h6>
+<p id="p-2805">El valor absoluto en \({\mathbb Z}\) es una valuación Euclideana.</p></article><article class="example-like" id="example-domains-deg-poly-field-valuation"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.19</span>
+</h6>
+<p id="p-2806">Sea \(F\) un cuerpo. Entonces el grado de un polinomio en \(F[x]\) es una valuación Euclideana.</p></article><article class="example-like" id="example-domains-gaussian-valuation"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.20</span>
+</h6>
+<p id="p-2807">Reclos enteros Gaussianos en el Ejemplo <a knowl="./knowl/example-rings-gaussian-integers.html" knowl-id="xref-example-rings-gaussian-integers" alt="Ejemplo 16.12 " title="Ejemplo 16.12 ">16.12</a> del Capítulo <a href="rings.html" alt="Capítulo 16 Anillos" title="Capítulo 16 Anillos">16</a> están definidos como</p>
+\begin{equation*}
+{\mathbb Z}[i] = \{  a + b i : a, b \in {\mathbb Z} \}.
+\end{equation*}
+<p>Usualmente medimos el tamaño de un número complejo \(a + bi\) por su valor absoluto, \(|a + bi| = \sqrt{ a^2 + b^2}\text{;}\) pero, \(\sqrt{a^2 + b^2}\) podría no ser un entero. Como valuación elegiremos \(\nu(a + bi) = a^2 + b^2\) para asegurarnos de tener un entero.</p>
+<p id="p-2808">Afirmamos que \(\nu( a+ bi) = a^2 + b^2\) es una valuación Euclideana en \({\mathbb Z}[i]\text{.}\) Sean \(z, w \in {\mathbb Z}[i]\text{.}\)  Entonces \(\nu( zw) = |zw|^2 = |z|^2 |w|^2  = \nu(z) \nu(w)\text{.}\)  Como \(\nu(z) \geq 1\) para todo \(z \in {\mathbb Z}[i]\) distinto de cero, \(\nu( z) \leq \nu(z) \nu(w)\text{.}\)</p>
+<p id="p-2809">A continuación, debemos mostrar que para cualquiera \(z= a+bi\) y \(w = c+di\) en \({\mathbb Z}[i]\) con \(w \neq 0\text{,}\) existen elementos \(q\) y \(r\) en  \({\mathbb Z}[i]\)  tales que \(z = qw + r\) con ya sea \(r=0\) o  \(\nu(r) \lt \nu(w)\text{.}\)  Podemos considerar \(z\) y \(w\) como elementos en \({\mathbb Q}(i) = \{ p + qi : p, q \in {\mathbb Q} \}\text{,}\) el cuerpo de fracciones de \({\mathbb Z}[i]\text{.}\)  Observemos que</p>
+\begin{align*}
+z w^{-1} &amp; = (a +b i) \frac{c -d i}{c^2 + d^2}\\
+&amp; = \frac{ac + b d}{c^2 + d^2} + \frac{b c -ad}{c^2 + d^2}i\\
+&amp; = \left( m_1 + \frac{n_1}{c^2 + d^2} \right) + \left( m_2 + \frac{n_2}{c^2 + d^2} \right) i\\
+&amp; = (m_1 + m_2 i) + \left( \frac{n_1}{c^2 + d^2} + \frac{n_2}{c^2 + d^2}i \right)\\
+&amp; = (m_1 + m_2 i) + (s + ti)
+\end{align*}
+<p>en \({\mathbb Q}(i)\text{.}\)  En los últimos pasos escribimos las partes real e imaginaria como un entero más una fracción propia.  Es decir, tomamos el entero más cercano \(m_i\) tal que la parte fraccionaria satisface \(|n_i / (a^2 + b^2)| \leq 1/2\text{.}\)  Por ejemplo, escribimos</p>
+\begin{align*}
+\frac{9}{8} &amp; = 1 + \frac{1}{8}\\
+\frac{15}{8} &amp; = 2 - \frac{1}{8}.
+\end{align*}
+<p>Así, \(s\) y \(t\) son las “partes fraccionarias” de \(z w^{-1} = (m_1 + m_2 i) + (s + ti)\text{.}\) También sabemos que \(s^2 + t^2 \leq 1/4 + 1/4 = 1/2\text{.}\)  Multiplicando por \(w\text{,}\) tenemos</p>
+\begin{equation*}
+z = z w^{-1} w = w (m_1 + m_2 i) + w (s + ti)  = q w + r,
+\end{equation*}
+<p>donde \(q = m_1 + m_2 i\) y \(r =  w (s + ti)\text{.}\)  Como \(z\) y \(qw\) están en \({\mathbb Z}[i]\text{,}\) \(r\) también está en \({\mathbb Z}[i]\text{.}\)  Finalmente, dedemos mostrar que ya sea \(r = 0\) o \(\nu(r) \lt \nu(w)\text{.}\)  Pero,</p>
+\begin{equation*}
+\nu(r) = \nu(w) \nu(s + ti) \leq \frac{1}{2} \nu(w) \lt \nu(w).
+\end{equation*}
+</article><article class="theorem-like" id="theorem-98"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">18.21</span>
+</h6>
+<p id="p-2810">Todo dominio Euclideano es un dominio de ideales principales.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-139" id="proof-139"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-139" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2811">Sea \(D\) un dominio Euclideano y sea \(\nu\) una valuación Euclideana en \(D\text{.}\) Supongamos que \(I\) es un ideal no trivial en \(D\) y escojamos un elemento \(b \in I\) distinto de cero tal que \(\nu(b)\) es minimal entre todos los \(a \in I\) distintos de cero. Para cualquier \(a \in I\) distinto de cero, como \(D\) es un dominio Euclideano, existen elementos \(q\) y \(r\) en \(D\) tales que \(a = bq +r\) y ya sea \(r=0\) o \(\nu(r) \lt \nu(b)\text{.}\) Pero \(r = a - bq\) está en \(I\) pues \(I\) es un ideal; por lo tanto, \(r = 0\) por la minimalidad de \(b\text{.}\) Concluioms que \(a = bq\) y que \(I = \langle b \rangle\text{.}\)</p></article></div>
+<article class="theorem-like" id="corollary-22"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.22</span>
+</h6>
+<p id="p-2812">Todo dominio Euclideano es un dominio de factorización única.</p></article></section><section class="subsection" id="domains-subsection-factorization"><h3 class="heading hide-type" alt="Subsección  Factorización en \(D\lbrack x \rbrack\)">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Factorización en \(D\lbrack x \rbrack\)</span>
+</h3>
+<a href="section-factorization-domains.html#domains-subsection-factorization" class="permalink">¶</a><p id="p-2813">Uno de los anillos de polinomios más importantes es \({\mathbb Z}[x]\text{.}\) Una de las primeras preguntas que surgen es si \({\mathbb Z}[x]\) es o no un <abbr class="acronym">DFU</abbr>.  Demostraremos un resultado más general. Primero obtendremos una generalización del Lema de Gauss (Teorema <a knowl="./knowl/theorem-gauss-lemma.html" knowl-id="xref-theorem-gauss-lemma" alt="Teorema 17.14 Lema de Gauss" title="Teorema 17.14 Lema de Gauss">17.14</a>).</p>
+<p id="p-2814">Sea \(D\) un dominio de factorización única y supongamos que</p>
+\begin{equation*}
+p(x) = a_n x^n + \cdots + a_1 x + a_0
+\end{equation*}
+<p>en \(D[x]\text{.}\)  Entonces, el <b class="terminology">contenido</b> de \(p(x)\) es el máximo común divisor de \(a_0, \ldots, a_n\text{.}\)  Decimos que \(p(x)\) es <b class="terminology">primitivo</b> si \(\gcd(a_0, \ldots, a_n ) = 1\text{.}\)</p>
+<article class="example-like" id="example-domains-poly-gcd"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">18.23</span>
+</h6>
+<p id="p-2815">En \({\mathbb Z}[x]\) el polinomio \(p(x)= 5 x^4 - 3 x^3 + x -4\) es un polinomio primitivo pues el máximo común divisor de sus coeficientes es 1; pero, el polinomio \(q(x) = 4 x^2 - 6 x + 8\) no es primitivo pues el contenido de \(q(x)\) es 2.</p></article><article class="theorem-like" id="theorem-domains-gauss-lemma"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">18.24</span><span class="title">Lema de Gauss</span>
+</h6>
+<p id="p-2816">Sea \(D\) un <abbr class="acronym">DFU</abbr> y sean \(f(x)\) y \(g(x)\) polinomios primitivos en \(D[x]\text{.}\)  Entonces \(f(x) g(x)\) es primitivo.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-140" id="proof-140"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-140" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2817">Sean \(f(x) = \sum_{i=0}^{m} a_i x^i\) y \(g(x) = \sum_{i=0}^{n} b_i x^i\text{.}\)  Supongamos que \(p\) es un primo que divide a todos los coeficientes de \(f(x) g(x)\text{.}\)  Sea \(r\) el menor entero tal que \(p \notdivide a_r\) y \(s\) el menor entero tal que \(p \notdivide b_s\text{.}\)  El coeficiente de \(x^{r+s}\) en \(f(x) g(x)\) es</p>
+\begin{equation*}
+c_{r + s} = a_0 b_{r + s} + a_1 b_{r + s - 1} + \cdots + a_{r + s - 1} b_1 + a_{r + s} b_0.
+\end{equation*}
+<p>Como \(p\) divide a \(a_0, \ldots, a_{r-1}\) y \(b_0, \ldots, b_{s-1}\text{,}\) \(p\) divide a cada término de \(c_{r+s}\) excepto por el término \(a_r b_s\text{.}\)  Pero, como \(p \mid c_{r+s}\text{,}\) ya sea \(p\) divide a \(a_r\) o \(p\) divide a \(b_s\) lo que es imposible.</p></article></div>
+<article class="theorem-like" id="lemma-27"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">18.25</span>
+</h6>
+<p id="p-2818">Sea \(D\) un <abbr class="acronym">DFU</abbr>, y sean \(p(x)\) y \(q(x)\) polinomios en \(D[x]\text{.}\) Entonecs el contenido de \(p(x) q(x)\) es igual al producto de los contenidos de \(p(x)\) y \(q(x)\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-141" id="proof-141"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-141" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2819">Sean \(p(x) = c p_1(x)\) y \(q(x) = d q_1(x)\text{,}\) donde \(c\) y \(d\) son los contenidos de \(p(x)\) y \(q(x)\text{,}\) respectivamente.  Entonces \(p_1(x)\) y \(q_1(x)\) son primitivos. Podemos ahora escribir \(p(x) q(x) = c d p_1(x) q_1(x)\text{.}\) Como \(p_1(x) q_1(x)\) es primitivo, el contenido de \(p(x) q(x)\) es \(cd\text{.}\)</p></article></div>
+<article class="theorem-like" id="lemma-ufd-factorization"><h6 class="heading">
+<span class="type">Lema</span><span class="codenumber">18.26</span>
+</h6>
+<p id="p-2820">Sea \(D\) un <abbr class="acronym">DFU</abbr> y sea \(F\) su cuerpo de fracciones. Supongamos que \(p(x) \in D[x]\) y \(p(x) = f(x) g(x)\text{,}\) donde \(f(x)\) y \(g(x)\) están en  \(F[x]\text{.}\) Entonces \(p(x) = f_1(x) g_1(x)\text{,}\) donde \(f_1(x)\) y \(g_1(x)\) están en \(D[x]\text{.}\)  Además, \(\deg f(x) = \deg f_1(x)\) y \(\deg g(x) = \deg g_1(x)\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-142" id="proof-142"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-142" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2821">Sean \(a\) y \(b\) elementos distintos de cero en \(D\) tales que \(a f(x), b g(x)\) están en  \(D[x]\text{.}\) Podemos encontrar \(a_1, b_2 \in D\) tales que \(a f(x) = a_1 f_1(x)\) y \(b g(x) = b_1 g_1(x)\text{,}\) donde \(f_1(x)\) y \(g_1(x)\) son polinomios primitivos en \(D[x]\text{.}\) Por lo tanto, \(a b p(x) = (a_1 f_1(x))( b_1 g_1(x))\text{.}\)  Como \(f_1(x)\) y \(g_1(x)\) son polinomios primitivos, debemos tener que \(ab \mid a_1 b_1\) por el Lema de Gauss. Así, existe un \(c \in D\) tal que \(p(x) = c f_1(x) g_1(x)\text{.}\) Claramente, \(\deg f(x) = \deg f_1(x)\) y \(\deg g(x) = \deg g_1(x)\text{.}\)</p></article></div>
+<p id="p-2822">Los siguientes corolarios son consecuencia directa del Lema <a knowl="./knowl/lemma-ufd-factorization.html" knowl-id="xref-lemma-ufd-factorization" alt="Lema 18.26 " title="Lema 18.26 ">18.26</a>.</p>
+<article class="theorem-like" id="corollary-irreducible-poly"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.27</span>
+</h6>
+<p id="p-2823">Sea \(D\) un <abbr class="acronym">DFU</abbr> y \(F\) su cuerpo de fracciones.  Un polinomio primitiv \(p(x)\) en \(D[x]\) es irreducible en \(F[x]\) si y solo si es irreducible en \(D[x]\text{.}\)</p></article><article class="theorem-like" id="corollary-24"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.28</span>
+</h6>
+<p id="p-2824">Sea \(D\) un <abbr class="acronym">DFU</abbr> y \(F\) su cuerpo de fracciones.  Si \(p(x)\) es un polinomio mónico en \(D[x]\) con \(p(x) = f(x) g(x)\) en \(F[x]\text{,}\) entonces \(p(x) = f_1(x) g_1(x)\text{,}\) donde \(f_1(x)\) y \(g_1(x)\) están en \(D[x]\text{.}\) Además, \(\deg f(x) = \deg f_1(x)\) y \(\deg g(x) = \deg g_1(x)\text{.}\)</p></article><article class="theorem-like" id="theorem-100"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">18.29</span>
+</h6>
+<p id="p-2825">Si \(D\) es un <abbr class="acronym">DFU</abbr>, entonces \(D[x]\) es un <abbr class="acronym">DFU</abbr>.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-143" id="proof-143"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-143" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-2826">Sea \(p(x)\) un polinomio distinto de cero en \(D[x]\text{.}\)  Si \(p(x)\) es un polinomio constante, entonces tiene una factorización única pues \(D\) es un <abbr class="acronym">DFU</abbr>. Ahora supongamos que \(p(x)\) es un polinomio de grado positivo en \(D[x]\text{.}\) Sea \(F\) el cuerpo de fracciones de \(D\text{,}\) y sea \(p(x) = f_1(x) f_2(x) \cdots f_n(x)\) una factorización de \(p(x)\text{,}\) donde cada \(f_i(x)\) es irreducible. Escojamos \(a_i \in D\) tales que \(a_i f_i(x)\) esté en \(D[x]\text{.}\) Existen \(b_1, \ldots, b_n \in D\) tales que \(a_i f_i(x) = b_i g_i(x)\text{,}\) donde \(g_i(x)\) es un polinomio primitivo en \(D[x]\text{.}\) Por el Corolario <a knowl="./knowl/corollary-irreducible-poly.html" knowl-id="xref-corollary-irreducible-poly" alt="Corolario 18.27 " title="Corolario 18.27 ">18.27</a>, cada \(g_i(x)\) es irreducible en \(D[x]\text{.}\) Así, podemos escribir</p>
+\begin{equation*}
+a_1 \cdots a_n p(x) = b_1 \cdots b_n g_1(x) \cdots g_n(x).
+\end{equation*}
+<p>Sea \(b = b_1 \cdots b_n\text{.}\) Como \(g_1(x) \cdots g_n(x)\) es primitive, \(a_1 \cdots a_n\) divide a \(b\text{.}\) Por lo tanto, \(p(x) = a g_1(x) \cdots g_n(x)\text{,}\) donde \(a \in D\text{.}\) Como \(D\) es un <abbr class="acronym">DFU</abbr>, podemos factorizar \(a\) como \(u c_1 \cdots c_k\text{,}\) donde \(u\) es una unidad y cada uno de los \(c_i\) es irreducible en \(D\text{.}\)</p>
+<p id="p-2827">Ahora mostraremos la unicidad de esta factorización. Sean</p>
+\begin{equation*}
+p(x) = a_1 \cdots a_m f_1(x) \cdots f_n(x) = b_1 \cdots b_r g_1(x) \cdots g_s(x)
+\end{equation*}
+<p>dos factorizaciones de \(p(x)\text{,}\) donde todos los factores son irreducibles en \(D[x]\text{.}\)  Por el Corolario <a knowl="./knowl/corollary-irreducible-poly.html" knowl-id="xref-corollary-irreducible-poly" alt="Corolario 18.27 " title="Corolario 18.27 ">18.27</a>, cada uno de los \(f_i\) y de los \(g_i\) es irreducible en \(F[x]\text{.}\) Los \(a_i\) y los \(b_i\) son unidades en \(F\text{.}\) Como \(F[x]\) es un <abbr class="acronym">DIP</abbr>, es un <abbr class="acronym">DFU</abbr>; por lo tanto, \(n=s\text{.}\) Reordenamos los \(g_i(x)\) de manera que \(f_i(x)\) y \(g_i(x)\) sean asociados para \(i = 1, \ldots, n\text{.}\)  Entonces existen \(c_1, \ldots, c_n\) y \(d_1, \ldots, d_n\) en \(D\) tales que \((c_i / d_i) f_i(x) = g_i(x)\) o \(c_i f_i(x) = d_i g_i(x)\text{.}\) Los polinomios \(f_i(x)\) y \(g_i(x)\) son primitivos; luego, \(c_i\) y \(d_i\) son asociados en \(D\text{.}\) Así, \(a_1 \cdots a_m = u b_1 \cdots b_r\) en \(D\text{,}\) donde \(u\) es una unidad en \(D\text{.}\) Como \(D\) es un dominio de factorización única, \(m = s\text{.}\) Finalmente, podemos reordenar los \(b_i\) de manera que \(a_i\) y \(b_i\) sean asociados para cada \(i\text{.}\) Esto completa la parte de unicidad de la demostración.</p></article></div>
+<p id="p-2828">El teorema que acabamos de demostrar tiene varios corolarios obvios pero importantes.</p>
+<article class="theorem-like" id="corollary-25"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.30</span>
+</h6>
+<p id="p-2829">Sea \(F\) un cuerpo. Entonces \(F[x]\) es un <abbr class="acronym">DFU</abbr>.</p></article><article class="theorem-like" id="corollary-integer-poly-ufd"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.31</span>
+</h6>
+<p id="p-2830">El anillo de polinomios sobre los enteros, \({\mathbb Z}[x]\text{,}\) es un <abbr class="acronym">DFU</abbr>.</p></article><article class="theorem-like" id="corollary-27"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">18.32</span>
+</h6>
+<p id="p-2831">Sea \(D\) un <abbr class="acronym">DFU</abbr>. Entonces \(D[x_1, \ldots, x_n]\) es un <abbr class="acronym">DFU</abbr>.</p></article><article class="remark-like" id="remark-8"><h6 class="heading">
+<span class="type">Nota</span><span class="codenumber">18.33</span>
+</h6>
+<p id="p-2832">Es importante destacar que todo dominio Euclideano es un <abbr class="acronym">DIP</abbr> y que todo <abbr class="acronym">DIP</abbr> es un <abbr class="acronym">DFU</abbr>. Sinembargo, como hemos demostrado con ejemplos, los recíprocos de cada una de estas aseveraciones son falsos.  Existen dominios de ideales principales que no son dominios Euclideanos, y existen dominios de factorización única que no son dominios de ideales principales (\({\mathbb Z}[x]\)).</p></article></section><section class="subsection" id="domains-subsection-historical-note"><h3 class="heading hide-type" alt="Subsección  Nota Histórica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Nota Histórica</span>
+</h3>
+<a href="section-factorization-domains.html#domains-subsection-historical-note" class="permalink">¶</a><p id="p-2834">Karl Friedrich Gauss, nació en Brunswick, Alemania el 30 de Abril de 1777 y es considerado uno de los matemáticos más importantes de la historia.  Gauss fue realmente un niño prodigio.  A los tres años pudo detectar errores en los libros de contabilidad del negocio de su padre.  Gauss entró a la universidad a los 15 años.  Antes de los 20, Gauss fue capaz de cosntruir un heptadecágono regular con regla y compás.  Esta fue la primera construcción nueva de un \(n\)-ágono regular desde el tiempo de la Grecia Antigua.  Gauss pudo demostrar que si \(N= 2^{2^n} + 1\) es primo, entonces es posible construir un polígono regular de \(N\) lados usando regla y compás.</p>
+<p id="p-2835">Gauss obtuvo su doctorado en 1799 bajo la dirección de Pfaff en la Universidad de Helmstedt.  En su tesis fue el primero en dar una demostración completa del Teorema Fundamental del Álgebra, que establece que todo polinomio con coeficientes complejos puede ser factorizado completamente sobre los números complejos.  La aceptación de los números complejos fue liderada por Gauss, quien fue el primero en usar la notación \(i\) para \(\sqrt{-1}\text{.}\)</p>
+<p id="p-2836">A continuación Gauss se dedicó a la teoría de números; en 1801, publicó su famoso libro de teoría de números, <em class="emphasis">Disquisitiones Arithmeticae</em>.  Durante toda su vida estuvo interesado por esta rama de las matemáticas.  Alguna vez escribió que, “la Matemática es la reina de las Ciencias, y la teoría de números es la reina de las matemáticas.”</p>
+<p id="p-2837">En 1807, Gauss fue nombrado director del Observatorio en la Universidad de Göttingen, cargo que mantuvo hasta su muerte.  En este cargo tuvo que estudiar aplicaciones de las matemáticas a las ciencias.  Realizó contribuciones a campos como astronomía, mecánica, óptica, geodesia y magnetismo.  Junto a Wilhelm Weber, fue coinventor del primer telégrafo eléctrico prácticoalgunos años anes de que una versión mejor fuera inventada por Samuel F. B. Morse.</p>
+<p id="p-2838">Gauss fue claramente el matemático más prominente de comienzos del siglo XIX. Su estatus lo sometió naturalmente a un intenso escrutinio.  La personalidad fría y distante de Gauss lo llevó muchas veces a ignorar el trabajo de su contemporáneos, creándole muchos enemigos.  No le gustaba mucho hacer clases, y jóvenes que buscaban su apoyo, eran rechazados con frecuencia.  Sin embargo, tuvo muchos discípulos sobresalientes, incluyendo a Eisenstein, Riemann, Kummer, Dirichlet, y Dedekind. Gauss también apoyó decididamente a Sophie Germain (1776–1831), que tuvo que sobrepasar los muchos obstáculos que existían en su tiempo en el camino de una mujer para convertirse en una prestigiosa matemática.  Gauss murió a los 78 años en Göttingen el 23 de February 23 de 1855.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

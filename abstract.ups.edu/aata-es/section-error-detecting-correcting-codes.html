@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:11-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Códigos para Detectar y para Corregir Errores</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="algcodes.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="algcodes.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="section-linear-codes.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="algcodes.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="algcodes.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="section-linear-codes.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes" class="active">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-error-detecting-correcting-codes"><h2 class="heading hide-type" alt="Sección 8.1 Códigos para Detectar y para Corregir Errores">
+<span class="type">Sección</span><span class="codenumber">8.1</span><span class="title">Códigos para Detectar y para Corregir Errores</span>
+</h2>
+<a href="section-error-detecting-correcting-codes.html" class="permalink">¶</a><section class="introduction" id="introduction-31"><p id="p-1199">Consideremos un modelo simple de sistema de comunicaciones para el envío y recepción de mensajes codificados (ver la Figura <a knowl="./knowl/figure-encoding.html" knowl-id="xref-figure-encoding" alt="Figura 8.1 " title="Figura 8.1 ">8.1</a>).</p>
+<figure class="figure-like" id="figure-encoding"><object type="image/svg+xml" style="width:60%; margin:auto; display:block;" data="images/algcodes-encode-decode.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object><figcaption><span class="type">Figura</span><span class="codenumber">8.1</span>Codificar y Decodificar Mensajes</figcaption></figure><p id="p-1200">Mensajes sin codificar pueden estar compuestos de letras o caracteres, pero típicamente consisten de \(m\)-tuplas binarias. Estos mensajes se codifican en palabras de un código, que son \(n\)-tuplas binarias, a través de un mecanismo llamado <b class="terminology">codificador</b>. El mensaje es transmitido y luego decodificado. Consideraremos la aparición de errores durante la transmisión. Un <b class="terminology">error</b> occure si hay un cambio en uno o más bits de la palabra del código. Un <b class="terminology">protocolo decodificador</b> es un método que ya sea convierte  \(n\)-tupla arbitraria recibida en un mensaje decodificado coherente o da un mensaje de error para esa \(n\)-tupla. Si el mensaje recibido es una palabra del código (una de las \(n\)-tuplas permitidas), entonces el mensaje decodificado debe ser el mensaje que fue codificado en la palabra del código. Para tuplas recibidas que no están en el código, el protocolo dará una indicación de error, o, si somos más astutos, tratará de corregir el error y reconstruir el mensaje original. Nuestro objetivos es transmitir mensajes libres de errores de la forma más barata y rápida posible.</p>
+<article class="example-like" id="example-algcodes-repeat"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.2</span>
+</h6>
+<p id="p-1201">Un posible mecanismo de codificación sería enviar el mensaje múltiples veces y comparar las copias recibidas entre ellas. Supongamos que el mensaje a codificar es una \(n\)-tupla binaria \((x_{1}, x_{2}, \ldots, x_{n})\text{.}\) El mensaje se codifica en una \(3n\)-tupla binaria simplemente repitiendo el mensaje tres veces:</p>
+\begin{equation*}
+(x_{1}, x_{2}, \ldots, x_{n}) \mapsto (x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}).
+\end{equation*}
+<p>Para decodificar el mensaje, escogemos como el \(i\)-ésimo dígito el que aparezca en la \(i\)-ésima posición de al menos dos de las tres transmisiones. Por ejemplo, si el mensaje original es \((0110)\text{,}\) entonces el mensaje transmitido será \((0110\;  0110\;  0110)\text{.}\) Si hay un error de transmisión en el quinto dígito, entonces la palabra recibida será \((0110\;  1110\;  0110)\text{,}\) la que será correctamente decodificada como \((0110)\text{.}\)<span class="footnote"><a knowl="" class="id-ref" refid="hk-fn-2" id="fn-2"><sup> 2 </sup></a></span><span id="hk-fn-2" class="hidden-content tex2jax_ignore"><span class="footnote">Adoptaremos la convención de numerar los dígitos de izquierda a derecha en las \(n\)-tuplas binarias.</span></span>  Este método de repetición-triple automáticamente detecta y corrige todos los errores individuales, pero es lento e ineficiente: para enviar un mensaje que consista de \(n\) bits, se requieren \(2n\) bits adicionales, y solo podemos detectar y corregir errores individuales. Veremos que es posible encontrar mecanismos de codificación que codifiquen un mensaje de \(n\) bits en uno de \(m\) bits con \(m\) mucho menor a \(3n\text{.}\)</p></article><article class="example-like" id="example-algcodes-even-parity"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.3</span>
+</h6>
+<p id="p-1202"><b class="terminology">La paridad</b>, un mecanismo de codificación usual, es mucho más eficiente que la simple repetición. El código <abbr class="acronym">ASCII</abbr> (American Standard Code for Information Interchange) usa 8-tuplas binarias, dando lugar a \(2^{8} = 256\) 8-tuplas posibles. Pero, solo se necesitan 7 bits pues solo hay \(2^7 = 128\) caracteres <abbr class="acronym">ASCII</abbr>. ¿Qué se puede o debe hacer con el bit restante? Usando los ocho dígitos, podemos detectar un error individual de transmisión. Por ejemplo, los códigos <abbr class="acronym">ASCII</abbr> para A, B, y C son</p>
+\begin{align*}
+\text{A} &amp; = 65_{10} = 01000001_{2},\\
+\text{B} &amp; = 66_{10} = 01000010_{2},\\
+\text{C} &amp; = 67_{10} = 01000011_{2}.
+\end{align*}
+<p>Note que el bit de más a la izquierda siempre es 0; es decir, los 128 caracteres <abbr class="acronym">ASCII</abbr> tienen códigos</p>
+\begin{align*}
+00000000_{2} &amp; = 0_{10},\\
+&amp; \vdots\\
+01111111_{2} &amp; = 127_{10}.
+\end{align*}
+<p>El bit puede ser usado para controlar errores en los otros siete bits. Se pone como 0 o 1 de manera que el número total de bits 1 en la representación del caracter sea par. Usando paridad, los códigos para A, B, y C se convierten en</p>
+\begin{align*}
+\text{A} &amp; = 01000001_{2},\\
+\text{B} &amp; = 01000010_{2},\\
+\text{C} &amp; = 11000011_{2}.
+\end{align*}
+<p>Supongamos que se envía una A y ocurre un error de transmisión en el sexto bit de manera que se recibe \((0100\; 0101)\text{.}\) Sabemos que se produjo un error pues se recibió un número impar de unos, y podemos pedir que la palabra sea retransmitida. Cuando se usa para detectar errores, el bit de más a la izquierda se llama <b class="terminology">bit de control de paridad</b>.</p>
+<p id="p-1203">Por lejos el mecanismo más común de detección de errores en los computadores está basado en la adición de un bit de paridad. Típicamente, un computador guarda la información en \(m\)-tuplas llamadas <b class="terminology">palabras</b>. Largos comunes para las palabras son 8, 16, y 32 bits. Un bit en la palabra se reserva como bit de control de paridad, y no se usa para almacenar información. Este bit se pone como 0 o 1, dependiendo del número de unos de la palabra.</p>
+<p id="p-1204">Agregar un control de paridad permite la detección de todos los errores únicos pues cualquier cambio a un solo bit, ya sea aumenta o disminuye en uno el número de unos, y en cualquier caso cambia la paridad de par a impar, de manera que la nueva palabra no es una palabra del código.</p></article><p id="p-1205">El sistema de paridad es fácil de implementar, pero tiene dos desventajas.  En primer lugar, errores múltiples no son detectables. Supongamos que se envía una A y se alteran el primer y séptimo dígitos en la transmisión. La palabra recibida resulta ser una palabra del código, pero será decodificada como una C en lugar de una A. En segundo lugar, no tenemos la habilidad de corregir errores.  Si la 8-tupla \((1001\; 1000)\) es recibida, sabemos que ha ocurrido un error, pero no tenemos idea cuál es el bit que se ha cambiado. Investigaremos ahora un mecanismo de codificación que no solo nos permita detectar errores de transmisión, sino que nos permita corregirlos.</p>
+<figure class="figure-like" id="table-repetition-code"><table>
+<tr>
+<td class="c m b0 r0 l0 t2 lines">Palabra</td>
+<td class="c m b0 r0 l0 t2 lines" colspan="8">Palabra Recibida</td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines">Transmitida</td>
+<td class="c m b2 r0 l0 t0 lines">000</td>
+<td class="c m b2 r0 l0 t0 lines">001</td>
+<td class="c m b2 r0 l0 t0 lines">010</td>
+<td class="c m b2 r0 l0 t0 lines">011</td>
+<td class="c m b2 r0 l0 t0 lines">100</td>
+<td class="c m b2 r0 l0 t0 lines">101</td>
+<td class="c m b2 r0 l0 t0 lines">110</td>
+<td class="c m b2 r0 l0 t0 lines">111</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">000</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines">111</td>
+<td class="c m b2 r0 l0 t0 lines">3</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">2</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">0</td>
+</tr>
+</table>
+<figcaption><span class="type">Cuadro</span><span class="codenumber">8.4</span>Un código de repetición</figcaption></figure><article class="example-like" id="example-algcodes-nearest"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.5</span>
+</h6>
+<p id="p-1206">Supongamos que nuestro mensaje original es 0 o 1, y que 0 se codifica en (000) y 1 se codifica en (111). Si ocurre solo un error durante la transmisión, entonces podemos detectar y corregir este error. Por ejemplo, si se recibe un 101, entonces el segundo bit debe haber sido cambiado de 1 a 0.  La palabra transmitida debe haber sido (111). Este método detecterá y corregirá todos los errores únicos.</p>
+<p id="p-1207">En la Tabla <a knowl="./knowl/table-repetition-code.html" knowl-id="xref-table-repetition-code" alt="Cuadro 8.4 " title="Cuadro 8.4 ">8.4</a>, presentamos todas las posibles palabras que pueden ser recibidas para las palabras transmitidas (000) y (111). La Tabla <a knowl="./knowl/table-repetition-code.html" knowl-id="xref-table-repetition-code" alt="Cuadro 8.4 " title="Cuadro 8.4 ">8.4</a> también muestra el número de bits en los que cada 3-tupla difiere de la palabra original.</p></article></section><section class="subsection" id="algcodes-subsection-max-likelihood"><h3 class="heading hide-type" alt="Subsección  Decodificación de Probabilidad Máxima">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Decodificación de Probabilidad Máxima</span>
+</h3>
+<a href="section-error-detecting-correcting-codes.html#algcodes-subsection-max-likelihood" class="permalink">¶</a><p id="p-1208">El mecanismo de codificación presentado en el Ejemplo <a knowl="./knowl/example-algcodes-nearest.html" knowl-id="xref-example-algcodes-nearest" alt="Ejemplo 8.5 " title="Ejemplo 8.5 ">8.5</a> no es una solución completa del problema pues no toma en cuenta la posibilidad de múltiples errores. Por ejemplo, ya sea un (000) o un (111) se podría enviar y se podría recibir un (001). No tenemos forma de decidir a partir de la palabra recibida si se cometió un solo error en el tercer bit o dos errores, uno en el primer bit y uno en el segundo.  Sin importar el mecanismo de codificación usado, un mensaje incorrecto puede ser recibido. Podríamos transmitir un (000), tener errores en los tres bits, y recibir la palabra (111) del código. Es importante explicitar las suposiciones hechas sobre la probabilidad y distribución de los errores de transmisión de manera que, en una aplicación particular, se sabrá si un cierto mecanismo de detección de errores es apropiado. Supondremos que los errores de transmisión son infrecuentes, y, que cuando ocurren, ocurren de forma independiente en cada bit; es decir, si \(p\) es la probabilidad de un error en un bit y \(q\) es la probabilidad de error en otro bit, entonces la probabilidad de errores en ambos bits al mismo tiempo, es \(pq\text{.}\) También supondremos que una \(n\)-tupla recibida se decodificará en la palabra del código que esté más cerca; es decir, suponemos que el receptor usa <b class="terminology">decodificación de probabilidad máxima</b>.<span class="footnote"><a knowl="" class="id-ref" refid="hk-fn-3" id="fn-3"><sup> 3 </sup></a></span><span id="hk-fn-3" class="hidden-content tex2jax_ignore"><span class="footnote">Esta sección requiere conocimientos de probabilidad, pero puede saltarse sin pérdida de continuidad.</span></span></p>
+<figure class="figure-like" id="figure-channel"><object type="image/svg+xml" style="width:40%; margin:auto; display:block;" data="images/algcodes-binary-channel.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object><figcaption><span class="type">Figura</span><span class="codenumber">8.6</span>Canal binario simétrico</figcaption></figure><p id="p-1209">Un <b class="terminology">canal binario simétrico</b> es un modelo que consiste de un transmisor capaz de enviar una señal binaria, ya sea un 0 o un 1, junto a un receptor. Sea \(p\) la probabilidad de que la señal se recibe correctamente. Entonces \(q = 1 - p\) es la probabilidad de recepción incorrecta. Si se envía un 1, entonces la probabilidad de recibir un 1 es \(p\) y la probabilidad de recibir un 0 es \(q\) (Figura <a knowl="./knowl/figure-channel.html" knowl-id="xref-figure-channel" alt="Figura 8.6 " title="Figura 8.6 ">8.6</a>). La probabilidad de que no ocurra ningún error durante la transmisión de una palabra binaria del código de largo \(n\) es \(p^{n}\text{.}\) Por ejemplo, si \(p=0.999\) y se envía un mensaje consistente de 10,000 bits, entonces la probabilidad de una transmisión perfecta es</p>
+\begin{equation*}
+(0.999)^{10,000} \approx 0.00005.
+\end{equation*}
+<article class="theorem-like" id="theorem-31"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">8.7</span>
+</h6>
+<p id="p-1210">Si una \(n\)-tupla binaria \((x_{1}, \ldots, x_{n})\) es transmitida por un canal binario simétrico con probabilidad \(p\) de que no ha ocurrido error en cada coordenada, entonces la probabilidad de que no haya errores en exactamente \(k\) coordenadas es</p>
+\begin{equation*}
+\binom{n}{k} q^kp^{n - k}.
+\end{equation*}
+</article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-45" id="proof-45"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-45" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1211">Fijemos \(k\) coordenadas diferentes. Calculemos primero la probabilidad de que un error ha ocurrido en este conjunto fijo de coordenadas. La probabilidad de que haya ocurrido un error en una en particular de estas \(k\) coordenadas es \(q\text{;}\) la probabilidad de que ningún error haya ocurrido en una de las restantes \(n-k\) coordenadas es \(p\text{.}\) La probabilidad de cada una de estos \(n\) eventos independientes es \(q^{k}p^{n-k}\text{.}\) El número posible de patrones de error con exactamente \(k\) errores es igual a</p>
+\begin{equation*}
+\binom{n}{k}  = \frac{n!}{k!(n - k)!},
+\end{equation*}
+<p>el número de combinaciones de \(k\) cosas elegidas entre un total de \(n\text{.}\) Cada uno de estos patrones de error tiene probabilidad \(q^{k}p^{n-k}\) de ocurrir; luego, la probabilidad de todos estos patrones de error es</p>
+\begin{equation*}
+\binom{n}{k}  q^{k}p^{n - k}. 
+\end{equation*}
+</article></div>
+<article class="example-like" id="example-algcodes-probability"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.8</span>
+</h6>
+<p id="p-1212">Supongamos que \(p = 0.995\) y que se envía un mensaje de 500-bits. La probabilidad de que el mensaje haya sido enviado sin errores es</p>
+\begin{equation*}
+p^{n} = (0.995)^{500} \approx 0.082.
+\end{equation*}
+<p>La probabilidad de que ocurra exactamente un error es</p>
+\begin{equation*}
+\binom{n}{1}  qp^{n - 1}= 500(0.005)(0.995)^{499} \approx 0.204.
+\end{equation*}
+<p>La probabilidad de exactamente dos errores es</p>
+\begin{equation*}
+\binom{n}{2} q^{2}p^{n - 2}= \frac{500 \cdot 499}{2}(0.005)^{2}(0.995)^{498} \approx 0.257.
+\end{equation*}
+<p>La probabilidad de más de dos errores es aproximadamente</p>
+\begin{equation*}
+1 - 0.082 - 0.204 - 0.257 = 0.457.
+\end{equation*}
+</article></section><section class="subsection" id="algcodes-subsection-block-codes"><h3 class="heading hide-type" alt="Subsección  Códigos de Bloque">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Códigos de Bloque</span>
+</h3>
+<a href="section-error-detecting-correcting-codes.html#algcodes-subsection-block-codes" class="permalink">¶</a><p id="p-1213">Si vamos a desarrollar códigos eficientes para detectar y corregir errores, necesitaremos herramientas matemáticas más sofisticadas.  La teoría de grupos permitirá métodos más rápidos y eficientes para codificar y decodificar mensajes. Un código es un  <b class="terminology">código de bloque</b> \((n, m)\) si la información que se codificará se puede dividir en bloques de \(m\) dígitos binarios, cada uno de los cuales puede ser codificado en \(n\) dígitos binarios. Más específicamente, un código de bloque \((n, m)\) consiste de una <b class="terminology">función codificadora</b></p>
+\begin{equation*}
+E:{\mathbb Z}^{m}_{2} \rightarrow {\mathbb Z}^{n}_{2}
+\end{equation*}
+<p>y una <b class="terminology">función decodificadora</b></p>
+\begin{equation*}
+D:{\mathbb Z}^{n}_{2} \rightarrow {\mathbb Z}^{m}_{2}.
+\end{equation*}
+<p>Una <b class="terminology">palabra del código</b> es cualquier elemento en la imagen de \(E\text{.}\) También requerimos que \(E\) sea 1-1 de manera que dos bloques de información no sean codificados en la misma palabra del código.</p>
+<article class="example-like" id="example-algcodes-block-code"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.9</span>
+</h6>
+<p id="p-1214">El código de paridad desarrollado para detectar errores individuales en caracteres <abbr class="acronym">ASCII</abbr> es un código de bloque \((8,7)\text{.}\) La función codificadora es</p>
+\begin{equation*}
+E(x_7, x_6, \ldots, x_1) = (x_8, x_7,  \ldots, x_1),
+\end{equation*}
+<p>donde \(x_8 = x_7 + x_6 + \cdots + x_1\) con la suma en \({\mathbb Z}_2\text{.}\)</p></article><p id="p-1215">Sean \({\mathbf x} = (x_1, \ldots, x_n)\) y \({\mathbf y} = (y_1, \ldots, y_n)\) \(n\)-tuplas binarias. La <b class="terminology">distancia de Hamming</b> o <b class="terminology">distancia</b>, \(d({\mathbf x}, {\mathbf y})\text{,}\) entre \({\mathbf x}\) e \({\mathbf y}\) es el número de bits en que \({\mathbf x}\) e \({\mathbf y}\) difieren. La distancia entre dos palabras del código es el mínimo número de errores de transmisión necesarios para transformar una de las palabras en la otra. La <b class="terminology">distancia mínima</b> para un código, \(d_{\min}\text{,}\) es el mínimo de todas las distancias \(d({\mathbf x}, {\mathbf y})\text{,}\) donde \({\mathbf x}\) e \({\mathbf y}\) son palabras distintas del código. El <b class="terminology">peso</b>, \(w({\mathbf x})\text{,}\) de una palabra de un código binario \({\mathbf x}\) es el número de unos en \({\mathbf x}\text{.}\) Claramente, \(w({\mathbf x}) = d({\mathbf x}, {\mathbf 0})\text{,}\) donde \({\mathbf 0} = (00 \cdots 0)\text{.}\)   </p>
+<article class="example-like" id="example-algcodes-min-distance"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.10</span>
+</h6>
+<p id="p-1216">Sean \({\mathbf x} = (10101)\text{,}\) \({\mathbf y} = (11010)\text{,}\) y \({\mathbf z} = (00011)\) todas las palabras en un código \(C\text{.}\) Entonces tenemos las siguientes distancias de Hamming:</p>
+\begin{equation*}
+d({\mathbf x},{\mathbf y}) = 4, \qquad d({\mathbf x},{\mathbf z}) = 3, \qquad d({\mathbf y},{\mathbf z}) = 3.
+\end{equation*}
+<p>La distancia mínima para este código es 3 y los pesos son:</p>
+\begin{equation*}
+w({\mathbf x}) = 3, \qquad w({\mathbf y}) = 3, \qquad w({\mathbf z}) = 2.
+\end{equation*}
+</article><p id="p-1217">La siguiente proposición lista algunas propiedades básicas sobre el peso de una palabra del código y la distancia entre dos palabras del código. La demostración se deja como ejercicio.</p>
+<article class="theorem-like" id="proposition-20"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">8.11</span>
+</h6>
+<p id="p-1218">Sean \({\mathbf x}\text{,}\) \({\mathbf y}\text{,}\) y \({\mathbf z}\)  \(n\)-tuplas binarias. Entonces </p>
+<ol id="ol-54" style="list-style-type: decimal;">
+<li id="li-299"><p id="p-1219">\(w({\mathbf x}) = d( {\mathbf x}, {\mathbf 0})\text{;}\)</p></li>
+<li id="li-300"><p id="p-1220">\(d( {\mathbf x}, {\mathbf y}) \geq 0\text{;}\)</p></li>
+<li id="li-301"><p id="p-1221">\(d( {\mathbf x}, {\mathbf y}) = 0\) si y solo si \({\mathbf x} = {\mathbf y}\text{;}\)</p></li>
+<li id="li-302"><p id="p-1222">\(d( {\mathbf x}, {\mathbf y})= d( {\mathbf y}, {\mathbf x})\text{;}\)</p></li>
+<li id="li-303"><p id="p-1223">\(d( {\mathbf x}, {\mathbf y}) \leq d( {\mathbf x}, {\mathbf z}) + d( {\mathbf z}, {\mathbf y})\text{.}\)</p></li>
+</ol></article><p id="p-1224">Los pesos en un código particular son usualmente mucho más fáciles de calcular que las distancias de Hamming entre todas las palabras del código. Si un código se construye cuidadosamente, podemos sacar provecho de este hecho.</p>
+<p id="p-1225">Supongamos que \({\mathbf x} = (1101)\) e \({\mathbf y} = (1100)\) son palabras en algún código. Si transmitimos (1101) y un error ocurre en el bit de más a la derecha, entonces se recibirá (1100). Como (1100) es una palabra del código, el decodificador  decodificará (1100) como el mensaje transmitido. Este código claramente no es muy apropiado para la detección de errores. El problema es que \(d({\mathbf x}, {\mathbf y}) = 1\text{.}\) Si \({\mathbf x} = (1100)\) e \({\mathbf y} = (1010)\) son palabras del código, entonces \(d({\mathbf x}, {\mathbf y}) = 2\text{.}\) Si \({\mathbf x}\) se transmite y ocurre un solo error, entonces \({\mathbf y}\) nunca puede ser recibido. La Tabla <a knowl="./knowl/table-4-bit-words.html" knowl-id="xref-table-4-bit-words" alt="Cuadro 8.12 " title="Cuadro 8.12 ">8.12</a> entrega las distancias entre todas las palabras del código de 4-bits en que los primeros tres bits son de información y el cuarto es un bit de control de paridad. Podemos ver que la distancia mínima acá es 2; luego, el código es apto como código de detección de un error.</p>
+<figure class="figure-like" id="table-4-bit-words"><table>
+<tr>
+<td class="c m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines">0000</td>
+<td class="c m b2 r2 l0 t2 lines">0011</td>
+<td class="c m b2 r2 l0 t2 lines">0101</td>
+<td class="c m b2 r2 l0 t2 lines">0110</td>
+<td class="c m b2 r2 l0 t2 lines">1001</td>
+<td class="c m b2 r2 l0 t2 lines">1010</td>
+<td class="c m b2 r2 l0 t2 lines">1100</td>
+<td class="c m b2 r2 l0 t2 lines">1111</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0000</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0011</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0101</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">0110</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1001</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1010</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">1100</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">1111</td>
+<td class="c m b2 r2 l0 t0 lines">4</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">0</td>
+</tr>
+</table>
+<figcaption><span class="type">Cuadro</span><span class="codenumber">8.12</span>Distancias entre palabras de código de 4-bit</figcaption></figure><p id="p-1226">Para determinar exactamente cuáles son las capacidades de detección y corrección de errores de un código, debemos analizar la distancia mínima para el código. Sean \({\mathbf x}\) e \({\mathbf y}\) palabras del código. Si \(d({\mathbf x}, {\mathbf y}) = 1\) y ocurre un error donde difieren \({\mathbf x}\) e \({\mathbf y}\text{,}\) entonces \({\mathbf x}\) se transforma en \({\mathbf y}\text{.}\) La palabra recibida es \({\mathbf y}\) y no se produce ningún mensaje de error. Ahora supongamos que \(d({\mathbf x}, {\mathbf y}) = 2\text{.}\) Entonces un único error no puede transformar \({\mathbf x}\) en \({\mathbf y}\text{.}\) Por lo tanto, si \(d_{\min} = 2\text{,}\) tenemos la habilidad de detectar errores únicos. Pero, supongamos que \(d({\mathbf x}, {\mathbf y}) = 2\text{,}\) \({\mathbf y}\) es enviado, y se recibe una palabra \({\mathbf z}\) que no está en el código tal que</p>
+\begin{equation*}
+d({\mathbf x}, {\mathbf z}) = d({\mathbf y}, {\mathbf z}) = 1.
+\end{equation*}
+<p>Entonces el decodificador no puede decidir entre \({\mathbf x}\) e \({\mathbf y}\text{.}\) Si bien estamos concientes de que se cometió un error, no sabemos cuál fue ese error.</p>
+<p id="p-1227">Supongamos que \(d_{\min} \geq 3\text{.}\) Entonces el algoritmo de decodificación de máxima probabilidad corrige todos los errores únicos. Comenzando con una palabra \({\mathbf x}\) del código, un error de un único bit en la transmisión da \({\mathbf y}\) con \(d({\mathbf x}, {\mathbf y}) = 1\text{,}\) pero \(d({\mathbf z}, {\mathbf y}) \geq 2\) para cualquier otra palabra \({\mathbf z} \neq {\mathbf x}\) del código. Si no necesitamos corregir errores, entonces podemos detectar más de un error cuando un código tiene distancia mínima mayor o igual a 3.</p>
+<article class="theorem-like" id="theorem-min-distance"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">8.13</span>
+</h6>
+<p id="p-1228">Sea \(C\) un código con \(d_{\min} = 2n + 1\text{.}\) Entonces \(C\) puede corregir cualquiera \(n\) o menos errores.  Alternativamente, \(2n\) o menos errores cualquiera pueden ser detectados con \(C\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-46" id="proof-46"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-46" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1229">Supongamos que se envía una palabra \({\mathbf x}\) del código y que se recibe la palabra \({\mathbf y}\) con a lo más \(n\) errores. Entonces \(d( {\mathbf x}, {\mathbf y}) \leq n\text{.}\) Si \({\mathbf z}\) es cualquier palabra del código distinta de \({\mathbf x}\text{,}\) entonces</p>
+\begin{equation*}
+2n+1 \leq d( {\mathbf x}, {\mathbf z}) \leq d( {\mathbf x}, {\mathbf y}) + d( {\mathbf y}, {\mathbf z}) \leq n + d( {\mathbf y}, {\mathbf z}).
+\end{equation*}
+<p>Luego, \(d({\mathbf y}, {\mathbf z} ) \geq n+1\) e \({\mathbf y}\) será decodificada correctamente como \({\mathbf x}\text{.}\) Ahora supongamos que se transmite \({\mathbf x}\) recibiéndose \({\mathbf y}\) y que al menos uno pero no más de \(2n\) errores han ocurrido. Entonces \(1 \leq d( {\mathbf x}, {\mathbf y} ) \leq 2n\text{.}\)  Como la distancia mínima entre palabras del código es \(2n +1\text{,}\) \({\mathbf y}\) no puede ser una palabra del código.  Así, el código puede detectar entre  hasta \(2n\) errores.</p></article></div>
+<article class="example-like" id="example-algcodes-single-correct"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">8.14</span>
+</h6>
+<p id="p-1230">En la Tabla <a knowl="./knowl/table-hamming-distance.html" knowl-id="xref-table-hamming-distance" alt="Cuadro 8.15 " title="Cuadro 8.15 ">8.15</a>, las palabras \({\mathbf c}_1 = (00000)\text{,}\) \({\mathbf c}_2 = (00111)\text{,}\) \({\mathbf c}_3 = (11100)\text{,}\) y \({\mathbf c}_4 = (11011)\) determinan un código corrector de un error.</p></article><figure class="figure-like" id="table-hamming-distance"><table>
+<tr>
+<td class="c m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines">00000</td>
+<td class="c m b2 r2 l0 t2 lines">00111</td>
+<td class="c m b2 r2 l0 t2 lines">11100</td>
+<td class="c m b2 r2 l0 t2 lines">11011</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">00000</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">00111</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l2 t0 lines">11100</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">11011</td>
+<td class="c m b2 r2 l0 t0 lines">4</td>
+<td class="c m b2 r2 l0 t0 lines">3</td>
+<td class="c m b2 r2 l0 t0 lines">3</td>
+<td class="c m b2 r2 l0 t0 lines">0</td>
+</tr>
+</table>
+<figcaption><span class="type">Cuadro</span><span class="codenumber">8.15</span>Distancias de Hamming para un código corrector de errores</figcaption></figure></section><section class="subsection" id="algcodes-subsection-historical-note"><h3 class="heading hide-type" alt="Subsección  Nota Histórica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Nota Histórica</span>
+</h3>
+<a href="section-error-detecting-correcting-codes.html#algcodes-subsection-historical-note" class="permalink">¶</a><p id="p-1231">La teoría moderna de códigos comenzó en 1948 con la publicación de C. Shannon, titulada “A Mathematical Theory of Information” [7]. En su artículo, Shannon ofreció un ejemplo de un código algebraico, y el Teorema de Shannon estableció precisamente qué tan bueno puede llegar a ser un código. Richard Hamming comenzó a trabajar con códigos lineales en Bell Labs a finales de los 1940s y principios de los 1950s después de sufrir la frustración de que los programas que corría no eran capaces de recuperarse de simples errores generados por ruido. La teoría de códigos ha crecido tremendamente en las décadas siguientes a estos trabajos. <em class="emphasis">The Theory of Error-Correcting Codes</em>, de MacWilliams y Sloane [5], publicado en 1977, ya contenía más de 1500 citas. Códigos lineales (códigos de bloque \((32, 6)\) de Reed-Muller) fueron usados en las sondas espaciales Mariner de la NASA.  Sondas espaciales posteriores como los Voyager han usado los llamados códigos de convolución.  Actualmente, hay investigación activa respecto a códigos Goppa, que dependen fuertemente de geometría algebraica.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

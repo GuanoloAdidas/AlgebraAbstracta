@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:26-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Sage</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="galois-references.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="galois.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="galois-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="galois-references.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="galois.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="galois-sage-exercises.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage" class="active">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="galois-sage"><h2 class="heading hide-type" alt="Sección 23.6 Sage">
+<span class="type">Sección</span><span class="codenumber">23.6</span><span class="title">Sage</span>
+</h2>
+<a href="galois-sage.html" class="permalink">¶</a><section class="introduction" id="introduction-84"><p id="p-3743">Nuestra capacidad de examinar cuerpos con Sage nos permitirá estudiar los principales conceptos de la Teoría de Galois con facilidad.  Examinaremos rigurosamente el Ejemplo 7 usando las herramientas computacionales a nuestra disposición.</p></section><section class="subsection" id="subsection-142"><h3 class="heading hide-type" alt="Subsección  Grupos de Galois">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Grupos de Galois</span>
+</h3>
+<p id="p-3744">Repetiremos el Ejemplo <a knowl="./knowl/example-galois-x4-2.html" knowl-id="xref-example-galois-x4-2" alt="Ejemplo 23.24 " title="Ejemplo 23.24 ">23.24</a> y analizaremos cuidadosamente el cuerpo de descomposición del polinomio \(p(x)=x^4-2\text{.}\)  Comenzamos con un cuerpo de extención inicial que contenga al menos una raíz.</p>
+<div class="sagecell-sage" id="sage-653"><script type="text/x-sage">x = polygen(QQ, 'x')
+N.<a> = NumberField(x^4 - 2); N
+</script></div>
+<p id="p-3745">El método <tt class="code-inline tex2jax_ignore">.galois_closure()</tt> crea una extensión que contiene todas las raíces del polinomio usado para definir el cuerpo de números.</p>
+<div class="sagecell-sage" id="sage-654"><script type="text/x-sage">L.<b> = N.galois_closure(); L
+</script></div>
+<div class="sagecell-sage" id="sage-655"><script type="text/x-sage">L.degree()
+</script></div>
+<div class="sagecell-sage" id="sage-656"><script type="text/x-sage">y = polygen(L, 'y')
+(y^4 - 2).factor()
+</script></div>
+<p id="p-3746">De la factorización, es claro que  <tt class="code-inline tex2jax_ignore">L</tt> es el cuerpo de descomposición del polinomio, si bien la factorización no es linda.  Es fácil entonces obtener el grupo de Galois de esta extensión de cuerpos.</p>
+<div class="sagecell-sage" id="sage-657"><script type="text/x-sage">G = L.galois_group(); G
+</script></div>
+<p id="p-3747">Podemos examinar e identificar este grupo.  Note que como el cuerpo es una extensión de grado  \(8\text{,}\) el grupo se describe como un grupo de permutaciones en  \(8\) símbolos.  (Es solo una coincidencia que el grupo tiene  \(8\) elementos.)  Dada la escasez de grupos no abelianos de orden  \(8\text{,}\) no es difícil descubrir la naturaleza de este grupo.</p>
+<div class="sagecell-sage" id="sage-658"><script type="text/x-sage">G.is_abelian()
+</script></div>
+<div class="sagecell-sage" id="sage-659"><script type="text/x-sage">G.order()
+</script></div>
+<div class="sagecell-sage" id="sage-660"><script type="text/x-sage">G.list()
+</script></div>
+<div class="sagecell-sage" id="sage-661"><script type="text/x-sage">G.is_isomorphic(DihedralGroup(4))
+</script></div>
+<p id="p-3748">Ahí está.  Pero puede no ser muy satisfactorio.  Veamos en mayor profundidad para entender mejor.  Empezaremos del principio y crearemos el cuerpo de descomposición de  \(p(x)=x^4-2\) nuevamente, pero la principal diferencia es que las raíces serán extremadamente obvias de manera que podamos trabajar más cuidadosamente con el grupo de Galois y los cuerpos fijos.  En el camino, veremos otro ejemplo donde el álgebra lineal nos permite ciertos cálculos.  La siguiente construcción debiese resultar familiar a esta altura.</p>
+<div class="sagecell-sage" id="sage-662"><script type="text/x-sage">x = polygen(QQ, 'x')
+p = x^4 - 2
+N.<a> = NumberField(p); N
+</script></div>
+<div class="sagecell-sage" id="sage-663"><script type="text/x-sage">y = polygen(N, 'y')
+p = p.subs(x=y)
+p.factor()
+</script></div>
+<div class="sagecell-sage" id="sage-664"><script type="text/x-sage">M.<b> = NumberField(y^2 + a^2); M
+</script></div>
+<div class="sagecell-sage" id="sage-665"><script type="text/x-sage">z = polygen(M, 'z')
+(z^4 - 2).factor()
+</script></div>
+<p id="p-3749">Lo que debemos notar acá es que hemos organizado el cuerpo de descomposición de manera de que las cuatro raíces, <tt class="code-inline tex2jax_ignore">a, -a, b, -b</tt>, son funciones muy sencillas en términos de los generadores.  En una notación más tradicional, <tt class="code-inline tex2jax_ignore">a</tt> es \(2^{\frac{1}{4}}=\sqrt[4]{2}\text{,}\) y <tt class="code-inline tex2jax_ignore">b</tt> es \(2^{\frac{1}{4}}i=\sqrt[4]{2}i\) (o sus negativos).</p>
+<p id="p-3750">Veremos que es más sencillo realizar cálculos en la torre aplanada, una construcción ya familiar.</p>
+<div class="sagecell-sage" id="sage-666"><script type="text/x-sage">L.<c> = M.absolute_field(); L
+</script></div>
+<div class="sagecell-sage" id="sage-667"><script type="text/x-sage">fromL, toL = L.structure()
+</script></div>
+<p id="p-3751">Podemos volver a nuestro polinomio original (sobre los racionales), y preguntar por sus raíces en la torre aplanada, diseññada a la medida para contener estas raíces.</p>
+<div class="sagecell-sage" id="sage-668"><script type="text/x-sage">roots = p.roots(ring=L, multiplicities=False); roots
+</script></div>
+<p id="p-3752">Hmmm.  ¿Se ven correctas?  Si volvemos a la factorización obtenida en el cuerpo construído con el método <tt class="code-inline tex2jax_ignore">.galois_closure()</tt>, se ven bien.  Pero podemos mejorarlas.</p>
+<div class="sagecell-sage" id="sage-669"><script type="text/x-sage">[fromL(r) for r in roots]
+</script></div>
+<p id="p-3753">Sí, esas son las raíces.</p>
+<p id="p-3754">El comando <tt class="code-inline tex2jax_ignore">End()</tt> creará el grupo de automorfismos del cuerpo <tt class="code-inline tex2jax_ignore">L</tt>.</p>
+<div class="sagecell-sage" id="sage-670"><script type="text/x-sage">G = End(L); G
+</script></div>
+<p id="p-3755">Podemos verificar que cada uno de estos automorfismos fija los números racionales.  Si un homomorfismo de cuerpos fija el 1, entonces fija los enteros, y por ende fija todas las fracciones de enteros.</p>
+<div class="sagecell-sage" id="sage-671"><script type="text/x-sage">[tau(1) for tau in G]
+</script></div>
+<p id="p-3756">Así, cada elemento de <tt class="code-inline tex2jax_ignore">G</tt> fija los números racionales y por ende <tt class="code-inline tex2jax_ignore">G</tt> es el grupo de Galois del cuerpo de descomposición <tt class="code-inline tex2jax_ignore">L</tt> sobre los racionales.</p>
+<p id="p-3757">La Proposición <a knowl="./knowl/proposition-roots-permute.html" knowl-id="xref-proposition-roots-permute" alt="Proposición 23.5 " title="Proposición 23.5 ">23.5</a> es fundamental.  Dice que todo automorfismo en el grupo de Galois de un cuerpo de extensión induce una permutación de las raíces de un polinomio con coeficientes en el cuerpo base.  Tenemos acá todos estos ingredientes.  Evaluaremos cada automorfismo del grupo de Galois en cada una de las cuatro raíces de nuestro polinomio, que en cada caso debiera ser otra raíz.  (Usamos el constructor <tt class="code-inline tex2jax_ignore">Sequence()</tt> para obtener una salida bien diagramada.)</p>
+<div class="sagecell-sage" id="sage-672"><script type="text/x-sage">Sequence([[fromL(tau(r)) for r in roots] for tau in G], cr=True)
+</script></div>
+<p id="p-3758">Cada fila de esta salida es una lista de raíces, pero permutadas, y así corresponde a una permutación de cuatro objetos (las raíces).  Por ejemplo, la segunda fila muestra que el segundo automorfismo intercambia <tt class="code-inline tex2jax_ignore">a</tt> con <tt class="code-inline tex2jax_ignore">-a</tt>, y <tt class="code-inline tex2jax_ignore">b</tt> con <tt class="code-inline tex2jax_ignore">-b</tt>.  (Note que la primera fila es el resultado del automorfismo identidad, de manera que podemos comparar mentalmente la primera fila con cualquier otra para imaginar la forma de “dos filas” de una permutación.)  Podemos numerar las raíces, del 1 al 4, y crear cada permutacióncomo un elemento de \(S_4\text{.}\)  Es más de lo que se requiere, pero podemos construir el grupo de permutaciones dejando que <em class="emphasis">todos</em> estos elementos generen un grupo.</p>
+<div class="sagecell-sage" id="sage-673"><script type="text/x-sage">S4 = SymmetricGroup(4)
+elements = [S4([1, 2, 3, 4]),
+            S4([4, 3, 2, 1]),
+            S4([2, 4, 1, 3]),
+            S4([1, 3, 2, 4]),
+            S4([3, 4, 1, 2]),
+            S4([2, 1, 4, 3]),
+            S4([4, 2, 3, 1]),
+            S4([3, 1, 4, 2])]
+elements
+</script></div>
+<div class="sagecell-sage" id="sage-674"><script type="text/x-sage">P = S4.subgroup(elements)
+P.is_isomorphic(DihedralGroup(4))
+</script></div>
+<p id="p-3759">Note que hemos construido un isomorfismo del grupo de Galois a un grupo de permutaciones <em class="emphasis">usando solo cuatro símbolos</em>, en lugar de los ocho usados previamente.</p></section><section class="subsection" id="subsection-143"><h3 class="heading hide-type" alt="Subsección  Cuerpo Fijos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Cuerpo Fijos</span>
+</h3>
+<p id="p-3760">En un ejercicio Sage anterior, calculamos los cuerpos fijos de automorfismos individuales para cuerpos finitos.  Esto fue “fácil” en el sentido de que podíamos verificar con cada uno de los elementos en el cuerpo para ver si quedaba fijo, pues el cuerpo era finito.  Ahora tenemos una extensión de cuerpos infinitos.  ¿Cómo determinaremos qué elementos quedan fijos bajo un automorfismo individual, o subgrupos de automorfismos?</p>
+<p id="p-3761">La respuesta es usar la estructura de espacio vectorial de la torre aplanada.  Como es una extensión de grado 8 de los racionales, las primeras 8 potencias de un elemento primitivo <tt class="code-inline tex2jax_ignore">c</tt> forman una base cuando el cuerpo se ve como un espacio vectorial con los racionales como escalares.  Es suficiente saber como cada automorfismo de cuerpos actúa en esta base para completamente especificar la definición del automorfismo.  Esto es,</p>
+\begin{align*}
+\tau(x)&amp;=\tau\left(\sum_{i=0}^7\,q_ic^i\right)&amp;&amp;q_i\in{\mathbb Q}\\
+&amp;=\sum_{i=0}^7\,\tau(q_i)\tau(c^i)&amp;&amp;\tau\text{ es un automorfismo de cuerpos}\\
+&amp;=\sum_{i=0}^7\,q_i\tau(c^i)&amp;&amp;\text{los racionales quedan fijos}
+\end{align*}
+<p>Así podemos calcular el valor de un automorfismo de cuerpos en cualquier combinación lineal de potencias del elemento primitivo como combinación lineal de los valores del automorfismo de cuerpos solo en las potencias del elemento primitivo.  Esta se conoce como “base de potencias”, lo que podemos obtener simplemente con el método <tt class="code-inline tex2jax_ignore">.power_basis()</tt>.  Empezaremos con un ejemplo de como usar esta base.  Ilustraremos con el cuarto automorfismo del grupo de Galois.  Note que el método <tt class="code-inline tex2jax_ignore">.vector()</tt> es conveniente en tanto transforma una combinación lineal de potencias de <tt class="code-inline tex2jax_ignore">c</tt> en un vector que solo retiene los coeficientes.  (Note además que  \(\tau\) está completamente definido por el valor de \(\tau(c)\text{,}\)  pues como es un automorfismo de cuerpos \(\tau(c^k)=(\tau(c))^k\text{.}\)  Sin embargo, igual debemos trabajar con la base de potencias completa para aprovechar la estructura de espacio vectorial.)</p>
+<div class="sagecell-sage" id="sage-675"><script type="text/x-sage">basis = L.power_basis(); basis
+</script></div>
+<div class="sagecell-sage" id="sage-676"><script type="text/x-sage">tau = G[3]
+z = 4 + 5*c+ 6*c^3-7*c^6
+tz = tau(4 + 5*c+ 6*c^3-7*c^6); tz
+</script></div>
+<div class="sagecell-sage" id="sage-677"><script type="text/x-sage">tz.vector()
+</script></div>
+<div class="sagecell-sage" id="sage-678"><script type="text/x-sage">tau_matrix = column_matrix([tau(be).vector() for be in basis])
+tau_matrix
+</script></div>
+<div class="sagecell-sage" id="sage-679"><script type="text/x-sage">tau_matrix*z.vector()
+</script></div>
+<div class="sagecell-sage" id="sage-680"><script type="text/x-sage">tau_matrix*(z.vector()) == (tau(z)).vector()
+</script></div>
+<p id="p-3762">La última línea expresa el hecho de que  <tt class="code-inline tex2jax_ignore">tau_matrix</tt> es una representación matricial del automorfismo de cuerpos, visto como transformación lineal en la estructura de espacio vectorial.  En la representación de un homomorfismo de cuerpos invertible, la matriz es invertible. Para una permutación de orden \(2\) de las raíces, la inversa de la matriz es ella misma.  Pero estos hechos son solo verificaciones de que tenemos lo que queremos, estamos interesados en otras propiedades.</p>
+<p id="p-3763">Para construir cuerpos fijos, queremos encontrar los elementos que quedan fijos por automorfismos.  Continuando con <tt class="code-inline tex2jax_ignore">tau</tt> de arriba, buscamos elementos  <tt class="code-inline tex2jax_ignore">z</tt> (escritos como vectores) tales que <tt class="code-inline tex2jax_ignore">tau_matrix*z=z</tt>.  Estos vectores propios para el valor propio  \(1\text{,}\) o elementos del espacio nulo de <tt class="code-inline tex2jax_ignore">(tau_matrix - I)</tt> (espacios nulos obtenidos con <tt class="code-inline tex2jax_ignore">.right_kernel()</tt> en Sage).</p>
+<div class="sagecell-sage" id="sage-681"><script type="text/x-sage">K = (tau_matrix-identity_matrix(8)).right_kernel(); K
+</script></div>
+<p id="p-3764">Cada fila de la matriz de base es un vector que representa un elemento del cuerpo, esspecíficamente <tt class="code-inline tex2jax_ignore">1</tt>, <tt class="code-inline tex2jax_ignore">c + (1/38)*c^5</tt>, <tt class="code-inline tex2jax_ignore">c^2 - (1/22)*c^6</tt>, <tt class="code-inline tex2jax_ignore">c^3 + (1/278)*c^7</tt>.  Examinemos en mayor detalle estos elementos fijos, en términos que reconozcamos.</p>
+<div class="sagecell-sage" id="sage-682"><script type="text/x-sage">fromL(1)
+</script></div>
+<div class="sagecell-sage" id="sage-683"><script type="text/x-sage">fromL(c + (1/38)*c^5)
+</script></div>
+<div class="sagecell-sage" id="sage-684"><script type="text/x-sage">fromL(c^2 - (1/22)*c^6)
+</script></div>
+<div class="sagecell-sage" id="sage-685"><script type="text/x-sage">fromL(c^3 + (1/278)*c^7)
+</script></div>
+<p id="p-3765">Cualquier elemento fijo por <tt class="code-inline tex2jax_ignore">tau</tt> es una combinación lineal de estos cuatro elementos.  Podemos ignorar los múltiplos racionales, el primer elemento está diciendo simplemente que los racionales quedan fijos, y que el último elemento es simplemente el producto de los dos del medio.  Así fundamentalmente <tt class="code-inline tex2jax_ignore">tau</tt> fija los racionales, <tt class="code-inline tex2jax_ignore">b</tt> (que es \(\sqrt[4]{2}i\)) y <tt class="code-inline tex2jax_ignore">a^2</tt> (que es \(\sqrt{2}\)).  Más aún, <tt class="code-inline tex2jax_ignore">b^2 = -a^2</tt> (la verificación viene a continuación), de manera que podemos crear cualquier elemento fijo por <tt class="code-inline tex2jax_ignore">tau</tt> simplemente adjuntando <tt class="code-inline tex2jax_ignore">b</tt>=\(\sqrt[4]{2}i\) a los racionales.  Así los elementos fijos por  <tt class="code-inline tex2jax_ignore">tau</tt> son \({\mathbb Q}(\sqrt[4]{2}i)\text{.}\)</p>
+<div class="sagecell-sage" id="sage-686"><script type="text/x-sage">a^2 + b^2
+</script></div></section><section class="subsection" id="subsection-144"><h3 class="heading hide-type" alt="Subsección  Correspondencia de Galois">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Correspondencia de Galois</span>
+</h3>
+<p id="p-3766">La estructura completa de subcuerpos de nuestro cuerpo de descomposición está determinada por la estrcutura de subgrupos del grupo de Galois (Teorema <a knowl="./knowl/theorem-fundamental-galois.html" knowl-id="xref-theorem-fundamental-galois" alt="Teorema 23.22 Teorema Fundamental de la Teoría de Galois" title="Teorema 23.22 Teorema Fundamental de la Teoría de Galois">23.22</a>), que es isomorfo a un grupo que conocemos bien.  ¿Cuáles son los subgrupos de nuestro grupo de Galois, expresados como grupos de permutaciones? (Para ser breves, solo listamos los <em class="emphasis">generadores</em> de cada subgrupo.)</p>
+<div class="sagecell-sage" id="sage-687"><script type="text/x-sage">sg = P.subgroups();
+[H.gens() for H in sg]
+</script></div>
+<div class="sagecell-sage" id="sage-688"><script type="text/x-sage">[H.order() for H in sg]
+</script></div>
+<p id="p-3767"><tt class="code-inline tex2jax_ignore">tau</tt> arriba, es el cuarto elemento del grupo de automorfismos, y la cuarta permutación en <tt class="code-inline tex2jax_ignore">elements</tt> es la permutación <tt class="code-inline tex2jax_ignore">(2,3)</tt>, el generador (de orden 2) para el segundo subgrupo.  Como es el único elemento no trivial de este subgrupo, sabemos que el cuerpo fijo correspondiente es \({\mathbb Q}(\sqrt[4]{2}i)\text{.}\)</p>
+<p id="p-3768">Analicemos otro subgrupo de orden  2, si toda la explicación, y comenzando con el subgrupo.  El sexto subgrupo está generado por el quinto automorfismo, así es que determinemos los elementos que quedan fijos.</p>
+<div class="sagecell-sage" id="sage-689"><script type="text/x-sage">tau = G[4]
+tau_matrix = column_matrix([tau(be).vector() for be in basis])
+(tau_matrix-identity_matrix(8)).right_kernel()
+</script></div>
+<div class="sagecell-sage" id="sage-690"><script type="text/x-sage">fromL(tau(1))
+</script></div>
+<div class="sagecell-sage" id="sage-691"><script type="text/x-sage">fromL(tau(c+(1/158)*c^5))
+</script></div>
+<div class="sagecell-sage" id="sage-692"><script type="text/x-sage">fromL(tau(c^2+(1/78)*c^6))
+</script></div>
+<div class="sagecell-sage" id="sage-693"><script type="text/x-sage">fromL(tau(c^3+(13/614)*c^7))
+</script></div>
+<p id="p-3769">El primer elemento indica que los racionales quedan fijos (lo sabíamos).  Escalando el segundo elemento nos da <tt class="code-inline tex2jax_ignore">b - a</tt> como elemento fijo.  Escalando el tercer y cuarto elementos fijos, reconocemos que puedens ser obtenidos a partir de potencias de  <tt class="code-inline tex2jax_ignore">b - a</tt>.</p>
+<div class="sagecell-sage" id="sage-694"><script type="text/x-sage">(b-a)^2
+</script></div>
+<div class="sagecell-sage" id="sage-695"><script type="text/x-sage">(b-a)^3
+</script></div>
+<p id="p-3770">Así el cuerpo fijo de este subgrupo puede ser formado adjuntando  <tt class="code-inline tex2jax_ignore">b - a</tt> a los racionales, lo que en notación matemática es \(\sqrt[4]{2}i - \sqrt[4]{2} = (1-i)\sqrt[4]{2}\text{,}\) así el cuerpo fijo es \({\mathbb Q}(\sqrt[4]{2}i - \sqrt[4]{2}) = {\mathbb Q}((1-i)\sqrt[4]{2})\text{.}\)</p>
+<p id="p-3771">Podemos crear este cuerpo fijo, aunque como lo hacemos acá no es estrictamente un subcuerpo de  <tt class="code-inline tex2jax_ignore">L</tt>.  Usaremos una expresión para <tt class="code-inline tex2jax_ignore">b - a</tt> que es una combinación lineal de potencias de <tt class="code-inline tex2jax_ignore">c</tt>.</p>
+<div class="sagecell-sage" id="sage-696"><script type="text/x-sage">subinfo = L.subfield((79/120)*(c+(1/158)*c^5)); subinfo
+</script></div>
+<p id="p-3772">El método <tt class="code-inline tex2jax_ignore">.subfield()</tt> entrega un par.  El primer  ítem es un nuevo cuerpo de números, isomorfo a un subcuerpo de  <tt class="code-inline tex2jax_ignore">L</tt>.  El segundo ítem es una función inyectiva desde el nuevo cuerpo de números a  <tt class="code-inline tex2jax_ignore">L</tt>.  En este caso, la imagen del elemento primitivo <tt class="code-inline tex2jax_ignore">c0</tt> es el elemento que hemos especificado como generador del subcuerpo.  El elemento primitivo del nuevo cuerpo satisface el polinomio  \(x^4+8\) — puede verificar que  \((1-i)\sqrt[4]{2}\) es de hecho una raíz del polinomio \(x^4 + 8\text{.}\)</p>
+<p id="p-3773">Existen cuatro subgrupos de orden  \(2\text{,}\) hemos encontrado cuerpos fijos para dos de ellos.  Los otros tres son similares, y sería un buen ejercicio obtenerlos.  Nuestro grupo de automorfismos tiene tres subgrupos de orden  4, y al menos uno de cada tipo posible (cíclico versus no cíclico).  Cuerpos fijos de subgrupos de mayor tamaño requieren encontrar elementos del cuerpo que queden fijos por todos los automorfismos en el subgrupo.  (Convenientemente ignoramos el automorfismo identidad arriba.)  Esto va a requerir myores cálculos, pero restringirá las posibilidades (cuerpos menores) al punto de que será más fácil determinar un elemento primitivo para cada uno de los cuerpos.</p>
+<p id="p-3774">El séptimo subgrupo es generado por dos elementos de orden  \(2\) y se compone completamente de elementos de orden \(2\) (exceptuando la identidad), así que es isomorfo a  \({\mathbb Z}_2\times{\mathbb Z}_2\text{.}\)  Las permutaciones corresponden a los automorfismos número  0, 1, 3, y 6.  Para determinar el elemento fijo por  <em class="emphasis">los cuatro</em> automorfismos, construiremos el núcleo de cada uno y a medida que avanzamos, formamos la <em class="emphasis">intersección</em> de los cuatro núcleos.  Usaremos un bucle sobre los cuatro automorfismos.</p>
+<div class="sagecell-sage" id="sage-697"><script type="text/x-sage">V = QQ^8
+for tau in [G[0], G[1], G[3], G[6]]:
+  tau_matrix = column_matrix([tau(be).vector() for be in basis])
+  K = (tau_matrix-identity_matrix(8)).right_kernel()
+  V = V.intersection(K)
+V
+</script></div>
+<p id="p-3775">Fuera de los racionales, hay un único elemento fijo.</p>
+<div class="sagecell-sage" id="sage-698"><script type="text/x-sage">fromL(tau(c^2 - (1/22)*c^6))
+</script></div>
+<p id="p-3776">Removiendo un múltiplo escalar, nuestro elemento primitivo es <tt class="code-inline tex2jax_ignore">a^2</tt>, que matemáticamente es \(\sqrt{2}\text{,}\) así el cuerpo fijo es \({\mathbb Q}(\sqrt{2})\text{.}\)  Nuevamente, podemos construir este cuerpo fijo, pero ignorando la función.</p>
+<div class="sagecell-sage" id="sage-699"><script type="text/x-sage">F, mapping = L.subfield((11/150)*(c^2 - (1/22)*c^6))
+F
+</script></div>
+<p id="p-3777">Un subgrupo más.  El penúltimo subgrupo tiene una permutación de orden 4 como generador, así es que es un grupo cíclico de orden  4.  Las permutaciones individuales del subgrupo corresponden a automorfismos de  0, 1, 2, 7.</p>
+<div class="sagecell-sage" id="sage-700"><script type="text/x-sage">V = QQ^8
+for tau in [G[0], G[1], G[2], G[7]]:
+  tau_matrix = column_matrix([tau(be).vector() for be in basis])
+  K = (tau_matrix-identity_matrix(8)).right_kernel()
+  V = V.intersection(K)
+V
+</script></div>
+<p id="p-3778">Así podemos calcular el elemento primitivo.</p>
+<div class="sagecell-sage" id="sage-701"><script type="text/x-sage">fromL(tau(c^4))
+</script></div>
+<p id="p-3779">Como los racionales quedan fijos, podemos sacar el \(-14\) y el múltiplo y tomar <tt class="code-inline tex2jax_ignore">a^3*b</tt> como el elemento primitivo.  Matemáticamente, esto es \(2i\text{,}\) así que podemos usar simplemente \(i\) como elemento primitivo y el cuerpo fijo es \({\mathbb Q}(i)\text{.}\)  Podemos entonces construir el cuerpo fijo (e ignorar la función que obtuvimos además).</p>
+<div class="sagecell-sage" id="sage-702"><script type="text/x-sage">F, mapping = L.subfield((c^4+14)/-48)
+F
+</script></div>
+<p id="p-3780">Hay un subgrupo más de orden \(4\text{,}\) cuyo análisi dejaremos como ejercicio.  Hay además dos subgrupos triviales (la identidad y el grupo completo) que no son muy interesantes ni sorprendentes.</p>
+<p id="p-3781">Si lo de arriba le parece mucho trabajo, puede siempre dejar que Sage lo haga todo con el método <tt class="code-inline tex2jax_ignore">.subfields()</tt>.</p>
+<div class="sagecell-sage" id="sage-703"><script type="text/x-sage">L.subfields()
+</script></div>
+<p id="p-3782">Se describen diez subcuerpos, que es lo que esperábamos, dados los 10 subgrupos del grupo de Galois.  Cada uno empieza con un cuerpo de número que es un subcuerpo.  Técnicamente, cada uno no es un subconjunto de  <tt class="code-inline tex2jax_ignore">L</tt>, pero el segundo ítem devuelto para cada subcuerpo es un homomorfismo inyectivo, también conocido como una “incrustación.”  Cada incrustación describe cómo un elemento primitivo del subcuerpo se traduce a un elemento de <tt class="code-inline tex2jax_ignore">L</tt>.  Algunos de estos elementos primitivos podrían ser manipulados (como hicimos arriba) para darnos polinomios minimales más simples, pero los resultados son bastante impresionantes de todas formas.  Cada ítem en la lista tiene una tercera componente, que es casi siempre  <tt class="code-inline tex2jax_ignore">None</tt>, excepto cuando el subcuerpo es el cuerpo completo, y ahí la tercera componente es un homomorfismo inyectivo  “en la otra dirección.”</p></section><section class="subsection" id="subsection-145"><h3 class="heading hide-type" alt="Subsección  Exensiones Normales">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Exensiones Normales</span>
+</h3>
+<p id="p-3783">Considere el tercer subgrupo en la lista arriba, generado por la permutación <tt class="code-inline tex2jax_ignore">(1,4)</tt>. Como subgrupo de orden \(2\text{,}\) tiene solo un elemento no trivial, que acá corresponde con el séptimo automorfismo.  Determinamos los elementos fijos como antes.</p>
+<div class="sagecell-sage" id="sage-704"><script type="text/x-sage">tau = G[6]
+tau_matrix = column_matrix([tau(be).vector() for be in basis])
+(tau_matrix-identity_matrix(8)).right_kernel()
+</script></div>
+<div class="sagecell-sage" id="sage-705"><script type="text/x-sage">fromL(tau(1))
+</script></div>
+<div class="sagecell-sage" id="sage-706"><script type="text/x-sage">fromL(tau(c+(-1/82)*c^5))
+</script></div>
+<div class="sagecell-sage" id="sage-707"><script type="text/x-sage">fromL(tau(c^2+(-1/22)*c^6))
+</script></div>
+<div class="sagecell-sage" id="sage-708"><script type="text/x-sage">fromL(tau(c^3+(11/58)*c^7))
+</script></div>
+<p id="p-3784">Como siempre, ignorando múltiplos racionales, vemos potencias de <tt class="code-inline tex2jax_ignore">a</tt> y reconocemos que  <tt class="code-inline tex2jax_ignore">a</tt> es un elemento primitivo para el cuerpo fijo, que es por lo tanto \({\mathbb Q}(\sqrt[4]{2})\text{.}\)  Reconozcamos que <tt class="code-inline tex2jax_ignore">a</tt> era nuestra primera raíz de \(x^4-2\text{,}\) y fue usada para crear la primera parte de nuestra torre original, <tt class="code-inline tex2jax_ignore">N</tt>.  Así <tt class="code-inline tex2jax_ignore">N</tt> es tanto \({\mathbb Q}(\sqrt[4]{2})\) como el cuerpo fijo de \(H=\langle(1,4)\rangle\text{.}\)</p>
+<p id="p-3785">\({\mathbb Q}(\sqrt[4]{2})\) contiene al menos una raíz del polinomio irreducible \(x^4-2\text{,}\) pero no todas las raíces (atestigua la factorización de arriba) y por lo tanto no califica como extensión normal.  Por la parte (4) del Teorema <a knowl="./knowl/theorem-fundamental-galois.html" knowl-id="xref-theorem-fundamental-galois" alt="Teorema 23.22 Teorema Fundamental de la Teoría de Galois" title="Teorema 23.22 Teorema Fundamental de la Teoría de Galois">23.22</a> el grupo de automorfismos de la extensión no es normal en el grupo de Galois completo.</p>
+<div class="sagecell-sage" id="sage-709"><script type="text/x-sage">sg[2].is_normal(P)
+</script></div>
+<p id="p-3786">Como se esperaba.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:02:16-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Definición y Ejemplos</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="isomorph.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="isomorph.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="section-direct-products.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="isomorph.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="isomorph.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="section-direct-products.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions" class="active">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-isomorph-definitions"><h2 class="heading hide-type" alt="Sección 9.1 Definición y Ejemplos">
+<span class="type">Sección</span><span class="codenumber">9.1</span><span class="title">Definición y Ejemplos</span>
+</h2>
+<a href="section-isomorph-definitions.html" class="permalink">¶</a><section class="introduction" id="introduction-36"><p id="p-1410">Dos grupos \((G, \cdot)\) y \((H, \circ)\) son <b class="terminology">isomorfos</b> si existe una función biyectiva  \(\phi : G \rightarrow H\) que preserve la operación de grupo;  es decir,</p>
+\begin{equation*}
+\phi( a \cdot b) = \phi( a) \circ \phi( b)
+\end{equation*}
+<p>para todo \(a\) y \(b\) en \(G\text{.}\) Si \(G\) es isomorfo con \(H\text{,}\) escribimos \(G \cong H\text{.}\)  La función \(\phi\) se llama un <b class="terminology">isomorfismo</b>.</p>
+<article class="example-like" id="example-isomorph-z4"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.1</span>
+</h6>
+<p id="p-1411">Para demostrar que \({\mathbb Z}_4 \cong \langle i \rangle\text{,}\) defina una función \(\phi: {\mathbb Z}_4 \rightarrow \langle i \rangle\) como \(\phi(n) = i^n\text{.}\)  Debemos mostrar que \(\phi\) es biyectiva y que preserva la operación de grupo.  La función \(\phi\) es biyectiva pues</p>
+\begin{align*}
+\phi(0) &amp; = 1\\
+\phi(1) &amp; = i\\
+\phi(2) &amp; = -1\\
+\phi(3) &amp; = -i.
+\end{align*}
+<p>Como</p>
+\begin{equation*}
+\phi(m + n) = i^{m+n} = i^m i^n = \phi(m) \phi( n),
+\end{equation*}
+<p>se preserva la operación de grupo.</p></article><article class="example-like" id="example-isomorph-real"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.2</span>
+</h6>
+<p id="p-1412">Podemos definir un isomorfismo \(\phi\) del grupo aditivo de los números reales \(( {\mathbb R}, + )\) al grupo multiplicativo de los números reales positivos \(( {\mathbb R^+}, \cdot )\)  mediante la función exponencial; es decir,</p>
+\begin{equation*}
+\phi( x + y) = e^{x + y} = e^x e^y = \phi( x ) \phi( y).
+\end{equation*}
+<p>Por supuesto, debemos aún demostrar que \(\phi\) es una biyección; esto puede ser hecho usando cálculo diferencial.</p></article><article class="example-like" id="example-isomorph-rational"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.3</span>
+</h6>
+<p id="p-1413">Los enteros son isomorfos al subgrupo de \({\mathbb Q}^\ast\) que consiste de los elementos de la forma \(2^n\text{.}\)  Defina una función \(\phi: {\mathbb Z} \rightarrow {\mathbb Q}^\ast\) como \(\phi( n ) = 2^n\text{.}\) Entonces</p>
+\begin{equation*}
+\phi( m + n ) = 2^{m + n} = 2^m 2^n = \phi( m ) \phi( n ).
+\end{equation*}
+<p>Por definición la función \(\phi\) es sobreyectiva en el subconjunto \(\{2^n :n \in {\mathbb Z} \}\) de  \({\mathbb Q}^\ast\text{.}\) Para mostrar que la función es inyectiva, supongamos que \(\phi(m) = \phi(n)\text{.}\)  Entonces \(2^m = 2^n\) y \(2^{m-n} = 1\text{.}\)  Concluimos que \(m = n\text{.}\)</p></article><article class="example-like" id="example-isomorph-units"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.4</span>
+</h6>
+<p id="p-1414">Los grupos \({\mathbb Z}_8\) y \({\mathbb Z}_{12}\)  no pueden ser isomorfos pues tienen diferentes órdenes; Sin embargo \(U(8) \cong U(12)\text{.}\)  Sabemos que</p>
+\begin{align*}
+U(8) &amp; = \{1, 3, 5, 7 \}\\
+U(12) &amp; = \{1, 5, 7, 11 \}.
+\end{align*}
+<p>Un isomorfismo \(\phi : U(8) \rightarrow U(12)\) está dado por</p>
+\begin{align*}
+1 &amp; \mapsto  1\\
+3 &amp; \mapsto  5\\
+5 &amp; \mapsto  7\\
+7 &amp; \mapsto  11.
+\end{align*}
+<p>La función \(\phi\) no es el único isomorfismo posible entre estos dos grupos.  Podríamos definir otro isomorfismo  \(\psi\) como \(\psi(1) = 1\text{,}\) \(\psi(3) = 11\text{,}\) \(\psi(5) = 5\text{,}\) \(\psi(7) = 7\text{.}\) De hecho, estos dos grupos son isomorfos a \({\mathbb Z}_2 \times {\mathbb Z}_2\) (Vea el Ejemplo <a knowl="./knowl/example-groups-z2xz2.html" knowl-id="xref-example-groups-z2xz2" alt="Ejemplo 3.28 " title="Ejemplo 3.28 ">3.28</a> en el Capítulo <a href="groups.html" alt="Capítulo 3 Grupos" title="Capítulo 3 Grupos">3</a>).</p></article><article class="example-like" id="example-isomorph-not-isomorph"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.5</span>
+</h6>
+<p id="p-1415">Si bien \(S_3\) y \({\mathbb Z}_6\) poseen el mismo número de elementos, podríamos sospechar que no son isomorfos, pues \({\mathbb Z}_6\) es abeliano y  \(S_3\) es no abeliano.  Para demostrar que esto es así, supongamos que \(\phi : {\mathbb Z}_6 \rightarrow  S_3\) es un isomorfismo.  Sean \(a , b \in S_3\) dos elementos tales que \(ab \neq ba\text{.}\)  Como \(\phi\) es un isomorfismo, existen elementos \(m\) y \(n\) en \({\mathbb Z}_6\) tales que</p>
+\begin{equation*}
+\phi( m )  = a \quad \text{and} \quad \phi( n )  = b.
+\end{equation*}
+<p>Pero,</p>
+\begin{equation*}
+ab = \phi(m ) \phi(n) = \phi(m + n) = \phi(n + m) = \phi(n ) \phi(m) = ba,
+\end{equation*}
+<p>lo que contradice el hecho de que \(a\) y \(b\) no conmutan.</p></article><article class="theorem-like" id="theorem-isomorph-1"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">9.6</span>
+</h6>
+<p id="p-1416">Sea \(\phi : G \rightarrow H\) un isomorfismo de grupos.  Entonces se cumplen las siguientes proposiciones.</p>
+<ol id="ol-69" style="list-style-type: decimal;">
+<li id="li-355"><p id="p-1417">\(\phi^{-1} : H \rightarrow G\) es un isomorfismo.</p></li>
+<li id="li-356"><p id="p-1418">\(|G| = |H|\text{.}\)</p></li>
+<li id="li-357"><p id="p-1419">Si \(G\) es abeliano, entonces \(H\) es abeliano.</p></li>
+<li id="li-358"><p id="p-1420">Si \(G\) es cíclico, entonces \(H\) es cíclico.</p></li>
+<li id="li-359"><p id="p-1421">Si \(G\) tiene un subgrupo de orden \(n\text{,}\) entonces \(H\) tiene un subgrupo de orden \(n\text{.}\)</p></li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-57" id="proof-57"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-57" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1422">Las afirmaciones (1) y (2) son consecuencia de que \(\phi\) sea una biyección.  Demostraremos (3) y dejaremos el resto del teorema para ser demostrado en los ejercicios.</p>
+<p id="p-1423">(3) Supongamos que \(h_1\) y \(h_2\) son elementos de \(H\text{.}\)  Como \(\phi\) es sobreyectiva, existen elementos \(g_1, g_2 \in G\) tales que \(\phi(g_1) = h_1\) y \(\phi(g_2) = h_2\text{.}\)  Por lo tanto,</p>
+\begin{equation*}
+h_1 h_2 = \phi(g_1) \phi(g_2) =  \phi(g_1 g_2) = \phi(g_2 g_1) = \phi(g_2) \phi(g_1) = h_2 h_1.
+\end{equation*}
+</article></div>
+<p id="p-1424">Estamos ahora en condiciones de caracterizar todos los grupos cíclicos.</p>
+<article class="theorem-like" id="theorem-isomorph-2"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">9.7</span>
+</h6>
+<p id="p-1425">Todo grupo cíclico de orden infinito es isomorfo a \({\mathbb Z}\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-58" id="proof-58"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-58" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1426">Sea \(G\) un grupo cíclico de orden infinito y supongamos que \(a\) es un generador de \(G\text{.}\)  Definamos la función \(\phi : {\mathbb Z} \rightarrow  G\) como \(\phi : n \mapsto a^n\text{.}\) Entonces</p>
+\begin{equation*}
+\phi( m+n ) = a^{m+n} = a^m a^n = \phi( m ) \phi( n ).
+\end{equation*}
+<p>Para mostrar que \(\phi\) es inyectiva, supongamos que \(m\) y \(n\) son dos elementos en \({\mathbb Z}\text{,}\) con \(m \neq n\text{.}\)  Podemos suponer que \(m \gt n\text{.}\)  Debemos mostrar que \(a^m \neq a^n\text{.}\) Supongamos lo contrario; es decir, \(a^m = a^n\text{.}\) En ese caso \(a^{m - n} = e\text{,}\) con \(m - n \gt 0\text{,}\) lo que contradice el hecho de que \(a\) tiene orden infinito.  Nuestra función es sobreyectiva pues todo elemento en \(G\) puede ser escrito como \(a^n\) para algún entero \(n\) y \(\phi(n) = a^n\text{.}\)</p></article></div>
+<article class="theorem-like" id="theorem-isomorph-3"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">9.8</span>
+</h6>
+<p id="p-1427">Si \(G\) es un grupo cíclico de orden \(n\text{,}\) entonces \(G\) es isomorfo a \({\mathbb Z}_n\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-59" id="proof-59"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-59" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1428">Sea \(G\) un grupo cíclico de orden \(n\) generado por \(a\) y defina una función \(\phi : {\mathbb Z}_n \rightarrow  G\) como \(\phi : k \mapsto a^k\text{,}\) donde \(0 \leq k \lt n\text{.}\) La demostración de que \(\phi\) es un isomorfismo es uno de los ejercicios al final del capítulo.</p></article></div>
+<article class="theorem-like" id="theorem-isomorph-4"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">9.9</span>
+</h6>
+<p id="p-1429">Si \(G\) es un grupo de orden \(p\text{,}\) donde \(p\) es un número primo, entonces  \(G\) es isomorfo a \({\mathbb Z}_p\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-60" id="proof-60"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-60" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1430">La demostración es un resultado directo del Corolario <a knowl="./knowl/corollary-cosets-theorem-7.html" knowl-id="xref-corollary-cosets-theorem-7" alt="Corolario 6.12 " title="Corolario 6.12 ">6.12</a>.</p></article></div>
+<p id="p-1431">El principal objetivo en la teoría de grupos es el de clasificar todos los grupos; sin embargo, tiene sentido considerar que dos grupos isomorfos son en realidad el mismo grupo.  Enunciamos este resultado en el siguiente teorema, cuya demostración dejamos coom ejercicio.</p>
+<article class="theorem-like" id="theorem-isomorph-5"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">9.10</span>
+</h6>
+<p id="p-1432">El isomorfismo de grupos define una relación de equivalencia en la clase de todos los grupos.</p></article><p id="p-1433">Luego, podemos modificar nuestro objetivo de clasificar todos los grupos al de clasificar todos los grupos <b class="terminology">salvo isomorfismo</b>; es decir, consideraremos que dos grupos son el mismo si son isomorfos.</p></section><section class="subsection" id="isomorph-subsection-cayleys-theorem"><h3 class="heading hide-type" alt="Subsección  Teorema de Cayley">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Teorema de Cayley</span>
+</h3>
+<a href="section-isomorph-definitions.html#isomorph-subsection-cayleys-theorem" class="permalink">¶</a><p id="p-1434">Cayley demostró que si \(G\) es un grupo, entonces es isomorfo a un grupo de permutaciones de algún conjunto; luego, todo grupo es un grupo de permutaciones.  El Teorema de Cayley es lo que llamamos un teorema de representaciones.  El objetivo de la teoría de representaciones es encontrar un isomorfismo de algún grupo \(G\) que queramos estudiar a un grupo sobre el que tengamos bastante información, tal como un grupo de permutaciones o de matrices.</p>
+<article class="example-like" id="example-isomorph-cayley"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">9.11</span>
+</h6>
+<p id="p-1435">Considere el grupo \({\mathbb Z}_3\text{.}\)  La tabla de Cayley para \({\mathbb Z}_3\) es como sigue.</p>
+<div class="sidebyside" id="sidebyside-4"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;">
+<p id="p-1436"></p>
+\begin{equation*}
+\begin{array}{c|ccc}
++ &amp; 0 &amp; 1 &amp; 2 \\ \hline
+0       &amp; 0 &amp; 1 &amp; 2 \\
+1       &amp; 1 &amp; 2 &amp; 0 \\
+2       &amp; 2 &amp; 0 &amp; 1 
+\end{array}
+\end{equation*}
+</div></div></div>
+<p id="p-1437">La tabla de sumas para \({\mathbb Z}_3\) sugiere que es igual al grupo de permutaciones \(G = \{ (0), (0 1 2), (0 2 1) \}\text{.}\)  El isomorfismo acá es</p>
+\begin{align*}
+0 &amp; \mapsto
+\begin{pmatrix}
+0 &amp; 1 &amp; 2 \\ 0 &amp; 1 &amp; 2
+\end{pmatrix}
+= (0)\\
+1 &amp; \mapsto
+\begin{pmatrix}
+0 &amp; 1 &amp; 2 \\ 1 &amp; 2 &amp; 0
+\end{pmatrix}
+= (0 1 2)\\
+2 &amp; \mapsto
+\begin{pmatrix}
+0 &amp; 1 &amp; 2 \\ 2 &amp; 0 &amp; 1
+\end{pmatrix}
+= (0 2 1).
+\end{align*}
+</article><article class="theorem-like" id="theorem-cayleys"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">9.12</span><span class="title">Cayley</span>
+</h6>
+<p id="p-1438">Todo grupo es isomorfo a un grupo de permutaciones.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-61" id="proof-61"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-61" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1439">Sea \(G\) un grupo.  Debemos encontrar un grupo de permutaciones \(\overline{G}\) que sea isomorfo a \(G\text{.}\) Para cualquier \(g \in G\text{,}\) definamos una función \(\lambda_g : G \rightarrow G\) como \(\lambda_g(a) = ga\text{.}\)  Afirmamos que \(\lambda_g\) es una permutación de \(G\text{.}\)  Para demostrar que \(\lambda_g\) es 1-1, supongamos que \(\lambda_g(a) = \lambda_g(b)\text{.}\)  Entonces</p>
+\begin{equation*}
+ga =\lambda_g(a) = \lambda_g(b) = gb.
+\end{equation*}
+<p>Luego, \(a = b\text{.}\)  Para demostrar que \(\lambda_g\) es sobre, debemos demostrar que para cada \(a \in G\text{,}\) existe \(b\) tal que \(\lambda_g (b) = a\text{.}\)  Sea \(b = g^{-1} a\text{.}\)</p>
+<p id="p-1440">Estamos preparados para definir nuestro grupo \(\overline{G}\text{.}\) Sea</p>
+\begin{equation*}
+\overline{G} = \{ \lambda_g : g \in G \}.
+\end{equation*}
+<p>Debemos mostrar que \(\overline{G}\) es un grupo con la operación de composición de funciones y encontrar un isomorfismo entre \(G\) y \(\overline{G}\text{.}\)  Tenemos la clausura bajo composición de funciones pues</p>
+\begin{equation*}
+(\lambda_g \circ \lambda_h )(a) = \lambda_g(ha) = gha = \lambda_{gh} (a).
+\end{equation*}
+<p>Además,</p>
+\begin{equation*}
+\lambda_e (a) = ea = a
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+(\lambda_{g^{-1}} \circ \lambda_g) (a) = \lambda_{g^{-1}} (ga) = g^{-1} g a = a = \lambda_e (a).
+\end{equation*}
+<p id="p-1441">Podemos definir un isomorfismo de \(G\) en \(\overline{G}\) como \(\phi : g \mapsto \lambda_g\text{.}\) La operación de grupo se preserva pues</p>
+\begin{equation*}
+\phi(gh) = \lambda_{gh} = \lambda_g \lambda_h = \phi(g) \phi(h).
+\end{equation*}
+<p>Es 1-1, pues si \(\phi(g)(a) = \phi(h)(a)\text{,}\) entonces</p>
+\begin{equation*}
+ga = \lambda_g a = \lambda_h a=  ha.
+\end{equation*}
+<p>Luego, \(g = h\text{.}\)  Que  \(\phi\) sea sobre sigue del hecho de que \(\phi( g ) = \lambda_g\) para cualquier \(\lambda_g \in \overline{G}\text{.}\)</p></article></div>
+<p id="p-1442">El isomorfismo \(g \mapsto \lambda_g\) se conoce como la <b class="terminology">representación regular izquierda</b> de \(G\text{.}\)</p></section><section class="subsection" id="isomorph-subsection-historical-note"><h3 class="heading hide-type" alt="Subsección  Nota histórica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Nota histórica</span>
+</h3>
+<a href="section-isomorph-definitions.html#isomorph-subsection-historical-note" class="permalink">¶</a><p id="p-1443">Arthur Cayley nació en Inglaterra en 1821, pero pasó la primera parte de su vida en Rusia, donde su padre era comerciante.  Cayley se educó en Cambridge, donde ganó el primer Premio Smith en matemáticas.  Ejerció como abogado la mayor parte de su vida adulta, y escribió varios trabajos antes de entrar a la profesión legal a los 25 años de edad.  Durante su práctica como abogado siguió sus investigaciones matemáticas, escribiendo más de 300 publicaciones en esta etapa de su vida.  Estas incluyeron parte de sus obras más importantes.  En 1863 dejó la abogacía para convertirse en profesor en  Cambridge.  Cayley escribió más de 900 trabajos en áreas como teoría de grupos, geometría y álgebra lineal. Sus conocimentos legales eran muy apreciados en Cambridge; participó en la redacción de muchos de los estatutos de la universidad.  Cayley fue también uno de los responsables de la admisión de mujeres a Cambridge.</p></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

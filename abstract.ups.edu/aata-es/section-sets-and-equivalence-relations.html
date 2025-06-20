@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:01:48-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Conjuntos y Relaciones de Equivalencia</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-note-on-proofs.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="sets.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="exercises-sets.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="section-note-on-proofs.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="sets.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="exercises-sets.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link active"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations" class="active">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-sets-and-equivalence-relations"><h2 class="heading hide-type" alt="Sección 1.2 Conjuntos y Relaciones de Equivalencia">
+<span class="type">Sección</span><span class="codenumber">1.2</span><span class="title">Conjuntos y Relaciones de Equivalencia</span>
+</h2>
+<a href="section-sets-and-equivalence-relations.html" class="permalink">¶</a><section class="subsection" id="sets-subsection-set-theory"><h3 class="heading hide-type" alt="Subsección  Teoría de Conjuntos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Teoría de Conjuntos</span>
+</h3>
+<a href="section-sets-and-equivalence-relations.html#sets-subsection-set-theory" class="permalink">¶</a><p id="p-40">Un <b class="terminology">conjunto</b> es una colección bien-definida de objetos; es decir, está definida de manera que para un objeto \(x\) cualquiera, podamos determinar si \(x\) pertenece o no al conjunto.  Los objetos que pertenecen al conjunto se llaman <b class="terminology">elementos</b> o <b class="terminology">miembros</b>. Denotaremos los conjuntos por letras mayúsculas, tales como \(A\) o \(X\text{;}\) si \(a\) es un elemento del conjunto \(A\text{,}\) escribimos \(a \in A\text{.}\) </p>
+<p id="p-41">Un conjunto usualmente se define ya sea listando todos los elementos que contiene entre un par de llaves o indicando la propiedad que determina si un objeto \(x\) pertenece o no al conjunto. Podemos escribir</p>
+\begin{equation*}
+X = \{ x_1, x_2, \ldots, x_n \}
+\end{equation*}
+<p>para un conjunto que contiene los elementos \(x_1, x_2, \ldots, x_n\) o</p>
+\begin{equation*}
+X = \{ x :x \text{ satisface }{\mathcal P}\}
+\end{equation*}
+<p>si cada \(x\) en \(X\) satisface cierta propiedad \({\mathcal P}\text{.}\)  Por ejemplo, si \(E\) es el conjunto de enteros pares positivos, podemos describir \(E\) escribiendo ya sea</p>
+\begin{equation*}
+E = \{2, 4, 6, \ldots \} \quad \text{o} \quad E = \{ x : x \text{ es un entero par y } x \gt 0 \}.
+\end{equation*}
+<p>Escribimos \(2 \in E\) cuando queremos decir que 2 está en el conjunto \(E\text{,}\) y \(-3 \notin E\) para  decir que \(-3\) no está en el conjunto \(E\text{.}\)</p>
+<p id="p-42">Algunos de los conjuntos más importantes que consideraremos son los siguientes:</p>
+\begin{gather*}
+{\mathbb N} = \{n: n \text{ es un número natural}\}  = \{1, 2, 3, \ldots \};\\
+{\mathbb Z} = \{n : n \text{ es un entero} \} = \{\ldots, -1, 0, 1,  2, \ldots \};\\
+{\mathbb Q} = \{r : r \text{ es un número racional}\} = \{p/q : p, q \in {\mathbb Z} \text{ con } q \neq 0\};\\
+{\mathbb R} = \{ x : x \text{ es un número real} \};\\
+{\mathbb C} = \{z : z \text{ es un número complejo}\}.
+\end{gather*}
+<p id="p-43">Podemos encontrar varias relaciones entre conjuntos y realizar operaciones entre ellos.  Un conjunto \(A\) es un  <b class="terminology">subconjunto</b> de \(B\text{,}\) denotado \(A \subset B\) o \(B \supset A\text{,}\) si todo elemento de \(A\) también es un elemento de \(B\text{.}\)   Por ejemplo,</p>
+\begin{equation*}
+\{4,5,8\} \subset \{2, 3, 4, 5, 6, 7, 8, 9 \}
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+{\mathbb N} \subset {\mathbb Z} \subset {\mathbb Q} \subset {\mathbb R} \subset {\mathbb C}.
+\end{equation*}
+<p>Trivialmente, todo conjunto es subconjunto de sí mismo.  Un conjunto \(B\) es un <b class="terminology">subconjunto propio</b> de un conjunto \(A\) si \(B \subset A\) pero \(B \neq A\text{.}\) Si \(A\) no es un subconjunto de \(B\text{,}\) escribimos \(A \notsubset B\text{;}\) por ejemplo, \(\{4, 7, 9\} \notsubset \{2, 4, 5,  8, 9 \}\text{.}\)  Dos conjuntos son <b class="terminology">iguales</b>, escrito \(A = B\text{,}\) si contienen los mismos elementos.  Esto es equivalente a que \(A \subset B\) y \(B \subset A\text{.}\)</p>
+<p id="p-44">Es conveniente tener un conjunto sin elementos.  Este conjunto se llama <b class="terminology">conjunto vacío</b> y se denota por \(\emptyset\text{.}\)  Notemos que el conjunto vacío es un subconjunto de todo conjunto. </p>
+<p id="p-45">Para construir conjuntos nuevos a partir de otros conjuntos, podemos realizar ciertas operaciones: la <b class="terminology">unión</b> \(A \cup B\) de dos conjuntos \(A\) y \(B\) se define como</p>
+\begin{equation*}
+A \cup B = \{x : x \in A \text{ o } x \in B \};
+\end{equation*}
+<p>la <b class="terminology">intersección</b> de \(A\) y \(B\)  se define como</p>
+\begin{equation*}
+A \cap B = \{x :  x \in A \text{ y } x \in B \}.
+\end{equation*}
+<p> Si \(A = \{1, 3, 5\}\) y \(B = \{ 1, 2, 3, 9 \}\text{,}\) entonces</p>
+\begin{equation*}
+A \cup B = \{1, 2, 3, 5, 9 \} \quad \text{y} \quad A \cap B = \{ 1, 3 \}.
+\end{equation*}
+<p>Podemos considerar la unión y la intersección de más de dos conjuntos.  En este caso escribimos</p>
+\begin{equation*}
+\bigcup_{i = 1}^{n} A_{i} = A_{1} \cup \ldots \cup A_n
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+\bigcap_{i = 1}^{n} A_{i} = A_{1} \cap \ldots \cap A_n
+\end{equation*}
+<p>para la unión e intersección, respectivamente de los conjuntos \(A_1, \ldots, A_n\text{.}\) También se pueden definir la unión y la intersección de una colección infinita (o arbitraria) de conjuntos.  Si \(\mathcal S=\{A_i:i\in \mathcal I\}\text{,}\) entonces</p>
+\begin{equation*}
+\bigcup \mathcal S=\bigcup_{i \in \mathcal I} A_{i} = \{x:x\in A_i\text{ para algún } A_i\in\mathcal S\}
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+\bigcap \mathcal S=\bigcap_{i \in \mathcal I} A_{i} = \{x:x\in A_i\text{ para todo } A_i\in\mathcal S\}
+\end{equation*}
+<p>para la unión e intersección, respectivamente, de los conjuntos en \(\mathcal S\) indexados por \(\mathcal I\text{.}\)</p>
+<p id="p-46">Cuando dos conjuntos no tienen elementos en común, se dice que son <b class="terminology">disjuntos</b>; por ejemplo, si \(P\) es el conjunto de los enteros pares e \(I\) es el conjunto de los enteros impares, entonces \(P\) e \(I\) son disjuntos.  Dos conjuntos \(A\) y \(B\) son disjuntos precisamente cuando \(A \cap B = \emptyset\text{.}\)</p>
+<p id="p-47">En ocasiones trabajaremos con un conjunto fijo \(U\text{,}\) llamado <b class="terminology">conjunto universal</b>.  Para cualquier conjunto \(A \subset U\text{,}\) podemos definir el <b class="terminology">complemento</b> de \(A\text{,}\) denotado por \(A'\text{,}\) como el conjunto </p>
+\begin{equation*}
+A' = \{ x : x \in U \text{ y } x \notin A \}.
+\end{equation*}
+<p id="p-48">Definimos la <b class="terminology">diferencia</b> de dos conjuntos \(A\) y \(B\) como </p>
+\begin{equation*}
+A \setminus B = A \cap B'  = \{ x : x \in A \text{ y } x \notin B \}.
+\end{equation*}
+<article class="example-like" id="example-sets-operations"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.1</span>
+</h6>
+<p id="p-49">Sea \({\mathbb R}\) el conjunto universal y supongamos que</p>
+\begin{equation*}
+A = \{ x \in {\mathbb R} : 0 \lt x \leq 3 \} \quad \text{y} \quad B = \{ x \in {\mathbb R} : 2 \leq x \lt 4 \}.
+\end{equation*}
+<p>Entonces</p>
+\begin{align*}
+A \cap B &amp; =  \{ x \in {\mathbb R} : 2 \leq x \leq 3 \}\\
+A \cup B &amp; =  \{ x \in {\mathbb R} : 0 \lt x \lt 4 \}\\
+A \setminus B &amp; =  \{ x \in {\mathbb R} : 0 \lt x \lt 2  \}\\
+A' &amp; =  \{ x \in {\mathbb R} : x \leq 0 \text{ o } x \gt 3 \}.
+\end{align*}
+</article><article class="theorem-like" id="proposition-1"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">1.2</span>
+</h6>
+<p id="p-50">Sean \(A\text{,}\) \(B\text{,}\) y \(C\) conjuntos. Entonces </p>
+<ol id="ol-1" style="list-style-type: decimal;">
+<li id="li-23"><p id="p-51">\(A \cup A = A\text{,}\) \(A \cap A = A\text{,}\) y \(A \setminus A = \emptyset\text{;}\)</p></li>
+<li id="li-24"><p id="p-52">\(A \cup \emptyset = A\) y \(A \cap \emptyset = \emptyset\text{;}\)</p></li>
+<li id="li-25"><p id="p-53">\(A \cup (B \cup C) = (A \cup B) \cup C\) y  \(A \cap (B \cap C) = (A \cap B) \cap C\text{;}\)</p></li>
+<li id="li-26"><p id="p-54">\(A \cup B = B \cup A\) y \(A \cap B = B \cap A\text{;}\)</p></li>
+<li id="li-27"><p id="p-55">\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\text{;}\)</p></li>
+<li id="li-28"><p id="p-56">\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\text{.}\)</p></li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-1" id="proof-1"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-1" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-57">Demostraremos (1) y (3) y dejaremos las demostraciones de los demás resultados como ejercicios.</p>
+<p id="p-58">(1) Observe que</p>
+\begin{align*}
+A \cup A &amp; =  \{ x :  x \in A \text{ o } x \in A \}\\
+&amp; =  \{ x : x \in A \}\\
+&amp; =  A
+\end{align*}
+<p>y</p>
+\begin{align*}
+A \cap A &amp; =  \{ x : x \in A \text{ y } x \in A \}\\
+&amp; =  \{ x : x \in A  \}\\
+&amp; =  A.
+\end{align*}
+<p>Además, \(A \setminus A = A \cap A' = \emptyset\text{.}\)</p>
+<p id="p-59">(3) Para conjuntos \(A\text{,}\) \(B\text{,}\) y \(C\text{,}\)</p>
+\begin{align*}
+A \cup (B \cup C) &amp; = A \cup \{ x : x \in B \text{ o } x \in C \}\\
+&amp; = \{ x : x \in A \text{ o } x \in B, \text{ o } x \in C \}\\
+&amp; = \{ x : x \in A \text{ o } x \in B \} \cup C\\
+&amp; = (A \cup B) \cup C. 
+\end{align*}
+<p>Un argumento similar demuestra que \(A \cap (B \cap C) = (A \cap B) \cap C\text{.}\)</p></article></div>
+<article class="theorem-like" id="theorem-1"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">1.3</span><span class="title">Leyes de De Morgan</span>
+</h6>
+<p id="p-60">Sean \(A\) y \(B\) conjuntos. Entonces </p>
+<ol id="ol-2" style="list-style-type: decimal;">
+<li id="li-29"><p id="p-61">\((A \cup B)' = A' \cap B'\text{;}\)</p></li>
+<li id="li-30"><p id="p-62">\((A \cap B)' = A' \cup B'\text{.}\)</p></li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-2" id="proof-2"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-2" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-63">(1) Si \(A \cup B = \emptyset\text{,}\) entonces el teorema es inmediato pues tanto \(A\) como \(B\) son el conjunto vacío. De otra manera, debemos mostrar que \((A \cup B)' \subset A' \cap B'\) y \((A \cup B)' \supset A' \cap B'\text{.}\) Sea \(x \in (A \cup B)'\text{.}\)  Entonces \(x \notin A \cup B\text{.}\) Así \(x\) no está en \(A\) ni en \(B\text{,}\) por la definición de la unión de conjuntos.  Por la definición del complemento, \(x \in A'\) y \(x \in B'\text{.}\)  Por lo tanto, \(x \in A' \cap B'\) y tenemos \((A \cup B)' \subset A' \cap B'\text{.}\)</p>
+<p id="p-64">Para mostrar la inclusión inversa, supongamos que \(x \in A' \cap B'\text{.}\)  Entonces \(x \in A'\) y \(x \in B'\text{,}\) y así \(x \notin A\) y \(x \notin B\text{.}\) Luego \(x \notin A \cup B\) y así \(x \in (A \cup B)'\text{.}\)  Por lo tanto, \((A \cup B)' \supset A' \cap B'\) y así \((A \cup B)' = A' \cap B'\text{.}\)</p>
+<p id="p-65">La demostración de (2) la dejamos como ejercicio.</p></article></div>
+<article class="example-like" id="example-sets-other-relations"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.4</span>
+</h6>
+<p id="p-66">Otras relaciones entre conjunto son por ejemplo,</p>
+\begin{equation*}
+( A \setminus B) \cap (B \setminus A) = \emptyset.
+\end{equation*}
+<p>Para ver que esta es verdadera, observe que</p>
+\begin{align*}
+( A \setminus B) \cap (B \setminus A) &amp; = ( A \cap B') \cap (B \cap A')\\
+&amp; = A \cap A' \cap B \cap B'\\
+&amp; = \emptyset.
+\end{align*}
+</article></section><section class="subsection" id="sets-subsection-cartesian-products"><h3 class="heading hide-type" alt="Subsección  Producto Cartesiano y Funciones">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Producto Cartesiano y Funciones</span>
+</h3>
+<a href="section-sets-and-equivalence-relations.html#sets-subsection-cartesian-products" class="permalink">¶</a><p id="p-67">Dados dos conjuntos \(A\) y \(B\text{,}\) podemos definir un nuevo conjunto \(A \times B\text{,}\) llamado <b class="terminology">producto Cartesiano</b>  de \(A\) y \(B\text{,}\) como conjunto de pares ordenados.  Esto es, </p>
+\begin{equation*}
+A \times B = \{ (a,b) : a \in A \text{ y } b \in B \}.
+\end{equation*}
+<article class="example-like" id="example-sets-cartesian-products"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.5</span>
+</h6>
+<p id="p-68">Si \(A = \{ x, y \}\text{,}\) \(B = \{ 1, 2, 3 \}\text{,}\) y \(C = \emptyset\text{,}\) entonces \(A \times B\) es el conjunto</p>
+\begin{equation*}
+\{ (x, 1), (x, 2), (x, 3), (y, 1), (y, 2), (y, 3) \}
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+A \times C = \emptyset.
+\end{equation*}
+</article><p id="p-69">Definimos el <b class="terminology">producto Cartesiano de \(n\) conjuntos</b> como</p>
+\begin{equation*}
+A_1 \times \cdots \times A_n = \{ (a_1, \ldots, a_n): a_i \in A_i \text{ para } i = 1, \ldots, n \}.
+\end{equation*}
+<p>Si \(A = A_1 = A_2 = \cdots = A_n\text{,}\) escribiremos \(A^n\) para \(A \times \cdots \times A\) (donde \(A\) se escribiría \(n\) veces).  Por ejemplo, el conjunto \({\mathbb R}^3\) consiste de todas las  3-tuplas de números reales.</p>
+<p id="p-70">Subconjuntos de \(A \times B\) se llaman <b class="terminology">relaciones</b>.  Definiremos un <b class="terminology">mapeo</b> o <b class="terminology">función</b> \(f \subset A \times B\) de un conjunto \(A\) en un conjunto \(B\) como el tipo especial de relación donde \((a, b) \in f\) si para todo elemento \(a \in A\) existe un único elemento \(b \in B\text{.}\) Otra forma de decir esto es que para cada elemento en \(A\text{,}\) \(f\) asigna un único elemento en \(B\text{.}\)  Usualmente escribimos \(f:A \rightarrow B\) o \(A \stackrel{f}{\rightarrow} B\text{.}\)  En lugar de escribir pares ordenados \((a,b) \in A \times B\text{,}\) escribimos \(f(a) = b\) o \(f : a \mapsto b\text{.}\)  El conjunto \(A\) se llama <b class="terminology">dominio</b> de \(f\) y</p>
+\begin{equation*}
+f(A) = \{ f(a) : a \in A \} \subset B
+\end{equation*}
+<p>se llama <b class="terminology">rango</b> o <b class="terminology">imagen</b> de \(f\text{.}\)  Podemos pensar los elementos del dominio de una función como valores de entrada y los elementos del rango de la función como valores de salida.</p>
+<figure class="figure-like" id="figure-sets-mappings"><object type="image/svg+xml" style="width:60%; margin:auto; display:block;" data="images/sets-mappings.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object><figcaption><span class="type">Figura</span><span class="codenumber">1.6</span>Funciones y Relaciones</figcaption></figure><article class="example-like" id="example-sets-mappings"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.7</span>
+</h6>
+<p id="p-71">Supongamos \(A = \{1, 2, 3 \}\) y \(B = \{a, b, c \}\text{.}\)  En la Figura <a knowl="./knowl/figure-sets-mappings.html" knowl-id="xref-figure-sets-mappings" alt="Figura 1.6 " title="Figura 1.6 ">1.6</a> definimos las relaciones \(f\) y  \(g\) de \(A\) en \(B\text{.}\)  La relación \(f\) es una función, pero \(g\) no lo es pues a \(1 \in A\) no se le asigna una única imagen en \(B\text{;}\) es decir, \(g(1) = a\) y \(g(1) = b\text{.}\)</p></article><p id="p-72">Dada una función \(f : A \rightarrow B\text{,}\) a veces es posible hacer una lista describiendo lo que le hace la función a cada elemento específico del dominio.  Pero no todas las funciones pueden ser descritas de esta manera.  Por ejemplo, la función  \(f: {\mathbb R} \rightarrow {\mathbb R}\) que envía a cada número real en su cubo es una función que debe ser descrita escribiendo \(f(x) = x^3\) o \(f:x \mapsto x^3\text{.}\)</p>
+<p id="p-73">Considere la relación \(f : {\mathbb Q} \rightarrow {\mathbb Z}\) dada por \(f(p/q) = p\text{.}\)  Sabemos que \(1/2 = 2/4\text{,}\) pero es \(f(1/2) = 1\) o 2?  Esta relación no puede ser una función pues no está bien-definida.  Una relación está <b class="terminology">bien-definida</b> si a cada elemento en el dominio se le asigna un <em class="emphasis">único</em> elemento en el rango.</p>
+<p id="p-74">Si \(f:A \rightarrow B\) es una función y la imagen de \(f\) es \(B\text{,}\) es decir, \(f(A) = B\text{,}\) entonces \(f\) se dice <b class="terminology">sobre</b> o <b class="terminology">sobreyectiva</b>. En otras palabras, si para cada \(b \in B\) existe \(a \in A\) tal que \(f(a) = b\text{,}\) entonces \(f\) es sobre. Una función es <b class="terminology">1-1</b> o <b class="terminology">inyectiva</b> si \(a_1 \neq a_2\) implica \(f(a_1) \neq f(a_2)\text{.}\)  Equivalentemente, una función es 1-1 si \(f(a_1) = f(a_2)\) implica \(a_1 = a_2\text{.}\)  Una función que es 1-1 y sobre se llama <b class="terminology">biyectiva</b>.</p>
+<article class="example-like" id="example-sets-one-to-one-onto"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.8</span>
+</h6>
+<p id="p-75">Sea \(f:{\mathbb Z} \rightarrow {\mathbb Q}\) definida como \(f(n) = n/1\text{.}\)  Entonces \(f\) es 1-1 pero no sobre.  Defina \(g : {\mathbb Q} \rightarrow {\mathbb Z}\) como \(g(p/q) = p\) donde \(p/q\) es un número racional en su forma reducida con denominador positivo.  La función \(g\) es sobre pero no 1-1.</p></article><p id="p-76">Dadas dos funciones, podemos construir una nueva función usando el rango de la primera función como el dominio de la segunda.  Sean \(f : A \rightarrow B\) y \(g : B \rightarrow C\) funciones.  Definimos una nueva función, la <b class="terminology">composición</b> de \(f\) y \(g\) de \(A\) en \(C\text{,}\) como \((g \circ f)(x) = g(f(x))\text{.}\)</p>
+<figure class="figure-like" id="figure-sets-composition"><object type="image/svg+xml" style="width:90%; margin:auto; display:block;" data="images/sets-composition.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object><figcaption><span class="type">Figura</span><span class="codenumber">1.9</span>Composición de funciones</figcaption></figure><article class="example-like" id="example-sets-composition"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.10</span>
+</h6>
+<p id="p-77">Considere las funciones \(f: A \rightarrow B\) y \(g: B \rightarrow C\) que están definidas en la Figura <a knowl="./knowl/figure-sets-composition.html" knowl-id="xref-figure-sets-composition" alt="Figura 1.9 " title="Figura 1.9 ">1.9</a> (arriba).  La composición de estas funciones, \(g \circ f: A \rightarrow C\text{,}\) está definida en la Figura <a knowl="./knowl/figure-sets-composition.html" knowl-id="xref-figure-sets-composition" alt="Figura 1.9 " title="Figura 1.9 ">1.9</a> (abajo).</p></article><article class="example-like" id="example-sets-composition-noncommute"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.11</span>
+</h6>
+<p id="p-78">Sean \(f(x) = x^2\) y \(g(x) = 2x + 5\text{.}\) Entonces</p>
+\begin{equation*}
+(f \circ g)(x) = f(g(x)) = (2x + 5)^2 = 4x^2 + 20x + 25
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+(g \circ f)(x) = g(f(x)) = 2x^2 + 5.
+\end{equation*}
+<p>En general, el orden importa; es decir, en la mayoría de los casos \(f \circ g \neq g \circ f\text{.}\)</p></article><article class="example-like" id="example-sets-composition-commute"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.12</span>
+</h6>
+<p id="p-79">A veces se cumple que \(f \circ g= g \circ f\text{.}\)  Sean \(f(x) = x^3\) y \(g(x) = \sqrt[3]{x}\text{.}\) Entonces</p>
+\begin{equation*}
+(f \circ g )(x) = f(g(x)) = f( \sqrt[3]{x}\, ) = (\sqrt[3]{x}\, )^3 = x
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+(g \circ f )(x) = g(f(x)) = g( x^3) = \sqrt[3]{ x^3} = x.
+\end{equation*}
+</article><article class="example-like" id="example-sets-linear-map"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.13</span>
+</h6>
+<p id="p-80">Dada  una matriz de \(2 \times 2\)</p>
+\begin{equation*}
+A =
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix},
+\end{equation*}
+<p>podemos definir una función \(T_A : {\mathbb R}^2 \rightarrow {\mathbb R}^2\) como</p>
+\begin{equation*}
+T_A (x,y) = (ax + by, cx +dy)
+\end{equation*}
+<p>para \((x,y)\) en \({\mathbb R}^2\text{.}\)  Esto en realidad es multiplicación de matrices; es decir,</p>
+\begin{equation*}
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}
+\begin{pmatrix}
+x \\ y
+\end{pmatrix}
+=
+\begin{pmatrix}
+ax + by \\
+cx +dy
+\end{pmatrix}.
+\end{equation*}
+<p>Funciones de \({\mathbb R}^n\) en \({\mathbb R}^m\) dadas por matrices se llaman <b class="terminology">funciones lineales</b> o <b class="terminology">transformaciones lineales</b>.</p></article><article class="example-like" id="example-sets-permutation"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.14</span>
+</h6>
+<p id="p-81">Supongamos que \(S = \{ 1,2,3  \}\text{.}\) Definamos una función \(\pi :S\rightarrow S\) como</p>
+\begin{equation*}
+\pi( 1 )  = 2, \qquad \pi( 2 )  = 1, \qquad \pi( 3 )  = 3.
+\end{equation*}
+<p>Esta es una función biyectiva.  Una forma alternativa de escribir \(\pi\) es</p>
+\begin{equation*}
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+\pi(1) &amp; \pi(2) &amp; \pi(3)
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+2 &amp; 1 &amp; 3
+\end{pmatrix}.
+\end{equation*}
+<p>Para cualquier conjunto \(S\text{,}\) una función biyectiva \(\pi : S \rightarrow S\) se llama <b class="terminology">permutación</b> de \(S\text{.}\)</p></article><article class="theorem-like" id="theorem-2"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">1.15</span>
+</h6>
+<p id="p-82">Sean \(f : A \rightarrow B\text{,}\) \(g : B \rightarrow C\text{,}\) y \(h : C \rightarrow D\text{.}\) Entonces </p>
+<ol id="ol-3" style="list-style-type: decimal;">
+<li id="li-31"><p id="p-83">La composición de funciones es asociativa; es decir, \((h \circ g) \circ f = h \circ (g \circ f)\text{;}\)</p></li>
+<li id="li-32"><p id="p-84">Si \(f\) y \(g\) son ambas 1-1, entonces la función \(g \circ f\) es 1-1;</p></li>
+<li id="li-33"><p id="p-85">Si \(f\) y \(g\) son ambas sobre, entonces la función \(g \circ f\) es sobre;</p></li>
+<li id="li-34"><p id="p-86">Si \(f\) y \(g\) son ambas biyectivas, entonces la función \(g \circ f\) es biyectiva;</p></li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-3" id="proof-3"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-3" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-87">Demostraremos (1) y (3). La parte (2) se deja como ejercicio.  La Parte (4) es consecuencia directa de (2) y (3).</p>
+<p id="p-88">(1) Debemos mostrar que</p>
+\begin{equation*}
+h \circ (g \circ f) = (h \circ g) \circ f.
+\end{equation*}
+<p>Para \(a \in A\) tenemos</p>
+\begin{align*}
+(h \circ (g \circ f))(a) &amp; = h((g \circ f)(a))\\
+&amp; = h(g(f(a))) \\
+&amp; = (h \circ g)(f(a))\\
+&amp; = ((h \circ g) \circ f)(a).
+\end{align*}
+<p id="p-89">(3) Supongamos que \(f\) y \(g\) son ambas sobreyectivas. Dado \(c \in C\text{,}\) debemos mostrar que existe \(a \in A\) tall que \((g \circ f)(a) = g(f(a)) = c\text{.}\) Pero, como \(g\) es sobre, existe \(b \in B\) tal que \(g(b) = c\text{.}\) Similarmente, existe \(a \in A\) tal que \(f(a) = b\text{.}\) Por ende,</p>
+\begin{equation*}
+(g \circ f)(a) = g(f(a)) = g(b) = c.
+\end{equation*}
+</article></div>
+<p id="p-90">Si \(S\) es cualquier conjunto, usaremos \(id_S\) o \(id\) para denotar a la <b class="terminology">función identidad</b> de \(S\) en sí mismo.  Definimos esta función como \(id(s) = s\) para todo \(s \in S\text{.}\)  Una función \(g: B \rightarrow A\) es una <b class="terminology">función inversa</b> de \(f: A \rightarrow B\) si \(g \circ f = id_A\) y \(f \circ g = id_B\text{;}\) en otras palabras, la función inversa de una función simplemente “deshace” lo que hace la función.   Una función se dice <b class="terminology">invertible</b> si tiene una inversa.  Usualmente escribimos \(f^{-1}\) para la inversa de \(f\text{.}\) </p>
+<article class="example-like" id="example-sets-inverse-function"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.16</span>
+</h6>
+<p id="p-91">La función \(f(x) = x^3\) tiene inversa \(f^{-1}(x) = \sqrt[3]{x}\) por el Ejemplo <a knowl="./knowl/example-sets-composition-commute.html" knowl-id="xref-example-sets-composition-commute" alt="Ejemplo 1.12 " title="Ejemplo 1.12 ">1.12</a>.</p></article><article class="example-like" id="example-sets-exponential"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.17</span>
+</h6>
+<p id="p-92">El logaritmo natural y la función exponencial, \(f(x) = \ln x\) y \(f^{-1}(x) = e^x\text{,}\) son inversas, la una de la otra, con tal de que seamos cuidadosos en la elección de los dominios.  Observe que</p>
+\begin{equation*}
+f(f^{-1}(x)) = f(e^x) = \ln e^x = x
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+f^{-1}(f(x)) = f^{-1}(\ln x) = e^{\ln x} = x
+\end{equation*}
+<p>siempre que la composición tenga sentido.</p></article><article class="example-like" id="example-sets-inverse-matrix"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.18</span>
+</h6>
+<p id="p-93">Supongamos que</p>
+\begin{equation*}
+A =
+\begin{pmatrix}
+3 &amp; 1 \\
+5 &amp; 2
+\end{pmatrix}.
+\end{equation*}
+<p>Entonces \(A\) define una función de \({\mathbb R}^2\) en \({\mathbb R}^2\) como</p>
+\begin{equation*}
+T_A (x,y) = (3x +  y, 5x + 2y).
+\end{equation*}
+<p>Podemos encontrar la función inversa de \(T_A\) simplemente invirtiendo la matriz \(A\text{;}\) es decir, \(T_A^{-1} = T_{A^{-1}}\text{.}\) En este ejemplo,</p>
+\begin{equation*}
+A^{-1} =
+\begin{pmatrix}
+2  &amp; -1 \\
+-5 &amp;  3
+\end{pmatrix};
+\end{equation*}
+<p>luego, la función inversa está dada por</p>
+\begin{equation*}
+T_A^{-1} (x,y) = (2x -  y, -5x + 3y).
+\end{equation*}
+<p>Es fácil verificar que</p>
+\begin{equation*}
+T^{-1}_A \circ T_A (x,y) = T_A \circ T_A^{-1} (x,y) = (x,y).
+\end{equation*}
+<p>No toda función tiene inversa.  Si consideramos la función</p>
+\begin{equation*}
+T_B (x,y) = (3x , 0 )
+\end{equation*}
+<p>dada por la matriz</p>
+\begin{equation*}
+B =
+\begin{pmatrix}
+3 &amp; 0 \\
+0 &amp; 0
+\end{pmatrix},
+\end{equation*}
+<p>una función inversa tendría que ser de la forma</p>
+\begin{equation*}
+T_B^{-1} (x,y) = (ax + by, cx +dy)
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+(x,y) = T \circ T_B^{-1} (x,y) = (3ax + 3by, 0)
+\end{equation*}
+<p>para todo \(x\) e \(y\text{.}\)  Claramente esto es imposible pues \(y\) podría no ser 0.</p></article><article class="example-like" id="example-sets-inverse-permutation"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.19</span>
+</h6>
+<p id="p-94">Dada la permutación</p>
+\begin{equation*}
+\pi =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+2 &amp; 3 &amp; 1
+\end{pmatrix}
+\end{equation*}
+<p>en \(S = \{ 1,2,3 \}\text{,}\) es fácil ver que la permutación definida por</p>
+\begin{equation*}
+\pi^{-1} =
+\begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+3 &amp; 1 &amp; 2
+\end{pmatrix}
+\end{equation*}
+<p>es la inversa de \(\pi\text{.}\)  De hecho, toda función biyectiva posee una inversa, como veremos en el próximo teorema.</p></article><article class="theorem-like" id="theorem-3"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">1.20</span>
+</h6>
+<p id="p-95">Una función es invertible si y solo si es biyectiva.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-4" id="proof-4"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-96">Supongamos primero que \(f:A \rightarrow B\) es invertible con inversa \(g: B \rightarrow A\text{.}\) Entonces \(g \circ f = id_A\) es la función identidad; es decir, \(g(f(a)) = a\text{.}\) Si \(a_1, a_2 \in A\) con \(f(a_1) = f(a_2)\text{,}\) entonces \(a_1 = g(f(a_1)) = g(f(a_2)) = a_2\text{.}\)  Así, \(f\) es 1-1.  Ahora supongamos que \(b \in B\text{.}\) Para mostrar que \(f\) es sobre, es necesario encontrar \(a \in A\) tal que \(f(a) = b\text{,}\) pero \(f(g(b)) = b\) con \(g(b) \in A\text{.}\) Sea \(a = g(b)\text{.}\)</p>
+<p id="p-97">Recíprocamente, sea \(f\) una función biyectiva y sea \(b \in B\text{.}\)  Como \(f\) es sobre, existe \(a \in A\) tal que \(f(a) = b\text{.}\)  Como \(f\) es 1-1, \(a\) es único. Defina \(g\) como \(g(b) = a\text{.}\)  Hemos construído la inversa de \(f\text{.}\)</p></article></div></section><section class="subsection" id="sets-subsection-equivalence-relations"><h3 class="heading hide-type" alt="Subsección  Relaciones de Equivalencia y Particiones">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Relaciones de Equivalencia y Particiones</span>
+</h3>
+<a href="section-sets-and-equivalence-relations.html#sets-subsection-equivalence-relations" class="permalink">¶</a><p id="p-98">Una noción fundamental en matemáticas es la de igualdad.  Podemos generalizar la igualdad por medio de las relaciones de equivalencia y las clases de equivalencia.  Una <b class="terminology">relación de equivalencia</b> en un conjunto \(X\) es una relación \(R \subset X \times X\) tal que </p>
+<ul id="ul-4" style="list-style-type: disc;">
+<li id="li-35"><p id="p-99">\((x, x) \in R\) para todo \(x \in X\) (<b class="terminology">propiedad refleja</b>);</p></li>
+<li id="li-36"><p id="p-100">\((x, y) \in R\) implica \((y, x) \in R\) (<b class="terminology">propiedad simétrica</b>);</p></li>
+<li id="li-37"><p id="p-101">\((x, y)\) y \((y, z) \in R\) implica \((x, z) \in R\) (<b class="terminology">propiedad transitiva</b>).</p></li>
+</ul>
+<p>Dada una relación de equivalencia \(R\)  en un conjunto \(X\text{,}\) usualmente escribiremos  \(x \sim y\) en lugar de \((x, y) \in R\text{.}\) Si la relación de equivalencia ya tiene asociada una notación como \(=\text{,}\) \(\equiv\text{,}\) o \(\cong\text{,}\) usaremos esa notación.</p>
+<article class="example-like" id="example-sets-equivalent-fractions"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.21</span>
+</h6>
+<p id="p-102">Sean \(p\text{,}\) \(q\text{,}\) \(r\text{,}\) y \(s\) enteros, con \(q\) y \(s\) distintos de cero.  Definimos \(p/q \sim r/s\) si \(ps = qr\text{.}\)  Claramente \(\sim\) es refleja y simétrica.  Para mostrar que también es transitiva, supongamos que \(p/q \sim r/s\) y \(r/s \sim t/u\text{,}\) con \(q\text{,}\) \(s\text{,}\) y \(u\) todos distintos de cero.  Entonces \(ps = qr\) y \(ru = st\text{.}\) Por lo tanto,</p>
+\begin{equation*}
+psu = qru = qst.
+\end{equation*}
+<p>Como \(s \neq 0\text{,}\) \(pu = qt\text{.}\) Así, \(p/q \sim t/u\text{.}\)</p></article><article class="example-like" id="example-sets-equivalent-derivative"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.22</span>
+</h6>
+<p id="p-103">Supongamos que \(f\) y \(g\) son funciones diferenciables en \({\mathbb R}\text{.}\)  Podemos definir una relación de equivalencia en el conjunto de tales funciones definiendo \(f(x) \sim g(x)\) si \(f'(x) = g'(x)\text{.}\) Es claro que esta relación es refleja y simétrica.  Para demostrar la transitividad, supongamos que \(f(x) \sim g(x)\) y  \(g(x) \sim h(x)\text{.}\)  De cálculo sabemos que \(f(x) - g(x) = c_1\) y \(g(x)- h(x) = c_2\text{,}\) donde \(c_1\) y \(c_2\) son ambos constantes. Luego,</p>
+\begin{equation*}
+f(x) - h(x) = ( f(x) - g(x)) + ( g(x)- h(x))  = c_1 - c_2
+\end{equation*}
+<p>y \(f'(x) - h'(x) = 0\text{.}\) Por lo tanto, \(f(x) \sim h(x)\text{.}\)</p></article><article class="example-like" id="example-sets-equivalent-circles"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.23</span>
+</h6>
+<p id="p-104">Para \((x_1, y_1 )\) y \((x_2, y_2)\) en \({\mathbb R}^2\text{,}\) definamos \((x_1, y_1 ) \sim (x_2, y_2)\) si \(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)  Entonces \(\sim\) es una relación de equivalencia en \({\mathbb R}^2\text{.}\)</p></article><article class="example-like" id="example-sets-equivalent-matrices"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.24</span>
+</h6>
+<p id="p-105">Sean \(A\) y \(B\) matrices de \(2 \times 2\) con coeficientes reales. Podemos definir una relación de equivalencia en el conjunto de la matrices de \(2 \times 2\text{,}\) diciendo que \(A \sim B\) si existe una matriz invertible  \(P\) tal que \(PAP^{-1} = B\text{.}\)  Por ejemplo, si</p>
+\begin{equation*}
+A =
+\begin{pmatrix}
+1 &amp; 2 \\
+-1 &amp; 1
+\end{pmatrix}
+\quad \text{and} \quad
+B =
+\begin{pmatrix}
+-18 &amp; 33 \\
+-11 &amp; 20
+\end{pmatrix},
+\end{equation*}
+<p>entonces \(A \sim B\) pues \(PAP^{-1} = B\) para</p>
+\begin{equation*}
+P =
+\begin{pmatrix}
+2 &amp; 5 \\
+1 &amp; 3
+\end{pmatrix}.
+\end{equation*}
+<p>Sea \(I\) la matriz identidad de \(2 \times 2\text{;}\) es decir,</p>
+\begin{equation*}
+I =
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix}.
+\end{equation*}
+<p>Entonces \(IAI^{-1} = IAI = A\text{;}\) por lo tanto, la relación es refleja.  Para demostrar simetría, supongamos que \(A \sim B\text{.}\)  Entonces existe una matriz invertible \(P\) tal que \(PAP^{-1} = B\text{.}\)  Así</p>
+\begin{equation*}
+A = P^{-1} B P = P^{-1} B (P^{-1})^{-1}.
+\end{equation*}
+<p>Finalmente, supongamos que \(A \sim B\) y \(B \sim C\text{.}\)  Entonces existen matrices \(P\) y \(Q\) tales que \(PAP^{-1} = B\) y  \(QBQ^{-1} = C\text{.}\)  Como</p>
+\begin{equation*}
+C = QBQ^{-1} = QPAP^{-1} Q^{-1} = (QP)A(QP)^{-1},
+\end{equation*}
+<p>la relación es transitiva.  Dos matrices equivalente de esta forma se dicen <b class="terminology">similares</b>.</p></article><p id="p-106">Una <b class="terminology">partición</b> \({\mathcal P}\) de un conjunto \(X\) es una colección de conjuntos no vacíos \(X_1, X_2, \ldots\) tales que \(X_i \cap X_j = \emptyset\) para \(i  \neq j\) y \(\bigcup_k X_k = X\text{.}\) Sea \(\sim\) una relación de equivalencia en un conjunto \(X\) y sea \(x \in X\text{.}\)  Entonces \([x] = \{ y \in X : y \sim x \}\) se llama <b class="terminology">clase de equivalencia</b> de \(x\text{.}\)  Veremos que una relación de equivalencia da lugar a una partición via clases de equivalencia.  Además, si tenemos una partición de un conjunto, entonces existe una relación de equivalencia subyacente, como demuestra el teorema siguiente.</p>
+<article class="theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">1.25</span>
+</h6>
+<p id="p-107">Dada una relación de equivalencia \(\sim\) en un conjunto \(X\text{,}\) las clases de equivalencia de \(X\) forman una partición de \(X\text{.}\)  Recíprocamente, si \({\mathcal P} = \{ X_i\}\) es una partición de un conjunto \(X\text{,}\) entonces existe una relación de equivalencia en \(X\) con clases de equivalencia \(X_i\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-5" id="proof-5"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-5" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-108">Supongamos que existe una relación de equivalencia \(\sim\) en el conjunto \(X\text{.}\)  Para cualquier \(x \in X\text{,}\) la propiedad refleja muestra que \(x \in [x]\) de manera que \([x]\) no es vacío.  Claramente \(X = \bigcup_{x \in X} [x]\text{.}\)  Sean \(x, y \in X\text{.}\) Debemos probar que ya sea \([x] = [y]\) o \([x] \cap [y] = \emptyset\text{.}\)  Supongamos que la intersección de \([x]\) y \([y]\) no es vacía y que \(z \in [x] \cap [y]\text{.}\) Entonces \(z \sim x\) y \(z \sim y\text{.}\)  Por simetría o por transitividad \(x \sim y\text{;}\) luego, \([x] \subset [y]\text{.}\)  Similarmente, \([y] \subset [x]\) y  así \([x] = [y]\text{.}\)  Por lo tanto, dos clases de equivalencia pueden ser disjuntas o exactamente la misma.</p>
+<p id="p-109">Recíprocamente, supongamos que \({\mathcal P} = \{X_i\}\) es una partición de un conjunto \(X\text{.}\)  Definamos que dos elementos son equivalentes si y solo si están en el mismo conjunto de la partición.  Claramente, la relación es refleja.  Si \(x\) está en el mismo conjunto que \(y\text{,}\) entonces \(y\) está en el mismo conjunto que \(x\text{,}\) así \(x \sim y\) implica \(y \sim x\text{.}\)  Finalmente, si \(x\) está en el mismo conjunto que \(y\) e \(y\) está en el mismo conjunto que \(z\text{,}\) entonces \(x\) debe estar en el mismo conjunto que \(z\text{,}\) por lo que tenemos transitividad.</p></article></div>
+<article class="theorem-like" id="corollary-1"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">1.26</span>
+</h6>
+<p id="p-110">Dos clases de equivalencia en una relación de equivalencia ya sea son disjuntas o son iguales.</p></article><p id="p-111">Examinemos algunas de las particiones dadas por las clases de equivalencia de los últimos ejemplos.</p>
+<article class="example-like" id="example-sets-fraction-partition"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.27</span>
+</h6>
+<p id="p-112">En la relación de equivalencia del Ejemplo <a knowl="./knowl/example-sets-equivalent-fractions.html" knowl-id="xref-example-sets-equivalent-fractions" alt="Ejemplo 1.21 " title="Ejemplo 1.21 ">1.21</a>, dos pares de enteros, \((p,q)\) y \((r,s)\text{,}\) están en la misma clase de equivalencia cuando se reducen a la misma fracción reducida.</p></article><article class="example-like" id="example-sets-matrix-partition"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.28</span>
+</h6>
+<p id="p-113">En la relación de equivalencia en el Ejemplo <a knowl="./knowl/example-sets-equivalent-derivative.html" knowl-id="xref-example-sets-equivalent-derivative" alt="Ejemplo 1.22 " title="Ejemplo 1.22 ">1.22</a>, dos funciones \(f(x)\) y \(g(x)\) están en la misma clase cuando difieren por una constante.</p></article><article class="example-like" id="example-sets-circle-partition"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.29</span>
+</h6>
+<p id="p-114">Hemos definido una clase de equivalencia en \({\mathbb R}^2\) por \((x_1, y_1 ) \sim (x_2, y_2)\) si \(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)  Dos pares de números reales están en la misma clase cuando representan puntos en una misma circunferencia centrada en el origen.</p></article><article class="example-like" id="example-sets-congruent-integers"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">1.30</span>
+</h6>
+<p id="p-115">Sean \(r\) y \(s\) dos enteros y supongamos que \(n \in {\mathbb N}\text{.}\)  Diremos que \(r\) es <b class="terminology">congruente</b> a \(s\) <b class="terminology">módulo</b> \(n\text{,}\) o \(r\) es congruente a \(s\) mód \(n\text{,}\) si \(r - s\) es divisible por \(n\text{;}\) es decir, \(r - s = nk\)  para algún \(k \in {\mathbb Z}\text{.}\)  En este caso escribimos \(r \equiv s \pmod{n}\text{.}\)    Por example, \(41 \equiv 17 \pmod{ 8}\) pues \(41 - 17=24\) es divisible por 8.  Afirmamos que congruencia módulo \(n\) es una relación de equivalencia en \({\mathbb Z}\text{.}\)  Ciertamente cualquier entero \(r\) es equivalente a sí mismo pues \(r - r = 0\) es divisible por \(n\text{.}\)  Mostraremos ahora que la relación es simétrica.  Si \(r \equiv s \pmod{ n}\text{,}\) entonces \(r - s = -(s -r)\) es divisible por \(n\text{.}\) Así \(s - r\) es divisible por \(n\) y \(s \equiv r \pmod{ n}\text{.}\)  Ahora supongamos que \(r \equiv s \pmod{ n}\) y \(s \equiv t \pmod{ n}\text{.}\)  Entonces existen enteros \(k\) y \(l\) tales que \(r -s = kn\) y \(s - t = ln\text{.}\)  Para mostrar la transitividad, es necesario probar que \(r - t\) es divisible por \(n\text{.}\)  Pero,</p>
+\begin{equation*}
+r - t = r - s + s - t = kn + ln = (k + l)n,
+\end{equation*}
+<p>y así \(r - t\) es divisible por \(n\text{.}\)</p>
+<p id="p-116">Si consideramos la relación de equivalencia estabecida por los enteros módulo 3, entonces</p>
+\begin{align*}
+{[0]} &amp; = \{ \ldots, -3, 0, 3, 6, \ldots \},\\
+{[1]} &amp; = \{ \ldots, -2, 1, 4, 7, \ldots \},\\
+{[2]} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}.
+\end{align*}
+<p>Note que \([0] \cup [1] \cup [2] = {\mathbb Z}\) y también que los conjuntos son disjuntos.  Los conjuntos \([0]\text{,}\) \([1]\text{,}\) y \([2]\) forman una partición de los enteros.</p>
+<p id="p-117">Los enteros módulo \(n\) son ejemplos importantes en el estudio del álgebra abstracta y serán muy útiles en el estudio de diversas estructuras algebraicas tales como grupos y anillos.  En nuestra discusión de los enteros módulo \(n\) hemos asumido un resultado conocido como algoritmo de división, que será enunciado y demostrado en el Capítulo <a href="integers.html" alt="Capítulo 2 Los Enteros" title="Capítulo 2 Los Enteros">2</a>.</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

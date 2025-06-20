@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-12-26T11:03:09-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA Extensiones de cuerpos</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.html", "../../pretextbook.org/legacy/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax2ba6.js?config=TeX-AMS_CHTML-full"></script><script src="../../cdn.jsdelivr.net/gh/google/code-prettify%40master/loader/run_prettify.js"></script><script>(function() {
+  var cx = '012975021551273728005:y0h32vuqauw';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><link href="../../aimath.org/knowlstyle.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../aimath.org/knowl.html"></script><script src="../../aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="../../aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="../../aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="../../pretextbook.org/legacy/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div class="hidden-content">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\renewcommand{\gcd}{\operatorname{mcd}}
+\renewcommand{\lcm}{\operatorname{mcm}}
+\renewcommand{\deg}{\operatorname{gr}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<div class="searchwrapper"><div class="gcse-search"></div></div>
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
+<p class="byline">Thomas W. Judson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético" alt="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="fields.html" title="Anterior" alt="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="fields.html" title="Arriba" alt="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="section-splitting-fields.html" title="Siguiente" alt="Siguiente">Siguiente</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Anotaciones</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="fields.html" title="Anterior" alt="Anterior">Anterior</a><a class="up-button button toolbar-item" href="fields.html" title="Arriba" alt="Arriba">Arriba</a><a class="next-button button toolbar-item" href="section-splitting-fields.html" title="Siguiente" alt="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="index-2.html" data-scroll="index"><span class="title">Páginas preliminares</span></a></h2>
+<ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colofón</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Agradecimentos</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Prefacio</a></li>
+</ul>
+<h2 class="link"><a href="sets.html" data-scroll="sets"><span class="codenumber">1</span><span class="title">Preliminares</span></a></h2>
+<ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Una Breve Nota sobre Demostraciones</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Conjuntos y Relaciones de Equivalencia</a></li>
+<li><a href="exercises-sets.html" data-scroll="exercises-sets">Ejercicios</a></li>
+<li><a href="sets-references.html" data-scroll="sets-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sets-sage.html" data-scroll="sets-sage">Sage</a></li>
+<li><a href="sets-sage-exercises.html" data-scroll="sets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="integers.html" data-scroll="integers"><span class="codenumber">2</span><span class="title">Los Enteros</span></a></h2>
+<ul>
+<li><a href="section-math-induction.html" data-scroll="section-math-induction">Principio de Inducción</a></li>
+<li><a href="section-division-algorithm.html" data-scroll="section-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="exercises-integers.html" data-scroll="exercises-integers">Ejercicios</a></li>
+<li><a href="integers-exercises-programming.html" data-scroll="integers-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="integers-references.html" data-scroll="integers-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="integers-sage.html" data-scroll="integers-sage">Sage</a></li>
+<li><a href="integers-sage-exercises.html" data-scroll="integers-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="groups.html" data-scroll="groups"><span class="codenumber">3</span><span class="title">Grupos</span></a></h2>
+<ul>
+<li><a href="section-mod-n-sym.html" data-scroll="section-mod-n-sym">Clases de Equivalencia de Enteros y Simetrías</a></li>
+<li><a href="section-groups-define.html" data-scroll="section-groups-define">Definiciones y Ejemplos</a></li>
+<li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgrupos</a></li>
+<li><a href="exercises-groups.html" data-scroll="exercises-groups">Ejercicios</a></li>
+<li><a href="groups-exercises-detecting-errors.html" data-scroll="groups-exercises-detecting-errors">Ejercicios Adicionales: Detectando Errores</a></li>
+<li><a href="groups-references.html" data-scroll="groups-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
+<li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a></h2>
+<ul>
+<li><a href="section-cyclic-subgroups.html" data-scroll="section-cyclic-subgroups">Subgrupos Cíclicos</a></li>
+<li><a href="section-mult-group-c.html" data-scroll="section-mult-group-c">Grupo multiplicativo de los números complejos</a></li>
+<li><a href="section-method-of-repeated-squares.html" data-scroll="section-method-of-repeated-squares">El método de los cuadrados repetidos</a></li>
+<li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Ejercicios</a></li>
+<li><a href="cyclic-exercises-programming.html" data-scroll="cyclic-exercises-programming">Ejercicios de programación</a></li>
+<li><a href="cyclic-references.html" data-scroll="cyclic-references">Referencias y Lecturas recomendadas</a></li>
+<li><a href="cyclic-sage.html" data-scroll="cyclic-sage">Sage</a></li>
+<li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="permute.html" data-scroll="permute"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a></h2>
+<ul>
+<li><a href="section-permutation-definitions.html" data-scroll="section-permutation-definitions">Definiciones y Notación</a></li>
+<li><a href="section-dihedral-groups.html" data-scroll="section-dihedral-groups">Grupos Dihedrales</a></li>
+<li><a href="exercises-permute.html" data-scroll="exercises-permute">Ejercicios</a></li>
+<li><a href="permute-sage.html" data-scroll="permute-sage">Sage</a></li>
+<li><a href="permute-sage-exercises.html" data-scroll="permute-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="cosets.html" data-scroll="cosets"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a></h2>
+<ul>
+<li><a href="section-cosets.html" data-scroll="section-cosets">Clases Laterales</a></li>
+<li><a href="section-lagranges-theorem.html" data-scroll="section-lagranges-theorem">Teorema de Lagrange</a></li>
+<li><a href="section-fermat-euler.html" data-scroll="section-fermat-euler">Teoremas de Fermat y Euler</a></li>
+<li><a href="exercises-cosets.html" data-scroll="exercises-cosets">Ejercicios</a></li>
+<li><a href="cosets-sage.html" data-scroll="cosets-sage">Sage</a></li>
+<li><a href="cosets-sage-exercises.html" data-scroll="cosets-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="crypt.html" data-scroll="crypt"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a></h2>
+<ul>
+<li><a href="section-private-key-crypt.html" data-scroll="section-private-key-crypt">Criptografía de Clave Privada</a></li>
+<li><a href="section-public-key-crypt.html" data-scroll="section-public-key-crypt">Criptografía de Clave Pública</a></li>
+<li><a href="exercises-crypt.html" data-scroll="exercises-crypt">Ejercicios</a></li>
+<li><a href="crypt-exercises-additional.html" data-scroll="crypt-exercises-additional">Ejercicios Adicionales: Primalidad y Factorización</a></li>
+<li><a href="crypt-references.html" data-scroll="crypt-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="crypt-sage.html" data-scroll="crypt-sage">Sage</a></li>
+<li><a href="crypt-sage-exercises.html" data-scroll="crypt-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="algcodes.html" data-scroll="algcodes"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a></h2>
+<ul>
+<li><a href="section-error-detecting-correcting-codes.html" data-scroll="section-error-detecting-correcting-codes">Códigos para Detectar y para Corregir Errores</a></li>
+<li><a href="section-linear-codes.html" data-scroll="section-linear-codes">Códigos Lineales</a></li>
+<li><a href="section-parity-check.html" data-scroll="section-parity-check">Matrices Verificadora y Generadora</a></li>
+<li><a href="section-efficient-decoding.html" data-scroll="section-efficient-decoding">Decodificación Eficiente</a></li>
+<li><a href="exercises-algcodes.html" data-scroll="exercises-algcodes">Ejercicios</a></li>
+<li><a href="algcodes-exercises-programming.html" data-scroll="algcodes-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="algcodes-references.html" data-scroll="algcodes-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="algcodes-sage.html" data-scroll="algcodes-sage">Sage</a></li>
+<li><a href="algcodes-sage-exercises.html" data-scroll="algcodes-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="isomorph.html" data-scroll="isomorph"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a></h2>
+<ul>
+<li><a href="section-isomorph-definitions.html" data-scroll="section-isomorph-definitions">Definición y Ejemplos</a></li>
+<li><a href="section-direct-products.html" data-scroll="section-direct-products">Productos Directos</a></li>
+<li><a href="exercises-isomorph.html" data-scroll="exercises-isomorph">Ejercicios</a></li>
+<li><a href="isomorph-sage.html" data-scroll="isomorph-sage">Sage</a></li>
+<li><a href="isomorph-sage-exercises.html" data-scroll="isomorph-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="normal.html" data-scroll="normal"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a></h2>
+<ul>
+<li><a href="section-factor-groups.html" data-scroll="section-factor-groups">Grupos Cociente y Subgrupos Normales</a></li>
+<li><a href="section-simplicity-of-an.html" data-scroll="section-simplicity-of-an">La Simplicidad del Grupo Alternante</a></li>
+<li><a href="exercises-normal.html" data-scroll="exercises-normal">Ejercicios</a></li>
+<li><a href="normal-sage.html" data-scroll="normal-sage">Sage</a></li>
+<li><a href="normal-sage-exercises.html" data-scroll="normal-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="homomorph.html" data-scroll="homomorph"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a></h2>
+<ul>
+<li><a href="section-group-homomorphisms.html" data-scroll="section-group-homomorphisms">Homomofismos de Grupos</a></li>
+<li><a href="section-group-isomorphism-theorems.html" data-scroll="section-group-isomorphism-theorems">Los Teoremas de Isomorfía</a></li>
+<li><a href="exercises-homomorph.html" data-scroll="exercises-homomorph">Ejercicios</a></li>
+<li><a href="homomorph-exercises-automorphisms.html" data-scroll="homomorph-exercises-automorphisms">Ejercicios adicionales: Automorfismos</a></li>
+<li><a href="homomorph-sage.html" data-scroll="homomorph-sage">Sage</a></li>
+<li><a href="homomorph-sage-exercises.html" data-scroll="homomorph-sage-exercises">Ejercicios Sage</a></li>
+</ul>
+<h2 class="link"><a href="matrix.html" data-scroll="matrix"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a></h2>
+<ul>
+<li><a href="section-matrix-groups.html" data-scroll="section-matrix-groups">Grupos de Matrices</a></li>
+<li><a href="section-symmetry.html" data-scroll="section-symmetry">Simetría</a></li>
+<li><a href="exercises-matrix.html" data-scroll="exercises-matrix">Ejercicios</a></li>
+<li><a href="matrix-references.html" data-scroll="matrix-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="matrix-sage.html" data-scroll="matrix-sage">Sage</a></li>
+<li><a href="matrix-sage-exercises.html" data-scroll="matrix-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="struct.html" data-scroll="struct"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a></h2>
+<ul>
+<li><a href="section-finite-abelian-groups.html" data-scroll="section-finite-abelian-groups">Grupos Abelianos Finitos</a></li>
+<li><a href="section-solvable-groups.html" data-scroll="section-solvable-groups">Grupos Solubles</a></li>
+<li><a href="exercises-struct.html" data-scroll="exercises-struct">Ejercicios</a></li>
+<li><a href="struct-exercises-programming.html" data-scroll="struct-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="struct-references.html" data-scroll="struct-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="struct-sage.html" data-scroll="struct-sage">Sage</a></li>
+<li><a href="struct-sage-exercises.html" data-scroll="struct-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="actions.html" data-scroll="actions"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a></h2>
+<ul>
+<li><a href="section-groups-acting-on-sets.html" data-scroll="section-groups-acting-on-sets">Grupos Actuando en Conjuntos</a></li>
+<li><a href="section-class-equation.html" data-scroll="section-class-equation">La Ecuación de Clase</a></li>
+<li><a href="section-burnsides-counting-theorem.html" data-scroll="section-burnsides-counting-theorem">Teorema de Conteo de Burnside</a></li>
+<li><a href="exercises-actions.html" data-scroll="exercises-actions">Ejercicios</a></li>
+<li><a href="actions-exercises-programming.html" data-scroll="actions-exercises-programming">Ejercicio de Programación</a></li>
+<li><a href="actions-references.html" data-scroll="actions-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="actions-sage.html" data-scroll="actions-sage">Sage</a></li>
+<li><a href="actions-sage-exercises.html" data-scroll="actions-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="sylow.html" data-scroll="sylow"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a></h2>
+<ul>
+<li><a href="section-sylow-theorems.html" data-scroll="section-sylow-theorems">Los Teoremas de Sylow</a></li>
+<li><a href="section-sylow-applications.html" data-scroll="section-sylow-applications">Ejemplos y Aplicaciones</a></li>
+<li><a href="exercises-sylow.html" data-scroll="exercises-sylow">Ejercicios</a></li>
+<li><a href="sylow-exercises-project.html" data-scroll="sylow-exercises-project">Un Proyecto</a></li>
+<li><a href="sylow-references.html" data-scroll="sylow-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="sylow-sage.html" data-scroll="sylow-sage">Sage</a></li>
+<li><a href="sylow-sage-exercises.html" data-scroll="sylow-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="rings.html" data-scroll="rings"><span class="codenumber">16</span><span class="title">Anillos</span></a></h2>
+<ul>
+<li><a href="section-rings-definitions.html" data-scroll="section-rings-definitions">Anillos</a></li>
+<li><a href="section-domains-and-fields.html" data-scroll="section-domains-and-fields">Dominios Integrales y Cuerpos</a></li>
+<li><a href="section-ring-homomorphisms.html" data-scroll="section-ring-homomorphisms">Homomorfismos de Anillos e Ideales</a></li>
+<li><a href="section-maximal-prime-ideals.html" data-scroll="section-maximal-prime-ideals">Ideales Maximales e Ideales Primos</a></li>
+<li><a href="section-software-application.html" data-scroll="section-software-application">Una Aplicación al Diseño de Software</a></li>
+<li><a href="exercises-rings.html" data-scroll="exercises-rings">Ejercicios</a></li>
+<li><a href="rings-exercises-programming.html" data-scroll="rings-exercises-programming">Ejercicio de programación</a></li>
+<li><a href="rings-references.html" data-scroll="rings-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="rings-sage.html" data-scroll="rings-sage">Sage</a></li>
+<li><a href="rings-sage-exercises.html" data-scroll="rings-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="poly.html" data-scroll="poly"><span class="codenumber">17</span><span class="title">Polinomios</span></a></h2>
+<ul>
+<li><a href="section-poly-rings.html" data-scroll="section-poly-rings">Anillos de Polinomios</a></li>
+<li><a href="section-poly-division-algorithm.html" data-scroll="section-poly-division-algorithm">El Algoritmo de División</a></li>
+<li><a href="section-irreducible-poly.html" data-scroll="section-irreducible-poly">Polinomios Irreducibles</a></li>
+<li><a href="exercises-poly.html" data-scroll="exercises-poly">Ejercicios</a></li>
+<li><a href="poly-exercises-cubics-quartics.html" data-scroll="poly-exercises-cubics-quartics">Ejercicios Adicionales:  Resolviendo las Ecuaciones Cúbica y Cuártica</a></li>
+<li><a href="poly-sage.html" data-scroll="poly-sage">Sage</a></li>
+<li><a href="poly-sage-exercises.html" data-scroll="poly-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="domains.html" data-scroll="domains"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a></h2>
+<ul>
+<li><a href="section-field-of-fractions.html" data-scroll="section-field-of-fractions">Cuerpos de Fracciones</a></li>
+<li><a href="section-factorization-domains.html" data-scroll="section-factorization-domains">Factorización en un Dominio Integral</a></li>
+<li><a href="exercises-domains.html" data-scroll="exercises-domains">Ejercicios</a></li>
+<li><a href="domains-references.html" data-scroll="domains-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="domains-sage.html" data-scroll="domains-sage">Sage</a></li>
+<li><a href="domains-sage-exercises.html" data-scroll="domains-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="boolean.html" data-scroll="boolean"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a></h2>
+<ul>
+<li><a href="section-boolean-lattices.html" data-scroll="section-boolean-lattices">Reticulados</a></li>
+<li><a href="section-boolean-algebras.html" data-scroll="section-boolean-algebras">Álgebras Booleanas</a></li>
+<li><a href="section-algebra-of-circuits.html" data-scroll="section-algebra-of-circuits">El Álgebra de los Circuitos Eléctricos</a></li>
+<li><a href="exercises-boolean.html" data-scroll="exercises-boolean">Ejercicios</a></li>
+<li><a href="boolean-exercises-programming.html" data-scroll="boolean-exercises-programming">Ejercicios de Programación</a></li>
+<li><a href="boolean-references.html" data-scroll="boolean-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="boolean-sage.html" data-scroll="boolean-sage">Sage</a></li>
+<li><a href="boolean-sage-exercises.html" data-scroll="boolean-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="vect.html" data-scroll="vect"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a></h2>
+<ul>
+<li><a href="section-vect-definitions-and-examples.html" data-scroll="section-vect-definitions-and-examples">Definiciones y Ejemplos</a></li>
+<li><a href="section-subspaces.html" data-scroll="section-subspaces">Subespacios</a></li>
+<li><a href="section-linear-independence.html" data-scroll="section-linear-independence">Independencia Lineal</a></li>
+<li><a href="exercises-vect.html" data-scroll="exercises-vect">Ejercicios</a></li>
+<li><a href="vect-references.html" data-scroll="vect-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="vect-sage.html" data-scroll="vect-sage">Sage</a></li>
+<li><a href="vect-sage-exercises.html" data-scroll="vect-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link active"><a href="fields.html" data-scroll="fields"><span class="codenumber">21</span><span class="title">Cuerpos</span></a></h2>
+<ul>
+<li><a href="section-extension-fields.html" data-scroll="section-extension-fields" class="active">Extensiones de cuerpos</a></li>
+<li><a href="section-splitting-fields.html" data-scroll="section-splitting-fields">Cuerpos de descomposición</a></li>
+<li><a href="section-constructions.html" data-scroll="section-constructions">Construcciones Geométricas</a></li>
+<li><a href="exercises-fields.html" data-scroll="exercises-fields">Ejercicios</a></li>
+<li><a href="fields-references.html" data-scroll="fields-references">Referencias y Lecturas sugeridas</a></li>
+<li><a href="fields-sage.html" data-scroll="fields-sage">Sage</a></li>
+<li><a href="fields-sage-exercises.html" data-scroll="fields-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="finite.html" data-scroll="finite"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a></h2>
+<ul>
+<li><a href="section-finite-field.html" data-scroll="section-finite-field">Estructura de Cuerpos Finitos</a></li>
+<li><a href="section-poly-codes.html" data-scroll="section-poly-codes">Códigos Polinomiales</a></li>
+<li><a href="exercises-finite.html" data-scroll="exercises-finite">Ejercicios</a></li>
+<li><a href="finite-exercises-bch-codes.html" data-scroll="finite-exercises-bch-codes">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></a></li>
+<li><a href="finite-references.html" data-scroll="finite-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="finite-sage.html" data-scroll="finite-sage">Sage</a></li>
+<li><a href="finite-sage-exercises.html" data-scroll="finite-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="galois.html" data-scroll="galois"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a></h2>
+<ul>
+<li><a href="section-field-automorphisms.html" data-scroll="section-field-automorphisms">Automorfismos de Cuerpos</a></li>
+<li><a href="section-fund-theorem-galois-theory.html" data-scroll="section-fund-theorem-galois-theory">El Teorema Fundamental</a></li>
+<li><a href="section-galois-applications.html" data-scroll="section-galois-applications">Aplicaciones</a></li>
+<li><a href="exercises-galois.html" data-scroll="exercises-galois">Ejercicios</a></li>
+<li><a href="galois-references.html" data-scroll="galois-references">Referencias y Lecturas Recomendadas</a></li>
+<li><a href="galois-sage.html" data-scroll="galois-sage">Sage</a></li>
+<li><a href="galois-sage-exercises.html" data-scroll="galois-sage-exercises">Ejercicios en Sage</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Referencia</span></a></h2>
+<ul>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="appendix-2.html" data-scroll="appendix-2">Pistas y Soluciones a Ejercicios Seleccionados</a></li>
+<li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
+<li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-extension-fields"><h2 class="heading hide-type" alt="Sección 21.1 Extensiones de cuerpos">
+<span class="type">Sección</span><span class="codenumber">21.1</span><span class="title">Extensiones de cuerpos</span>
+</h2>
+<a href="section-extension-fields.html" class="permalink">¶</a><section class="introduction" id="introduction-74"><p id="p-3216">Un cuerpo \(E\) es una <b class="terminology">extensión de cuerpos</b> de un cuerpo \(F\) si \(F\) es un subcuerpo de \(E\text{.}\) El cuerpo \(F\) se llama <b class="terminology">cuerpo base</b>.  Escribimos \(F \subset E\text{.}\)</p>
+<article class="example-like" id="example-fields-q-sqrt2"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.1</span>
+</h6>
+<p id="p-3217">Por ejemplo, sea</p>
+\begin{equation*}
+F = {\mathbb Q}( \sqrt{2}\,) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}
+\end{equation*}
+<p>y sea \(E =  {\mathbb Q }( \sqrt{2} +  \sqrt{3}\,)\) el menor cuerpo que contiene \({\mathbb Q}\) y \(\sqrt{2} + \sqrt{3}\text{.}\) Tanto \(E\) como \(F\) son extensiones de los números racionales. Afirmamos que  \(E\) es una extensión del cuerpo \(F\text{.}\) Para ver esto, solo necesitamos mostrar que \(\sqrt{2}\) está en \(E\text{.}\) Como \(\sqrt{2} + \sqrt{3}\) está en \(E\text{,}\) \(1 / (\sqrt{2} + \sqrt{3}\,) = \sqrt{3} - \sqrt{2}\) también debe estar en \(E\text{.}\) Tomando combinaciones lineales de \(\sqrt{2} + \sqrt{3}\) y \(\sqrt{3} - \sqrt{2}\text{,}\) encontramos que tanto \(\sqrt{2}\) como \(\sqrt{3}\) deben estar en \(E\text{.}\)</p></article><article class="example-like" id="example-fields-finite-f4"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.2</span>
+</h6>
+<p id="p-3218">Sea \(p(x) = x^2 + x + 1 \in {\mathbb Z}_2[x]\text{.}\) Como ni 0 ni 1 es una raíz de este polinomio, sabemos que \(p(x)\) es irreducible sobre \({\mathbb Z}_2\text{.}\) Construiremos una extensión del cuerpo \({\mathbb Z}_2\) que contenga un elemento \(\alpha\) tal que \(p(\alpha) = 0\text{.}\) Por el Teorema <a knowl="./knowl/theorem-max-ideal-poly.html" knowl-id="xref-theorem-max-ideal-poly" alt="Teorema 17.22 " title="Teorema 17.22 ">17.22</a>, el ideal \(\langle p(x) \rangle\) generado por \(p(x)\) es maximal; luego, \({\mathbb Z}_2[x] / \langle p(x) \rangle\) es un cuerpo.  Sea \(f(x) + \langle p(x) \rangle\) un elemento arbitrario de \({\mathbb Z}_2[x] / \langle p(x) \rangle\text{.}\) Por el algoritmo de la división,</p>
+\begin{equation*}
+f(x) = (x^2 + x + 1) q(x) + r(x),
+\end{equation*}
+<p>donde el grado de \(r(x)\) es menor al grado de \(x^2 + x + 1\text{.}\) Por lo tanto,</p>
+\begin{equation*}
+f(x) + \langle x^2 + x + 1 \rangle = r(x) + \langle x^2 + x + 1 \rangle.
+\end{equation*}
+<p>Las únicas posibilidades para \(r(x)\) son entonces \(0\text{,}\) \(1\text{,}\) \(x\text{,}\) y \(1 + x\text{.}\) En consecuencia, \(E = {\mathbb Z}_2[x] / \langle x^2 + x + 1 \rangle\) es un cuerpo con cuatro elementos y debe ser una extensión de  \({\mathbb Z}_2\text{,}\) que contiene un cero \(\alpha\) de \(p(x)\text{.}\) El cuerpo \({\mathbb Z}_2(  \alpha)\) consiste de los elementos</p>
+\begin{align*}
+0 + 0 \alpha &amp; = 0\\
+1 + 0 \alpha &amp; = 1\\
+0 + 1 \alpha &amp; = \alpha\\
+1 + 1 \alpha &amp; = 1 + \alpha.
+\end{align*}
+<p>Notemos que \({\alpha}^2 + {\alpha} + 1 = 0\text{;}\) por lo que, si calculamos \((1 + \alpha)^2\text{,}\)</p>
+\begin{equation*}
+(1 + \alpha)(1 + \alpha)= 1 + \alpha + \alpha + (\alpha)^2 = \alpha.
+\end{equation*}
+<p>Otros cálculos se realizan de forma similar.  Resumimos estos resultados en las siguientes tablas, que nos dicen cómo sumar y multiplicar elementos en \(E\text{.}\)</p></article><figure class="figure-like" id="table-addition-z2-alpha"><p id="p-3219"></p>
+\begin{equation*}
+\begin{array}{c|cccc}
++ &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
+\hline
+0 &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
+1 &amp; 1 &amp; 0 &amp; 1 + \alpha &amp; \alpha \\
+\alpha &amp; \alpha &amp; 1 + \alpha &amp; 0 &amp; 1  \\
+1 + \alpha &amp; 1 + \alpha &amp; \alpha &amp; 1 &amp; 0
+\end{array}
+\end{equation*}
+<figcaption><span class="type">Cuadro</span><span class="codenumber">21.3</span>Tabla de sumas para \({\mathbb Z}_2(\alpha)\)</figcaption></figure><figure class="figure-like" id="table-multiplication-z2-alpha"><p id="p-3220"></p>
+\begin{equation*}
+\begin{array}{c|cccc}
+\cdot &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
+\alpha &amp; 0 &amp; \alpha &amp; 1 + \alpha &amp; 1  \\
+1 + \alpha &amp; 0 &amp; 1 + \alpha &amp; 1 &amp; \alpha
+\end{array}
+\end{equation*}
+<figcaption><span class="type">Cuadro</span><span class="codenumber">21.4</span>Tabla de productos para \({\mathbb Z}_2(\alpha)\)</figcaption></figure><p id="p-3221">El siguiente teorema, de Kronecker, es tan importante y básico para nuestra comprensión de los cuerpos que frecuentemente se conoce como Teorema Fundamental de la Teoría de Cuerpos.</p>
+<article class="theorem-like" id="theorem-fundamental-of-field-theory"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.5</span>
+</h6>
+<p id="p-3222">Sea \(F\) un cuerpo y sea \(p(x)\) un polinomio no constante en \(F[x]\text{.}\)  Entonces existe un cuerpo de extensión \(E\) de \(F\) y un elemento \(\alpha \in E\) tal que \(p(\alpha) = 0\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-161" id="proof-161"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-161" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3223">Para demostrar este teorema, usaremos el método usado en el Ejemplo  <a knowl="./knowl/example-fields-finite-f4.html" knowl-id="xref-example-fields-finite-f4" alt="Ejemplo 21.2 " title="Ejemplo 21.2 ">21.2</a>. Claramente, podemos suponer que \(p(x)\) es un polinomio irreducible. Queremos encontrar una extensión \(E\) de \(F\) que contenga un elemento \(\alpha\) tal que \(p(\alpha) = 0\text{.}\) El ideal \(\langle p(x) \rangle\) generado por \(p(x)\) es un ideal maximal en \(F[x]\) por el  Teorema <a knowl="./knowl/theorem-max-ideal-poly.html" knowl-id="xref-theorem-max-ideal-poly" alt="Teorema 17.22 " title="Teorema 17.22 ">17.22</a>; luego, \(F[x]/\langle p(x) \rangle\) es un cuerpo. Afirmamos que  \(E = F[x]/\langle p(x) \rangle\) es el cuerpo buscado.</p>
+<p id="p-3224">Demostraremos primero que  \(E\) es una extensión de \(F\text{.}\) Podemos definir un homomorfismo de anillos conmutativos \(\psi:F \rightarrow F[x]/\langle p(x) \rangle\text{,}\) donde \(\psi(a) = a + \langle p(x)\rangle\) para \(a \in F\text{.}\) Es fácil verificar que \(\psi\) es realmente un homomorfismo de anillos. Observe que</p>
+\begin{equation*}
+\psi( a ) + \psi( b ) = (a + \langle p(x) \rangle) + (b + \langle p(x) \rangle) = (a + b) + \langle p(x) \rangle = \psi( a + b )
+\end{equation*}
+<p>y</p>
+\begin{equation*}
+\psi( a )  \psi( b ) = (a  + \langle p(x) \rangle)  (b + \langle p(x) \rangle) = a  b  + \langle p(x) \rangle = \psi( a  b ).
+\end{equation*}
+<p>Para demostrar que \(\psi\) es 1-1, supongamos que</p>
+\begin{equation*}
+a + \langle p(x) \rangle = \psi(a) = \psi(b) = b + \langle p(x) \rangle.
+\end{equation*}
+<p>Entonces \(a - b\) es un  múltiplo de \(p(x)\text{,}\) dado que está en el ideal \(\langle p(x) \rangle\text{.}\) Como \(p(x)\) es un polinomio no constante, la única posibilidad es que \(a - b = 0\text{.}\) Por lo tanto, \(a = b\) y \(\psi\) es inyectivo. Como \(\psi\) es 1-1, podemos identificar \(F\) con el subcuerpo \(\{ a + \langle p(x) \rangle : a \in F \}\) de \(E\) y ver \(E\) como un cuerpo de extensión de \(F\text{.}\)</p>
+<p id="p-3225">Nos falta demostrar  que \(p(x)\) tiene un cero \(\alpha \in E\text{.}\) Sea \(\alpha = x + \langle p(x) \rangle\text{.}\) Entonces \(\alpha\) está en \(E\text{.}\) Si \(p(x) = a_0 + a_1 x + \cdots + a_n x^n\text{,}\) entonces</p>
+\begin{align*}
+p( \alpha ) &amp; =  a_0 + a_1( x + \langle p(x) \rangle) + \cdots + a_n ( x + \langle p(x) \rangle)^n\\
+&amp; = a_0 + ( a_1 x + \langle p(x) \rangle) + \cdots + (a_n  x^n + \langle p(x) \rangle)\\
+&amp; = a_0 + a_1 x + \cdots + a_n x^n + \langle p(x) \rangle\\
+&amp; = 0 + \langle p(x) \rangle.
+\end{align*}
+<p>Por lo tanto, hemos encontrado un elemento \(\alpha \in E = F[x]/\langle p(x) \rangle\) tal que \(\alpha\) es un cero de \(p(x)\text{.}\)</p></article></div>
+<article class="example-like" id="example-fields-finite-f8"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.6</span>
+</h6>
+<p id="p-3226">Sea \(p(x) = x^5 + x^4 + 1 \in {\mathbb Z}_2[x]\text{.}\) Entonces \(p(x)\) tiene factores irreducibles \(x^2 + x + 1\) y \(x^3 + x + 1\text{.}\) Para un cuerpo de extensión \(E\) de \({\mathbb Z}_2\) tal que \(p(x)\) tenga una raíz en \(E\text{,}\) podemos tomar \(E\) como \({\mathbb Z}_2[x] / \langle x^2 + x + 1 \rangle\) o como \({\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle\text{.}\)  Dejaremos de ejercicio mostrar que \({\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle\) es un cuerpo con \(2^3=8\) elementos.</p></article></section><section class="subsection" id="fields-subsection-algebraic-elements"><h3 class="heading hide-type" alt="Subsección  Elementos Algebraicos">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Elementos Algebraicos</span>
+</h3>
+<a href="section-extension-fields.html#fields-subsection-algebraic-elements" class="permalink">¶</a><p id="p-3227">Un elemento \(\alpha\) en una extensión de cuerpos \(E\) sobre \(F\) es <b class="terminology">algebraico</b> sobre \(F\) si \(f(\alpha)=0\) para algún polinomio no nulo \(f(x) \in F[x]\text{.}\) Un elemento en \(E\) que no es algebraico sobre \(F\) es  <b class="terminology">trascendente</b> sobre \(F\text{.}\) Un cuerpo de extensión \(E\) de un cuerpo \(F\) es una <b class="terminology">extensión algebraica</b> de \(F\) si cada elemento en \(E\) es algebraico sobre \(F\text{.}\) Si \(E\) es una extensión de cuerpos de \(F\) y \(\alpha_1, \ldots, \alpha_n\) están contenidos en \(E\text{,}\) denotamos por \(F( \alpha_1, \ldots, \alpha_n)\) al menor cuerpo que contiene \(F\) y \(\alpha_1, \ldots, \alpha_n\text{.}\)   Si \(E = F( \alpha )\) para cierto \(\alpha \in E\text{,}\) entonces \(E\) es una <b class="terminology">extensión simple</b> de \(F\text{.}\)</p>
+<article class="example-like" id="example-fields-extension-pi"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.7</span>
+</h6>
+<p id="p-3228">Tanto \(\sqrt{2}\) como \(i\) son algebraicos sobre \({\mathbb Q}\) pues son ceros de los polinomios \(x^2 -2\) y \(x^2 + 1\text{,}\) respectivamente. Claramente \(\pi\) y \(e\) son algebraicos sobre los números reales; sin embargo, es un hecho que son trascendentes sobre \({\mathbb Q}\text{.}\) Números en \({\mathbb R}\) que sean algebraicos sobre \({\mathbb Q}\) son minoría. Casi todos los números reales son trascendentes sobre \({\mathbb Q}\text{.}\)<span class="footnote"><a knowl="" class="id-ref" refid="hk-fn-6" id="fn-6"><sup> 6 </sup></a></span><span id="hk-fn-6" class="hidden-content tex2jax_ignore"><span class="footnote">La probabilidad de que un número real elegido al azar en el intervalo \([0, 1]\) sea trascendente sobre los números racionales es uno.</span></span> (En muchos casos no se sabe si un número específico es trascendente o no; por ejemplo aún no se sabe si \(\pi + e\) es trascendente o algebraico.)</p></article><p id="p-3229">Un número complejo que sea algebraico sobre \({\mathbb Q}\) es un <b class="terminology">número algebraico</b>. Un <b class="terminology">número trascendente</b> es un elemento de \({\mathbb C}\) que es trascendente sobre \({\mathbb Q}\text{.}\)</p>
+<article class="example-like" id="example-fields-sqrt2-sqrt3"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.8</span>
+</h6>
+<p id="p-3230">Mostraremos que \(\sqrt{2 + \sqrt{3} }\) es algebraico sobre \({\mathbb Q}\text{.}\) Si \(\alpha = \sqrt{2 + \sqrt{3} }\text{,}\) entonces \(\alpha^2 = 2 + \sqrt{3}\text{.}\) Por lo tanto, \(\alpha^2 -  2 = \sqrt{3}\) y \(( \alpha^2 -  2)^2 = 3\text{.}\) Como \(\alpha^4 - 4 \alpha^2 + 1 = 0\text{,}\) debe ocurrir que \(\alpha\) es un cero del polinomio \(x^4 - 4 x^2 + 1 \in {\mathbb Q}[x]\text{.}\)</p></article><p id="p-3231">Es muy fácil dar un ejemplo de una extensión de cuerpos \(E\) sobre un cuerpo \(F\text{,}\) tal que  \(E\) contenga un elemento trascendente sobre \(F\text{.}\) El siguiente teorema caracteriza las extensiones trascendentes.</p>
+<article class="theorem-like" id="theorem-111"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.9</span>
+</h6>
+<p id="p-3232">Sea \(E\) un cuerpo de extensión de \(F\) y \(\alpha \in E\text{.}\) Entonces \(\alpha\) es trascendente sobre \(F\) si y solo si \(F( \alpha )\) es isomorfo a \(F(x)\text{,}\) el cuerpo de fracciones de \(F[x]\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-162" id="proof-162"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-162" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3233">Sea \(\phi_{\alpha} : F[x] \rightarrow E\) el homomorfismo de evaluación en \(\alpha\text{.}\) Entonces \(\alpha\) es trascendente sobre  \(F\) si y solo si \(\phi_{\alpha} (p(x)) = p(\alpha) \neq 0\) para todo polinomio no constante  \(p(x) \in F[x]\text{.}\)  Esto es verdadero si y solo si \(\ker \phi_{\alpha} = \{ 0 \}\text{;}\) es decir, es verdadero precisamente cuando \(\phi_{\alpha}\) es 1-1. Luego, \(E\) debe contener una copia de \(F[x]\text{.}\)  El menor cuerpo que contiene a \(F[x]\) es el cuerpo de fracciones \(F(x)\text{.}\)  Por el Teorema <a knowl="./knowl/theorem-field-of-quotients.html" knowl-id="xref-theorem-field-of-quotients" alt="Teorema 18.4 " title="Teorema 18.4 ">18.4</a>, \(E\) debe contener una copia de este cuerpo.</p></article></div>
+<p id="p-3234">Tenemos una situación más interesante para el caso de las extensiones algebraicas.</p>
+<article class="theorem-like" id="theorem-112"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.10</span>
+</h6>
+<p id="p-3235">Sea \(E\) una extensión de un cuerpo \(F\) y \(\alpha \in E\) con \(\alpha\) algebraico sobre \(F\text{.}\) Entonces hay un único polinomio mónico e irreducible \(p(x) \in F[x]\) tal que \(p( \alpha ) = 0\text{.}\) Si \(f(x)\) es otro polinomio en \(F[x]\) tal que \(f(\alpha) = 0\text{,}\) entonces \(p(x)\) divide a \(f(x)\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-163" id="proof-163"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-163" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3236">Sea \(\phi_{\alpha} : F[x] \rightarrow E\) el homomorfismo de evaluación. El núcleo de \(\phi_{\alpha}\) es un ideal principal generado por algún polinomio \(p(x) \in F[x]\) con \(\deg p(x) \geq 1\text{.}\) Sabemos que tal polinomio existe, pues \(F[x]\) es un dominio de ideales principales y \(\alpha\) es algebraico. El ideal \(\langle p(x) \rangle\) consiste exactamente de aquellos elementos de \(F[x]\) que tienen a \(\alpha\) como cero. Si \(f( \alpha ) = 0\) y \(f(x)\) no es el polinomio nulo, entonces \(f(x) \in \langle p(x) \rangle\) y \(p(x)\) divide a \(f(x)\text{.}\) Así \(p(x)\) es un polinomio de grado mínimo que tiene a \(\alpha\) como un cero. Cualquier otro polinomio del mismo grado que se anule en \(\alpha\) debe ser de la forma \(\beta p( x)\) para cierto \(\beta \in F\text{.}\)</p>
+<p id="p-3237">Supongamos ahora que \(p(x) = r(x) s(x)\) es una factorización de \(p(x)\) en factores de grado menor. Como \(p( \alpha ) = 0\text{,}\) \(r( \alpha ) s( \alpha ) = 0\text{;}\) luego, \(r( \alpha )=0\) o \(s( \alpha ) = 0\text{,}\) lo que contradice el hecho de que \(p\) es de grado mínimo. Por lo tanto, \(p(x)\) debe ser irreducible.</p></article></div>
+<p id="p-3238">Sea \(E\) una extensión del cuerpo \(F\) y \(\alpha \in E\) un elemento algebraico sobre \(F\text{.}\) El polinomio mónico único \(p(x)\) del teorema anterior se llama <b class="terminology">polinomio minimal</b> de \(\alpha\) sobre \(F\text{.}\) El grado de \(p(x)\) es el <b class="terminology">grado de \(\alpha\) sobre \(F\)</b>.</p>
+<article class="example-like" id="example-fields-minimal-poly"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.11</span>
+</h6>
+<p id="p-3239">Sea \(f(x) = x^2 - 2\) y \(g(x) = x^4 - 4 x^2 + 1\text{.}\) Estos son los polinomios minimales de \(\sqrt{2}\) y \(\sqrt{2 + \sqrt{3} }\text{,}\) respectivamente.</p></article><article class="theorem-like" id="proposition-minimal-poly"><h6 class="heading">
+<span class="type">Proposición</span><span class="codenumber">21.12</span>
+</h6>
+<p id="p-3240">Sea \(E\) una extensión del cuerpo \(F\) y \(\alpha \in E\) algebraico sobre \(F\text{.}\)  Entonces \(F( \alpha ) \cong F[x] / \langle p(x) \rangle\text{,}\) donde \(p(x)\) es el polinomio minimal de \(\alpha\) sobre \(F\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-164" id="proof-164"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-164" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3241">Sea \(\phi_{\alpha} : F[x] \rightarrow E\) el homomorfismo de evaluación. El núcleo de esta función es \(\langle p(x) \rangle\text{,}\) donde \(p(x)\) es el polinomio minimal de \(\alpha\text{.}\) Por el Primer Teorema de Isomorfía de anillos, la imagen \(\phi_{\alpha}\) en \(E\) es isomorfa a \(F( \alpha )\) pues contiene tanto a \(F\) como a \(\alpha\text{.}\)</p></article></div>
+<article class="theorem-like" id="theorem-simple_extension"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.13</span>
+</h6>
+<p id="p-3242">Sea \(E = F( \alpha )\) una extensión simple de \(F\text{,}\) con \(\alpha \in E\) algebraico sobre \(F\text{.}\)  Supongamos que el grado de \(\alpha\) sobre \(F\) es \(n\text{.}\) Entonces todo elemento \(\beta \in E\) puede ser expresado de forma única como</p>
+\begin{equation*}
+\beta = b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n - 1}
+\end{equation*}
+<p>con \(b_i \in F\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-165" id="proof-165"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-165" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3243">Dado que \(\phi_{\alpha} ( F[x] ) \cong F( \alpha )\text{,}\)  todo elemento en \(E = F( \alpha )\) debe ser de la forma \(\phi_{\alpha} ( f(x) ) = f( \alpha )\text{,}\) donde \(f(\alpha)\) es un polinomio en \(\alpha\) con coeficientes en \(F\text{.}\) Sea</p>
+\begin{equation*}
+p(x) = x^n + a_{n - 1} x^{n - 1} + \cdots + a_0
+\end{equation*}
+<p>el polinomio minimal de \(\alpha\text{.}\) Entonces \(p( \alpha ) = 0\text{;}\) luego,</p>
+\begin{equation*}
+{\alpha}^n = - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0.
+\end{equation*}
+<p>Similarmente,</p>
+\begin{align*}
+{\alpha}^{n + 1} &amp; = {\alpha} {\alpha}^n\\
+&amp; = - a_{n - 1} {\alpha}^n - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}\\
+&amp; = - a_{n - 1}( - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0) - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}.
+\end{align*}
+<p>Continuando de esta manera, podemos expresar cualquier monomio \({\alpha}^m\text{,}\) \(m \geq n\text{,}\) como combinación lineal de potencias de \({\alpha}\) menores a \(n\text{.}\) Por lo tanto, cualquier \(\beta \in F( \alpha )\) puede ser escrito como</p>
+\begin{equation*}
+\beta = b_0 + b_1 \alpha + \cdots + b_{n - 1} \alpha^{n - 1}.
+\end{equation*}
+<p id="p-3244">Para mostrar la unicidad, supongamos que</p>
+\begin{equation*}
+\beta =  b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n-1} = c_0 + c_1 \alpha + \cdots + c_{n - 1} \alpha^{n - 1}
+\end{equation*}
+<p>para \(b_i\) y \(c_i\) en \(F\text{.}\) Entonces</p>
+\begin{equation*}
+g(x) = (b_0 - c_0) + (b_1 - c_1) x + \cdots + (b_{n - 1} - c_{n - 1})x^{n - 1}
+\end{equation*}
+<p>está en \(F[x]\) y \(g( \alpha ) = 0\text{.}\) Como el grado de \(g(x)\) es menor que el grado de \(p( x )\text{,}\)  el polinomio irreducible de \(\alpha\text{,}\) \(g(x)\) debe ser el polinomio nulo. Concluimos,</p>
+\begin{equation*}
+b_0 - c_0 = b_1 - c_1 = \cdots = b_{n - 1} - c_{n - 1} = 0,
+\end{equation*}
+<p>es decir, \(b_i = c_i\) para \(i = 0, 1, \ldots, n-1\text{.}\)  Hemos demostrado la unicidad.</p></article></div>
+<article class="example-like" id="example-fields-isomorph"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.14</span>
+</h6>
+<p id="p-3245">Como \(x^2 + 1\) es irreducible sobre \({\mathbb R}\text{,}\) \(\langle x^2 + 1 \rangle\) es un ideal maximal en \({\mathbb R}[x]\text{.}\) Así \(E = {\mathbb R}[x]/\langle x^2 + 1 \rangle\) es una extensión de cuerpos de \({\mathbb R}\) que contiene una raíz de \(x^2 + 1\text{.}\) Sea \(\alpha = x + \langle x^2 + 1 \rangle\text{.}\) Podemos identificar \(E\) con lo números complejos. Por Proposición  <a knowl="./knowl/proposition-minimal-poly.html" knowl-id="xref-proposition-minimal-poly" alt="Proposición 21.12 " title="Proposición 21.12 ">21.12</a>, \(E\) es isomorfo a \({\mathbb R}( \alpha ) = \{ a + b \alpha : a, b \in {\mathbb R} \}\text{.}\) Sabemos que \(\alpha^2 = -1\) en \(E\text{,}\) dado que</p>
+\begin{align*}
+\alpha^2 + 1 &amp; = (x + \langle  x^2 + 1  \rangle)^2 + (1 + \langle  x^2 + 1  \rangle)\\
+&amp; = (x^2 + 1) +  \langle  x^2 + 1  \rangle\\
+&amp; = 0.
+\end{align*}
+<p>Luego, tenemos un isomorfismo de \({\mathbb R}( \alpha )\) con \({\mathbb C}\) definido por la función que envía \(a + b \alpha\) a \(a + bi\text{.}\)</p></article><p id="p-3246">Sea \(E\) una extensión de un cuerpo \(F\text{.}\)  Si consideramos \(E\) como un espacio vectorial sobre \(F\text{,}\) entonces podemos usar toda la maquinaria de álgebra lineal para trabajar en problemas que encontremos en nuestro estudio de cuerpos. Los elementos en el cuerpo \(E\) son vectores; los elementos en el cuerpo \(F\) son escalares. Podemos pensar en la adición en \(E\) como sumar vectores.  Cuando multiplicamos un elemento en \(E\) por un elemento de \(F\text{,}\) estamos multiplicando un vector por un escalar.  Este punto de vista para las extensiones de cuerpos es especialmente fructífero si una extensión \(E\) de \(F\)  es un  espacio vectorial de dimensión finita sobre \(F\text{,}\) y el Teorema <a knowl="./knowl/theorem-simple_extension.html" knowl-id="xref-theorem-simple_extension" alt="Teorema 21.13 " title="Teorema 21.13 ">21.13</a> dice que \(E = F(\alpha )\) es de dimensión finita sobre \(F\) con base \(\{ 1, \alpha, {\alpha}^2, \ldots, {\alpha}^{n - 1} \}\text{.}\)</p>
+<p id="p-3247">Si un cuerpo de extensión \(E\) de un cuerpo  \(F\) es un espacio vectorial  sobre \(F\) de dimensión finita \(n\text{,}\) entonces diremos que \(E\) es una  <b class="terminology">extensión de grado finito  \(n\) sobre \(F\)</b>.  Escribiremos</p>
+\begin{equation*}
+[E:F]= n.
+\end{equation*}
+<p>para indicar la dimensión de \(E\) sobre \(F\text{.}\) </p>
+<article class="theorem-like" id="theorem-finite-extension"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.15</span>
+</h6>
+<p id="p-3248">Toda extensión finita \(E\) de un cuerpo \(F\) es una extensión algebraica.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-166" id="proof-166"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-166" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3249">Sea \(\alpha \in E\text{.}\) Como \([E:F] = n\text{,}\) los elementos</p>
+\begin{equation*}
+1, \alpha, \ldots, {\alpha}^n
+\end{equation*}
+<p>no pueden ser linealmente independientes.  Luego existen \(a_i \in F\text{,}\) no todos cero, tales que</p>
+\begin{equation*}
+a_n {\alpha}^n + a_{n - 1} {\alpha}^{n - 1} + \cdots + a_1 \alpha + a_0 = 0.
+\end{equation*}
+<p>Por lo tanto,</p>
+\begin{equation*}
+p(x) = a_n x^n + \cdots + a_0 \in F[x]
+\end{equation*}
+<p>es un polinomio no nulo con \(p( \alpha ) = 0\text{.}\)</p></article></div>
+<article class="remark-like" id="remark-9"><h6 class="heading">
+<span class="type">Nota</span><span class="codenumber">21.16</span>
+</h6>
+<p id="p-3250">Teorema <a knowl="./knowl/theorem-finite-extension.html" knowl-id="xref-theorem-finite-extension" alt="Teorema 21.15 " title="Teorema 21.15 ">21.15</a> dice que toda extensión finita de un cuerpo \(F\) es una extensión algebraica. Sin embargo, el recíproco es falso. Dejaremos como un ejercicio demostrar que el conjunto de todos los elementos en \({\mathbb R}\) que son algebraicos sobre \({\mathbb Q}\) forma una extensión infinita de \({\mathbb Q}\text{.}\)</p></article><p id="p-3251">El siguiente es un teorema de conteo similar al Teorema de Lagrange en teoría de grupos. Teorema <a knowl="./knowl/theorem-tower-indices.html" knowl-id="xref-theorem-tower-indices" alt="Teorema 21.17 " title="Teorema 21.17 ">21.17</a> probará una herramienta de gran utilidad en nuestra investigación de extensiones finitas de cuerpos.</p>
+<article class="theorem-like" id="theorem-tower-indices"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.17</span>
+</h6>
+<p id="p-3252">Si \(E\) es una extensión finita de \(F\text{,}\) y \(K\) es una extensión finita de \(E\text{,}\) entonces \(K\) es una extensión finita de \(F\) y</p>
+\begin{equation*}
+[K:F]= [K:E] [E:F].
+\end{equation*}
+</article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-167" id="proof-167"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-167" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3253">Sea \(\{ \alpha_1, \ldots, \alpha_n \}\) una base para \(E\) como espacio vectorial sobre \(F\) y sea \(\{ \beta_1, \ldots, \beta_m \}\)  una base para \(K\) como espacio vectorial  sobre \(E\text{.}\) Afirmamos que \(\{ \alpha_i \beta_j \}\) es una base para  \(K\) sobre \(F\text{.}\)  Probaremos primero que estos vectores generan \(K\text{.}\) Sea \(u \in K\text{.}\) Entonces \(u = \sum_{j = 1}^{m} b_j \beta_j\) y \(b_j = \sum_{i = 1}^{n} a_{ij} \alpha_i\text{,}\) donde \(b_j \in E\) y \(a_{ij} \in F\text{.}\) Entonces</p>
+\begin{equation*}
+u = \sum_{j = 1}^{m} \left( \sum_{i = 1}^{n} a_{ij} \alpha_i  \right) \beta_j = \sum_{i,j} a_{ij} ( \alpha_i \beta_j ).
+\end{equation*}
+<p>Así los  \(mn\) vectores \(\alpha_i \beta_j\) generan \(K\) sobre \(F\text{.}\)</p>
+<p id="p-3254">Debemos mostrar que los \(\alpha_i \beta_j \) son linealmente independientes. Recuerde que un conjunto de vectores \(\{v_1, v_2, \ldots, v_n\}\) en un espacio vectorial \(V\) es linealmente independiente si</p>
+\begin{equation*}
+c_1 v_1 + c_2 v_2 + \cdots + c_n v_n = 0
+\end{equation*}
+<p>implica que</p>
+\begin{equation*}
+c_1 = c_2 = \cdots = c_n = 0.
+\end{equation*}
+<p>Sea</p>
+\begin{equation*}
+u = \sum_{i,j} c_{ij} ( \alpha_i \beta_j ) = 0
+\end{equation*}
+<p>para \(c_{ij} \in F\text{.}\) Debemos demostrar que todos los \(c_{ij}\)'s son cero. Podemos reescribir \(u\) como</p>
+\begin{equation*}
+\sum_{j = 1}^{m} \left( \sum_{i = 1}^{n} c_{ij} \alpha_i \right) \beta_j = 0,
+\end{equation*}
+<p>donde \(\sum_i c_{ij} \alpha_i \in E\text{.}\)  Como los \(\beta_j\) son linealmente independientes sobre \(E\text{,}\) debe ser el caso que</p>
+\begin{equation*}
+\sum_{i = 1}^n c_{ij} \alpha_i = 0
+\end{equation*}
+<p>para todo \(j\text{.}\) Sin embargo, los \(\alpha_j\) también son linealmente independientes  sobre \(F\text{.}\)  Por lo tanto, \(c_{ij} = 0\) para todo \(i\) y \(j\text{,}\) lo que completa la demostración.</p></article></div>
+<p id="p-3255">El siguiente corolario se demuestra fácilmente por inducción.</p>
+<article class="theorem-like" id="corollary-29"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">21.18</span>
+</h6>
+<p id="p-3256">Si \(F_i\) son cuerpos para \(i = 1, \dots, k\) y \(F_{i+1}\) es una extensión finita de \(F_i\text{,}\) entonces \(F_k\) es una extensión finita de \(F_1\) y</p>
+\begin{equation*}
+[F_k : F_1] = [F_k : F_{k-1} ] \cdots [F_2 : F_1 ].
+\end{equation*}
+</article><article class="theorem-like" id="corollary-30"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">21.19</span>
+</h6>
+<p id="p-3257">Sea \(E\) una extensión de cuerpos de \(F\text{.}\) Si \(\alpha \in E\) es algebraico sobre \(F\) con polinomio minimal \(p(x)\) y \(\beta \in F( \alpha )\) con polinomio minimal \(q(x)\text{,}\) entonces \(\deg q(x)\) divide a  \(\deg p(x)\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-168" id="proof-168"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-168" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3258">Sabemos que  \(\deg p(x) = [F( \alpha ) : F ]\) y \(\deg q(x) = [F( \beta ) : F ]\text{.}\) Como \(F \subset F( \beta ) \subset F( \alpha )\text{,}\)</p>
+\begin{equation*}
+[F( \alpha ) : F ]= [ F( \alpha ) : F( \beta ) ] [ F( \beta ) : F ].
+\end{equation*}
+</article></div>
+<article class="example-like" id="example-fields-sqrt3-sqrt5"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.20</span>
+</h6>
+<p id="p-3259">Determinemos una extensión de cuerpos de \({\mathbb Q}\) que contenga \(\sqrt{3} + \sqrt{5}\text{.}\) Es fácil determinar que el polinomio minimal de \(\sqrt{3} + \sqrt{5}\) es \(x^4 - 16 x^2 + 4\text{.}\) Se sigue que</p>
+\begin{equation*}
+[{\mathbb Q}( \sqrt{3} + \sqrt{5}\, ) : {\mathbb Q} ] = 4.
+\end{equation*}
+<p>Sabemos que \(\{ 1, \sqrt{3}\, \}\) es una base para  \({\mathbb Q}( \sqrt{3}\, )\) sobre \({\mathbb Q}\text{.}\) Luego, \(\sqrt{3} + \sqrt{5}\) no puede estar en \({\mathbb Q}( \sqrt{3}\, )\text{.}\) Se sigue que \(\sqrt{5}\) no puede estar en \({\mathbb Q}( \sqrt{3}\, )\) tampoco. Por lo tanto, \(\{ 1, \sqrt{5}\, \}\) es una base para \({\mathbb Q}( \sqrt{3}, \sqrt{5}\, ) = ( {\mathbb Q}(\sqrt{3}\, ))( \sqrt{5}\, )\) sobre \({\mathbb Q}( \sqrt{3}\, )\) y \(\{ 1, \sqrt{3}, \sqrt{5}, \sqrt{3} \sqrt{5} = \sqrt{15}\,  \}\) es una base para \({\mathbb Q}( \sqrt{3}, \sqrt{5}\, ) = {\mathbb Q}( \sqrt{3} + \sqrt{5}\, )\) sobre \({\mathbb Q}\text{.}\)  Este ejemplo muestra que es posible que cierta extensión \(F( \alpha_1, \ldots, \alpha_n )\) sea realmente una extensión simple de \(F\) aunque \(n \gt 1\text{.}\)</p></article><article class="example-like" id="example-fields-cubert5-sqrt5-i"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="codenumber">21.21</span>
+</h6>
+<p id="p-3260">Calculemos una base para \({\mathbb Q}( \sqrt[3]{5}, \sqrt{5} \, i )\text{,}\) donde \(\sqrt{5}\) es la raíz cuadrada positiva de 5 y \(\sqrt[3]{5}\) es la raíz cúbica real de 5.  Sabemos que  \(\sqrt{5} \, i \notin {\mathbb Q}(\sqrt[3]{5}\, )\text{,}\) así es que</p>
+\begin{equation*}
+[ {\mathbb Q}(\sqrt[3]{5}, \sqrt{5}\, i) : {\mathbb Q}(\sqrt[3]{5}\, )] = 2.
+\end{equation*}
+<p>Es fácil determinar que  \(\{ 1, \sqrt{5}i\,  \}\) es una base para \({\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i )\) sobre \({\mathbb Q}( \sqrt[3]{5}\, )\text{.}\)  También sabemos que \(\{ 1, \sqrt[3]{5}, (\sqrt[3]{5}\, )^2  \}\) es una base para \({\mathbb Q}(\sqrt[3]{5}\, )\) sobre \({\mathbb Q}\text{.}\) Luego, una base para \({\mathbb Q}(\sqrt[3]{5}, \sqrt{5}\, i )\) sobre \({\mathbb Q}\) es</p>
+\begin{equation*}
+\{ 1, \sqrt{5}\, i, \sqrt[3]{5}, (\sqrt[3]{5}\, )^2, (\sqrt[6]{5}\, )^5 i, (\sqrt[6]{5}\, )^7 i = 5 \sqrt[6]{5}\, i \text{ o } \sqrt[6]{5}\, i \}.
+\end{equation*}
+<p>Notemos que \(\sqrt[6]{5}\, i\) es un cero de \(x^6 + 5\text{.}\) Podemos demostrar que este polinomio es irreducible sobre \({\mathbb Q}\) usando el Criterio de Eisenstein, con  \(p = 5\text{.}\) Por lo tanto,</p>
+\begin{equation*}
+{\mathbb Q} \subset {\mathbb Q}( \sqrt[6]{5}\, i) \subset {\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i ).
+\end{equation*}
+<p>Pero debe ser el caso que \({\mathbb Q}( \sqrt[6]{5}\, i) = {\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i )\text{,}\) dado que ambas son extensiones de grado 6.</p></article><article class="theorem-like" id="theorem-116"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.22</span>
+</h6>
+<p id="p-3261">Sea \(E\)  una extensión de cuerpos de \(F\text{.}\) Entonces las siguientes afirmaciones son equivalentes. </p>
+<ol id="ol-155" style="list-style-type: decimal;">
+<li id="li-726"><p id="p-3262">\(E\) es una extensión finita de \(F\text{.}\)</p></li>
+<li id="li-727"><p id="p-3263">Existe un número finito de elementos algebraicos \(\alpha_1,  \ldots, \alpha_n \in E\) tales que  \(E = F(\alpha_1, \ldots, \alpha_n)\text{.}\)</p></li>
+<li id="li-728">
+<p id="p-3264">Existe una sucesión de cuerpos</p>
+\begin{equation*}
+E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n-1} ) \supset \cdots \supset F( \alpha_1 ) \supset F,
+\end{equation*}
+<p>donde cada cuerpo \(F(\alpha_1, \ldots, \alpha_i)\) es algebraico sobre \(F(\alpha_1, \ldots, \alpha_{i-1})\text{.}\)</p>
+</li>
+</ol></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-169" id="proof-169"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-169" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3265">(1) \(\Rightarrow\) (2). Sea \(E\) una extensión algebraica finita de \(F\text{.}\)  Entonces \(E\) es un espacio vectorial de dimensión finita sobre \(F\) y hay una base que consiste de elementos \(\alpha_1, \ldots, \alpha_n\) en \(E\) tales que \(E = F(\alpha_1, \ldots, \alpha_n)\text{.}\) Cada \(\alpha_i\) es algebraico sobre \(F\) por el  Teorema <a knowl="./knowl/theorem-finite-extension.html" knowl-id="xref-theorem-finite-extension" alt="Teorema 21.15 " title="Teorema 21.15 ">21.15</a>.</p>
+<p id="p-3266">(2) \(\Rightarrow\) (3). Supongamos que  \(E = F(\alpha_1, \ldots, \alpha_n)\text{,}\) donde cada \(\alpha_i\) es algebraico sobre \(F\text{.}\) Entonces</p>
+\begin{equation*}
+E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F,
+\end{equation*}
+<p>donde cada cuerpo \(F(\alpha_1, \ldots, \alpha_i)\) es algebraico sobre \(F(\alpha_1, \ldots, \alpha_{i - 1})\text{.}\)</p>
+<p id="p-3267">(3) \(\Rightarrow\) (1). Sea</p>
+\begin{equation*}
+E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F,
+\end{equation*}
+<p>donde cada cuerpo \(F(\alpha_1, \ldots, \alpha_i)\) es algebraico sobre  \(F(\alpha_1, \ldots, \alpha_{i - 1})\text{.}\) Como</p>
+\begin{equation*}
+F(\alpha_1, \ldots, \alpha_i) =  F(\alpha_1, \ldots, \alpha_{i - 1} )(\alpha_i)
+\end{equation*}
+<p>es una extensión simple y \(\alpha_i\) es algebraico sobre \(F(\alpha_1, \ldots, \alpha_{i - 1})\text{,}\) se sigue que</p>
+\begin{equation*}
+[ F(\alpha_1, \ldots, \alpha_i) : F(\alpha_1, \ldots, \alpha_{i - 1} )]
+\end{equation*}
+<p>es finita para cada \(i\text{.}\) Por lo tanto, \([E : F]\) es finita.</p></article></div></section><section class="subsection" id="fields-subsection-algebraic-closure"><h3 class="heading hide-type" alt="Subsección  Clausura Algebraica">
+<span class="type">Subsección</span><span class="codenumber"></span><span class="title">Clausura Algebraica</span>
+</h3>
+<a href="section-extension-fields.html#fields-subsection-algebraic-closure" class="permalink">¶</a><p id="p-3268">Dado un cuerpo \(F\text{,}\) surge la pregunta sobre si es posible encontrar un cuerpo \(E\) tal que todo polinomio \(p(x)\) tenga una raíz en \(E\text{.}\) Esto nos lleva al siguiente teorema.</p>
+<article class="theorem-like" id="theorem-117"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.23</span>
+</h6>
+<p id="p-3269">Sea \(E\) una extensión de cuerpos de \(F\text{.}\) El conjunto de los elementos en \(E\) que son algebraicos sobre \(F\) forma un cuerpo.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-170" id="proof-170"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-170" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3270">Sean \(\alpha, \beta \in E\)  algebraicos sobre \(F\text{.}\) Entonces \(F( \alpha, \beta )\) es una extensión finita de \(F\text{.}\)  Como todo elemento de \(F( \alpha, \beta )\) es algebraico sobre \(F\text{,}\) \(\alpha \pm \beta\text{,}\) \(\alpha  \beta\text{,}\) y \(\alpha / \beta\) (\(\beta \neq 0\)) son todos algebraicos sobre \(F\text{.}\) Por lo tanto, el conjunto de los elementos en \(E\) que son algebraicos sobre \(F\) forma un cuerpo.</p></article></div>
+<article class="theorem-like" id="corollary-algebraic-numbers-field"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">21.24</span>
+</h6>
+<p id="p-3271">El conjunto de todos los  números algebraicos forma un cuerpo; es decir, el conjunto de todos los números complejos que son algebraicos sobre \({\mathbb Q}\) constituye un cuerpo.</p></article><p id="p-3272">Sea \(E\) una extensión de cuerpos de un cuerpo \(F\text{.}\) Definimos la <b class="terminology">clausura algebraica</b>  de un cuerpo \(F\) en \(E\) como el cuerpo que consiste de todos los  elementos en \(E\) que son algebraicos sobre \(F\text{.}\) Un cuerpo \(F\) es <b class="terminology">algebraicamente cerrado</b> si todo polinomio no constante en \(F[x]\) tiene una raíz en \(F\text{.}\)</p>
+<article class="theorem-like" id="theorem-118"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.25</span>
+</h6>
+<p id="p-3273">Un cuerpo \(F\) es algebraicamente cerrado si y solo si todo polinomio no constante en \(F[x]\) se factoriza en factores lineales sobre \(F[x]\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-171" id="proof-171"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-171" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3274">Sea \(F\) un cuerpo algebraicamente cerrado. Si \(p(x) \in F[x]\) es un polinomio  no constante, entonces \(p(x)\) tiene una raíz en \(F\text{,}\) digamos \(\alpha\text{.}\) Luego, \(x-\alpha\) debe ser un factor de \(p(x)\) de manera que \(p(x) = (x - \alpha) q_1(x)\text{,}\) donde \(\deg q_1(x) = \deg p(x) - 1\text{.}\) Continúe este proceso con \(q_1(x)\) para encontrar la factorización</p>
+\begin{equation*}
+p(x) = (x - \alpha)(x - \beta)q_2(x),
+\end{equation*}
+<p>donde \(\deg q_2(x) = \deg p(x) -2\text{.}\) Este proceso debe terminar en algún momento pues el grado de \(p(x)\) es finito.</p>
+<p id="p-3275">Recíprocamente, supongamos que todo polinomio no constante \(p(x)\) en \(F[x]\) se factoriza como producto de factores lineales. Sea \(ax - b\) uno de esos factores. Entonces \(p( b/a) = 0\text{.}\) Luego, \(F\) es algebraicamente cerrado.</p></article></div>
+<article class="theorem-like" id="corollary-32"><h6 class="heading">
+<span class="type">Corolario</span><span class="codenumber">21.26</span>
+</h6>
+<p id="p-3276">Un cuerpo algebraicamente cerrado \(F\) no tiene extensiones  algebraicas  \(E\) con \(E\neq F\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-172" id="proof-172"><h6 class="heading"><span class="type">Demostración</span></h6></a></article><div id="hk-proof-172" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-3277">Sea \(E\) una extensión algebraica de \(F\text{;}\) Entonces \(F \subset E\text{.}\) Para \(\alpha \in E\text{,}\) el polinomio minimal de \(\alpha\) es \(x - \alpha\text{.}\) Por lo tanto, \(\alpha \in F\) y \(F = E\text{.}\)</p></article></div>
+<article class="theorem-like" id="theorem-119"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.27</span>
+</h6>
+<p id="p-3278">Todo cuerpo \(F\) tiene una única clausura algebraica.</p></article><p id="p-3279">Es un hecho no trivial que todo cuerpo tenga una única clausura algebraica. La demostración no es demasiado difícil, pero requiere algunas herramientas más sofisticadas de teoría de conjuntos. El lector interesado puede encontrar una demostración de este hecho en [3], [4], o [8].</p>
+<p id="p-3280">Enunciamos ahora el Teorema Fundamental del Álgebra, demostrado por primera vez por Gauss a los 22 años de edad en su tesis doctoral. Este teorema dice que todo polinomio con coeficientes en los números complejos tiene una raíz en los números complejos.  La demostración de este teorema se dará en el Capítulo  <a href="galois.html" alt="Capítulo 23 Teoría de Galois" title="Capítulo 23 Teoría de Galois">23</a>.</p>
+<article class="theorem-like" id="theorem-120"><h6 class="heading">
+<span class="type">Teorema</span><span class="codenumber">21.28</span><span class="title">Teorema Fundamental del Álgebra</span>
+</h6>
+<p id="p-3281">El cuerpo de los números complejos es algebraicamente cerrado.</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script type="text/javascript">
+var sc_project=11583430;
+var sc_invisible=1;
+var sc_security="72e3190a";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11583430/0/72e3190a/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>
