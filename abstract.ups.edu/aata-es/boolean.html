@@ -5,7 +5,23 @@
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!--**************************************-->
+<!-- MathJax v3 configuration -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
 <html lang="es-ES">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -13,7 +29,7 @@
 <title>AATA Reticulados y Álgebras Booleanas</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
@@ -80,7 +96,7 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <div class="searchwrapper"><div class="gcse-search"></div></div>
-<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
@@ -338,8 +354,7 @@ MathJax.Hub.Config({
 <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
 <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="boolean"><h1 class="heading" alt="Capítulo 19 Reticulados y Álgebras Booleanas">
+</ul></nav></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="boolean"><h1 class="heading" alt="Capítulo 19 Reticulados y Álgebras Booleanas">
 <span class="type">Capítulo</span><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span>
 </h1>
 <a href="boolean.html" class="permalink">¶</a><section class="introduction" id="introduction-67"><p id="p-2899">Los axiomas de un anillo dan estructura a las operaciones de adición y multiplicación en un conjunto. Pero, podemos construir estructuras algebraicas, conocidas como reticulados y álgebras Booleanas, que generalizan otro tipo de operaciones. Por ejemplo, las operaciones importantes en conjuntos son inclusión, unión e intersección. Los reticulados son generalizaciones de relaciones de orden en espacios algebraicos, tal como la inclusión en teoría de conjuntos y la desigualdad en los sistemas de números familiares \({\mathbb N}\text{,}\) \({\mathbb Z}\text{,}\) \({\mathbb Q}\text{,}\) y \({\mathbb R}\text{.}\)  Las álgebra Booleanas generalizan las opraciones de intersección y unión. Los reticulados y las álgebras Booleanas han encontrado aplicaciones en lógica, teoría de circuitos, y probabilidades.</p></section><nav class="summary-links"><a href="section-boolean-lattices.html"><span class="codenumber">19.1</span><span class="title">Reticulados</span></a><a href="section-boolean-algebras.html"><span class="codenumber">19.2</span><span class="title">Álgebras Booleanas</span></a><a href="section-algebra-of-circuits.html"><span class="codenumber">19.3</span><span class="title">El Álgebra de los Circuitos Eléctricos</span></a><a href="exercises-boolean.html"><span class="codenumber">19.4</span><span class="title">Ejercicios</span></a><a href="boolean-exercises-programming.html"><span class="codenumber">19.5</span><span class="title">Ejercicios de Programación</span></a><a href="boolean-references.html"><span class="codenumber">19.6</span><span class="title">Referencias y Lecturas Recomendadas</span></a><a href="boolean-sage.html"><span class="codenumber">19.7</span><span class="title">Sage</span></a><a href="boolean-sage-exercises.html"><span class="codenumber">19.8</span><span class="title">Ejercicios en Sage</span></a></nav></section></div></main>

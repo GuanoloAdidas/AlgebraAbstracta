@@ -5,7 +5,23 @@
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!--**************************************-->
+<!-- MathJax v3 configuration -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
 <html lang="es-ES">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -13,7 +29,7 @@
 <title>AATA Algebra Abstracta</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
@@ -94,7 +110,7 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <div class="searchwrapper"><div class="gcse-search"></div></div>
-<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
@@ -352,8 +368,7 @@ MathJax.Hub.Config({
 <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
 <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="book" id="aata"><nav class="summary-links"><a href="index-2.html"><span class="title">Páginas preliminares</span></a><a href="sets.html"><span class="codenumber">1</span><span class="title">Preliminares</span></a><a href="integers.html"><span class="codenumber">2</span><span class="title">Los Enteros</span></a><a href="groups.html"><span class="codenumber">3</span><span class="title">Grupos</span></a><a href="cyclic.html"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a><a href="permute.html"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a><a href="cosets.html"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a><a href="crypt.html"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a><a href="algcodes.html"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a><a href="isomorph.html"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a><a href="normal.html"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a><a href="homomorph.html"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a><a href="matrix.html"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a><a href="struct.html"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a><a href="actions.html"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a><a href="sylow.html"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a><a href="rings.html"><span class="codenumber">16</span><span class="title">Anillos</span></a><a href="poly.html"><span class="codenumber">17</span><span class="title">Polinomios</span></a><a href="domains.html"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a><a href="boolean.html"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a><a href="vect.html"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a><a href="fields.html"><span class="codenumber">21</span><span class="title">Cuerpos</span></a><a href="finite.html"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a><a href="galois.html"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a><a href="backmatter.html"><span class="title">Referencia</span></a></nav></section></div></main>
+</ul></nav></aside><main class="main"><div id="content" class="mathbook-content"><section class="book" id="aata"><nav class="summary-links"><a href="index-2.html"><span class="title">Páginas preliminares</span></a><a href="sets.html"><span class="codenumber">1</span><span class="title">Preliminares</span></a><a href="integers.html"><span class="codenumber">2</span><span class="title">Los Enteros</span></a><a href="groups.html"><span class="codenumber">3</span><span class="title">Grupos</span></a><a href="cyclic.html"><span class="codenumber">4</span><span class="title">Grupos Cíclicos</span></a><a href="permute.html"><span class="codenumber">5</span><span class="title">Grupos de Permutaciones</span></a><a href="cosets.html"><span class="codenumber">6</span><span class="title">Clases Laterales y Teorema de Lagrange</span></a><a href="crypt.html"><span class="codenumber">7</span><span class="title">Introducción a la Criptografía</span></a><a href="algcodes.html"><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span></a><a href="isomorph.html"><span class="codenumber">9</span><span class="title">Isomorfismos</span></a><a href="normal.html"><span class="codenumber">10</span><span class="title">Subgrupos Normales y Grupos Cociente</span></a><a href="homomorph.html"><span class="codenumber">11</span><span class="title">Homomorfismos</span></a><a href="matrix.html"><span class="codenumber">12</span><span class="title">Grupos de Matrices y Simetría</span></a><a href="struct.html"><span class="codenumber">13</span><span class="title">La Estructura de Grupos</span></a><a href="actions.html"><span class="codenumber">14</span><span class="title">Acciones de Grupo</span></a><a href="sylow.html"><span class="codenumber">15</span><span class="title">Los Teoremas de Sylow</span></a><a href="rings.html"><span class="codenumber">16</span><span class="title">Anillos</span></a><a href="poly.html"><span class="codenumber">17</span><span class="title">Polinomios</span></a><a href="domains.html"><span class="codenumber">18</span><span class="title">Dominios Integrales</span></a><a href="boolean.html"><span class="codenumber">19</span><span class="title">Reticulados y Álgebras Booleanas</span></a><a href="vect.html"><span class="codenumber">20</span><span class="title">Espacios Vectoriales</span></a><a href="fields.html"><span class="codenumber">21</span><span class="title">Cuerpos</span></a><a href="finite.html"><span class="codenumber">22</span><span class="title">Cuerpos Finitos</span></a><a href="galois.html"><span class="codenumber">23</span><span class="title">Teoría de Galois</span></a><a href="backmatter.html"><span class="title">Referencia</span></a></nav></section></div></main>
 </div>
 <!--Start: StatCounter code--><script type="text/javascript">
 var sc_project=11583430;

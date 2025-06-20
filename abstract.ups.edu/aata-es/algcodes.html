@@ -5,7 +5,23 @@
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!--**************************************-->
+<!-- MathJax v3 configuration -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
 <html lang="es-ES">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -13,7 +29,7 @@
 <title>AATA Teoría Algebraica de Códigos</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
@@ -80,7 +96,7 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <div class="searchwrapper"><div class="gcse-search"></div></div>
-<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
@@ -338,8 +354,7 @@ MathJax.Hub.Config({
 <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
 <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="algcodes"><h1 class="heading" alt="Capítulo 8 Teoría Algebraica de Códigos">
+</ul></nav></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="algcodes"><h1 class="heading" alt="Capítulo 8 Teoría Algebraica de Códigos">
 <span class="type">Capítulo</span><span class="codenumber">8</span><span class="title">Teoría Algebraica de Códigos</span>
 </h1>
 <a href="algcodes.html" class="permalink">¶</a><section class="introduction" id="introduction-30"><p id="p-1198">La teoría de códigos es una aplicación del álgebra que se ha vuelto cada vez más importante durante las últimas décadas. Cuando transmitimos datos, estamos preocupados de transmitir datos a través de un canal que podría estar afectado por “ruido.” Queremos ser capaces de codificar y decodificar la información de forma de poder detectar, y posiblemente corregir, los errores causados por el ruido. Esta situación surge en muchas áreas de comunicación, incluyendo la radio, telefonía, televisión, comunicaciones entre computadores, y tecnologías de almacenamiento digital. Probabilidades, combinatoria, teoría de grupos, álgebra lineal y anillos de polinomios sobre cuerpos finitos todos tienen un rol importante en la teoría de códigos.</p></section><nav class="summary-links"><a href="section-error-detecting-correcting-codes.html"><span class="codenumber">8.1</span><span class="title">Códigos para Detectar y para Corregir Errores</span></a><a href="section-linear-codes.html"><span class="codenumber">8.2</span><span class="title">Códigos Lineales</span></a><a href="section-parity-check.html"><span class="codenumber">8.3</span><span class="title">Matrices Verificadora y Generadora</span></a><a href="section-efficient-decoding.html"><span class="codenumber">8.4</span><span class="title">Decodificación Eficiente</span></a><a href="exercises-algcodes.html"><span class="codenumber">8.5</span><span class="title">Ejercicios</span></a><a href="algcodes-exercises-programming.html"><span class="codenumber">8.6</span><span class="title">Ejercicios de Programación</span></a><a href="algcodes-references.html"><span class="codenumber">8.7</span><span class="title">Referencias y Lecturas Recomendadas</span></a><a href="algcodes-sage.html"><span class="codenumber">8.8</span><span class="title">Sage</span></a><a href="algcodes-sage-exercises.html"><span class="codenumber">8.9</span><span class="title">Ejercicios en Sage</span></a></nav></section></div></main>

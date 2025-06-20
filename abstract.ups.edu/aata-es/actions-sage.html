@@ -5,7 +5,23 @@
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!--**************************************-->
+<!-- MathJax v3 configuration -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
 <html lang="es-ES">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -13,7 +29,7 @@
 <title>AATA Sage</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
@@ -80,7 +96,7 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <div class="searchwrapper"><div class="gcse-search"></div></div>
-<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
@@ -338,8 +354,7 @@ MathJax.Hub.Config({
 <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
 <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="actions-sage"><h2 class="heading hide-type" alt="Sección 14.7 Sage">
+</ul></nav></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="actions-sage"><h2 class="heading hide-type" alt="Sección 14.7 Sage">
 <span class="type">Sección</span><span class="codenumber">14.7</span><span class="title">Sage</span>
 </h2>
 <a href="actions-sage.html" class="permalink">¶</a><section class="introduction" id="introduction-52"><p id="p-2141">Los grupos se pueden presentar de diversas formas, tales como conjuntos de permutaciones, como conjuntos de matrics o como conjuntos de símbolos abstractos relacionados por ciertas reglas (“presentaciones”) y en muchas otras formas más.  Nos hemos concentrado en grupos de permutaciones por su tangibilidad, con elementos escritos como funciones, y por lo bien implementados que están en Sage.  Las acciones de grupo son de gran interés cuando el conjunto en el que se actúa es el grupo mismo, y la acción de grupos figura de forma prominente en las demostraciones de  los principales teoremas del próximo capítulo.  Pero, cada vez que tenemos una acción de un grupo en un conjunto, podemos pensar el grupo como un grupo de permutaciones en los elementos del conjunto.  Por esto los grupos de permutaciones forman un área de teoría de grupos de interés independiente, con sus propias definiciones y teoremas.</p>

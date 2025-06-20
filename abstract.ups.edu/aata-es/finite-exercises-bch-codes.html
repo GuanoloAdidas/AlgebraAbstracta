@@ -5,7 +5,23 @@
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
-<!--**************************************-->
+<!-- MathJax v3 configuration -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<!-- Load MathJax v3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script><!--**************************************-->
 <html lang="es-ES">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -14,7 +30,7 @@
 </title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/javascript" src="../../sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="../../sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
@@ -73,7 +89,7 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <div class="searchwrapper"><div class="gcse-search"></div></div>
-<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/cover_aata_2017.png" alt="Logo image for document"></a><div class="title-container">
+<a id="logo-link" href="http://abstract.pugetsound.edu/" target="_blank"><img src="images/LOGO-USACH_COLOR.png" alt="Logo image for document"></a><div class="title-container">
 <h1 class="heading"><a href="aata.html"><span class="title">Algebra Abstracta</span><span class="subtitle">Teoría y Aplicaciones</span></a></h1>
 <p class="byline">Thomas W. Judson</p>
 </div>
@@ -331,8 +347,7 @@ MathJax.Hub.Config({
 <li><a href="appendix-3.html" data-scroll="appendix-3">Notación</a></li>
 <li><a href="index-1.html" data-scroll="index-1">Índice alfabético</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colofón</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu/">Realizado con PreTeXt</a><a href="https://www.mathjax.org/"><img title="Powered by MathJax" src="../../www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="exercises" id="finite-exercises-bch-codes"><h2 class="heading hide-type" alt="Ejercicios 22.4 Ejercicios Adicionales: Corrección de Errores para Códigos BCH">
+</ul></nav></aside><main class="main"><div id="content" class="mathbook-content"><section class="exercises" id="finite-exercises-bch-codes"><h2 class="heading hide-type" alt="Ejercicios 22.4 Ejercicios Adicionales: Corrección de Errores para Códigos BCH">
 <span class="type">Sección</span><span class="codenumber">22.4</span><span class="title">Ejercicios Adicionales: Corrección de Errores para Códigos <abbr class="acronym">BCH</abbr></span>
 </h2>
 <a href="finite-exercises-bch-codes.html" class="permalink">¶</a><section class="introduction" id="introduction-79"><p id="p-3549">Los códigos <abbr class="acronym">BCH</abbr> tienen algoritmos de corrección de errores muy atractivos. Sea \(C\) un código <abbr class="acronym">BCH</abbr> en \(R_n\text{,}\) y supongamos que se transmite un polinomio \(c(t) = c_0 + c_1 t + \cdots + c_{n-1} t^{n-1}\) del código. Sea \(w(t) = w_0 + w_1 t + \cdots w_{n-1} t^{n-1}\) el polinomio en \(R_n\) que es recibido.  Si han ocurrido errores en los bits \(a_1, \ldots, a_k\text{,}\) entonces \(w(t) = c(t) + e(t)\text{,}\) donde \(e(t) = t^{a_1} + t^{a_2} + \cdots + t^{a_k}\) es el <b class="terminology">polinomio de error</b>. El decodificador debe determinar los enteros \(a_i\) y luego recuperar \(c(t)\) a partir de \(w(t)\) cambiando el valor de los bit \(a_i\text{.}\) A partir de \(w(t)\) podemos calcular \(w( \omega^i ) = s_i\) para \(i = 1, \ldots, 2r\text{,}\) donde \(\omega\) es una raíz \(n\)-ésima primitiva de la unidad sobre \({\mathbb Z}_2\text{.}\) Decimos que el <b class="terminology">síndrome</b> de \(w(t)\) es \(s_1, \ldots, s_{2r}\text{.}\)</p></section><article class="exercise-like" id="exercise-759"><h6 class="heading"><span class="codenumber">1</span></h6>
