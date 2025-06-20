@@ -1,0 +1,6 @@
+
+/* Asegurar que el contenido principal tenga espacio inferior */
+.page, .main-content, .mathbook-content {
+    padding-bottom: 40px; /* Espacio respirable al fondo */
+    box-sizing: border-box;
+}
