@@ -579,11 +579,10 @@ a:hover {
 .has-sidebar-left #primary-navbar .sidebar-left-toggle-button,
 .has-sidebar-left #primary-navbar-sticky-wrapper .sidebar-left-toggle-button {
   display: block;
-  
-  width: 230px;
+  width: 240px;
   padding: 6px 16px;
   border: none;
-  border-radius: 14px 14px 0px 0px;
+  border-radius: 14px;
   background-color: #e8e8ee;
   color: #444;
   font-weight: 500;
@@ -1002,7 +1001,6 @@ a:hover {
    * so that our borders display correctly
    */
   overflow: hidden;
-  *zoom: 1;
 }
 /* line 28, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_flex-container.scss */
 #primary-navbar .toolbar .toolbar-item, #primary-navbar .toolbar.toolbar-align-left .toolbar-item, #primary-navbar-sticky-wrapper .toolbar .toolbar-item, #primary-navbar-sticky-wrapper .toolbar.toolbar-align-left .toolbar-item {
@@ -1431,9 +1429,7 @@ a:hover {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: baseline;
-  *vertical-align: auto;
   zoom: 1;
-  *display: inline;
   margin-left: 16.192px;
 }
 /* line 105, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_toc.scss */
@@ -2236,9 +2232,7 @@ a:hover {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
-  *vertical-align: auto;
   zoom: 1;
-  *display: inline;
   /* Disable accidental text-selection */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2647,21 +2641,21 @@ body {
 /* Evita scroll en el html/body */
 html, body {
   overflow: hidden;
-  height: 99vh;
-  margin: 0;
+  height: 100vh;
+  margin-bottom: 20px;
   padding: 0;
 }
 
 /* Scroll interno SOLO en sidebar y contenido */
 .page {
   display: flex;
-  height: 99vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .sidebar,
 .sidebar-left {
-  height: 99vh;
+  height: 85vh;
   overflow-y: auto;
   position: sticky;
   top: 0;
@@ -2669,6 +2663,13 @@ html, body {
 
 .main {
   flex: 1;
-  height: 99vh;
+  height: 100vh;
   overflow-y: auto;
+}
+
+/* Forzar que el contenido principal ocupe al menos toda la altura de la pantalla */
+.main {
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
 }

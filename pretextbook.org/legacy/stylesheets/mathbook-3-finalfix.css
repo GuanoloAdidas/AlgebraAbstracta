@@ -15,27 +15,7 @@ body {
   color: var(--apple-text);
 }
 
-/* Botones estilo Apple */
-button,
-.button,
-.toolbar-item {
-  border: none;
-  border-radius: var(--apple-radius);
-  padding: 6px 14px;
-  background-color: var(--apple-bg);
-  color: var(--apple-text);
-  font-family: var(--apple-font);
-  box-shadow: var(--apple-shadow);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  font-weight: 500;
-}
 
-button:hover,
-.button:hover,
-.toolbar-item:hover {
-  background-color: var(--apple-hover);
-  box-shadow: var(--apple-shadow-hover);
-}
 
 /* Scrollbars limpias */
 ::-webkit-scrollbar {
@@ -48,12 +28,12 @@ button:hover,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: #f0f0f0;
   border-radius: var(--apple-radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a0a0a0;
+  background: #f0f0f0;
 }
 
 /* Links */
@@ -148,6 +128,7 @@ a:hover {
   font-size: 1em;
   padding-left: 9.68px;
   overflow: hidden;
+  *zoom: 1;
   /* On mobile phones */
 }
 @media screen and (max-width: 480px) {
@@ -237,7 +218,7 @@ a:hover {
 }
 /* line 102, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_masthead.scss */
 #masthead #title-container > .heading a:active, #masthead .title-container > .heading a:active {
-  color: #3572a0;
+  color: #932919;
   /**
    * Better underlines using background gradients
    * See http://bit.ly/1vTg7hr
@@ -327,7 +308,7 @@ a:hover {
 }
 /* line 193, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_masthead.scss */
 #masthead #logo-link:empty:active:before, #masthead .logo-link:empty:active:before {
-  color: #3572a0;
+  color: #932919;
 }
 /* line 199, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_masthead.scss */
 #masthead #logo-link:link, #masthead #logo-link:hover, #masthead #logo-link:active, #masthead .logo-link:link, #masthead .logo-link:hover, #masthead .logo-link:active {
@@ -385,7 +366,7 @@ a:hover {
 }
 /* line 250, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_masthead.scss */
 #masthead #byline a:active, #masthead .byline a:active {
-  color: #3572a0;
+  color: #932919;
   /**
    * Better underlines using background gradients
    * See http://bit.ly/1vTg7hr
@@ -424,7 +405,7 @@ a:hover {
 }
 /* line 44, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_primary-navbar.scss */
 #primary-navbar, #primary-navbar-sticky-wrapper {
-  background: #ededed;
+  background: #fafafa;
   border-bottom: 1px solid #bababa;
   z-index: 200;
   height: 35.36px;
@@ -435,6 +416,7 @@ a:hover {
   -o-transition: box-shadow 400ms;
   transition: box-shadow 400ms;
   overflow: hidden;
+  *zoom: 1;
   /*
    * Styles applied to make the navbar persistently visible
    * when it's sticky-wrapper is stuck
@@ -465,7 +447,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ededed;
+    background: #fafafa;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 5px;
@@ -478,7 +460,9 @@ a:hover {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
+  *vertical-align: auto;
   zoom: 1;
+  *display: inline;
   /* Disable accidental text-selection */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -542,7 +526,7 @@ a:hover {
 /* line 115, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_primary-navbar.scss */
 #primary-navbar .button, #primary-navbar .button:link, #primary-navbar .button:visited, #primary-navbar-sticky-wrapper .button, #primary-navbar-sticky-wrapper .button:link, #primary-navbar-sticky-wrapper .button:visited {
   color: #333333;
-  background-color: #ededed;
+  background-color: #fafafa;
 }
 /* line 120, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_primary-navbar.scss */
 #primary-navbar .button:hover, #primary-navbar-sticky-wrapper .button:hover {
@@ -556,7 +540,7 @@ a:hover {
 #primary-navbar .button.disabled, #primary-navbar .button.disabled:link, #primary-navbar .button.disabled:visited, #primary-navbar .button.disabled:hover, #primary-navbar .button.disabled:focus, #primary-navbar .button.disabled:active, #primary-navbar-sticky-wrapper .button.disabled, #primary-navbar-sticky-wrapper .button.disabled:link, #primary-navbar-sticky-wrapper .button.disabled:visited, #primary-navbar-sticky-wrapper .button.disabled:hover, #primary-navbar-sticky-wrapper .button.disabled:focus, #primary-navbar-sticky-wrapper .button.disabled:active {
   opacity: .4;
   color: #333333;
-  background: #ededed;
+  background: #fafafa;
   cursor: default;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -628,12 +612,14 @@ a:hover {
     color: #000;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     font-weight: 600;
+    margin-bottom: 20px;
   }
 
   #primary-navbar .sidebar-left-toggle-button.active:hover,
   #primary-navbar-sticky-wrapper .sidebar-left-toggle-button.active:hover {
     background-color: #c9c9d9;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
   }
 }
 
@@ -652,7 +638,9 @@ a:hover {
   /* So text isn't removed from this too */
   display: inline-block;
   vertical-align: baseline;
+  *vertical-align: auto;
   zoom: 1;
+  *display: inline;
 }
 @media screen and (max-width: 800px) {
   /* line 183, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_primary-navbar.scss */
@@ -1013,6 +1001,7 @@ a:hover {
    * so that our borders display correctly
    */
   overflow: hidden;
+  *zoom: 1;
 }
 /* line 28, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_flex-container.scss */
 #primary-navbar .toolbar .toolbar-item, #primary-navbar .toolbar.toolbar-align-left .toolbar-item, #primary-navbar-sticky-wrapper .toolbar .toolbar-item, #primary-navbar-sticky-wrapper .toolbar.toolbar-align-left .toolbar-item {
@@ -1327,8 +1316,8 @@ a:hover {
 /* line 30, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_toc.scss */
 #toc {
   /* IMPORTANT height must be calculated by javascript. */
-  width: 240px;
-  margin: 0;
+  width: 260px;
+  margin-left: 20px;;
   font-size: 14.72px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -1348,13 +1337,23 @@ a:hover {
 #toc h2 a {
   position: relative;
   display: block;
-  font-size: 14.72px;
-  padding: 5.58696px;
-  padding-left: 9.68px;
-  border: 1px solid #2c5f85;
-  border-right: none;
-  border-left: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f7;
+  color: #932919; /* gris oscuro tipo Apple */
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transition: background-color 0.2s ease;
+  margin-bottom: 6px;
 }
+
+#toc h2 a:hover {
+  background-color: #e5e5ea;
+  cursor: pointer;
+}
+
 /* line 113, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc h2 a, #toc h2 a:link, #toc h2 a:visited, #toc h2 a:hover, #toc h2 a:active {
   text-decoration: none;
@@ -1362,7 +1361,7 @@ a:hover {
 /* line 117, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc h2 a, #toc h2 a:link, #toc h2 a:visited {
   color: white;
-  background: #3572a0;
+  background: #932919;
 }
 /* line 128, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc h2 a.active, #toc h2 a:active {
@@ -1386,54 +1385,54 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px inset;
 }
 @media screen and (max-width: 800px) {
-  /* line 98, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
   #toc h2 a {
     position: relative;
     display: block;
-    font-size: 14.72px;
-    padding: 7.2337px;
-    padding-left: 12.1px;
-    border: 1px solid #2c5f85;
-    border-right: none;
-    border-left: none;
+    font-size: 15px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f7;
+    color: #932919;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 8px;
   }
-  /* line 113, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
-  #toc h2 a, #toc h2 a:link, #toc h2 a:visited, #toc h2 a:hover, #toc h2 a:active {
-    text-decoration: none;
-  }
-  /* line 117, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
-  #toc h2 a, #toc h2 a:link, #toc h2 a:visited {
-    color: white;
-    background: #3572a0;
-  }
-  /* line 128, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
-  #toc h2 a.active, #toc h2 a:active {
-    color: white;
-    background: #932919;
-  }
-  /* line 133, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
-  #toc h2 a:hover {
-    color: white;
-    background: #671d12;
-    border-color: #3c110a;
-  }
-  /* line 139, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
+
+  #toc h2 a:link,
+  #toc h2 a:visited,
+  #toc h2 a:hover,
   #toc h2 a:active {
-    /* Depressed state on click but not when marked active */
+    text-decoration: none;
+    color: #932919;
   }
-  /* line 215, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_buttons.scss */
-  #toc h2 a:active:active, #toc h2 a:active.active {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px inset;
-    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px inset;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px inset;
+
+  #toc h2 a:hover {
+    background-color: #e5e5ea;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  #toc h2 a.active,
+  #toc h2 a:active.active {
+    background-color: #d1d1d6;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+  }
+
+  #toc h2 a:active:active {
+    /* mismo efecto que active.active */
   }
 }
+
 /* line 101, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_toc.scss */
 #toc .codenumber + .title {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: baseline;
+  *vertical-align: auto;
   zoom: 1;
+  *display: inline;
   margin-left: 16.192px;
 }
 /* line 105, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_toc.scss */
@@ -1474,6 +1473,7 @@ a:hover {
   border: 1px solid #d1d1d1;
   border-right: none;
   border-left: none;
+  border-radius: 10px;
 }
 /* line 113, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc ul li a, #toc ul li a:link, #toc ul li a:visited, #toc ul li a:hover, #toc ul li a:active {
@@ -1487,13 +1487,13 @@ a:hover {
 /* line 128, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc ul li a.active, #toc ul li a:active {
   color: white;
-  background: #932919;
+  background: #61615d;
 }
 /* line 133, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc ul li a:hover {
   color: white;
-  background: #671d12;
-  border-color: #3c110a;
+  background: #888886;
+  border-color: #4f4f4c;
 }
 /* line 139, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_navtree.scss */
 #toc ul li a:active {
@@ -1610,6 +1610,7 @@ a:hover {
 /* line 55, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_sliding-sidebars.scss */
 .has-sidebar-left.mathbook-loading.sidebar-left-open .page > #sidebar-left, .has-sidebar-left.mathbook-loaded.sidebar-left-open .page > #sidebar-left, .has-sidebar-left.mathbook-loading.sidebar-left-open #sidebar-left-sticky-wrapper, .has-sidebar-left.mathbook-loaded.sidebar-left-open #sidebar-left-sticky-wrapper {
   margin-left: 0;
+  
 }
 /* line 61, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_sliding-sidebars.scss */
 .has-sidebar-left.mathbook-loading.sidebar-left-closed .page > #sidebar-left, .has-sidebar-left.mathbook-loaded.sidebar-left-closed .page > #sidebar-left, .has-sidebar-left.mathbook-loading.sidebar-left-closed #sidebar-left-sticky-wrapper, .has-sidebar-left.mathbook-loaded.sidebar-left-closed #sidebar-left-sticky-wrapper {
@@ -1698,6 +1699,7 @@ a:hover {
   border-left: none;
   border-right: none;
   border-bottom: none;
+  max-height: 100dvi;
 }
 /* line 35, ../../../../../MathBook/mathbook-assets/scss/ui/partials/_sidebar-extras.scss */
 .sidebar-content .extras:before {
@@ -1971,7 +1973,7 @@ a:hover {
 }
 /* line 119, ../../../../../MathBook/mathbook-assets/scss/ui/mixins/_sliding-sidebars.scss */
 .has-sidebar-left.mathbook-loading.sidebar-left-open .page > .main, .has-sidebar-left.mathbook-loaded.sidebar-left-open .page > .main {
-  margin-left: 240px;
+  margin-left: 260px;
   left: auto;
 }
 @media screen and (max-width: 640px) {
@@ -2233,7 +2235,9 @@ a:hover {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
+  *vertical-align: auto;
   zoom: 1;
+  *display: inline;
   /* Disable accidental text-selection */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2475,7 +2479,7 @@ body #MathJax_Message {
 /* Sidebar con ancho fijo */
 .sidebar,
 .sidebar-left {
-  width: 270px;
+  width:260px;
   flex-shrink: 0;
 }
 
@@ -2591,6 +2595,7 @@ body {
   overflow-y: auto;
   position: sticky;
   top: 0;
+  width: 240px; /* Ancho fijo para el TOC */
 }
 
 #content {
@@ -2604,8 +2609,8 @@ body {
 /* Sidebar ocupa toda la altura de la ventana, sin superponerse */
 .sidebar,
 .sidebar-left {
-  height: 100vh;
-  max-height: 100vh;
+  height: 99vh;
+  max-height: 99vh;
   overflow-y: auto;
   flex: 0 0 270px;
 }
@@ -2613,7 +2618,7 @@ body {
 /* Contenido se ajusta correctamente al lado del menú */
 .main {
   flex: 1 1 auto;
-  min-height: 100vh;
+  min-height: 99vh;
   overflow-x: hidden;
 }
 
@@ -2622,14 +2627,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  min-height: 100vh;
+  min-height: 99vh;
 }
 
 
 /* Sidebar scroll independiente y tamaño pantalla completo */
 .sidebar,
 .sidebar-left {
-    height: 100vh;
+    height: 99vh;
     overflow-y: auto;
     position: sticky;
     top: 0;
@@ -2641,7 +2646,7 @@ body {
 /* Evita scroll en el html/body */
 html, body {
   overflow: hidden;
-  height: 100vh;
+  height: 99vh;
   margin: 0;
   padding: 0;
 }
@@ -2649,13 +2654,13 @@ html, body {
 /* Scroll interno SOLO en sidebar y contenido */
 .page {
   display: flex;
-  height: 100vh;
+  height: 99vh;
   overflow: hidden;
 }
 
 .sidebar,
 .sidebar-left {
-  height: 100vh;
+  height: 99vh;
   overflow-y: auto;
   position: sticky;
   top: 0;
@@ -2663,6 +2668,13 @@ html, body {
 
 .main {
   flex: 1;
-  height: 100vh;
+  height: 99vh;
   overflow-y: auto;
+}
+
+/* Forzar que el contenido principal ocupe al menos toda la altura de la pantalla */
+.main {
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
